@@ -1,6 +1,4 @@
-| | |
-|:---:|--:|
-| ![GitHub Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=thanos&theme=default&show_icons=true&hide_border=true&layout=compact)| <a href="https://web.archive.org/web/20041024235844/http://www.python.org/~guido/pycon03/PyCon/P3280035r.JPG"><img width="300"  alt="Screenshot 2025-10-05 at 20 47 53" src="https://github.com/user-attachments/assets/b18d29d5-9f51-4fb2-a2bf-8ef8dd90ee06" /></a> <br> At <a href="https://web.archive.org/web/20130125060013/http://www.python.org/~guido/pycon03/">PyCon 2003</a> - <i>photo by <a href="https://gvanrossum.github.io/">Guido van Rossum</a><i> |
+ <a href="https://web.archive.org/web/20041024235844/http://www.python.org/~guido/pycon03/PyCon/P3280035r.JPG"><img width="300"  alt="Screenshot 2025-10-05 at 20 47 53" src="https://github.com/user-attachments/assets/b18d29d5-9f51-4fb2-a2bf-8ef8dd90ee06" /></a> <br> At <a href="https://web.archive.org/web/20130125060013/http://www.python.org/~guido/pycon03/">PyCon 2003</a> - <i>photo by <a href="https://gvanrossum.github.io/">Guido van Rossum</a><i> 
 
 
 
