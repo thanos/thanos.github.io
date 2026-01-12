@@ -3,6 +3,7 @@
  <a href="https://web.archive.org/web/20041024235844/http://www.python.org/~guido/pycon03/PyCon/P3280035r.JPG"><img width="300"  alt="Screenshot 2025-10-05 at 20 47 53" src="https://github.com/user-attachments/assets/b18d29d5-9f51-4fb2-a2bf-8ef8dd90ee06" /></a> <br> At <a href="https://web.archive.org/web/20130125060013/http://www.python.org/~guido/pycon03/">PyCon 2003</a> - <i>photo by <a href="https://gvanrossum.github.io/">Guido van Rossum</a><i> 
 
 
+resume: [thanos-vassilakis-resume-2026-01.pdf](https://github.com/user-attachments/files/24570585/thanos-vassilakis-resume-2026-01.pdf)
 
 ```python
 thanos_vassilakis_continued = {
@@ -10,7 +11,7 @@ thanos_vassilakis_continued = {
   "email": "thanos@automa.us", 
   "nationality": "USA & Greek", 
   "spoken languages": "English & French", 
-  "interests": "Art, Reading, Music, Film, Gardening, Skiing, and programming." 	
+  "interests": "Art, Reading, Music, Film, Gardening, Skiing, and programming."
   "now": {
     "title": "Distinguished Engineer, MD at RBC Finance", 
     "current projects" : ["Modernizing the General Ledger", "Everything AI!"]
