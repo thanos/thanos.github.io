@@ -3,11 +3,11 @@ import tailwind from '@astrojs/tailwind';
 import remarkGfm from 'remark-gfm';
 
 // https://astro.build/config
-// Repo `thanos/thanos` is a project site → https://thanos.github.io/thanos/
-// If you rename the repo to `thanos.github.io` (user site at domain root), set base: '/'.
+// User site (`thanos.github.io` repo): https://thanos.github.io/
+// If you only have `thanos/thanos`, GitHub serves at /thanos/ — use base: '/thanos/'.
 export default defineConfig({
   site: 'https://thanos.github.io',
-  base: '/thanos/',
+  base: '/',
   output: 'static',
   trailingSlash: 'always',
   integrations: [
