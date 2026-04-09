@@ -1,6 +1,6 @@
 ---
-title: "Stablecoins: What They Are, Why They Exist, Their History, How They Work, and Their Future"
-description: "An introduction to Staplecoins"
+title: "Stablecoins: What & Why?"
+description: "Stablecoins: What They Are, Why They Exist, Their History, How They Work, and Their Future"
 date: 2025-04-26
 tags:
 - Blockchain

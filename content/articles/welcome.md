@@ -5,7 +5,7 @@ date: 2026-04-01
 tags:
   - meta
   - astro
-draft: false
+draft: true
 ---
 
 ![Abstract header image (sourced from your Pictures/t.webp; copy lives beside this .md for the content pipeline)](./welcome-hero.webp)
