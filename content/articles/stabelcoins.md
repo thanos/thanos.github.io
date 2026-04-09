@@ -85,7 +85,7 @@ Usage spans:
 
 Geographically, adoption is global, with particularly strong growth in Asia, Latin America, and Africa for remittances and savings, and in North America and Europe for institutional and DeFi applications.
 
-### How Do Stablecoins Work? (Types and Mechanics – 101 and 102)
+### How Do Stablecoins Work?
 
 Stablecoins fall into three main categories, each with distinct backing and stability mechanisms.
 
@@ -135,13 +135,7 @@ Early experiments already show AI agents using stablecoin wallets for real-time 
 
 Stablecoins are the infrastructure that makes blockchain useful for everyday economic activity. They solve real problems of volatility and friction—especially in high-volume areas such as remittances—while opening new possibilities in decentralized and AI-driven systems. Begin by exploring one major stablecoin in a small, controlled transaction. Consult official issuer documentation, on-chain transparency reports, and resources such as DeFiLlama for live data.
 
-**Glossary of Key Terms**  
-- **Blockchain**: Decentralized ledger technology.  
-- **Cryptocurrency**: Digital asset on a blockchain.  
-- **DeFi**: Decentralized finance applications.  
-- **Fiat-collateralized**: Backed by traditional currency reserves.  
-- **Peg**: Target stable value (usually $1).  
-- **Smart contract**: Self-executing blockchain code.  
+
 
 ### References
 
