@@ -1,0 +1,44 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import TagList from '../components/TagList.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  tags: string[];
+  canonicalPath?: string;
+}
+
+const { title, description, date, tags } = Astro.props;
+const formatted = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}).format(date);
+---
+
+<BaseLayout title={title} description={description} canonicalPath={Astro.props.canonicalPath}>
+  <a
+    href="/"
+    class="mx-auto block max-w-3xl px-4 py-6 text-sm text-neutral-600 underline-offset-4 hover:text-neutral-900 hover:underline"
+  >
+    ← Home
+  </a>
+  <article class="mx-auto max-w-3xl px-4 pb-16">
+    <header class="mb-10 border-b border-neutral-200 pb-8">
+      <h1 class="text-3xl font-semibold tracking-tight text-neutral-950 md:text-4xl">
+        {title}
+      </h1>
+      <p class="mt-2 text-neutral-600">{formatted}</p>
+      {tags.length > 0 && (
+        <div class="mt-4">
+          <TagList tags={tags} />
+        </div>
+      )}
+    </header>
+    <div class="article-body">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>

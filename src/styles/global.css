@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .article-body :is(h2, h3, h4) {
+    @apply mt-8 font-semibold text-neutral-950 first:mt-0;
+  }
+
+  .article-body h2 {
+    @apply text-xl md:text-2xl;
+  }
+
+  .article-body h3 {
+    @apply text-lg md:text-xl;
+  }
+
+  .article-body p {
+    @apply my-4 leading-relaxed text-neutral-800;
+  }
+
+  .article-body a {
+    @apply font-medium text-neutral-900 underline decoration-neutral-400 underline-offset-4 hover:decoration-neutral-900;
+  }
+
+  .article-body ul {
+    @apply my-4 list-disc space-y-2 pl-6 text-neutral-800;
+  }
+
+  .article-body ol {
+    @apply my-4 list-decimal space-y-2 pl-6 text-neutral-800;
+  }
+
+  .article-body pre {
+    @apply my-4 overflow-x-auto rounded-lg bg-neutral-100 p-4 text-sm text-neutral-900;
+  }
+
+  .article-body :not(pre) > code {
+    @apply rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-sm text-neutral-900;
+  }
+
+  .article-body blockquote {
+    @apply my-4 border-l-4 border-neutral-300 pl-4 italic text-neutral-700;
+  }
+
+  .article-body img {
+    @apply my-8 w-full max-h-80 rounded-lg object-cover shadow-sm ring-1 ring-neutral-200;
+  }
+
+  .article-body table {
+    @apply my-6 w-full border-collapse text-left text-sm;
+  }
+
+  .article-body thead {
+    @apply border-b border-neutral-300 bg-neutral-50;
+  }
+
+  .article-body th,
+  .article-body td {
+    @apply border border-neutral-200 px-3 py-2 align-top;
+  }
+
+  .article-body th {
+    @apply font-semibold text-neutral-900;
+  }
+
+  .article-body tbody tr:nth-child(even) {
+    @apply bg-neutral-50/80;
+  }
+
+  .article-body .footnotes {
+    @apply mt-12 border-t border-neutral-200 pt-6 text-sm text-neutral-600;
+  }
+
+  .article-body .footnotes ol {
+    @apply list-decimal space-y-2 pl-5;
+  }
+
+  .article-body .footnote-backref,
+  .article-body [data-footnote-backref] {
+    @apply ml-1 text-neutral-900 no-underline hover:underline;
+  }
+}
