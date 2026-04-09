@@ -8,7 +8,11 @@ interface Props {
 }
 
 const { title, description, canonicalPath } = Astro.props;
-const canonical = new URL(canonicalPath ?? Astro.url.pathname, Astro.site);
+
+const base = import.meta.env.BASE_URL;
+const rawPath = canonicalPath ?? Astro.url.pathname;
+const pathname = rawPath.startsWith(base) ? rawPath : `${base}${rawPath.replace(/^\//, '')}`;
+const canonical = new URL(pathname, Astro.site);
 ---
 
 <!doctype html>
