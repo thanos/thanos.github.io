@@ -1,7 +1,7 @@
 ---
 title: "Block Template Construction: How Miners Build the Candidate Blocks They Actually Hash"
 description: "A detailed look at the Block template construction process by which a miner (or its pool) assembles all the pieces needed before the nonce hunt can begin."
-date: 2024-06-10
+date: 2025-06-10
 tags:
 - Blockchain
 - Crypto
