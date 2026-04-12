@@ -14,6 +14,13 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+
+const inSeries = (
+  await getCollection('articles', ({ data }) => {
+    if (data.series !== entry.id) return false;
+    return import.meta.env.PROD ? !data.draft : true;
+  })
+).sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
 ---
 
 <ArticleLayout
@@ -24,4 +31,26 @@ const { Content } = await render(entry);
   canonicalPath={`/series/${entry.id}/`}
 >
   <Content />
+  {
+    inSeries.length > 0 && (
+      <section class="mt-12 border-t border-neutral-200 pt-8">
+        <h2 class="text-lg font-semibold text-neutral-950">Articles in this series</h2>
+        <ol class="mt-4 list-decimal space-y-2 pl-6 text-neutral-800">
+          {inSeries.map((a) => (
+            <li>
+              <a
+                href={`${import.meta.env.BASE_URL}articles/${a.id}/`}
+                class="font-medium text-neutral-900 underline-offset-4 hover:underline"
+              >
+                {a.data.title}
+              </a>
+              {a.data.description && (
+                <span class="text-neutral-600"> — {a.data.description}</span>
+              )}
+            </li>
+          ))}
+        </ol>
+      </section>
+    )
+  }
 </ArticleLayout>

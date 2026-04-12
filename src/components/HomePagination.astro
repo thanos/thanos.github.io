@@ -1,0 +1,49 @@
+---
+interface Props {
+  currentPage: number;
+  totalPages: number;
+}
+
+const { currentPage, totalPages } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+if (totalPages <= 1) {
+  return null;
+}
+
+const prevHref = currentPage <= 2 ? base : `${base}page/${currentPage - 1}/`;
+const nextHref = `${base}page/${currentPage + 1}/`;
+---
+
+<nav
+  class="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-neutral-200 pt-8 text-sm text-neutral-700"
+  aria-label="Pagination"
+>
+  <p class="text-neutral-600">Page {currentPage} of {totalPages}</p>
+  <div class="flex gap-3">
+    {
+      currentPage > 1 ? (
+        <a
+          href={prevHref}
+          class="rounded-md border border-neutral-300 px-3 py-1.5 font-medium text-neutral-900 hover:bg-neutral-50"
+        >
+          ← Newer
+        </a>
+      ) : (
+        <span class="rounded-md border border-transparent px-3 py-1.5 text-neutral-400">← Newer</span>
+      )
+    }
+    {
+      currentPage < totalPages ? (
+        <a
+          href={nextHref}
+          class="rounded-md border border-neutral-300 px-3 py-1.5 font-medium text-neutral-900 hover:bg-neutral-50"
+        >
+          Older →
+        </a>
+      ) : (
+        <span class="rounded-md border border-transparent px-3 py-1.5 text-neutral-400">Older →</span>
+      )
+    }
+  </div>
+</nav>

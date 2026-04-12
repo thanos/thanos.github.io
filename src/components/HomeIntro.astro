@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL;
+const notes = await getCollection('notes', ({ data }) =>
+  import.meta.env.PROD ? !data.draft : true
+);
+const hasNotes = notes.length > 0;
+---
+
+<header class="mb-12">
+  <h1 class="text-3xl font-semibold tracking-tight text-neutral-950 md:text-2xl">ideas, tests, and Code fragments…</h1>
+  <p class="mt-4 max-w-2xl text-neutral-600">
+    résumé:{' '}
+    <a
+      href={`${base}material/thanos-vassilakis-resume.pdf`}
+      class="font-medium text-neutral-900 underline underline-offset-4"
+    >
+      PDF
+    </a>
+    {' · '}
+    <a href={`${base}resume/`} class="font-medium text-neutral-900 underline underline-offset-4">Markdown</a>
+  </p>
+  <p class="mt-3 max-w-2xl text-neutral-600">
+    Browse{' '}
+    <a href={`${base}articles/`} class="font-medium text-neutral-900 underline underline-offset-4">all articles</a>,{' '}
+    <a href={`${base}series/`} class="font-medium text-neutral-900 underline underline-offset-4">series</a>
+    {
+      hasNotes ? (
+        <>
+          , or{' '}
+          <a href={`${base}notes/`} class="font-medium text-neutral-900 underline underline-offset-4">
+            notes
+          </a>
+        </>
+      ) : null
+    }
+    .
+  </p>
+</header>

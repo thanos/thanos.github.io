@@ -10,9 +10,14 @@ const baseSchema = z.object({
   draft: z.boolean().default(false),
 });
 
+const articleSchema = baseSchema.extend({
+  /** Matches `series` collection entry id (filename without .md), e.g. `mining-foundations`. */
+  series: z.string().optional(),
+});
+
 const articles = defineCollection({
   loader: glob({ base: './content/articles', pattern: '**/*.md' }),
-  schema: baseSchema,
+  schema: articleSchema,
 });
 
 const series = defineCollection({

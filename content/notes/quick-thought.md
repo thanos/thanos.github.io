@@ -4,7 +4,7 @@ description: "Notes are shorter entries in content/notes/ using the same schema 
 date: 2026-04-03
 tags:
   - notes
-draft: false
+draft: true
 ---
 
 Keep **notes** lightweight: bookmarks, half-formed ideas, or append-only logs. Everything is still validated by Zod at build time.

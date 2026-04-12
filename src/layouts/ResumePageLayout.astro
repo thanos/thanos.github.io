@@ -1,0 +1,24 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+const { frontmatter } = Astro.props;
+const title = typeof frontmatter.title === 'string' ? frontmatter.title : 'Résumé';
+const description =
+  typeof frontmatter.description === 'string'
+    ? frontmatter.description
+    : 'Curriculum vitae and contact.';
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/resume/">
+  <div class="mx-auto max-w-3xl px-4 py-12 md:py-16">
+    <a
+      href={import.meta.env.BASE_URL}
+      class="text-sm text-neutral-600 underline-offset-4 hover:text-neutral-900 hover:underline"
+    >
+      ← Home
+    </a>
+    <article class="article-body mt-8">
+      <slot />
+    </article>
+  </div>
+</BaseLayout>
