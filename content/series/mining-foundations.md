@@ -8,7 +8,3 @@ tags:
   - Crypto
 draft: false
 ---
-
-These articles are numbered **001–018** and build on each other: start with the overview, then PoW and miner operation, block and network mechanics, pool protocols, and finally Noise/WireGuard topics for secured mining connections.
-
-Use the list on this page to read in order, or jump to any installment from the links below.
