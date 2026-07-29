@@ -1,6 +1,6 @@
 ---
-title: "Part 1: Why Post-Quantum Multi-Recipient Encryption?"
-description: "I've spent decades building UIs. AI is about to evaporate them."
+title: "The Classic UI Is Dead. Long Live the AIUI?"
+description: "I’ve spent decades building UIs. AI is about to evaporate them."
 date: 2026-07-29
 tags:
  - AIUI
@@ -19,17 +19,14 @@ tags:
 draft: false
 ---
 
-# The Classic UI Is Dead. Long Live the AIUI.
 
 *I’ve spent decades building UIs. AI is about to evaporate them.*
 
-I have spent most of my career building user interfaces.
+I have spent most of my career building user interfaces. I built them for mainframes, various minis such as  PDP-8s, HP3000s, control equipment, DOS, Atari, Amiga, Digital Research's GEM, OS/2, Windows, the Lisa and classic Mac OS, OSX. I worked with vector displays, raster displays, consoles, OSs, and printer RIPs. I wrote them in assembler, C, C++, FORTRAN, Java, Python and JavaScript—with AWT, Swing, Qt, HTML, jQuery, Svelte and LiveView.  
 
-I built them for mainframes, minis, PDP-11s, control equipment, DOS, Atari, OS/2, Windows, the Lisa and classic Mac OS. I worked with vector displays, raster displays and RIPs. I wrote them in assembler, C, C++, FORTRAN, Java, Python and JavaScript—with AWT, Swing, Qt, HTML, jQuery, Svelte and LiveView.
+Before the iPhone, I built mobile interfaces (including eBay Mobile, MapQuest Mobile) with BREW, J2ME, Psion and BlackBerry—and even created my own language, PhoneScript.  I have built for the military, for governments, casinos, telcos, banks, NYSE: Editors, debuggers, games, gaming, spreadsheets, trading systems, websites, chatbots and terminal interfaces.
 
-Before the iPhone, I built mobile interfaces with BREW, J2ME, Psion and BlackBerry—and even created my own language, PhoneScript. Since then, I have built editors, debuggers, games, spreadsheets, trading systems, websites, chatbots and terminal interfaces.
-
-Yes, I have really done it all.
+Yes, I have really nearly done it all.
 
 And after all that machinery, every user interface reduces to a simple loop:
 
@@ -37,7 +34,7 @@ And after all that machinery, every user interface reduces to a simple loop:
 2. Accept input.
 3. Render the response—updating the information and choices.
 
-That is it. Windows, buttons, menus, forms, gestures, command lines and chat boxes are merely different implementations of this loop.
+That is it. Windows, buttons, menus, forms, gestures, command lines, and chat boxes are merely different implementations of this loop.
 
 ## From commands to intent
 
@@ -47,9 +44,9 @@ That was enormously expensive. A new requirement meant new screens. A changed wo
 
 An AIUI reverses that relationship.
 
-Instead of making a person translate an intention into our predetermined sequence of controls, the person states the desired outcome. The system determines the procedure, asks for missing information and renders whatever interface is useful at that moment.
+Instead of making a person translate an intention into our predetermined sequence of controls, the person states the desired outcome. The system determines the procedure, asks for missing information, and renders whatever interface is useful at that moment.
 
-Jakob Nielsen describes this as the move from command-based interaction to **intent-based outcome specification**. Google’s work on [generative UI](https://research.google/blog/generative-ui-a-rich-custom-visual-interactive-user-experience-for-any-prompt/) takes the idea further: the interface can be generated for a particular person, question and context instead of selected from a fixed collection of screens.
+Jakob Nielsen describes this as the move from command-based interaction to **intent-based outcome specification**. Google’s work on [generative UI](https://research.google/blog/generative-ui-a-rich-custom-visual-interactive-user-experience-for-any-prompt/) takes the idea further: the interface can be generated for a particular person, question, and context instead of selected from a fixed collection of screens.
 
 This idea is not entirely new.
 
@@ -61,7 +58,7 @@ We can model the data, capabilities, rules and permissions, then let the AI comp
 
 The marginal cost of supporting a new path through the system falls dramatically.
 
-Responsive design and platform porting also largely disappear as separate activities. We no longer need to handcraft and maintain different flows for desktop, mobile, tablet, terminal and control room. The same intent and domain model can be rendered appropriately for each device, available space and mode of interaction.
+Responsive design and platform porting also largely disappear as separate activities. We no longer need to handcraft and maintain different flows for desktop, mobile, tablet, terminal and control room. With the same intent and domain model, GenAI can render appropriately for each device, available space, and mode of interaction.
 
 The classic UI is therefore dead—not because buttons and charts disappear, but because the **prebuilt screen is no longer the fundamental unit of software**.
 
@@ -101,7 +98,7 @@ The same thing happened to dashboards. The availability of a chart became the re
 
 Tufte, Stephen Few and others spent decades developing principles for communicating information clearly, densely and honestly. Most programmers never encountered that work. GenAI can draw on this accumulated knowledge every time it creates an interface.
 
-It can determine what matters and select the representation that makes it most apparent: a sentence, dense table, chart, map, timeline, comparison, simulation or alert. It can remove decoration, expose uncertainty, emphasize an anomaly and use the available space intelligently.
+GenAI can determine what matters and select the representation that makes it most apparent: a sentence, dense table, chart, map, timeline, comparison, simulation, or alert. GenAI can remove decoration, expose uncertainty, emphasize an anomaly, and use the available space intelligently.
 
 It can often make these choices better than a human designer working months earlier, forced to predict an unknown user in an unknown situation.
 
