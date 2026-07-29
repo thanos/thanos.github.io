@@ -1,169 +1,189 @@
-<!-- Markdown export; page /resume/ — PDF: thanos-vassilakis-resume.pdf -->
-
 # Thanos Vassilakis
 
-**Email:** [thanosv@gmail.com](mailto:thanosv@gmail.com) · **Phone:** +1-917-517-5912
+**Email:** [thanosv@gmail.com](mailto:thanosv@gmail.com) | **Phone:** +1-917-517-5912 | **GitHub:** [github.com/thanos](https://github.com/thanos)
 
-**Personal:** Thanos Vassilakis · **Nationality:** USA & Greek · **Languages:** English & French
-
-**Interests:** Art, reading, music, film, gardening, skiing, and programming.
-
----
-
-## Currently
-
-**Organization:** RBC CM  
-
-**Title:** Director of R&D for Technology & Director of Shared Technical Services
-
-Responsible for RBC’s technology strategy, architecting: cloud and cloud-agnostic services, data lake / big data, open source, cyber currencies & blockchain, UI, and machine learning.
-
-### R&D portfolios
-
-- Machine learning  
-- Blockchain & cyber currencies  
-- Information gathering — NLP framework for technological and development intelligence  
-- Creating — using custom chips to process partial differential equations and nonlinear problems  
-
-### Shared Technical Services
-
-Building key technology services for the bank’s strategy — services similar to those on AWS with the same SLA, cloud-vendor agnostic, bridging on-prem infrastructure and vendor clouds.
-
-**Portfolios include**
-
-- Universal business data discoverer (à la Google)  
-- Data federation — serverless GraphQL interface to all business data  
-- A data lake fed through a Fuse-based file system  
-- Function as a service  
-- Simple notification  
-- Simple queuing service  
-- Database as a service  
-- Bank-wide configuration service  
-- Bank-wide mapping and preference service  
-- Implicit localized caching service — distributed P2P big data cache (network is the bottleneck)  
-- Glacier-like deep storage  
-- Workflow and rules as a service  
-- Blockchain as a service (many of the above are built on it; cost, chargeback, fair use)  
-- Sentry-type error tracking and monitoring; bank-wide central logging  
-- Jupyter notebook services  
-- Machine learning & AI as a service  
-- A Generic hospital  
+**Distinguished Engineer**
+MD, Head of AI and Architecture for Finance IT.
 
 ---
 
-## My pitch
+## Executive Summary
 
-I’m looking for work where my experience and creative development skills will be used and will count. I’m not seeking a title but a position where I can remain hands-on and yet be given enough responsibility, trust, and empowerment to really contribute to the company. In my career I’ve had the privilege to build really great development groups, and with them create powerful and successful services and products. I’m hoping these experiences and my strong technical and creative abilities will be exploited. Although I’ve often led, I enjoy being part of a team and will happily take a back seat: listen, learn, reflect, and then contribute.
-
----
-
-## Some projects
-
-- **ANEX:** A cryptocurrency exchange.  
-- **BTC:** A cryptocurrency trading platform that aggregated across exchanges.  
-- **Chromite:** A Bancor-based cryptocurrency backed by chromium mine deposits in the Ring of Fire.  
-- **Echo:** A stream-based real-time social analytical engine.  
-- **TradeSource:** A trade abstraction framework (Erlang and Python).  
-- **MarketSource:** A market data framework (Erlang and Python).  
-- **HyperState:** A gaming framework for the iPhone.  
-- **AudioBook:** An audio/visual book framework for the iPhone; on the team that first brought chess (Caissa) to the iPhone.  
-- **Syntazo & Taxy:** An Erlang/OTP competitor to Twitter’s Storm — high-performance distributed EC2-based stream processing with real-time dynamic topology configuration based on Riak’s core.  
-- **Phonescript:** PostScript ported to J2ME, Brew, and Symbian — a small (under 35k) interpreter with floats and 2-D transparency; fast; one program on J2ME, Symbian, and Brew; load and run code on the fly.  
-- **MobileNewton:** NewtonScript for phones — superseded by Phonescript.  
-- **Ilab:** Object-oriented workflow conforming to all 39 Eindhoven patterns — European Parliament EPEDES, SECTORS system control, NYSE and SIAC compliance.  
-- **async-j:** Java NIO wrapped to behave like Python’s async chat — fast server framework, Jetty-style but lighter.  
-- **VisualTrading:** Lightweight Java UI for trading front-ends.  
-- **Python Server Objects:** “A kind of Ruby on Rails or Django” developed in 1996 for Python.  
-- **Hope:** British Telecom’s project — still a great functional language.  
-- **NewtonSmalltalk:** Smalltalk ported to the Newton.  
-
-### Programming (years, approximate)
-
-- C, Fortran, C++ — 30+  
-- Python — 20+  
-- Java, JavaScript — 20+  
-- Erlang — 15+  
-- Go, Elixir, Solidity — 2+  
+Accomplished technology executive with over 20 years of experience driving transformation and innovation in the financial services sector. Demonstrated expertise in leading large-scale development initiatives, leveraging disruptive technologies, and fostering an entrepreneurial culture within established organizations. Proven record of enhancing income generation through strategic technology integration and operational efficiency. Adept at creating inclusive environments that empower teams and encourage collaboration to drive progress and maximize business impact. My career is characterized by a commitment to continuous learning, mentorship, and the pursuit of excellence in technology and its application in the finance industry.
 
 ---
 
-## Employers
+## Current Mandate
 
-AAH Medical, Apple, Atari, Barclays, Books On Demand, British Telecom, Caesars Casino, Credit Suisse, Electric Coin Company, Ericsson, European Community/Cordis, European Parliament, Ferranti, Honeywell Bull, HP, ICAP, Infinigon Group, JP Morgan, Multitone, NYSE, Panasonic, RBC, SIAC, Unilever, West LB, Zingy.
+- Technical ownership of GL migration from zOS/DB2 to Linux/Oracle and Sub-ledger modernization.
+- Drive modernization and AI adoption of RBC Finance IT.
 
-### Domains
+---
 
-| Domain | Examples |
-|--------|----------|
-| Robotics | Unilever |
-| Military | Ferranti |
-| Comms / telecom | British Telecom, Ericsson, HP, Honeywell Bull, Multitone, Reuters, Drake |
-| Games | Atari, Zingy |
-| Gaming | Caesars Casino, Electric Coin Company, Zingy |
-| Medical | AAH Medical |
-| Blockchain, encryption & electronic money | British Telecom, Caesars Casino, Ferranti, Marita Bank, RBC CM, Infinigon Group |
-| Trading | Barclays, ICAP, JP Morgan, NYSE, RBC, SIAC |
-| Risk | West LB, JP Morgan, Credit Suisse, RBC CM |
-| Big data | Infinigon Group, RBC CM |
-| Social media analytics | Infinigon Group, RBC CM |
-| Machine learning | Caesars Casino, Infinigon Group, RBC CM |
-| NLP | Caesars Casino, Infinigon Group, RBC CM |
-| Cloud | Infinigon Group, RBC CM |
-| HPC | JP Morgan, NYSE, SIAC, HP, RBC CM |
-| Mobile | ICAP, Ericsson, Zingy, Apple |
-| Workflow | European Parliament, European Community |
+## What I've Run at RBC
 
-**Technologies:** Django, RabbitMQ, NAT, Iris, Pastry, Scribe, Riac Core, Mesos, Docker, Kafka, Disco, Redis, Memcache, Postgres, Elasticsearch, Hadoop, Node, WebSockets, and more.
+A multi national group of 166, 47% diversity, and with full-time teams in Canada, US, UK, Malaysia, Mexico, and consultants in India with a current budget of just over 30m.
 
-### Stack of past work (chronological / repeated as in CV)
+- **Architecture for Operations** -- driving modernizing in reporting, monitoring, and the confirmation and settlement landscape, plus overseeing all development and vendor acquisitions in operations.
+- **Access Control** -- a central access management services for 1k+ apps and services in Capital Markets.
+- **Enterprise Reconciliation Service** -- built in-house processing 300 realtime and 2k+ daily reconciliations using ML and GPU matching.
+- **Trade Expense Management.**
+- **Expense Reporting Service** for Capital Markets.
+- **Global Market Supervision** -- an event driven service that is now using ML and hierarchical agents state service to model behavior and generate required reports by SEC, FINRA, UK and European regulators.
+- **Market Access, Trade Limits Control** -- a Rule 15c3-5 compliant centralized ML automated trade limits for most all our order management systems.
+- **ML Pricing Service** -- used by the Municipal Bond and Credit Derivative desks. Predicts a fair price for all unique 1.5m bonds in real-time and has beaten our competitor evaluation services every single trading day since it went live 4 years ago.
+- **All Shared Operation Services** -- UI Platforms, Reporting Service, central queuing, Notification, FAS, T+1 Reporting, + Trade Repository for Capital Markets, Wealth Management and Cash Management.
+- **R&D for Technology** -- blockchain, crypto, ML model development, plus inner source and open source stewardship.
 
-RBC CM, Infinigon Group, RBC CM, JP Morgan, Credit Suisse, JP Morgan, Zingy, ICAP, SIAC/NYSE, Ericsson/HP, West LB, European Community, Caesars Casino, European Parliament, AAH Medical, Apple, Symantec (Zortech), Reuters International, Honeywell Bull, Drake, British Telecom, Ferranti, Barclays, Multitone, Atari, Unilever, Atari, Electric Coin Company.
+---
+
+## Key Achievements & Deliverables
+
+### Strategic Cost Optimization & Vendor Consolidation
+
+- **Enterprise Reconciliation Service (2024):** Architected an in-house solution using ML and GPU matching to displace legacy vendor products, securing **$7M in annual savings**.
+- **Trade Expense Services (2024):** Deployed agentic invoice processing to modernize expense management, eliminating external vendor dependencies for **$11M/year savings**.
+- **Global Market Supervision (2023):** Engineered an event-driven, real-time supervision service that replaced third-party systems.
+- **Post-Trade Modernization (2023):** Built T+1 infrastructure and post-trade processing services, ensuring regulatory compliance.
+- **Access Control Modernization (2023):** Centralized application access control for over 1,000 apps.
+- **Governance & Data (2023):** Internalized Reference Data Services and ML-based Trade Limits Governance.
+
+### AI, Machine Learning & Quantitative Platforms
+
+- **Pricing & Risk:** Developed ML-based real-time pricing models for municipal bonds and credit derivatives, alongside real-time Position and PnL systems (2020).
+- **ML Infrastructure:** Delivered an ML Model execution and scoring service (2018) to operationalize data science initiatives.
+- **Data Strategy:** Established the Capital Markets Data Lake (2016) and a Single Data Interface SDK (2019) to standardize data access.
+
+### Core Infrastructure & Technology Transformation
+
+- **Engineering Leadership:** Built and scaled high-performance development teams across Kuala Lumpur, Halifax, and Montreal.
+- **Language Adoption:** Successfully introduced and standardized Python (2010) and Elixir (2017) within the enterprise technology stack.
+- **Platform Engineering:** Architected critical infrastructure including Distributed Compute Service (2018), Function-as-a-Service (Lambda) (2017), and Central Logging (2017).
+- **Trading Cores:** Built the Real-time Trading Data Core (Athena-style, 2018) and the Cash Management Real-time Core with virtual accounts.
+- **Innovation:** Developed a Tokenization Platform (2022) to advance digital asset capabilities.
+
+### Regulatory & Compliance
+
+- **Risk & Reporting:** Delivered infrastructure for FRTB (Fundamental Review of the Trading Book) (2018) and Anti-Terrorism/Money Laundering services (2018).
+- **Exchange Migrations:** Led the LME trading platform development and migrated commodity trades onto OpenLink.
+
+---
+
+## Previous Work
+
+**Infinigon Group** | Head of Development | 2012 - 2015
+- Created a cross-exchange custodial cryptocurrency trading platform.
+- Built a machine learning analytics platform utilizing real-time data and social media sentiment.
+
+**Credit Suisse** | Contractor, Commodities | 2007 - 2010
+- Architected a risk system for complex commodities trades and integrated external pricing models for OpenLink.
+- Built a central trade repository and market data services for commodities.
+
+**JPMorgan** | Contractor, Energy Trading Systems | 2007
+- Contributed to the Athena platform, developing a code profiler and native FIX engine.
+- Developed a standardized trade feed framework and implemented gateways for CME and ICE to streamline energy trading operations.
+- Optimized network and computation performance for the counterparty risk system (Gauss).
+
+**Zingy** | Head of Mobile Development | 2006 - 2007
+- Managed development and operations for 50+ mobile applications across 27 carriers and multiple platforms.
+- Led the development of innovative mobile products, including the top-selling MapQuest mobile application.
+
+**ICAP** | Head of Front-End Development | 2004 - 2006
+- Established and led the in-house development team for fixed income trading systems.
+- Developed high-performance distributed trading services and mobile trading platforms.
+
+**NYSE/SEC/SIAC** | Director, Specialist Trading Services | 1997 - 2004
+- Architected and implemented market surveillance systems, stock information servers, and regulatory reporting services.
+- Developed innovative Python-based trading services for specialists.
+
+**ERICSSON** | Contractor, Telecom Switches | 1995 - 1997
+- Built a remote telecom switch management system.
 
 ---
 
 ## Bio
 
-I started work in 1979 for the Electric Coin Company programming slot machines — a mix of assembler and electronics. After graduating in maths from the North London Polytechnic, I joined Atari’s PC games division. After Atari I became a freelancer and, apart from some startup stints, remained largely freelance until my current position. If my grandchildren were ever to ask me “What did you do when you were…?” I would be hard placed to mention anything remarkable — much of my life has been programming, which has not left a visible trail.
+I came to Computer Science by accident. At eighteen, I had no interest in computers; my heart was set on being a hydrologist to solve water problems in developing countries. My technical interests were analog -- trading and repairing vintage valve amplifiers. That changed during a summer job at the Electric Coin Company, a slot machine vendor. I expected to wield a soldering iron but found myself coding 6801 controllers. By the end of the summer, I was addicted to programming. I switched tracks, graduating from North London Polytechnic with a degree in Maths & Computer Science.
 
-In the eighties in the UK I avoided financial institutions except for developing in 1985 the trading system used by Barclays. Work included building standard libraries for Walter Bright’s C++ distribution, porting Eispack and Linpack to C++ and Ada, writing Forth-based RIP engines for Panasonic laser printers, writing most of the drivers for their fax machines, implementing the functional programming language **Hope** for Imperial College, developing fast time-series databases for telecom for BT, fuzzy logic control systems for Unilever, and Occam-based neural networks on Transputers for the UK Treasury. During this period I also worked for Ferranti on designing and building a real-time operating system for their Lynx helicopter program.
+My early career was defined by eclectic, high-intensity technical challenges. I worked with Richard Forsyth on *Darwin*, one of the earliest Machine Learning frameworks, which we used to unsuccessfully predict horse races. I worked in Atari's PC games division, built RIP engines for printers, and developed a real-time OS for Ferranti's Lynx helicopter program. My freelance work spanned industries: fuzzy logic control systems for Unilever, video routing for the BBC, and neural networks on Transputers for the UK Treasury.
 
-The early nineties started with an interest in PDAs; I joined Apple’s Newton program, developing languages and tools for the Newton community. Through Apple in 1993 I discovered the internet; that year I started a centralized internet-based patient register for the National Health. In 1994 I joined DG1 in Luxembourg as IT advisor to the European Parliament president, Klaus Hänsch — workflow systems and an internet-based workflow system still in use. In 1995 I was commissioned to build an internet casino for Caesars. With Marita Bank we developed an early form of cyber-currency. After Luxembourg I moved to Düsseldorf at Westdeutsche Landesbank to develop their VAR system; after a year I joined Ericsson on distributed switch programming in Erlang.
+In 1993, while working at Apple on the Newton program, I discovered the internet and built a WAIS-based patient record system for the UK National Health Service. A pivotal moment came in 1995 when I was commissioned to build the first internet casino for Caesars. My initial C++ codebase was tight but unwieldy at over 40,000 lines, and I struggled to complete it. On a whim, I bought Mark Lutz's Python book and rewrote the entire system over a weekend. The result was a superior, 4,000-line solution. That project made me a lifelong Python evangelist and led to the creation of an early cyber currency, WebCheck.
 
-In 1997 I returned to New York and developed a new trading system for NYSE — among the first production financial systems on the Internet, and possibly the first written in Python. Since then: high-frequency trading, fixed income, commodities (ICAP, BrokerTec, JP Morgan, Credit Suisse), and startups (mobile apps, social media analytics, blockchains, smart contracts, alt-currencies).
-
----
-
-## Other posts & memberships
-
-- Vice President, National Center for Art and Technology of Greece  
-- Internet consultant to the cabinet of the president of the European Parliament, 1994–1996  
-- Founder, Linux & Python user groups, Luxembourg  
-- Founder, Python user groups, Düsseldorf  
-- Python Starship member  
+After stints in Europe -- advising the European Parliament, building Erlang systems for Ericsson, and being poached by IBM Research in Zurich to code a mobile JVM -- I returned to my hometown, New York, in 1997. I architected the NYSE's first internet-based system, which was likely the first financial production system written in Python. Since then, my focus has been on high-frequency trading, fixed income platforms, and risk systems for major institutions like ICAP, JP Morgan, Credit Suisse, and RBC Capital Markets. Between these corporate mandates, I continue to explore the bleeding edge through running a startup style group within the bank.
 
 ---
 
-## Talks, publications & articles
+## Some Key Achievements & Industry Firsts
 
-- Social media and news — Columbia University, November 2017  
-- Blockchains — Bloomberg Quant BBQ, September 2016  
-- Art market — Bloomberg Quant BBQ, April 2016  
-- Social analytics — Bloomberg Quant BBQ, 2015  
-- Introducing Phonescript — MobiCom, 2006  
-- Flash Lite application development: Trails and issues — Adobe MAX, 2006  
-- *Financial Algorithms Cookbook* — ISBN 978-1-4116-2259-3  
-- Trading in Python — Fast Track, PyCon 2002  
-- Using LinPACK/Eispack from Erlang — *Algorithms Journal*, Vol. 41, 1997  
-- Beagle and evolutionary trading — *Algorithms Journal*, Vol. 9, 1989  
-- An Eispak introduction — *Algorithms Journal*, Vol. 8, 1988  
-- A LinPACK introduction — *Algorithms Journal*, Vol. 7, 1988  
-- How sharp is OCCAM — *Algorithms Journal*, Vol. 6, 1988  
-- Fixed versus float — *Algorithms Journal*, Vol. 4, 1987  
-- Cordic functions — *Algorithms Journal*, Vol. 3, 1987  
-- Finding primes through probability — *Algorithms Journal*, Vol. 2, 1987  
-- Large arithmetic — *Algorithms Journal*, Vol. 1, 1987  
-- *Financial Numeric Algorithms Edition One* — Algorithms Press, 1987  
-- *Probably Prime* — SIG Press, 1987  
+| Achievement | Description |
+|-------------|-------------|
+| Europe's 1st Missing Children's Registry | Built a central online database of missing children and was awarded a citation from the European Parliament. |
+| Top earning US mobile app | MapQuest |
+| Phonescript | 1st phone programming language |
+| eBay's first mobile app | Developed the initial mobile application for eBay |
+| 1st Python trading service | Built for SIAC/NYSE |
+| 1st C++ debugger & Numeric library | Coded standard libraries for Walter Bright's C++ distribution |
+| 1st Internet Casino | Caesars Casino |
+| 1st Chess app for iPhone | Reached to #23 in games in App Store |
+| 1st Web framework for Python (PSO) | Included in Debian Linux and used by European Parliament, NASA, SIAC, JP Morgan |
+| Byteeasy | Anonymous crypto exchange |
+| BTC Terminal | Cross-exchange custodial crypto trading platform |
+| JVM for Mobile | Coded the mobile phone version of the JVM for IBM |
+| Author of Nimalana | Nim based Solana validator |
+| Developer of Aegis | A Zig based high-performance Bittensor miner specifically engineered to exploit Apple Silicon |
+
+---
+
+## Domains & Companies
+
+| Domain | Companies |
+|--------|-----------|
+| Trading & Risk | Infinigon Group, RBC CM |
+| Blockchain & Crypto | RBC CM, Infinigon Group, Solana, Marita Bank, Caesars Casino, Electric Coin Co. |
+| Machine Learning & Big Data | RBC CM, Infinigon Group, Caesars Casino, Ericsson |
+| Mobile Development | Apple, RBC CM, IBM, ICAP, Ericsson, Zingy |
+| Gaming & Robotics | Atari, Zingy, Caesars Casino, Unilever |
+| High Performance Computing | JP Morgan, NYSE, SIAC, HP |
+| Telecommunications | British Telecom, Ericsson, HP, Honeywell Bull, Multitone, Reuters |
+| Cloud & Distributed Systems | RBC CM, Infinigon Group, Ericsson |
+| Medical & Public Sector | British National Health, European Parliament, European Community, AAH Meditel |
+| Military | Ferranti |
+
+---
+
+## Stack of Past Work
+
+RBC CM, Infinigon Group, RBC CM, JP Morgan, Credit Suisse, JP Morgan, Zingy, ICAP, SIAC/NYSE, Ericsson/HP, West LB, European Community, Caesars Casino, European Parliament, AAH Medical, Apple, Symantec (Zortech), Reuters International, Honeywell Bull, Drake, British Telecom, Ferranti, Barclays, Multitone, Atari, Unilever, Atari, Electric Coin Company.
+
+---
+
+## Languages
+
+C, C++, Erlang, Elixir, Fortran, Go, Java, JavaScript, Python, Solidity, Zig, some Rust, COBOL.
+
+---
+
+## Personal Details
+
+- **Nationality:** US & Greek (European)
+- **Spoken Languages:** English & French
+- **Email:** [thanosv@gmail.com](mailto:thanosv@gmail.com)
+
+---
+
+## Work References
+
+- Kabir Reike, MD Head of Data Architecture, Bank of America
+- Sid Belzberg, CFO, Infinigon Group - ex Captain of the Canadian Chess Team
+- Endri Mani, MD Head of GenAI, RBC CM
+- Yaroslav Chinskiy, MD, Head of Data Architecture, JP Morgan
+- Geraud Boyer, Director of Engineering, Datadog
+
+## Personal References
+
+- Bruno Dupire, Head of Quantitative Research, Bloomberg
+- Hope Igelhart, Senior Psychoanalyst, Columbia University
+- Stavros Lambrinidis, European Union ambassador to the UN
 
 ---
 
