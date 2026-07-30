@@ -1,5 +1,5 @@
 ---
-title: "Ship one Rust CLI everywhere: multi-ecosystem install without rewriting it"
+title: "One Binary, Many Front Doors"
 description: "Treat GitHub Release binaries as the source of truth, then wrap them for Homebrew, Scoop, mise/asdf, pip, npm, Mix, and CI—the Ruff/esbuild pattern for tools like Oratos."
 date: 2026-07-30
 tags:
