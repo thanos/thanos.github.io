@@ -1,7 +1,7 @@
 ---
 title: "Building a BEAM-native drone controller: processes, UDP, safety, and simulation"
 description: "Part 1 of Programming Drones with OTP: why one GenServer per vehicle, how Tello UDP fits the mailbox, how a pure safety pipeline protects flight, and why the simulator is the real development surface."
-date: 2026-07-31
+date: 2026-07-20
 tags:
   - Elixir
   - OTP
