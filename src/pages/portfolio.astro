@@ -1,0 +1,280 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  loadExperiences,
+  kindLabel,
+  formatWhen,
+  formatMetric,
+  metricCaption,
+} from '../lib/resume-experiences';
+
+const experiences = loadExperiences();
+const kinds = [...new Set(experiences.map((e) => e.kind))].sort();
+const domains = [
+  ...new Set(experiences.flatMap((e) => e.signals?.domains ?? [])),
+].sort();
+const impacts = [
+  ...new Set(experiences.flatMap((e) => e.signals?.impact ?? [])),
+].sort();
+
+const base = import.meta.env.BASE_URL;
+
+function isFeatured(e: (typeof experiences)[number]): boolean {
+  return (e.proof?.metrics?.length ?? 0) > 0 || e.kind === 'job_role';
+}
+
+function primaryLink(e: (typeof experiences)[number]): string | null {
+  const links = e.proof?.links ?? [];
+  const withUrl = links.find((l) => l.url);
+  return withUrl?.url ?? null;
+}
+---
+
+<BaseLayout
+  title="Portfolio · Thanos Vassilakis"
+  description="A mosaic of roles, platforms built and run, open source, and writing."
+  canonicalPath="/portfolio/"
+>
+  <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+    <header class="mb-10 max-w-3xl">
+      <a
+        href={base}
+        class="text-sm text-neutral-600 underline-offset-4 hover:text-neutral-900 hover:underline"
+      >
+        ← Home
+      </a>
+      <h1 class="mt-6 text-3xl font-semibold tracking-tight text-neutral-950 md:text-4xl">
+        Portfolio
+      </h1>
+      <p class="mt-3 text-neutral-600 leading-relaxed">
+        Experiences as tiles — what I’ve run, built, open-sourced, and written.
+        Filter by kind, domain, or impact.
+      </p>
+    </header>
+
+    <div
+      id="portfolio-filters"
+      class="sticky top-0 z-10 -mx-4 mb-8 border-y border-neutral-200 bg-white/95 px-4 py-4 backdrop-blur-sm"
+      data-portfolio-filters
+    >
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <p class="text-sm text-neutral-500">
+          <span id="portfolio-count">{experiences.length}</span> of {experiences.length}
+        </p>
+        <button
+          type="button"
+          id="portfolio-clear"
+          class="text-sm font-medium text-neutral-700 underline-offset-4 hover:underline disabled:opacity-40"
+          disabled
+        >
+          Clear filters
+        </button>
+      </div>
+
+      <div class="mt-4 space-y-3">
+        <div>
+          <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">Kind</p>
+          <div class="flex flex-wrap gap-2" data-filter-group="kind">
+            {
+              kinds.map((k) => (
+                <button
+                  type="button"
+                  class="filter-chip border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-800 transition hover:border-neutral-900"
+                  data-filter="kind"
+                  data-value={k}
+                  aria-pressed="false"
+                >
+                  {kindLabel(k)}
+                </button>
+              ))
+            }
+          </div>
+        </div>
+        <div>
+          <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">Domain</p>
+          <div class="flex flex-wrap gap-2" data-filter-group="domain">
+            {
+              domains.map((d) => (
+                <button
+                  type="button"
+                  class="filter-chip border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-800 transition hover:border-neutral-900"
+                  data-filter="domain"
+                  data-value={d}
+                  aria-pressed="false"
+                >
+                  {d}
+                </button>
+              ))
+            }
+          </div>
+        </div>
+        <div>
+          <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">Impact</p>
+          <div class="flex flex-wrap gap-2" data-filter-group="impact">
+            {
+              impacts.map((i) => (
+                <button
+                  type="button"
+                  class="filter-chip border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-800 transition hover:border-neutral-900"
+                  data-filter="impact"
+                  data-value={i}
+                  aria-pressed="false"
+                >
+                  {i}
+                </button>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="portfolio-mosaic"
+      class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-fr"
+    >
+      {
+        experiences.map((e) => {
+          const featured = isFeatured(e);
+          const href = primaryLink(e);
+          const when = formatWhen(e.when);
+          const metrics = e.proof?.metrics ?? [];
+          const domainsList = e.signals?.domains ?? [];
+          const impactsList = e.signals?.impact ?? [];
+          const Tag = href ? 'a' : 'article';
+          return (
+            <Tag
+              href={href ?? undefined}
+              target={href?.startsWith('http') ? '_blank' : undefined}
+              rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+              class:list={[
+                'portfolio-tile group flex flex-col border border-neutral-200 bg-neutral-50/40 p-4 transition',
+                'hover:border-neutral-900 hover:bg-white',
+                featured && 'sm:col-span-2 sm:row-span-1',
+                href && 'cursor-pointer',
+              ]}
+              data-portfolio-tile
+              data-kind={e.kind}
+              data-domains={domainsList.join(' ')}
+              data-impacts={impactsList.join(' ')}
+              data-id={e.id}
+            >
+              <div class="flex items-start justify-between gap-3">
+                <span class="text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                  {kindLabel(e.kind)}
+                  {e.org ? ` · ${e.org}` : ''}
+                </span>
+                {when ? (
+                  <span class="shrink-0 text-xs tabular-nums text-neutral-500">{when}</span>
+                ) : null}
+              </div>
+              <h2 class="mt-2 text-base font-semibold tracking-tight text-neutral-950 group-hover:underline group-hover:underline-offset-4 md:text-lg">
+                {e.title}
+              </h2>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600">{e.summary}</p>
+              {metrics.length > 0 ? (
+                <dl class="mt-4 flex flex-wrap gap-4 border-t border-neutral-200 pt-3">
+                  {metrics.slice(0, 3).map((m) => (
+                    <div>
+                      <dt class="text-[11px] uppercase tracking-wide text-neutral-500">
+                        {metricCaption(m.label)}
+                      </dt>
+                      <dd class="text-lg font-semibold tabular-nums text-neutral-950">
+                        {formatMetric(m.label, m.value)}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              ) : (
+                <div class="mt-4 flex flex-wrap gap-1.5">
+                  {domainsList.slice(0, 4).map((d) => (
+                    <span class="border border-neutral-200 bg-white px-1.5 py-0.5 text-[11px] text-neutral-600">
+                      {d}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </Tag>
+          );
+        })
+      }
+    </div>
+
+    <p id="portfolio-empty" class="mt-12 hidden text-center text-neutral-500">
+      No experiences match these filters.
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .filter-chip[aria-pressed='true'] {
+    border-color: #171717;
+    background-color: #171717;
+    color: #fafafa;
+  }
+</style>
+
+<script>
+  const chips = [...document.querySelectorAll('.filter-chip')] as HTMLButtonElement[];
+  const tiles = [...document.querySelectorAll('[data-portfolio-tile]')] as HTMLElement[];
+  const countEl = document.getElementById('portfolio-count');
+  const emptyEl = document.getElementById('portfolio-empty');
+  const clearBtn = document.getElementById('portfolio-clear') as HTMLButtonElement | null;
+
+  type FilterState = { kind: Set<string>; domain: Set<string>; impact: Set<string> };
+  const state: FilterState = {
+    kind: new Set(),
+    domain: new Set(),
+    impact: new Set(),
+  };
+
+  function activeFilters(): boolean {
+    return state.kind.size + state.domain.size + state.impact.size > 0;
+  }
+
+  function apply() {
+    let visible = 0;
+    for (const tile of tiles) {
+      const kind = tile.dataset.kind || '';
+      const domains = (tile.dataset.domains || '').split(/\s+/).filter(Boolean);
+      const impacts = (tile.dataset.impacts || '').split(/\s+/).filter(Boolean);
+
+      const kindOk = state.kind.size === 0 || state.kind.has(kind);
+      const domainOk =
+        state.domain.size === 0 || [...state.domain].some((d) => domains.includes(d));
+      const impactOk =
+        state.impact.size === 0 || [...state.impact].some((i) => impacts.includes(i));
+
+      const show = kindOk && domainOk && impactOk;
+      tile.classList.toggle('hidden', !show);
+      if (show) visible++;
+    }
+    if (countEl) countEl.textContent = String(visible);
+    emptyEl?.classList.toggle('hidden', visible > 0);
+    if (clearBtn) clearBtn.disabled = !activeFilters();
+  }
+
+  for (const chip of chips) {
+    chip.addEventListener('click', () => {
+      const group = chip.dataset.filter as keyof FilterState;
+      const value = chip.dataset.value || '';
+      const set = state[group];
+      if (set.has(value)) {
+        set.delete(value);
+        chip.setAttribute('aria-pressed', 'false');
+      } else {
+        set.add(value);
+        chip.setAttribute('aria-pressed', 'true');
+      }
+      apply();
+    });
+  }
+
+  clearBtn?.addEventListener('click', () => {
+    state.kind.clear();
+    state.domain.clear();
+    state.impact.clear();
+    for (const chip of chips) chip.setAttribute('aria-pressed', 'false');
+    apply();
+  });
+</script>

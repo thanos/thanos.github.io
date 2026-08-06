@@ -1,0 +1,49 @@
+id: rbc-enterprise-reconciliation
+kind: built
+title: Enterprise Reconciliation Service
+org: RBC
+job: rbc
+when:
+  start: 2024
+  end: null
+summary: In-house ML + GPU matching reconciliation displacing vendor products.
+bullets:
+  - Architected in-house reconciliation using ML and GPU matching (300 realtime / 2k+ daily).
+  - Displaced legacy vendor products for ~$7M annual savings (2024).
+signals:
+  domains:
+    - post-trade
+    - ml
+    - capital-markets
+    - cost-optimization
+  skills:
+    - ml
+    - gpu
+    - architecture
+    - vendor-consolidation
+  seniority: hybrid
+  impact:
+    - cost
+    - scale
+    - platform
+  keywords:
+    - reconciliation
+    - GPU
+    - ML
+    - vendor consolidation
+    - savings
+proof:
+  metrics:
+    - label: annual_savings_usd
+      value: 7000000
+    - label: realtime_recon
+      value: 300
+    - label: daily_recon
+      value: 2000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

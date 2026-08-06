@@ -1,0 +1,41 @@
+id: oss-ex-systolic
+kind: oss
+title: ex_systolic — systolic array / spatial dataflow simulator
+when:
+  start: 2025
+  end: null
+summary: BEAM-native systolic-array simulator with explicit ticks, links, and processing elements.
+bullets:
+  - Built a clocked spatial dataflow simulator (systolic arrays) for studying parallel compute
+    fabrics.
+signals:
+  domains:
+    - open-source
+    - hpc
+    - computer-architecture
+    - parallel-computing
+  skills:
+    - elixir
+    - architecture
+    - simulation
+    - parallel-computing
+  seniority: hands-on
+  impact:
+    - platform
+  keywords:
+    - systolic array
+    - spatial dataflow
+    - computer architecture
+    - parallel compute
+    - quantum-computing-adjacent
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/ex_systolic
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

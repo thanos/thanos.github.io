@@ -1,0 +1,42 @@
+id: zingy-mobile
+kind: built
+title: Mobile platform leadership — MapQuest & carrier apps
+org: Zingy
+job: zingy
+role: Head of Mobile Development
+when:
+  start: 2006
+  end: 2007
+summary: 50+ mobile apps across 27 carriers; MapQuest mobile among top sellers.
+bullets:
+  - Managed development and operations for 50+ mobile applications across 27 carriers.
+  - Led MapQuest mobile — top-selling US mobile app in its category.
+signals:
+  domains:
+    - mobile
+    - product
+  skills:
+    - mobile
+    - engineering-management
+    - product
+  seniority: hybrid
+  impact:
+    - people
+    - platform
+  keywords:
+    - mobile
+    - MapQuest
+    - Head of Development
+proof:
+  metrics:
+    - label: apps
+      value: 50
+    - label: carriers
+      value: 27
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

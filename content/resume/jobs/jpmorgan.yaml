@@ -1,0 +1,11 @@
+id: jpmorgan
+org: JPMorgan
+titles:
+  - Contractor, Energy Trading Systems
+when:
+  start: 2007
+  end: 2007
+current: false
+summary: >
+  Athena platform, FIX engine, exchange gateways, counterparty risk performance.
+visibility: public

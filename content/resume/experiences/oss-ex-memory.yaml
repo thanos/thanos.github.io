@@ -1,0 +1,39 @@
+id: oss-ex-memory
+kind: oss
+title: ex_memory — local-first memory for LLMs
+when:
+  start: 2025
+  end: null
+summary: Pluggable high-level memory system for LLMs and applications in Elixir.
+bullets:
+  - Designed a local-first, pluggable memory layer for LLM applications on the BEAM.
+signals:
+  domains:
+    - open-source
+    - ai
+    - ml
+    - llm
+  skills:
+    - elixir
+    - llm
+    - ai
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+  keywords:
+    - AI/ML
+    - LLM
+    - memory
+    - agents
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/ex_memory
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

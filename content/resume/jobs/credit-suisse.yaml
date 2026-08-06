@@ -1,0 +1,11 @@
+id: credit-suisse
+org: Credit Suisse
+titles:
+  - Contractor, Commodities
+when:
+  start: 2007
+  end: 2010
+current: false
+summary: >
+  Commodities risk, trade repository, and market data services.
+visibility: public

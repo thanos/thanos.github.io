@@ -1,0 +1,41 @@
+id: article-programming-drones
+kind: article
+title: Programming Drones with OTP (series)
+when:
+  start: 2026
+  end: null
+summary: Technical series on BEAM-native drone control and OTP swarms.
+bullets:
+  - Published “Building a BEAM-native drone controller” and “Why OTP is a natural model for drone
+    swarms.”
+signals:
+  domains:
+    - elixir
+    - otp
+    - writing
+    - education
+  skills:
+    - technical-writing
+    - elixir
+    - otp
+  seniority: hands-on
+  impact:
+    - people
+  keywords:
+    - OTP
+    - Elixir
+    - article
+    - teaching
+proof:
+  metrics: []
+  links:
+    - label: series
+      url: /series/programming-drones-with-otp/
+  source: article
+provenance:
+  type: article
+  refs:
+    - path: content/articles/01-beam-native-drone-controller.md
+    - path: content/articles/02-otp-drone-swarms.md
+  last_verified: 2026-08-06
+visibility: public

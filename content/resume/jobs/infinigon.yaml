@@ -1,0 +1,11 @@
+id: infinigon
+org: Infinigon Group
+titles:
+  - Head of Development
+when:
+  start: 2012
+  end: 2015
+current: false
+summary: >
+  Led development for crypto custody trading and ML analytics platforms.
+visibility: public

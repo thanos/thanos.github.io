@@ -1,0 +1,40 @@
+id: rbc-access-control
+kind: built
+title: Central Access Control for Capital Markets
+org: RBC
+job: rbc
+when:
+  start: 2023
+  end: null
+summary: Centralized application access management for 1,000+ apps and services.
+bullets:
+  - Centralized application access control for over 1,000 Capital Markets apps and services (2023).
+signals:
+  domains:
+    - security
+    - capital-markets
+    - platform
+  skills:
+    - access-control
+    - platform-engineering
+    - architecture
+  seniority: hybrid
+  impact:
+    - risk
+    - platform
+    - scale
+  keywords:
+    - IAM
+    - access control
+    - 1000 apps
+proof:
+  metrics:
+    - label: apps
+      value: 1000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

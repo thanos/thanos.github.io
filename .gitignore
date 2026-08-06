@@ -3,3 +3,10 @@ dist/
 .astro/
 /baoulo/
 .tool-versions
+.env
+
+# Resume flavor targets (briefs + generated output stay local)
+content/resume/briefs/
+content/resume/out/
+!content/resume/briefs/.gitkeep
+!content/resume/out/.gitkeep

@@ -1,0 +1,36 @@
+id: interest-early-career-maker
+kind: interest
+title: Maker / systems roots — Python evangelism & industry firsts
+when:
+  start: 1990
+  end: null
+summary: Eclectic systems background; early Python finance systems; notable industry firsts.
+bullets:
+  - Rewrote Caesars internet casino from 40k LOC C++ to 4k LOC Python — lifelong Python evangelist.
+  - Industry firsts include early Python trading at SIAC/NYSE, PhoneScript, PSO web framework,
+    MapQuest mobile, Nimalana, Aegis.
+signals:
+  domains:
+    - history
+    - python
+    - innovation
+  skills:
+    - python
+    - innovation
+    - systems
+  seniority: hands-on
+  impact:
+    - platform
+  keywords:
+    - Python
+    - innovation
+    - industry firsts
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

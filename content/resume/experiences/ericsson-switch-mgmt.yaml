@@ -1,0 +1,34 @@
+id: ericsson-switch-mgmt
+kind: built
+title: Remote telecom switch management
+org: Ericsson
+job: ericsson
+when:
+  start: 1995
+  end: 1997
+summary: Remote management system for telecom switches.
+bullets:
+  - Built a remote telecom switch management system.
+signals:
+  domains:
+    - telecom
+  skills:
+    - erlang
+    - distributed-systems
+    - embedded
+  seniority: hands-on
+  impact:
+    - platform
+  keywords:
+    - Ericsson
+    - telecom
+    - Erlang
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

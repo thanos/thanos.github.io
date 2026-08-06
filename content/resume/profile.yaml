@@ -1,0 +1,27 @@
+name: Thanos Vassilakis
+email: thanosv@gmail.com
+phone: "+1-917-517-5912"
+github: https://github.com/thanos
+nationality: [US, Greek]
+spoken_languages: [English, French]
+default_titles:
+  - Distinguished Engineer
+  - Managing Director
+  - Head of AI and Architecture for Finance IT
+languages:
+  - C
+  - C++
+  - Erlang
+  - Elixir
+  - Fortran
+  - Go
+  - Java
+  - JavaScript
+  - Python
+  - Solidity
+  - Zig
+  - Rust
+  - COBOL
+defaults:
+  tone: executive_technical
+  visibility: public

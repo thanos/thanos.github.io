@@ -1,0 +1,40 @@
+id: infinigon-crypto-custody
+kind: built
+title: Cross-exchange custodial crypto trading platform
+org: Infinigon Group
+job: infinigon
+role: Head of Development
+when:
+  start: 2012
+  end: 2015
+summary: Custodial cross-exchange crypto trading platform (BTC Terminal lineage).
+bullets:
+  - Created a cross-exchange custodial cryptocurrency trading platform.
+  - Built ML analytics using real-time data and social media sentiment.
+signals:
+  domains:
+    - crypto
+    - trading
+    - ml
+  skills:
+    - trading-systems
+    - ml
+    - architecture
+    - engineering-management
+  seniority: hybrid
+  impact:
+    - platform
+  keywords:
+    - crypto
+    - custody
+    - trading
+    - Head of Development
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

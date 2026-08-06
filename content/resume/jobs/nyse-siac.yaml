@@ -1,0 +1,12 @@
+id: nyse-siac
+org: NYSE / SIAC
+titles:
+  - Director, Specialist Trading Services
+when:
+  start: 1997
+  end: 2004
+current: false
+summary: >
+  Market surveillance, stock information servers, regulatory reporting,
+  early Python trading services for specialists.
+visibility: public

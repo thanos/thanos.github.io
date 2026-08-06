@@ -1,0 +1,50 @@
+id: rbc-language-platform-adoption
+kind: built
+title: Language & platform engineering adoption
+org: RBC
+job: rbc
+when:
+  start: 2010
+  end: null
+summary: Introduced Python and Elixir; delivered distributed compute, FaaS, logging, trading cores.
+bullets:
+  - Introduced and standardized Python (2010) and Elixir (2017) in the enterprise stack.
+  - Architected Distributed Compute Service (2018), Function-as-a-Service / Lambda (2017), Central
+    Logging (2017).
+  - Built Real-time Trading Data Core (Athena-style, 2018) and Cash Management Real-time Core with
+    virtual accounts.
+  - Delivered ML model execution/scoring service (2018), Capital Markets Data Lake (2016), Single
+    Data Interface SDK (2019).
+  - Tokenization platform (2022); FRTB and AML infrastructure (2018); LME trading platform /
+    OpenLink migration.
+signals:
+  domains:
+    - platform
+    - distributed-systems
+    - capital-markets
+  skills:
+    - python
+    - elixir
+    - platform-engineering
+    - distributed-systems
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+    - people
+  keywords:
+    - Elixir
+    - Python
+    - FaaS
+    - distributed compute
+    - data lake
+    - principal engineer
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

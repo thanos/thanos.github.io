@@ -1,0 +1,43 @@
+id: rbc-global-market-supervision
+kind: built
+title: Global Market Supervision
+org: RBC
+job: rbc
+when:
+  start: 2023
+  end: null
+summary: Event-driven supervision with ML/agents for SEC, FINRA, UK, EU reporting.
+bullets:
+  - Built event-driven real-time supervision replacing third-party systems (2023).
+  - ML and hierarchical agent state modeling for SEC, FINRA, UK, and European regulatory reports.
+signals:
+  domains:
+    - surveillance
+    - regulatory
+    - ml
+    - capital-markets
+  skills:
+    - event-driven
+    - ml
+    - agents
+    - architecture
+  seniority: hybrid
+  impact:
+    - risk
+    - platform
+    - cost
+  keywords:
+    - FINRA
+    - SEC
+    - surveillance
+    - supervision
+    - agents
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

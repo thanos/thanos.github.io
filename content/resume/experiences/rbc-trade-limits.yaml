@@ -1,0 +1,41 @@
+id: rbc-trade-limits
+kind: built
+title: Market Access & Trade Limits (Rule 15c3-5)
+org: RBC
+job: rbc
+when:
+  start: 2023
+  end: null
+summary: Centralized ML automated trade limits across OMS estate.
+bullets:
+  - Rule 15c3-5 compliant centralized ML trade limits for most order management systems.
+  - Internalized ML-based Trade Limits Governance (2023).
+signals:
+  domains:
+    - market-access
+    - regulatory
+    - ml
+    - risk
+  skills:
+    - ml
+    - risk
+    - architecture
+    - compliance
+  seniority: hybrid
+  impact:
+    - risk
+    - platform
+  keywords:
+    - 15c3-5
+    - trade limits
+    - OMS
+    - market access
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

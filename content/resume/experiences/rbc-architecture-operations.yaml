@@ -1,0 +1,38 @@
+id: rbc-architecture-operations
+kind: ran
+title: Architecture for Operations
+org: RBC
+job: rbc
+when:
+  start: 2018
+  end: null
+summary: Modernize reporting, monitoring, confirmation/settlement; oversee ops development and vendors.
+bullets:
+  - Drive modernization in reporting, monitoring, and confirmation & settlement.
+  - Oversee development and vendor acquisitions in operations.
+signals:
+  domains:
+    - post-trade
+    - operations
+    - architecture
+  skills:
+    - architecture
+    - vendor-management
+    - settlement
+  seniority: hybrid
+  impact:
+    - platform
+    - cost
+  keywords:
+    - architecture
+    - operations
+    - settlement
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_ran
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

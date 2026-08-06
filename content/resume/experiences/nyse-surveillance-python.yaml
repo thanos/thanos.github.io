@@ -1,0 +1,43 @@
+id: nyse-surveillance-python
+kind: built
+title: NYSE specialist systems & early Python trading
+org: NYSE/SIAC
+job: nyse-siac
+role: Director, Specialist Trading Services
+when:
+  start: 1997
+  end: 2004
+summary: Surveillance, stock info servers, regulatory reporting; first Python trading services.
+bullets:
+  - Architected market surveillance, stock information servers, and regulatory reporting.
+  - Developed innovative Python-based trading services for specialists (among first in production
+    finance).
+signals:
+  domains:
+    - exchange
+    - surveillance
+    - trading
+  skills:
+    - python
+    - architecture
+    - regulatory
+    - engineering-management
+  seniority: hybrid
+  impact:
+    - risk
+    - platform
+    - people
+  keywords:
+    - NYSE
+    - surveillance
+    - Python
+    - Director
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs: []
+  last_verified: 2026-08-06
+visibility: public

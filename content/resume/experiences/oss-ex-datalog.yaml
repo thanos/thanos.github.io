@@ -1,0 +1,41 @@
+id: oss-ex-datalog
+kind: oss
+title: ex_datalog — Datalog rules engine for Elixir
+org: null
+when:
+  start: 2025
+  end: null
+summary: Datalog library with rich authorization, graph, and analytics examples.
+bullets:
+  - Authored ex_datalog and extensive worked examples (RBAC, fraud rings, BOM, recommendations).
+signals:
+  domains:
+    - open-source
+    - elixir
+    - knowledge
+    - authorization
+  skills:
+    - elixir
+    - datalog
+    - rules-engines
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+  keywords:
+    - Datalog
+    - Elixir
+    - authorization
+    - open source
+proof:
+  metrics: []
+  links:
+    - label: article
+      url: /articles/ex_datalog_examples/
+  source: github
+provenance:
+  type: github
+  refs:
+    - path: content/articles/ex_datalog_examples.md
+  last_verified: 2026-08-06
+visibility: public

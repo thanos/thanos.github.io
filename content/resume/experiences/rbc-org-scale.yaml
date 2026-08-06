@@ -1,0 +1,53 @@
+id: rbc-org-scale
+kind: ran
+title: Engineering organization — scale and operating model
+org: RBC
+job: rbc
+role: MD / Distinguished Engineer
+when:
+  start: 2010
+  end: null
+summary: Run a multinational engineering organization with ~$30M budget.
+bullets:
+  - Lead a multinational group of ~166 people (47% diversity) with teams in Canada, US, UK,
+    Malaysia, Mexico, and India consultants.
+  - Own operating budget just over $30M.
+  - Built and scaled high-performance development teams across Kuala Lumpur, Halifax, and Montreal.
+signals:
+  domains:
+    - engineering-management
+    - capital-markets
+    - org-design
+  skills:
+    - people-management
+    - budget
+    - hiring
+    - mentoring
+    - global-teams
+  seniority: executive
+  impact:
+    - people
+    - cost
+    - scale
+  keywords:
+    - managing director
+    - development manager
+    - org leadership
+    - diversity
+    - budget
+proof:
+  metrics:
+    - label: headcount
+      value: 166
+    - label: budget_usd_m
+      value: 30
+    - label: diversity_pct
+      value: 47
+  links: []
+  source: job
+provenance:
+  type: job_ran
+  refs:
+    - path: content/material/thanos-vassilakis-resume.md
+  last_verified: 2026-08-06
+visibility: public

@@ -1,0 +1,47 @@
+id: oss-ex-drone
+kind: oss
+title: ex_drone — BEAM-native drone control
+org: null
+when:
+  start: 2026
+  end: null
+summary: "Elixir library: one GenServer per vehicle, safety pipeline, sim, swarms."
+bullets:
+  - "Designed and shipped ex_drone: supervised vehicles, UDP Tello adapter, pure safety checks,
+    simulator-first workflow."
+  - v0.2.0 swarm coordinator with fail-fast fan-out and geometric formations.
+signals:
+  domains:
+    - open-source
+    - elixir
+    - robotics
+    - otp
+  skills:
+    - elixir
+    - otp
+    - udp
+    - architecture
+    - testing
+  seniority: hands-on
+  impact:
+    - platform
+  keywords:
+    - Elixir
+    - OTP
+    - GenServer
+    - open source
+    - drones
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/ex_drone
+    - label: hex
+      url: https://hex.pm/packages/ex_drone
+  source: github
+provenance:
+  type: github
+  refs:
+    - path: content/articles/01-beam-native-drone-controller.md
+  last_verified: 2026-08-06
+visibility: public

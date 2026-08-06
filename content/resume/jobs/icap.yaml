@@ -1,0 +1,11 @@
+id: icap
+org: ICAP
+titles:
+  - Head of Front-End Development
+when:
+  start: 2004
+  end: 2006
+current: false
+summary: >
+  Built in-house fixed income trading UI and distributed trading services.
+visibility: public

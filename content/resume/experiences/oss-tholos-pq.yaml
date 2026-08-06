@@ -1,0 +1,44 @@
+id: oss-tholos-pq
+kind: oss
+title: tholos-pq — post-quantum multi-recipient encryption
+org: null
+when:
+  start: 2025
+  end: null
+summary: "Rust crate: encrypt-once / decrypt-many with ML-KEM / ML-DSA."
+bullets:
+  - Designed and published tholos-pq for multi-recipient PQ envelope encryption.
+  - Documented threat model and wire format in a public series.
+signals:
+  domains:
+    - cryptography
+    - open-source
+    - security
+  skills:
+    - rust
+    - post-quantum
+    - cryptography
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+    - risk
+  keywords:
+    - ML-KEM
+    - post-quantum
+    - Rust
+    - encryption
+proof:
+  metrics: []
+  links:
+    - label: crates.io
+      url: https://crates.io/crates/tholos-pq
+    - label: series
+      url: /series/pqe-multi-recipient-encryption/
+  source: github
+provenance:
+  type: github
+  refs:
+    - path: content/articles/01-why-pq-multi-recipient.md
+  last_verified: 2026-08-06
+visibility: public

@@ -1,0 +1,47 @@
+id: rbc-mandate
+kind: job_role
+title: Current mandate — Finance IT modernization & AI
+org: RBC
+job: rbc
+role: Distinguished Engineer, MD, Head of AI and Architecture for Finance IT
+when:
+  start: 2024
+  end: null
+summary: Technical ownership of GL migration and Finance IT AI/modernization.
+bullets:
+  - Technical ownership of GL migration from zOS/DB2 to Linux/Oracle and Sub-ledger modernization.
+  - Drive modernization and AI adoption across RBC Finance IT.
+signals:
+  domains:
+    - finance-it
+    - gl
+    - modernization
+    - ai
+  skills:
+    - architecture
+    - migration
+    - ai-adoption
+    - executive-leadership
+  seniority: executive
+  impact:
+    - platform
+    - people
+    - risk
+  keywords:
+    - general ledger
+    - zOS
+    - Oracle
+    - AI
+    - modernization
+    - MD
+    - principal
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_ran
+  refs:
+    - path: content/material/thanos-vassilakis-resume.md
+  last_verified: 2026-08-06
+visibility: public

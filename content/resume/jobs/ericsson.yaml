@@ -1,0 +1,11 @@
+id: ericsson
+org: Ericsson
+titles:
+  - Contractor, Telecom Switches
+when:
+  start: 1995
+  end: 1997
+current: false
+summary: >
+  Remote telecom switch management systems.
+visibility: public
