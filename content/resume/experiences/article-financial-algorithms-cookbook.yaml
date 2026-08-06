@@ -1,0 +1,38 @@
+id: article-financial-algorithms-cookbook
+kind: publication
+title: Financial Algorithms Cookbook
+client: null
+org: null
+when:
+  start: 2007
+  end: 2007
+summary: Book — Financial Algorithms Cookbook (ISBN 978-1-4116-2259-3).
+bullets:
+  - Authored Financial Algorithms Cookbook, ISBN 978-1-4116-2259-3.
+domain:
+  - finance
+  - trading
+skills:
+  - Python
+  - C++
+signals:
+  domains:
+    - finance
+    - trading
+  skills:
+    - python
+    - c++
+    - technical-writing
+  seniority: hands-on
+  impact:
+    - people
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: 2026-08-06
+visibility: public

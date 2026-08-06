@@ -1,0 +1,10 @@
+id: european-parliament
+org: European Parliament
+titles:
+  - IT Advisor / Consultant, Lead
+when:
+  start: 1994
+  end: 1996
+current: false
+summary: Internet/intranet services and large-scale multilingual workflow for the European Parliament.
+visibility: public

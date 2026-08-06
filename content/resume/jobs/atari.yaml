@@ -1,0 +1,10 @@
+id: atari
+org: Atari
+titles:
+  - Developer
+when:
+  start: 1980
+  end: 1984
+current: false
+summary: Arcade and ST games ports; earlier Kee Games arcade titles.
+visibility: public

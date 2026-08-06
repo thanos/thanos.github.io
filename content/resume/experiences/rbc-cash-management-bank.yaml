@@ -1,0 +1,46 @@
+id: rbc-cash-management-bank
+kind: ran
+title: Cash Management Bank — 5th-generation transactional core
+client: RBC
+org: RBC
+job: rbc
+role: Distinguished Engineer & Head of Engineering
+when:
+  start: 2020
+  end: 2023
+summary: "Head of engineering for RBC’s new transactional cash-management bank: virtual accounts,
+  liquidity, payments rails, ERP integrations, KYC/KYB, document store."
+bullets:
+  - Built cash-management core including virtual accounts and liquidity management.
+  - Payment manager/rails, ERP integrations, CMS KYC/KYB, evidence and document store.
+  - Stack included Elixir/Phoenix/LiveView, Rust, Python, and blockchain components.
+domain:
+  - finance
+  - trading
+skills:
+  - Elixir
+  - Rust
+  - Python
+signals:
+  domains:
+    - finance
+    - trading
+  skills:
+    - elixir
+    - rust
+    - python
+    - architecture
+  seniority: hybrid
+  impact:
+    - platform
+    - scale
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_ran
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: 2026-08-06
+visibility: public

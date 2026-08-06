@@ -1,6 +1,7 @@
 id: rbc-language-platform-adoption
 kind: built
 title: Language & platform engineering adoption
+client: RBC
 org: RBC
 job: rbc
 when:
@@ -17,14 +18,19 @@ bullets:
     Data Interface SDK (2019).
   - Tokenization platform (2022); FRTB and AML infrastructure (2018); LME trading platform /
     OpenLink migration.
+domain:
+  - finance
+skills:
+  - Python
+  - Elixir
+  - C++
 signals:
   domains:
-    - platform
-    - distributed-systems
-    - capital-markets
+    - finance
   skills:
     - python
     - elixir
+    - c++
     - platform-engineering
     - distributed-systems
     - architecture
@@ -32,13 +38,6 @@ signals:
   impact:
     - platform
     - people
-  keywords:
-    - Elixir
-    - Python
-    - FaaS
-    - distributed compute
-    - data lake
-    - principal engineer
 proof:
   metrics: []
   links: []

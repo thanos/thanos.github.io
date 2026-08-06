@@ -1,6 +1,9 @@
 id: oss-aegis
 kind: oss
 title: Aegis — Zig zkML miner for Bittensor (Apple Silicon)
+client: null
+org: null
+job: null
 when:
   start: 2024
   end: null
@@ -8,30 +11,25 @@ summary: High-performance Zig/Metal Bittensor miner for zkML (Subnet 2 / Omron) 
 bullets:
   - Built Aegis in Zig with Metal/AMX acceleration for Bittensor Subnet 2 (Omron) zkML workloads.
   - Targeted verified intelligence / zero-knowledge ML proof generation on ARM64 validators.
+domain:
+  - AI
+  - crypto
+skills:
+  - Zig
+  - ML
 signals:
   domains:
-    - open-source
-    - ai
-    - ml
-    - hpc
-    - zkml
+    - AI
+    - crypto
   skills:
     - zig
     - ml
     - zkml
     - performance
-    - gpu
     - architecture
   seniority: hands-on
   impact:
     - platform
-  keywords:
-    - AI/ML
-    - zkML
-    - Bittensor
-    - machine learning
-    - Metal
-    - Apple Silicon
 proof:
   metrics: []
   links: []

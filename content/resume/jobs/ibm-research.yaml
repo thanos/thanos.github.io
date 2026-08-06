@@ -1,0 +1,10 @@
+id: ibm-research
+org: IBM Research (Zurich)
+titles:
+  - Contractor
+when:
+  start: 1996
+  end: 1997
+current: false
+summary: Mobile phone JVM work at IBM Research labs.
+visibility: public

@@ -1,0 +1,39 @@
+id: bt-hope-telecom-gold
+kind: built
+title: British Telecom — Telecom Gold & Hope language
+client: British Telecom
+org: British Telecom
+job: british-telecom
+when:
+  start: 1986
+  end: 1988
+summary: Telecom Gold credit-card transaction handling and Hope functional language work.
+bullets:
+  - Developed Telecom Gold credit-card transaction handling and related financial services.
+  - Implemented / extended the Hope functional language for BT / Imperial College.
+domain:
+  - telecom
+  - finance
+skills:
+  - C++
+  - C
+signals:
+  domains:
+    - telecom
+    - finance
+  skills:
+    - c++
+    - c
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: 2026-08-06
+visibility: public

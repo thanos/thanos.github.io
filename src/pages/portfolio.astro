@@ -6,16 +6,22 @@ import {
   formatWhen,
   formatMetric,
   metricCaption,
+  atomDomains,
+  atomClient,
+  atomSkills,
 } from '../lib/resume-experiences';
 
 const experiences = loadExperiences();
-const kinds = [...new Set(experiences.map((e) => e.kind))].sort();
-const domains = [
-  ...new Set(experiences.flatMap((e) => e.signals?.domains ?? [])),
-].sort();
-const impacts = [
-  ...new Set(experiences.flatMap((e) => e.signals?.impact ?? [])),
-].sort();
+
+const domains = [...new Set(experiences.flatMap((e) => atomDomains(e)))].sort((a, b) =>
+  a.localeCompare(b, undefined, { sensitivity: 'base' })
+);
+const clients = [
+  ...new Set(experiences.map((e) => atomClient(e)).filter((c): c is string => Boolean(c))),
+].sort((a, b) => a.localeCompare(b));
+const skills = [...new Set(experiences.flatMap((e) => atomSkills(e)))].sort((a, b) =>
+  a.localeCompare(b, undefined, { sensitivity: 'base' })
+);
 
 const base = import.meta.env.BASE_URL;
 
@@ -47,8 +53,8 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
         Portfolio
       </h1>
       <p class="mt-3 text-neutral-600 leading-relaxed">
-        Experiences as tiles — what I’ve run, built, open-sourced, and written.
-        Filter by kind, domain, or impact.
+        Experiences as tiles — what I’ve run, built, open-sourced, and written. Filter by domain,
+        client, or skill.
       </p>
     </header>
 
@@ -73,24 +79,6 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
 
       <div class="mt-4 space-y-3">
         <div>
-          <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">Kind</p>
-          <div class="flex flex-wrap gap-2" data-filter-group="kind">
-            {
-              kinds.map((k) => (
-                <button
-                  type="button"
-                  class="filter-chip border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-800 transition hover:border-neutral-900"
-                  data-filter="kind"
-                  data-value={k}
-                  aria-pressed="false"
-                >
-                  {kindLabel(k)}
-                </button>
-              ))
-            }
-          </div>
-        </div>
-        <div>
           <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">Domain</p>
           <div class="flex flex-wrap gap-2" data-filter-group="domain">
             {
@@ -109,18 +97,36 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
           </div>
         </div>
         <div>
-          <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">Impact</p>
-          <div class="flex flex-wrap gap-2" data-filter-group="impact">
+          <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">Client</p>
+          <div class="flex flex-wrap gap-2" data-filter-group="client">
             {
-              impacts.map((i) => (
+              clients.map((c) => (
                 <button
                   type="button"
                   class="filter-chip border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-800 transition hover:border-neutral-900"
-                  data-filter="impact"
-                  data-value={i}
+                  data-filter="client"
+                  data-value={c}
                   aria-pressed="false"
                 >
-                  {i}
+                  {c}
+                </button>
+              ))
+            }
+          </div>
+        </div>
+        <div>
+          <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">Skills</p>
+          <div class="flex flex-wrap gap-2" data-filter-group="skill">
+            {
+              skills.map((s) => (
+                <button
+                  type="button"
+                  class="filter-chip border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-800 transition hover:border-neutral-900"
+                  data-filter="skill"
+                  data-value={s}
+                  aria-pressed="false"
+                >
+                  {s}
                 </button>
               ))
             }
@@ -131,7 +137,7 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
 
     <div
       id="portfolio-mosaic"
-      class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-rows-fr"
+      class="grid auto-rows-fr grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     >
       {
         experiences.map((e) => {
@@ -139,8 +145,9 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
           const href = primaryLink(e);
           const when = formatWhen(e.when);
           const metrics = e.proof?.metrics ?? [];
-          const domainsList = e.signals?.domains ?? [];
-          const impactsList = e.signals?.impact ?? [];
+          const domainsList = atomDomains(e);
+          const skillsList = atomSkills(e);
+          const client = atomClient(e);
           const Tag = href ? 'a' : 'article';
           return (
             <Tag
@@ -154,15 +161,15 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
                 href && 'cursor-pointer',
               ]}
               data-portfolio-tile
-              data-kind={e.kind}
-              data-domains={domainsList.join(' ')}
-              data-impacts={impactsList.join(' ')}
+              data-domains={domainsList.join('|')}
+              data-client={client ?? ''}
+              data-skills={skillsList.join('|')}
               data-id={e.id}
             >
               <div class="flex items-start justify-between gap-3">
                 <span class="text-xs font-semibold uppercase tracking-wider text-neutral-500">
                   {kindLabel(e.kind)}
-                  {e.org ? ` · ${e.org}` : ''}
+                  {client ? ` · ${client}` : ''}
                 </span>
                 {when ? (
                   <span class="shrink-0 text-xs tabular-nums text-neutral-500">{when}</span>
@@ -187,9 +194,14 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
                 </dl>
               ) : (
                 <div class="mt-4 flex flex-wrap gap-1.5">
-                  {domainsList.slice(0, 4).map((d) => (
+                  {domainsList.slice(0, 3).map((d) => (
                     <span class="border border-neutral-200 bg-white px-1.5 py-0.5 text-[11px] text-neutral-600">
                       {d}
+                    </span>
+                  ))}
+                  {skillsList.slice(0, 3).map((s) => (
+                    <span class="border border-neutral-200 bg-white px-1.5 py-0.5 text-[11px] text-neutral-600">
+                      {s}
                     </span>
                   ))}
                 </div>
@@ -221,31 +233,30 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
   const emptyEl = document.getElementById('portfolio-empty');
   const clearBtn = document.getElementById('portfolio-clear') as HTMLButtonElement | null;
 
-  type FilterState = { kind: Set<string>; domain: Set<string>; impact: Set<string> };
+  type FilterState = { domain: Set<string>; client: Set<string>; skill: Set<string> };
   const state: FilterState = {
-    kind: new Set(),
     domain: new Set(),
-    impact: new Set(),
+    client: new Set(),
+    skill: new Set(),
   };
 
   function activeFilters(): boolean {
-    return state.kind.size + state.domain.size + state.impact.size > 0;
+    return state.domain.size + state.client.size + state.skill.size > 0;
   }
 
   function apply() {
     let visible = 0;
     for (const tile of tiles) {
-      const kind = tile.dataset.kind || '';
-      const domains = (tile.dataset.domains || '').split(/\s+/).filter(Boolean);
-      const impacts = (tile.dataset.impacts || '').split(/\s+/).filter(Boolean);
+      const domains = (tile.dataset.domains || '').split('|').filter(Boolean);
+      const client = tile.dataset.client || '';
+      const skills = (tile.dataset.skills || '').split('|').filter(Boolean);
 
-      const kindOk = state.kind.size === 0 || state.kind.has(kind);
       const domainOk =
         state.domain.size === 0 || [...state.domain].some((d) => domains.includes(d));
-      const impactOk =
-        state.impact.size === 0 || [...state.impact].some((i) => impacts.includes(i));
+      const clientOk = state.client.size === 0 || state.client.has(client);
+      const skillOk = state.skill.size === 0 || [...state.skill].some((s) => skills.includes(s));
 
-      const show = kindOk && domainOk && impactOk;
+      const show = domainOk && clientOk && skillOk;
       tile.classList.toggle('hidden', !show);
       if (show) visible++;
     }
@@ -271,9 +282,9 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
   }
 
   clearBtn?.addEventListener('click', () => {
-    state.kind.clear();
     state.domain.clear();
-    state.impact.clear();
+    state.client.clear();
+    state.skill.clear();
     for (const chip of chips) chip.setAttribute('aria-pressed', 'false');
     apply();
   });

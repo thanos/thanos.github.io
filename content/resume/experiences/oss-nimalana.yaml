@@ -1,17 +1,22 @@
 id: oss-nimalana
 kind: oss
 title: Nimalana — Nim Solana validator
+client: null
+org: null
+job: null
 when:
   start: 2023
   end: null
 summary: Author of Nimalana, a Nim-based Solana validator.
 bullets:
   - Author of Nimalana — Nim-based Solana validator.
+domain:
+  - crypto
+skills:
+  - Nim
 signals:
   domains:
-    - open-source
     - crypto
-    - blockchain
   skills:
     - nim
     - blockchain
@@ -19,10 +24,6 @@ signals:
   seniority: hands-on
   impact:
     - platform
-  keywords:
-    - Solana
-    - validator
-    - Nim
 proof:
   metrics: []
   links: []

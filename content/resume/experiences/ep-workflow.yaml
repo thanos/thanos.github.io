@@ -1,0 +1,44 @@
+id: ep-workflow
+kind: built
+title: European Parliament multilingual workflow & web services
+client: European Parliament
+org: European Parliament
+job: european-parliament
+role: Consultant, Lead
+when:
+  start: 1994
+  end: 1996
+summary: Large-scale internet workflow and document systems handling 100k+ documents/day across 11
+  languages.
+bullets:
+  - Designed workflow engine on internet transport + Oracle — production at ~100k documents/day, 11
+    languages, 12k+ document types.
+  - "Technical consultant for EP internet/intranet: CGIs, search, dynamic document generation."
+  - Built general client/server libraries (TCP/IP) ported across platforms for EPADES.
+domain:
+  - finance
+skills:
+  - C++
+  - C
+  - Java
+signals:
+  domains: []
+  skills:
+    - c++
+    - c
+    - java
+    - architecture
+  seniority: hybrid
+  impact:
+    - platform
+    - scale
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: 2026-08-06
+visibility: public

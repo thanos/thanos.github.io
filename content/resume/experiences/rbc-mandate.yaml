@@ -1,6 +1,7 @@
 id: rbc-mandate
 kind: job_role
 title: Current mandate — Finance IT modernization & AI
+client: RBC
 org: RBC
 job: rbc
 role: Distinguished Engineer, MD, Head of AI and Architecture for Finance IT
@@ -11,13 +12,19 @@ summary: Technical ownership of GL migration and Finance IT AI/modernization.
 bullets:
   - Technical ownership of GL migration from zOS/DB2 to Linux/Oracle and Sub-ledger modernization.
   - Drive modernization and AI adoption across RBC Finance IT.
+domain:
+  - finance
+  - AI
+skills:
+  - Python
+  - Elixir
 signals:
   domains:
-    - finance-it
-    - gl
-    - modernization
-    - ai
+    - finance
+    - AI
   skills:
+    - python
+    - elixir
     - architecture
     - migration
     - ai-adoption
@@ -27,14 +34,6 @@ signals:
     - platform
     - people
     - risk
-  keywords:
-    - general ledger
-    - zOS
-    - Oracle
-    - AI
-    - modernization
-    - MD
-    - principal
 proof:
   metrics: []
   links: []

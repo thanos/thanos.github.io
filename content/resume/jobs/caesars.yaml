@@ -1,0 +1,10 @@
+id: caesars
+org: Caesars Casino
+titles:
+  - Contractor
+when:
+  start: 1995
+  end: 1995
+current: false
+summary: Built an early internet casino; early cyber-currency work with Marita Bank (WebCheck).
+visibility: public

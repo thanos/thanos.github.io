@@ -16,12 +16,18 @@ export interface ExperienceAtom {
   id: string;
   kind: ExperienceKind;
   title: string;
+  /** Portfolio / filter client (e.g. Ericsson, RBC). */
+  client?: string | null;
   org?: string | null;
   job?: string | null;
   role?: string | null;
   when?: { start: number | null; end: number | null };
   summary: string;
   bullets?: string[];
+  /** Controlled portfolio domains — see content/resume/taxonomy.yaml */
+  domain?: string | string[];
+  /** Languages / core tech for portfolio skill filters */
+  skills?: string[];
   signals?: {
     domains?: string[];
     skills?: string[];
@@ -42,14 +48,35 @@ const KIND_LABELS: Record<string, string> = {
   ran: 'Ran',
   built: 'Built',
   oss: 'Open source',
-  article: 'Writing',
+  article: 'Authored',
   interest: 'Interest',
-  talk: 'Talk',
-  publication: 'Publication',
+  talk: 'Authored',
+  publication: 'Authored',
+};
+
+/** Portfolio mosaic order: Role → Ran → Built → Open source → Authored → rest */
+const KIND_SORT_ORDER: Record<string, number> = {
+  job_role: 0,
+  ran: 1,
+  built: 2,
+  oss: 3,
+  article: 4,
+  talk: 4,
+  publication: 4,
+  interest: 5,
 };
 
 export function kindLabel(kind: string): string {
   return KIND_LABELS[kind] ?? kind;
+}
+
+export function kindSortIndex(kind: string): number {
+  return KIND_SORT_ORDER[kind] ?? 99;
+}
+
+export function asList(value?: string | string | null | string[]): string[] {
+  if (value == null || value === '') return [];
+  return (Array.isArray(value) ? value : [value]).map(String).filter(Boolean);
 }
 
 export function formatWhen(when?: ExperienceAtom['when']): string {
@@ -78,6 +105,38 @@ export function metricCaption(label: string): string {
   return label.replace(/_/g, ' ').replace(/\busd\b/i, '').trim();
 }
 
+export function atomDomains(atom: ExperienceAtom): string[] {
+  // Prefer explicit portfolio `domain` (including empty) over legacy signals.
+  if (Object.prototype.hasOwnProperty.call(atom, 'domain')) {
+    return asList(atom.domain);
+  }
+  return atom.signals?.domains ?? [];
+}
+
+export function atomClient(atom: ExperienceAtom): string | null {
+  return atom.client || atom.org || null;
+}
+
+export function atomSkills(atom: ExperienceAtom): string[] {
+  if (atom.skills?.length) return atom.skills;
+  return [];
+}
+
+function startYear(atom: ExperienceAtom): number {
+  return atom.when?.start ?? 0;
+}
+
+/** Sort: kind order (Role→Ran→Built→OSS→Authored), then latest first. */
+export function sortExperiencesForPortfolio(atoms: ExperienceAtom[]): ExperienceAtom[] {
+  return [...atoms].sort((a, b) => {
+    const ko = kindSortIndex(a.kind) - kindSortIndex(b.kind);
+    if (ko !== 0) return ko;
+    const by = startYear(b) - startYear(a);
+    if (by !== 0) return by;
+    return a.title.localeCompare(b.title);
+  });
+}
+
 /** Load public experience atoms from content/resume/experiences. */
 export function loadExperiences(repoRoot = process.cwd()): ExperienceAtom[] {
   const dir = path.join(repoRoot, 'content/resume/experiences');
@@ -92,10 +151,5 @@ export function loadExperiences(repoRoot = process.cwd()): ExperienceAtom[] {
     atoms.push(raw);
   }
 
-  return atoms.sort((a, b) => {
-    const ay = a.when?.start ?? 0;
-    const by = b.when?.start ?? 0;
-    if (by !== ay) return by - ay;
-    return a.title.localeCompare(b.title);
-  });
+  return sortExperiencesForPortfolio(atoms);
 }

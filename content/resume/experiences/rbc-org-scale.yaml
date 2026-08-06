@@ -1,6 +1,7 @@
 id: rbc-org-scale
 kind: ran
 title: Engineering organization — scale and operating model
+client: RBC
 org: RBC
 job: rbc
 role: MD / Distinguished Engineer
@@ -13,11 +14,12 @@ bullets:
     Malaysia, Mexico, and India consultants.
   - Own operating budget just over $30M.
   - Built and scaled high-performance development teams across Kuala Lumpur, Halifax, and Montreal.
+domain:
+  - finance
+skills: []
 signals:
   domains:
-    - engineering-management
-    - capital-markets
-    - org-design
+    - finance
   skills:
     - people-management
     - budget
@@ -29,12 +31,6 @@ signals:
     - people
     - cost
     - scale
-  keywords:
-    - managing director
-    - development manager
-    - org leadership
-    - diversity
-    - budget
 proof:
   metrics:
     - label: headcount

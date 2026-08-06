@@ -1,0 +1,39 @@
+id: atari-games
+kind: built
+title: Atari — arcade & ST games
+client: Atari
+org: Atari
+job: atari
+when:
+  start: 1980
+  end: 1984
+summary: Arcade and Atari ST game ports and titles (Kee Games era through ST division).
+bullets:
+  - Ported arcade titles to Atari ST (Hardball, SunDog, Crystal Castles) and worked 3D/RPG titles.
+  - Earlier Kee Games arcade work including Tempest, Space Duel, Red Baron, Gravitar.
+domain:
+  - gaming
+skills:
+  - C
+  - 6809 machine code assembly
+  - 68000 machine code assembly
+signals:
+  domains:
+    - gaming
+  skills:
+    - c
+    - 6809-assembly
+    - 68000-assembly
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: 2026-08-06
+visibility: public

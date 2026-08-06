@@ -1,0 +1,19 @@
+# Controlled vocabulary for portfolio filters and experience atoms.
+# Use these values in content/resume/experiences/*.yaml
+
+domains:
+  - telecom
+  - finance
+  - trading
+  - defence
+  - gaming
+  - AI
+  - crypto
+  - robotics
+
+# Clients appear as written on the atom (`client:`), e.g.:
+# RBC, Ericsson, JPMorgan, Credit Suisse, ICAP, NYSE/SIAC, Infinigon, Zingy,
+# European Parliament, Apple, Atari, Barclays, Caesars Casino, Ferranti, IBM, …
+
+# Skills filter is meant for languages / core tech, e.g.:
+# C, C++, Rust, Elixir, Erlang, Python, Zig, Nim, Java, JavaScript, Go, ML, GPU

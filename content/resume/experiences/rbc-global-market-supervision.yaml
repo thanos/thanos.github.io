@@ -1,6 +1,7 @@
 id: rbc-global-market-supervision
 kind: built
 title: Global Market Supervision
+client: RBC
 org: RBC
 job: rbc
 when:
@@ -10,15 +11,24 @@ summary: Event-driven supervision with ML/agents for SEC, FINRA, UK, EU reportin
 bullets:
   - Built event-driven real-time supervision replacing third-party systems (2023).
   - ML and hierarchical agent state modeling for SEC, FINRA, UK, and European regulatory reports.
+domain:
+  - finance
+  - trading
+  - AI
+skills:
+  - Python
+  - ML
+  - Elixir
 signals:
   domains:
-    - surveillance
-    - regulatory
-    - ml
-    - capital-markets
+    - finance
+    - trading
+    - AI
   skills:
-    - event-driven
+    - python
     - ml
+    - elixir
+    - event-driven
     - agents
     - architecture
   seniority: hybrid
@@ -26,12 +36,6 @@ signals:
     - risk
     - platform
     - cost
-  keywords:
-    - FINRA
-    - SEC
-    - surveillance
-    - supervision
-    - agents
 proof:
   metrics: []
   links: []

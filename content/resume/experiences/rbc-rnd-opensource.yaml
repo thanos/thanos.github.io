@@ -1,6 +1,7 @@
 id: rbc-rnd-opensource
 kind: ran
 title: R&D for Technology — inner source & OSS stewardship
+client: RBC
 org: RBC
 job: rbc
 when:
@@ -10,13 +11,23 @@ summary: Blockchain/crypto/ML R&D plus inner-source and open-source stewardship.
 bullets:
   - Lead R&D spanning blockchain, crypto, and ML model development.
   - Inner source and open source stewardship inside the bank.
+domain:
+  - finance
+  - AI
+  - crypto
+skills:
+  - Python
+  - Elixir
+  - Rust
 signals:
   domains:
-    - r&d
-    - blockchain
-    - ml
-    - open-source
+    - finance
+    - AI
+    - crypto
   skills:
+    - python
+    - elixir
+    - rust
     - oss
     - r&d
     - mentoring
@@ -25,11 +36,6 @@ signals:
   impact:
     - platform
     - people
-  keywords:
-    - open source
-    - inner source
-    - R&D
-    - blockchain
 proof:
   metrics: []
   links: []

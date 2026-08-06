@@ -1,6 +1,7 @@
 id: rbc-trade-expense
 kind: built
 title: Trade Expense & Agentic Invoice Processing
+client: RBC
 org: RBC
 job: rbc
 when:
@@ -10,13 +11,19 @@ summary: Agentic invoice processing modernizing trade expense; large vendor disp
 bullets:
   - Deployed agentic invoice processing for trade expense management.
   - Eliminated external vendor dependencies for ~$11M/year savings (2024).
+domain:
+  - finance
+  - AI
+skills:
+  - Python
+  - ML
 signals:
   domains:
-    - capital-markets
-    - ai
-    - cost-optimization
-    - operations
+    - finance
+    - AI
   skills:
+    - python
+    - ml
     - agents
     - ai
     - architecture
@@ -25,12 +32,6 @@ signals:
   impact:
     - cost
     - platform
-  keywords:
-    - agentic
-    - invoice
-    - expense
-    - savings
-    - AI
 proof:
   metrics:
     - label: annual_savings_usd

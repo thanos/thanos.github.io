@@ -1,6 +1,9 @@
 id: oss-ex-systolic
 kind: oss
 title: ex_systolic — systolic array / spatial dataflow simulator
+client: null
+org: null
+job: null
 when:
   start: 2025
   end: null
@@ -8,12 +11,13 @@ summary: BEAM-native systolic-array simulator with explicit ticks, links, and pr
 bullets:
   - Built a clocked spatial dataflow simulator (systolic arrays) for studying parallel compute
     fabrics.
+domain:
+  - AI
+skills:
+  - Elixir
 signals:
   domains:
-    - open-source
-    - hpc
-    - computer-architecture
-    - parallel-computing
+    - AI
   skills:
     - elixir
     - architecture
@@ -22,12 +26,6 @@ signals:
   seniority: hands-on
   impact:
     - platform
-  keywords:
-    - systolic array
-    - spatial dataflow
-    - computer architecture
-    - parallel compute
-    - quantum-computing-adjacent
 proof:
   metrics: []
   links:

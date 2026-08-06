@@ -1,6 +1,7 @@
 id: rbc-architecture-operations
 kind: ran
 title: Architecture for Operations
+client: RBC
 org: RBC
 job: rbc
 when:
@@ -10,12 +11,19 @@ summary: Modernize reporting, monitoring, confirmation/settlement; oversee ops d
 bullets:
   - Drive modernization in reporting, monitoring, and confirmation & settlement.
   - Oversee development and vendor acquisitions in operations.
+domain:
+  - finance
+  - trading
+skills:
+  - Python
+  - Elixir
 signals:
   domains:
-    - post-trade
-    - operations
-    - architecture
+    - finance
+    - trading
   skills:
+    - python
+    - elixir
     - architecture
     - vendor-management
     - settlement
@@ -23,10 +31,6 @@ signals:
   impact:
     - platform
     - cost
-  keywords:
-    - architecture
-    - operations
-    - settlement
 proof:
   metrics: []
   links: []

@@ -1,0 +1,37 @@
+id: barclays-topic-trading
+kind: built
+title: Barclays Topic equities trading system
+client: Barclays
+org: Barclays
+job: barclays
+role: Developer
+when:
+  start: 1984
+  end: 1986
+summary: Sole developer of Barclays Topic-based equities trading system.
+bullets:
+  - Built the Topic trading system used by Barclays equities.
+domain:
+  - finance
+  - trading
+skills:
+  - C
+signals:
+  domains:
+    - finance
+    - trading
+  skills:
+    - c
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: 2026-08-06
+visibility: public

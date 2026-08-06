@@ -1,0 +1,40 @@
+id: rbc-faas-notification
+kind: built
+title: On-prem FaaS (Lambda) and SNS-style notification
+client: RBC
+org: RBC
+job: rbc
+when:
+  start: 2017
+  end: 2018
+summary: Forked/adapted OpenWhisk into bank FaaS then rewrote with streamed-event triggers; built
+  AWS-SNS-like notification used by 90+ apps.
+bullets:
+  - Delivered on-prem/cloud-agnostic Function-as-a-Service to cut microservice sprawl and RTB cost.
+  - Simple Notification Service modeled on AWS SNS — eventually serving 92+ applications.
+domain:
+  - finance
+skills:
+  - Python
+  - Elixir
+signals:
+  domains:
+    - finance
+  skills:
+    - python
+    - elixir
+    - platform-engineering
+  seniority: hands-on
+  impact:
+    - cost
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: 2026-08-06
+visibility: public

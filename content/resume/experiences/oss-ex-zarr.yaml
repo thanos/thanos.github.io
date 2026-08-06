@@ -1,6 +1,9 @@
 id: oss-ex-zarr
 kind: oss
 title: ExZarr — chunked N-dimensional arrays
+client: null
+org: null
+job: null
 when:
   start: 2025
   end: null
@@ -8,12 +11,13 @@ summary: Elixir Zarr implementation for compressed, chunked N-dimensional arrays
 bullets:
   - "Implemented Zarr in Elixir: compressed, chunked, N-dimensional arrays suited to parallel and
     large-array workloads."
+domain:
+  - AI
+skills:
+  - Elixir
 signals:
   domains:
-    - open-source
-    - big-data
-    - scientific-computing
-    - parallel-computing
+    - AI
   skills:
     - elixir
     - zarr
@@ -23,12 +27,6 @@ signals:
   impact:
     - platform
     - scale
-  keywords:
-    - Zarr
-    - big-data
-    - N-dimensional
-    - chunked arrays
-    - parallel
 proof:
   metrics: []
   links:

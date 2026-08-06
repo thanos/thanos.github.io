@@ -1,6 +1,9 @@
 id: oss-ex-arrow
 kind: oss
 title: ex_arrow — Native Apache Arrow for the BEAM
+client: null
+org: null
+job: null
 when:
   start: 2025
   end: null
@@ -8,12 +11,14 @@ summary: Apache Arrow IPC, Flight, and ADBC bindings; columnar data in Rust buff
 bullets:
   - "Built native Apache Arrow for Elixir: IPC streaming, Arrow Flight, and ADBC database bindings."
   - Columnar payloads live in Rust buffers; precompiled NIFs across Linux, macOS, Windows.
+domain:
+  - AI
+skills:
+  - Elixir
+  - Rust
 signals:
   domains:
-    - open-source
-    - big-data
-    - distributed-systems
-    - data-platform
+    - AI
   skills:
     - elixir
     - rust
@@ -24,13 +29,6 @@ signals:
   impact:
     - platform
     - scale
-  keywords:
-    - Apache Arrow
-    - big-data
-    - Arrow Flight
-    - ADBC
-    - columnar
-    - platform
 proof:
   metrics: []
   links:

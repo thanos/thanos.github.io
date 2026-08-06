@@ -1,0 +1,10 @@
+id: barclays
+org: Barclays
+titles:
+  - Developer / Director
+when:
+  start: 1984
+  end: 1986
+current: false
+summary: Sole developer of Barclays Topic-based equities trading system.
+visibility: public

@@ -1,0 +1,38 @@
+id: oss-phonescript
+kind: oss
+title: Phonescript — PostScript on J2ME/Brew/Symbian
+client: null
+org: null
+job: null
+when:
+  start: 2006
+  end: 2006
+summary: Ported PostScript to J2ME, Brew, and Symbian — <35k interpreter with floats and 2D transparency.
+bullets:
+  - One program runnable across J2ME, Symbian, and Brew; load/run code on the fly.
+  - Presented “Introducing Phonescript” at MobiCom 2006.
+domain:
+  - gaming
+skills:
+  - C++
+  - Java
+signals:
+  domains:
+    - gaming
+  skills:
+    - c++
+    - java
+    - mobile
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: 2026-08-06
+visibility: public

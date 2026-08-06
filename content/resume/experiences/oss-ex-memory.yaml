@@ -1,18 +1,22 @@
 id: oss-ex-memory
 kind: oss
 title: ex_memory — local-first memory for LLMs
+client: null
+org: null
+job: null
 when:
   start: 2025
   end: null
 summary: Pluggable high-level memory system for LLMs and applications in Elixir.
 bullets:
   - Designed a local-first, pluggable memory layer for LLM applications on the BEAM.
+domain:
+  - AI
+skills:
+  - Elixir
 signals:
   domains:
-    - open-source
-    - ai
-    - ml
-    - llm
+    - AI
   skills:
     - elixir
     - llm
@@ -21,11 +25,6 @@ signals:
   seniority: hands-on
   impact:
     - platform
-  keywords:
-    - AI/ML
-    - LLM
-    - memory
-    - agents
 proof:
   metrics: []
   links:

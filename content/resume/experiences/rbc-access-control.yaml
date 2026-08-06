@@ -1,6 +1,7 @@
 id: rbc-access-control
 kind: built
 title: Central Access Control for Capital Markets
+client: RBC
 org: RBC
 job: rbc
 when:
@@ -9,12 +10,17 @@ when:
 summary: Centralized application access management for 1,000+ apps and services.
 bullets:
   - Centralized application access control for over 1,000 Capital Markets apps and services (2023).
+domain:
+  - finance
+skills:
+  - Python
+  - Java
 signals:
   domains:
-    - security
-    - capital-markets
-    - platform
+    - finance
   skills:
+    - python
+    - java
     - access-control
     - platform-engineering
     - architecture
@@ -23,10 +29,6 @@ signals:
     - risk
     - platform
     - scale
-  keywords:
-    - IAM
-    - access control
-    - 1000 apps
 proof:
   metrics:
     - label: apps

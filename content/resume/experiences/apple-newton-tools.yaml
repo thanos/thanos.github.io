@@ -1,0 +1,35 @@
+id: apple-newton-tools
+kind: built
+title: Apple Newton — languages and developer tools
+client: Apple
+org: Apple
+job: apple
+when:
+  start: 1993
+  end: 1993
+summary: Programming languages and tools for the Newton PDA developer community; NewtonSmalltalk port.
+bullets:
+  - Developed languages and programming tools for Newton developers.
+  - Ported Smalltalk to the Newton (NewtonSmalltalk).
+domain:
+  - gaming
+skills:
+  - C++
+signals:
+  domains:
+    - gaming
+  skills:
+    - c++
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: 2026-08-06
+visibility: public

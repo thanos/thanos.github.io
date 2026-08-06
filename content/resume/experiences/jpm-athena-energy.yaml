@@ -1,6 +1,7 @@
 id: jpm-athena-energy
 kind: built
 title: Athena / energy trading — FIX, feeds, Gauss
+client: JPMorgan
 org: JPMorgan
 job: jpmorgan
 when:
@@ -11,27 +12,26 @@ bullets:
   - "Athena: code profiler and native FIX engine."
   - Standardized trade feed framework; CME and ICE gateways for energy trading.
   - Optimized network and compute for counterparty risk system (Gauss).
+domain:
+  - finance
+  - trading
+skills:
+  - C++
+  - Python
 signals:
   domains:
-    - energy-trading
-    - hpc
-    - risk
+    - finance
+    - trading
   skills:
-    - fix
     - c++
+    - python
+    - fix
     - performance
     - trading-systems
   seniority: hands-on
   impact:
     - platform
     - scale
-  keywords:
-    - Athena
-    - FIX
-    - CME
-    - ICE
-    - Gauss
-    - performance
 proof:
   metrics: []
   links: []

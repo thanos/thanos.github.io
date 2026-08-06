@@ -1,0 +1,10 @@
+id: unilever
+org: Unilever
+titles:
+  - Consultant
+when:
+  start: 1982
+  end: 1983
+current: false
+summary: PDP-11 control software for die milling / robotics.
+visibility: public

@@ -64,10 +64,18 @@ const SIGNAL_ALIASES = {
 /** Do not treat post-quantum crypto as quantum-computing. */
 function atomTextBlob(atom) {
   const signals = atom.signals || {};
+  const domain = Array.isArray(atom.domain)
+    ? atom.domain
+    : atom.domain
+      ? [atom.domain]
+      : [];
   return [
     atom.title,
     atom.summary,
     ...(atom.bullets || []),
+    ...domain,
+    atom.client,
+    ...(atom.skills || []),
     ...(signals.domains || []),
     ...(signals.skills || []),
     ...(signals.keywords || []),

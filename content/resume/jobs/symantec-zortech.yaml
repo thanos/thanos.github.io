@@ -1,0 +1,10 @@
+id: symantec-zortech
+org: Symantec (Zortech)
+titles:
+  - Project Manager
+when:
+  start: 1987
+  end: 1992
+current: false
+summary: C++ debugger contributions; project manager for numeric libraries (Num++ / Fin++).
+visibility: public

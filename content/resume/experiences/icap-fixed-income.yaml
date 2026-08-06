@@ -1,6 +1,7 @@
 id: icap-fixed-income
 kind: built
 title: Fixed income trading systems leadership
+client: ICAP
 org: ICAP
 job: icap
 role: Head of Front-End Development
@@ -11,11 +12,19 @@ summary: In-house FI trading systems and high-performance distributed services.
 bullets:
   - Established and led in-house development for fixed income trading systems.
   - High-performance distributed trading services and mobile trading platforms.
+domain:
+  - finance
+  - trading
+skills:
+  - C++
+  - Java
 signals:
   domains:
-    - fixed-income
+    - finance
     - trading
   skills:
+    - c++
+    - java
     - trading-systems
     - distributed-systems
     - engineering-management
@@ -23,10 +32,6 @@ signals:
   impact:
     - platform
     - people
-  keywords:
-    - fixed income
-    - trading
-    - distributed
 proof:
   metrics: []
   links: []

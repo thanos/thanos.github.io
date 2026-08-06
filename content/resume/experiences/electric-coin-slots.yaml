@@ -1,0 +1,36 @@
+id: electric-coin-slots
+kind: built
+title: Electric Coin Company — slot & video poker machines
+client: Electric Coin Company
+org: Electric Coin Company
+job: electric-coin
+when:
+  start: 1978
+  end: 1980
+summary: Z80 machine-code programming for slot/video poker machines; PDP-8 lottery print driver.
+bullets:
+  - Programmed slot and video poker machines mostly in Z80 machine code.
+  - Fortran instant-lottery print driver for PDP-8.
+domain:
+  - gaming
+skills:
+  - C
+signals:
+  domains:
+    - gaming
+  skills:
+    - assembler
+    - fortran
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: 2026-08-06
+visibility: public

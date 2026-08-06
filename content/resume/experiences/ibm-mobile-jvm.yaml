@@ -1,0 +1,36 @@
+id: ibm-mobile-jvm
+kind: built
+title: IBM Research — mobile phone JVM
+client: IBM
+org: IBM
+job: ibm-research
+when:
+  start: 1996
+  end: 1997
+summary: Coded the mobile-phone JVM at IBM Research labs near Zurich.
+bullets:
+  - Developed mobile phone version of the JVM for IBM Research.
+domain:
+  - telecom
+skills:
+  - Java
+  - C
+signals:
+  domains:
+    - telecom
+  skills:
+    - java
+    - c
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: 2026-08-06
+visibility: public

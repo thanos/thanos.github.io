@@ -1,0 +1,10 @@
+id: ferranti
+org: Ferranti
+titles:
+  - Contractor
+when:
+  start: 1988
+  end: 1990
+current: false
+summary: Real-time OS work for the Lynx helicopter program.
+visibility: public

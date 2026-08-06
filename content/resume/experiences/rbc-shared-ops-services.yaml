@@ -1,6 +1,7 @@
 id: rbc-shared-ops-services
 kind: ran
 title: Shared Operations Services portfolio
+client: RBC
 org: RBC
 job: rbc
 when:
@@ -11,12 +12,21 @@ bullets:
   - "Own shared operation services: UI platforms, Reporting, central queuing, Notification, FAS, T+1
     reporting, Trade Repository across CM, Wealth, and Cash Management."
   - Built T+1 infrastructure and post-trade processing services (2023).
+domain:
+  - finance
+  - trading
+skills:
+  - Python
+  - Elixir
+  - Java
 signals:
   domains:
-    - post-trade
-    - platform
-    - operations
+    - finance
+    - trading
   skills:
+    - python
+    - elixir
+    - java
     - platform-engineering
     - architecture
     - t+1
@@ -25,11 +35,6 @@ signals:
     - platform
     - scale
     - risk
-  keywords:
-    - T+1
-    - trade repository
-    - shared services
-    - platform
 proof:
   metrics: []
   links: []

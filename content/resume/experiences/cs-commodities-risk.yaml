@@ -1,6 +1,7 @@
 id: cs-commodities-risk
 kind: built
 title: Commodities risk, repository & market data
+client: Credit Suisse
 org: Credit Suisse
 job: credit-suisse
 when:
@@ -11,12 +12,19 @@ bullets:
   - Architected risk system for complex commodities trades; integrated external pricing into
     OpenLink.
   - Built central trade repository and market data services for commodities.
+domain:
+  - finance
+  - trading
+skills:
+  - C++
+  - Python
 signals:
   domains:
-    - commodities
-    - risk
+    - finance
     - trading
   skills:
+    - c++
+    - python
     - risk
     - architecture
     - openlink
@@ -25,11 +33,6 @@ signals:
   impact:
     - risk
     - platform
-  keywords:
-    - commodities
-    - risk
-    - OpenLink
-    - trade repository
 proof:
   metrics: []
   links: []

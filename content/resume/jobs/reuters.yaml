@@ -1,0 +1,10 @@
+id: reuters
+org: Reuters International
+titles:
+  - Consultant, Lead
+when:
+  start: 1988
+  end: 1990
+current: false
+summary: News and image server for the RNT system.
+visibility: public

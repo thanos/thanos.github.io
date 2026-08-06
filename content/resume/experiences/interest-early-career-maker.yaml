@@ -1,6 +1,9 @@
 id: interest-early-career-maker
 kind: interest
 title: Maker / systems roots — Python evangelism & industry firsts
+client: null
+org: null
+job: null
 when:
   start: 1990
   end: null
@@ -9,22 +12,22 @@ bullets:
   - Rewrote Caesars internet casino from 40k LOC C++ to 4k LOC Python — lifelong Python evangelist.
   - Industry firsts include early Python trading at SIAC/NYSE, PhoneScript, PSO web framework,
     MapQuest mobile, Nimalana, Aegis.
+domain:
+  - gaming
+skills:
+  - Python
+  - C++
 signals:
   domains:
-    - history
-    - python
-    - innovation
+    - gaming
   skills:
     - python
+    - c++
     - innovation
     - systems
   seniority: hands-on
   impact:
     - platform
-  keywords:
-    - Python
-    - innovation
-    - industry firsts
 proof:
   metrics: []
   links: []

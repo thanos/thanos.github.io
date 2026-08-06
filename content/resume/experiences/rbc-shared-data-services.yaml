@@ -1,0 +1,47 @@
+id: rbc-shared-data-services
+kind: built
+title: Shared Data Services — discoverable bank-wide data fabric
+client: RBC
+org: RBC
+job: rbc
+role: Distinguished Engineer & Head of Shared Data Services
+when:
+  start: 2019
+  end: 2019
+summary: Re-architected data infrastructure toward discoverable, addressable, trustworthy,
+  self-describing, interoperable data with a single schema-driven interface.
+bullets:
+  - Built teams for a storage-agnostic data SDK, immutable operational store, and AI-based data
+    intelligence (classification, search, monitoring).
+  - One Data Transport (Kappa-style) shipping bank data from logs to FRTB reports.
+  - Single RETE-based ingest consolidating 100+ ingest projects; Enterprise Market Data Services.
+domain:
+  - finance
+  - AI
+skills:
+  - Elixir
+  - Rust
+  - Python
+signals:
+  domains:
+    - finance
+    - AI
+  skills:
+    - elixir
+    - rust
+    - python
+    - architecture
+  seniority: hybrid
+  impact:
+    - platform
+    - scale
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: 2026-08-06
+visibility: public

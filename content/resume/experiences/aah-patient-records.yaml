@@ -1,0 +1,37 @@
+id: aah-patient-records
+kind: built
+title: AAH Meditel patient registration & records
+client: AAH Meditel
+org: AAH Meditel
+job: aah-meditel
+role: Consultant, Leader
+when:
+  start: 1993
+  end: 1994
+summary: Led Unix/C++ patient registration and records product used widely in UK primary care.
+bullets:
+  - Cross-platform C++ patient registration/records — installed with majority of UK doctors/medical
+    centers and health authorities.
+  - Implemented replacement cursor stack for Wyse 50 terminals popular in clinics.
+domain: []
+skills:
+  - C++
+  - C
+signals:
+  domains: []
+  skills:
+    - c++
+    - c
+  seniority: hybrid
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: 2026-08-06
+visibility: public

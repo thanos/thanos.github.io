@@ -1,0 +1,10 @@
+id: electric-coin
+org: Electric Coin Company
+titles:
+  - Programmer
+when:
+  start: 1978
+  end: 1980
+current: false
+summary: Slot and video poker machine programming; lottery print driver.
+visibility: public

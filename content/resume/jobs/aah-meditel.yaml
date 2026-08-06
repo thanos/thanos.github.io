@@ -1,0 +1,10 @@
+id: aah-meditel
+org: AAH Meditel
+titles:
+  - Consultant, Leader
+when:
+  start: 1993
+  end: 1994
+current: false
+summary: Led Unix/C++ patient registration and records system used widely across UK primary care.
+visibility: public

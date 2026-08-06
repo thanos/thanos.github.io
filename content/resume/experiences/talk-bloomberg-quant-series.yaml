@@ -1,0 +1,39 @@
+id: talk-bloomberg-quant-series
+kind: talk
+title: Bloomberg Quant Seminar talks
+client: null
+org: null
+when:
+  start: 2015
+  end: 2017
+summary: Regular contributor to Bloomberg Quant Seminar (Bruno Dupire); talks on social analytics,
+  art market, blockchains.
+bullets:
+  - Blockchains — Bloomberg Quant BBQ, Sep 2016.
+  - Art Market — Apr 2016; Social Analytics — 2015; Social media and News — Columbia, Nov 2017.
+domain:
+  - finance
+  - AI
+  - crypto
+skills:
+  - Python
+signals:
+  domains:
+    - finance
+    - AI
+    - crypto
+  skills:
+    - technical-writing
+  seniority: hybrid
+  impact:
+    - people
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-4.pdf
+  last_verified: 2026-08-06
+visibility: public

@@ -1,28 +1,30 @@
 id: article-pqe-series
 kind: article
 title: Encrypt Once, Decrypt Many — tholos-pq series
+client: null
+org: null
+job: null
 when:
   start: 2025
   end: null
 summary: Public series on post-quantum multi-recipient encryption design.
 bullets:
   - Wrote a three-part series on HNDL risk, wire format, and hardening tholos-pq in public.
+domain:
+  - crypto
+skills:
+  - Rust
 signals:
   domains:
-    - cryptography
-    - writing
-    - security
+    - crypto
   skills:
+    - rust
     - technical-writing
     - cryptography
   seniority: hands-on
   impact:
     - people
     - risk
-  keywords:
-    - post-quantum
-    - article
-    - threat model
 proof:
   metrics: []
   links:

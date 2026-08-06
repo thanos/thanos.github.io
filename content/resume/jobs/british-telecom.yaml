@@ -1,0 +1,10 @@
+id: british-telecom
+org: British Telecom
+titles:
+  - Developer
+when:
+  start: 1986
+  end: 1988
+current: false
+summary: Telecom Gold payments services and Hope functional language work.
+visibility: public
