@@ -15,15 +15,13 @@ domain:
   - gaming
 skills:
   - C
-  - 6809 machine code assembly
-  - 68000 machine code assembly
+  - Assembler
 signals:
   domains:
     - gaming
   skills:
     - c
-    - 6809-assembly
-    - 68000-assembly
+    - assembler
   seniority: hands-on
   impact:
     - platform

@@ -14,12 +14,14 @@ domain:
   - defence
 skills:
   - C
+  - Assembler
 signals:
   domains:
     - defence
   skills:
     - c
     - embedded
+    - real-time
   seniority: hands-on
   impact:
     - platform

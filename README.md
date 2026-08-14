@@ -1,5 +1,7 @@
 
 
+ [![Deploy to GitHub Pages](https://github.com/thanos/thanos.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/thanos/thanos.github.io/actions/workflows/deploy.yml)
+ 
  After you clone
  Go into the repo
  

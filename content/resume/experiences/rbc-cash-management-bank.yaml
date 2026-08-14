@@ -16,7 +16,7 @@ bullets:
   - Stack included Elixir/Phoenix/LiveView, Rust, Python, and blockchain components.
 domain:
   - finance
-  - trading
+  - accounting
 skills:
   - Elixir
   - Rust
@@ -24,7 +24,7 @@ skills:
 signals:
   domains:
     - finance
-    - trading
+    - accounting
   skills:
     - elixir
     - rust

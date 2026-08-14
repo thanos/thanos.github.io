@@ -16,13 +16,13 @@ domain:
   - finance
 skills:
   - Python
-  - Elixir
+  - Erlang
 signals:
   domains:
     - finance
   skills:
     - python
-    - elixir
+    - erlang
     - platform-engineering
   seniority: hands-on
   impact:

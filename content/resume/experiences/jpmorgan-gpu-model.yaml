@@ -1,0 +1,37 @@
+id: rbc-gpu-model-port
+kind: built
+title: GPU Cuda Counter Party Risk
+client: JPMorgan
+org: JPMorgan
+job: jpmorgan
+when:
+  start: 2010
+  end: 2010
+summary: Ported heavy C++ models onto CUDA for calculating counter party risk.
+bullets:
+  - Ported counter party risk  pricing/risk models onto CUDA GPU blades.
+domain:
+  - finance
+skills:
+  - C++
+  - GPU
+signals:
+  domains:
+    - finance
+    - trading
+  skills:
+    - c++
+    - gpu
+  seniority: hybrid
+  impact:
+    - scale
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: 2026-08-06
+visibility: public
