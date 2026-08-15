@@ -13,7 +13,7 @@ tags:
 - performance
 - AWS
 
-draft: true
+draft: false
 ---
 
 # My Second Super Computer 
