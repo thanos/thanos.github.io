@@ -1,0 +1,198 @@
+---
+import ArticleCard from './ArticleCard.astro';
+import HomePagination from './HomePagination.astro';
+import { HOME_PAGE_SIZE } from '../constants';
+import {
+  articleKeywordKeys,
+  topArticleKeywords,
+  type ArticleKeyword,
+} from '../lib/article-keywords';
+import type { getSortedHomeArticles } from '../lib/home-articles';
+
+interface Props {
+  articles: Awaited<ReturnType<typeof getSortedHomeArticles>>;
+  currentPage: number;
+}
+
+const { articles, currentPage } = Astro.props;
+const totalPages = Math.max(1, Math.ceil(articles.length / HOME_PAGE_SIZE));
+const start = (currentPage - 1) * HOME_PAGE_SIZE;
+const keywords: ArticleKeyword[] = topArticleKeywords(articles);
+const base = import.meta.env.BASE_URL;
+---
+
+<div data-home-feed>
+
+{
+  keywords.length > 0 && (
+    <div class="mb-8" data-home-keywords>
+      <div class="mb-3 flex flex-wrap items-end justify-between gap-3">
+        <p class="text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          Filter by keyword
+        </p>
+        <button
+          type="button"
+          data-keyword-clear
+          class="text-sm font-medium text-neutral-700 underline-offset-4 hover:underline disabled:opacity-40"
+          disabled
+        >
+          Clear
+        </button>
+      </div>
+      <div class="flex flex-wrap gap-2" role="group" aria-label="Top article keywords">
+        {keywords.map((kw) => (
+          <button
+            type="button"
+            class="keyword-chip border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-800 transition hover:border-neutral-900"
+            data-keyword-chip
+            data-key={kw.key}
+            aria-pressed="false"
+          >
+            {kw.label}
+            <span class="ml-1.5 tabular-nums text-neutral-500">{kw.count}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+<h2 class="mb-6 text-2xl font-semibold tracking-tight text-neutral-950">
+  Latest articles
+  <span class="ml-2 text-base font-normal text-neutral-500" data-home-count>
+    {Math.min(HOME_PAGE_SIZE, Math.max(0, articles.length - start))} of {articles.length}
+  </span>
+</h2>
+
+<ul class="flex flex-col gap-4" data-home-list>
+  {
+    articles.map((post, index) => {
+      const onPage = index >= start && index < start + HOME_PAGE_SIZE;
+      const keys = articleKeywordKeys(post.data.tags);
+      return (
+        <li
+          class:list={[{ hidden: !onPage }]}
+          data-home-article
+          data-on-page={onPage ? 'true' : 'false'}
+          data-keywords={keys.join('|')}
+        >
+          <ArticleCard
+            href={`${base}articles/${post.id}/`}
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.date}
+          />
+        </li>
+      );
+    })
+  }
+</ul>
+
+<p class="mt-8 hidden text-center text-neutral-500" data-home-empty>
+  No articles match these keywords.
+</p>
+
+<div data-home-pagination>
+  <HomePagination currentPage={currentPage} totalPages={totalPages} />
+</div>
+
+</div>
+
+<style>
+  .keyword-chip[aria-pressed='true'] {
+    border-color: #171717;
+    background-color: #171717;
+    color: #fafafa;
+  }
+  .keyword-chip[aria-pressed='true'] span {
+    color: #d4d4d4;
+  }
+</style>
+
+<script>
+  const root = document.querySelector('[data-home-feed]');
+  if (root) {
+    const chips = [...root.querySelectorAll('[data-keyword-chip]')] as HTMLButtonElement[];
+    const items = [...root.querySelectorAll('[data-home-article]')] as HTMLElement[];
+    const countEl = root.querySelector('[data-home-count]');
+    const emptyEl = root.querySelector('[data-home-empty]');
+    const pagination = root.querySelector('[data-home-pagination]');
+    const clearBtn = root.querySelector('[data-keyword-clear]') as HTMLButtonElement | null;
+    const total = items.length;
+    const selected = new Set<string>();
+
+    function pageHref(): string {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('tag');
+      return url.pathname + url.search + url.hash;
+    }
+
+    function apply() {
+      const filtering = selected.size > 0;
+      let visible = 0;
+
+      for (const item of items) {
+        const keys = (item.dataset.keywords || '').split('|').filter(Boolean);
+        const show = filtering
+          ? [...selected].some((key) => keys.includes(key))
+          : item.dataset.onPage === 'true';
+        item.classList.toggle('hidden', !show);
+        if (show) visible += 1;
+      }
+
+      if (countEl) countEl.textContent = `${visible} of ${total}`;
+      emptyEl?.classList.toggle('hidden', visible > 0);
+      pagination?.classList.toggle('hidden', filtering);
+      if (clearBtn) clearBtn.disabled = !filtering;
+
+      const url = new URL(window.location.href);
+      if (filtering) {
+        url.searchParams.set('tag', [...selected].join(','));
+      } else {
+        url.searchParams.delete('tag');
+      }
+      const next = url.pathname + url.search + url.hash;
+      if (next !== window.location.pathname + window.location.search + window.location.hash) {
+        history.replaceState(null, '', next);
+      }
+    }
+
+    function setChip(chip: HTMLButtonElement, on: boolean) {
+      chip.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+
+    for (const chip of chips) {
+      chip.addEventListener('click', () => {
+        const key = chip.dataset.key || '';
+        if (selected.has(key)) {
+          selected.delete(key);
+          setChip(chip, false);
+        } else {
+          selected.add(key);
+          setChip(chip, true);
+        }
+        apply();
+      });
+    }
+
+    clearBtn?.addEventListener('click', () => {
+      selected.clear();
+      for (const chip of chips) setChip(chip, false);
+      history.replaceState(null, '', pageHref());
+      apply();
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    const fromUrl = (params.get('tag') || '')
+      .split(',')
+      .map((t) => t.trim().toLowerCase())
+      .filter(Boolean);
+    if (fromUrl.length) {
+      for (const key of fromUrl) selected.add(key);
+      for (const chip of chips) {
+        if (selected.has(chip.dataset.key || '')) setChip(chip, true);
+      }
+      apply();
+    }
+  }
+</script>

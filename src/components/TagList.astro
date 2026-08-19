@@ -4,15 +4,19 @@ interface Props {
 }
 
 const { tags } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <ul class="flex flex-wrap gap-2">
   {
     tags.map((tag) => (
       <li>
-        <span class="rounded-md bg-neutral-100 px-2 py-0.5 text-xs font-medium text-neutral-700">
+        <a
+          href={`${base}?tag=${encodeURIComponent(tag.trim().toLowerCase())}`}
+          class="rounded-md bg-neutral-100 px-2 py-0.5 text-xs font-medium text-neutral-700 hover:bg-neutral-200"
+        >
           {tag}
-        </span>
+        </a>
       </li>
     ))
   }

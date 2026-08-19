@@ -27,7 +27,7 @@ Here is a rewritten version that applies the readability, focus, and retention i
 
 The One Billion Row Challenge is a good analytical story and a bad sketch tutorial if you stop at the original result. Gunnar Morling’s [1BRC](https://github.com/gunnarmorling/1brc) asks for minimum, mean, and maximum temperature per weather station. That contract is exact. Sprinkling HyperLogLog on it does not make it more honest.
 
-This article is about the questions *around* that contract: quantiles, distinct sensors, heavy hitters, set overlap, and rollups you can ship between regions. The sketches come from [`ex_data_sketch`](https://hex.pm/packages/ex_data_sketch) `~> 0.9`. If you want an optimized Elixir 1BRC (file generation, parsing, profiling, schedulers), read [Raj Rajhans’s elixir_1brc](https://github.com/rajrajhans/elixir_1brc) instead. This piece starts after the rows are already structured observations.
+This article is about the questions *around* that contract: quantiles, distinct sensors, heavy hitters, set overlap, and rollups you can ship between regions. The sketches come from [`ex_data_sketch`](https://hex.pm/packages/ex_data_sketch) `~> 0.10`. If you want an optimized Elixir 1BRC (file generation, parsing, profiling, schedulers), read [Raj Rajhans’s elixir_1brc](https://github.com/rajrajhans/elixir_1brc) instead. This piece starts after the rows are already structured observations.
 
 **Roadmap**
 

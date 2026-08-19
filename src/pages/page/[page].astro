@@ -1,8 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ArticleCard from '../../components/ArticleCard.astro';
-import HomePagination from '../../components/HomePagination.astro';
 import HomeIntro from '../../components/HomeIntro.astro';
+import HomeArticleFeed from '../../components/HomeArticleFeed.astro';
 import { HOME_PAGE_SIZE } from '../../constants';
 import { getSortedHomeArticles } from '../../lib/home-articles';
 
@@ -14,15 +13,14 @@ export async function getStaticPaths() {
   }
   const paths: {
     params: { page: string };
-    props: { currentPage: number; totalPages: number; posts: typeof sorted };
+    props: { currentPage: number; articles: typeof sorted };
   }[] = [];
   for (let p = 2; p <= totalPages; p++) {
     paths.push({
       params: { page: String(p) },
       props: {
         currentPage: p,
-        totalPages,
-        posts: sorted.slice((p - 1) * HOME_PAGE_SIZE, p * HOME_PAGE_SIZE),
+        articles: sorted,
       },
     });
   }
@@ -31,11 +29,10 @@ export async function getStaticPaths() {
 
 interface Props {
   currentPage: number;
-  totalPages: number;
-  posts: Awaited<ReturnType<typeof getSortedHomeArticles>>;
+  articles: Awaited<ReturnType<typeof getSortedHomeArticles>>;
 }
 
-const { currentPage, totalPages, posts } = Astro.props;
+const { currentPage, articles } = Astro.props;
 ---
 
 <BaseLayout
@@ -45,24 +42,6 @@ const { currentPage, totalPages, posts } = Astro.props;
 >
   <div class="mx-auto max-w-3xl px-4 py-12 md:py-16">
     <HomeIntro />
-
-    <h2 class="mb-6 text-2xl font-semibold tracking-tight text-neutral-950">Latest articles</h2>
-
-    <ul class="flex flex-col gap-4">
-      {
-        posts.map((post) => (
-          <li>
-            <ArticleCard
-              href={`${import.meta.env.BASE_URL}articles/${post.id}/`}
-              title={post.data.title}
-              description={post.data.description}
-              date={post.data.date}
-            />
-          </li>
-        ))
-      }
-    </ul>
-
-    <HomePagination currentPage={currentPage} totalPages={totalPages} />
+    <HomeArticleFeed articles={articles} currentPage={currentPage} />
   </div>
 </BaseLayout>

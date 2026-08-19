@@ -1,14 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ArticleCard from '../components/ArticleCard.astro';
-import HomePagination from '../components/HomePagination.astro';
 import HomeIntro from '../components/HomeIntro.astro';
-import { HOME_PAGE_SIZE } from '../constants';
+import HomeArticleFeed from '../components/HomeArticleFeed.astro';
 import { getSortedHomeArticles } from '../lib/home-articles';
 
 const sorted = await getSortedHomeArticles();
-const totalPages = Math.max(1, Math.ceil(sorted.length / HOME_PAGE_SIZE));
-const pagePosts = sorted.slice(0, HOME_PAGE_SIZE);
 ---
 
 <BaseLayout
@@ -17,24 +13,6 @@ const pagePosts = sorted.slice(0, HOME_PAGE_SIZE);
 >
   <div class="mx-auto max-w-3xl px-4 py-12 md:py-16">
     <HomeIntro />
-
-    <h2 class="mb-6 text-2xl font-semibold tracking-tight text-neutral-950">Latest articles</h2>
-
-    <ul class="flex flex-col gap-4">
-      {
-        pagePosts.map((post) => (
-          <li>
-            <ArticleCard
-              href={`${import.meta.env.BASE_URL}articles/${post.id}/`}
-              title={post.data.title}
-              description={post.data.description}
-              date={post.data.date}
-            />
-          </li>
-        ))
-      }
-    </ul>
-
-    <HomePagination currentPage={1} totalPages={totalPages} />
+    <HomeArticleFeed articles={sorted} currentPage={1} />
   </div>
 </BaseLayout>
