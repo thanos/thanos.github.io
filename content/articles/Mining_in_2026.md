@@ -10,7 +10,7 @@ tags:
 - Finance
 - Fintech
 
-draft: false
+draft: true
 ---
 
 # **Crypto Mining — Can You Still Make Money from It?**
