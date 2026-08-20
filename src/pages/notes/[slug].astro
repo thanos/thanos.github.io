@@ -21,6 +21,7 @@ const { Content } = await render(note);
   description={note.data.description}
   date={note.data.date}
   tags={note.data.tags}
+  authors={note.data.authors}
   canonicalPath={`/notes/${note.id}/`}
 >
   <Content />

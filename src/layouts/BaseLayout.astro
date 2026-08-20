@@ -5,9 +5,10 @@ interface Props {
   title: string;
   description: string;
   canonicalPath?: string;
+  authors?: string[];
 }
 
-const { title, description, canonicalPath } = Astro.props;
+const { title, description, canonicalPath, authors = [] } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
 const rawPath = canonicalPath ?? Astro.url.pathname;
@@ -21,7 +22,9 @@ const canonical = new URL(pathname, Astro.site);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    {authors.length > 0 && <meta name="author" content={authors.join(', ')} />}
     <link rel="canonical" href={canonical.href} />
+    <link rel="sitemap" type="application/xml" href={new URL('sitemap-index.xml', Astro.site).href} />
     <title>{title}</title>
   </head>
   <body class="min-h-screen bg-white font-sans text-neutral-900 antialiased">

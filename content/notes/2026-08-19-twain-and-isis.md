@@ -11,6 +11,10 @@ tags:
   - SANE
   - AirPrint
   - eSCL
+
+authors:
+  - Thanos Vassilakis
+
 draft: false
 ---
 

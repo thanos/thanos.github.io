@@ -1,18 +1,21 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import TagList from '../components/TagList.astro';
+import { formatAuthors } from '../lib/authors';
 
 interface Props {
   title: string;
   description: string;
   date: Date;
   tags: string[];
+  authors?: string[];
   canonicalPath?: string;
   /** When set, shows a link back to the series index. */
   seriesLink?: { slug: string; title: string };
 }
 
-const { title, description, date, tags, seriesLink } = Astro.props;
+const { title, description, date, tags, authors = [], seriesLink } = Astro.props;
+const byline = formatAuthors(authors);
 const base = import.meta.env.BASE_URL;
 const formatted = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
@@ -21,7 +24,12 @@ const formatted = new Intl.DateTimeFormat('en-US', {
 }).format(date);
 ---
 
-<BaseLayout title={title} description={description} canonicalPath={Astro.props.canonicalPath}>
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath={Astro.props.canonicalPath}
+  authors={authors}
+>
   <nav
     class="mx-auto flex max-w-3xl flex-wrap items-center gap-x-4 gap-y-1 px-4 py-6 text-sm text-neutral-600"
     aria-label="Breadcrumb"
@@ -51,6 +59,11 @@ const formatted = new Intl.DateTimeFormat('en-US', {
         <div class="mt-4">
           <TagList tags={tags} />
         </div>
+      )}
+      {byline && (
+        <p class="mt-4 text-sm text-neutral-600">
+          <span class="text-neutral-500">By</span> {byline}
+        </p>
       )}
     </header>
     <div class="article-body">

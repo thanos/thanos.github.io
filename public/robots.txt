@@ -1,2 +1,5 @@
+# Search engines and LLM crawlers (GPTBot, ClaudeBot, Google-Extended, etc.)
 User-agent: *
 Allow: /
+
+Sitemap: https://thanos.github.io/sitemap-index.xml

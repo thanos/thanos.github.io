@@ -2,11 +2,20 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+const authorsSchema = z
+  .union([z.string(), z.array(z.string())])
+  .transform((value) =>
+    (Array.isArray(value) ? value : [value]).map((name) => name.trim()).filter(Boolean)
+  )
+  .default(['Thanos Vassilakis']);
+
 const baseSchema = z.object({
   title: z.string(),
   description: z.string(),
   date: z.coerce.date(),
   tags: z.array(z.string()).default([]),
+  /** One author or several. A string or a YAML list both work. */
+  authors: authorsSchema,
   draft: z.boolean().default(false),
 });
 
