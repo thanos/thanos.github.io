@@ -31,4 +31,4 @@ Allow: /
 # https://thanos.github.io/llms-full.txt
 # https://thanos.github.io/rss.xml
 
-Sitemap: https://thanos.github.io/sitemap-index.xml
+Sitemap: https://thanos.github.io/sitemap.xml

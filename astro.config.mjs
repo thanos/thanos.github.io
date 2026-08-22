@@ -2,9 +2,31 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import remarkGfm from 'remark-gfm';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { contentLastmodByPath } from './src/lib/sitemap-lastmod.mjs';
 
 const lastmodByPath = contentLastmodByPath();
+
+/** Copy sitemap-index.xml → sitemap.xml so the conventional URL works in Search Console. */
+function sitemapXmlAlias() {
+  return {
+    name: 'sitemap-xml-alias',
+    hooks: {
+      'astro:build:done': ({ dir }) => {
+        const out = fileURLToPath(dir);
+        const src = path.join(out, 'sitemap-index.xml');
+        const dest = path.join(out, 'sitemap.xml');
+        if (fs.existsSync(src)) fs.copyFileSync(src, dest);
+      },
+    },
+  };
+}
+
+function dateOnly(iso) {
+  return String(iso).slice(0, 10);
+}
 
 // https://astro.build/config
 // User site (`thanos.github.io` repo): https://thanos.github.io/
@@ -29,7 +51,7 @@ export default defineConfig({
       serialize(item) {
         const pathname = new URL(item.url).pathname;
         const lastmod = lastmodByPath.get(pathname);
-        if (lastmod) item.lastmod = lastmod;
+        if (lastmod) item.lastmod = dateOnly(lastmod);
 
         if (pathname === '/') {
           item.changefreq = 'weekly';
@@ -62,6 +84,7 @@ export default defineConfig({
         return item;
       },
     }),
+    sitemapXmlAlias(),
   ],
   markdown: {
     remarkPlugins: [remarkGfm],

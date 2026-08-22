@@ -58,7 +58,7 @@ const jsonLdText = JSON.stringify(graphJsonLd(jsonLd ? [jsonLd] : [], site.href)
     {tags.length > 0 && <meta name="keywords" content={tags.join(', ')} />}
     <link rel="canonical" href={canonical.href} />
     <link rel="author" href={new URL('about/', site).href} />
-    <link rel="sitemap" type="application/xml" href={new URL('sitemap-index.xml', site).href} />
+    <link rel="sitemap" type="application/xml" href={new URL('sitemap.xml', site).href} />
     <link
       rel="alternate"
       type="application/rss+xml"
