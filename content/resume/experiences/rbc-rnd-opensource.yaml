@@ -1,9 +1,9 @@
 id: rbc-rnd-opensource
 kind: ran
 title: R&D for Technology — inner source & OSS stewardship
-client: RBC
-org: RBC
-job: rbc
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
 when:
   start: 2017
   end: null

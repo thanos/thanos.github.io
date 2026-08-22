@@ -1,9 +1,9 @@
 id: rbc-shared-ops-services
 kind: ran
 title: Shared Operations Services portfolio
-client: RBC
-org: RBC
-job: rbc
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
 when:
   start: 2016
   end: null

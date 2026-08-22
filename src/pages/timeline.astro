@@ -1,0 +1,157 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  loadExperiences,
+  loadJobs,
+  buildCareerTimeline,
+  kindLabel,
+  formatWhen,
+  atomClient,
+  experiencePath,
+  withBase,
+} from '../lib/resume-experiences';
+
+const experiences = loadExperiences();
+const jobs = loadJobs();
+const { periods, leftover } = buildCareerTimeline(jobs, experiences);
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout
+  title="Timeline · Thanos Vassilakis"
+  description="Career timeline of Thanos Vassilakis — roles, platforms, open source, and writing, newest first."
+  canonicalPath="/timeline/"
+  authors={['Thanos Vassilakis']}
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Timeline · Thanos Vassilakis',
+    description:
+      'Career timeline of Thanos Vassilakis — roles, platforms, open source, and writing, newest first.',
+  }}
+>
+  <div class="mx-auto max-w-3xl px-4 py-12 md:py-16">
+    <header class="mb-12">
+      <a
+        href={base}
+        class="text-sm text-neutral-600 underline-offset-4 hover:text-neutral-900 hover:underline"
+      >
+        ← Home
+      </a>
+      <h1 class="mt-6 text-3xl font-semibold tracking-tight text-neutral-950 md:text-4xl">
+        Timeline
+      </h1>
+      <p class="mt-3 text-neutral-600 leading-relaxed">
+        Roles newest first, with the work nested under each employer. Independent open source and
+        writing sit alongside the years they overlap.{' '}
+        <a
+          href={withBase('portfolio/', base)}
+          class="font-medium text-neutral-900 underline underline-offset-4">Portfolio mosaic</a
+        >.
+      </p>
+    </header>
+
+    <ol class="relative border-l border-neutral-200 pl-6 md:pl-8">
+      {
+        periods.map(({ job, experiences: nested, alongside }) => {
+          const when = formatWhen(job.when);
+          return (
+            <li class="relative pb-12 last:pb-0">
+              <span
+                class="absolute -left-[calc(1.5rem+5px)] top-1.5 h-2.5 w-2.5 rounded-full border border-neutral-900 bg-white md:-left-[calc(2rem+5px)]"
+                aria-hidden="true"
+              />
+              <p class="text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                {when}
+                {job.current ? ' · current' : ''}
+                {job.location ? ` · ${job.location}` : ''}
+              </p>
+              <h2 class="mt-1 text-xl font-semibold tracking-tight text-neutral-950">{job.org}</h2>
+              {job.titles && job.titles.length > 0 ? (
+                <p class="mt-1 text-sm text-neutral-600">{job.titles.join(' · ')}</p>
+              ) : null}
+              {job.summary ? (
+                <p class="mt-3 text-sm leading-relaxed text-neutral-700">{job.summary}</p>
+              ) : null}
+
+              {nested.length > 0 ? (
+                <ul class="mt-5 space-y-3">
+                  {nested.map((e) => (
+                    <li>
+                      <a
+                        href={withBase(experiencePath(e.id), base)}
+                        class="group block"
+                      >
+                        <span class="text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                          {kindLabel(e.kind)}
+                          {formatWhen(e.when) ? ` · ${formatWhen(e.when)}` : ''}
+                        </span>
+                        <span class="mt-0.5 block font-medium text-neutral-950 group-hover:underline group-hover:underline-offset-4">
+                          {e.title}
+                        </span>
+                        <span class="mt-1 line-clamp-2 block text-sm text-neutral-600">
+                          {e.summary}
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+
+              {alongside.length > 0 ? (
+                <div class="mt-6 border-t border-neutral-100 pt-4">
+                  <p class="text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                    Alongside
+                  </p>
+                  <ul class="mt-3 space-y-2">
+                    {alongside.map((e) => (
+                      <li>
+                        <a
+                          href={withBase(experiencePath(e.id), base)}
+                          class="text-sm font-medium text-neutral-900 underline-offset-4 hover:underline"
+                        >
+                          {e.title}
+                        </a>
+                        <span class="text-sm text-neutral-500">
+                          {' '}
+                          · {kindLabel(e.kind)}
+                          {formatWhen(e.when) ? ` · ${formatWhen(e.when)}` : ''}
+                          {atomClient(e) ? ` · ${atomClient(e)}` : ''}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </li>
+          );
+        })
+      }
+    </ol>
+
+    {
+      leftover.length > 0 ? (
+        <section class="mt-12 border-t border-neutral-200 pt-10">
+          <h2 class="text-xl font-semibold tracking-tight text-neutral-950">Other work</h2>
+          <ul class="mt-5 space-y-3">
+            {leftover.map((e) => (
+              <li>
+                <a href={withBase(experiencePath(e.id), base)} class="group block">
+                  <span class="text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                    {kindLabel(e.kind)}
+                    {formatWhen(e.when) ? ` · ${formatWhen(e.when)}` : ''}
+                    {atomClient(e) ? ` · ${atomClient(e)}` : ''}
+                  </span>
+                  <span class="mt-0.5 block font-medium text-neutral-950 group-hover:underline group-hover:underline-offset-4">
+                    {e.title}
+                  </span>
+                  <span class="mt-1 line-clamp-2 block text-sm text-neutral-600">{e.summary}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null
+    }
+  </div>
+</BaseLayout>

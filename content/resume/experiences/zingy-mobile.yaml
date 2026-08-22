@@ -1,45 +1,76 @@
 id: zingy-mobile
-kind: built
-title: Mobile platform leadership — MapQuest & carrier apps
+kind: ran
+title: MD, Head of Mobile Development — carrier decks and top US titles
 client: Zingy
 org: Zingy
 job: zingy
-role: Head of Mobile Development
+role: MD, Head of Mobile Development
 when:
   start: 2006
   end: 2007
-summary: 50+ mobile apps across 27 carriers; MapQuest mobile among top sellers.
+summary: >
+  MD, Head of Mobile Development in New York: owned development, QA, support,
+  and operations for 50+ mobile applications across 27 carriers, five major
+  platforms and 70+ minor ones, six billing systems and four DRM systems.
+  Client binaries were typically under 64K on handsets often below 40 MHz;
+  carrier compliance testing made post-release upgrades expensive, and an app
+  that fell off the carrier deck did not earn. Coverage across platforms,
+  carriers, and handsets is why MapQuest Mobile, Vindigo City Guide, Moviegoer,
+  GuysStuff, and Celebrity stayed in the US top ten.
 bullets:
-  - Managed development and operations for 50+ mobile applications across 27 carriers.
-  - Led MapQuest mobile — top-selling US mobile app in its category.
+  - "MapQuest Mobile: #1 selling phone app in the US (~30% of the market; Weather Channel ~5%); major upgrade added multi-stop routing, points of interest, and Canada (Java, C++, J2ME, Python)."
+  - "Vindigo City Guide: third-best-selling US app and #1 in the UK; banner-ad upgrade brought in $320K/month (Brew, C++, J2ME, Java, Python)."
+  - "eBay Mobile and New York Times Mobile: Java clients plus a new syndication workflow so New York Times Mobile news feeds could land on carrier news decks."
+  - "NBC Weather Mobile for Sprint then Cingular, 35+ MIDP 1.0/2.0 handsets: MNG animated radar maps (platform extension), real-time weather alerts, and tabular screens that had to fit small Samsung devices (Java, J2ME)."
+  - "NBC, NBA, NFA, and NHL fantasy gaming: high-score server and games CMS in Stackless Python for mobile multiplayer / fantasy titles, handling over 4,000K simultaneous players and used as a trial for later server work."
+  - "Plaxo: on-the-go personal-content sync with maps and travel directions; shipped on 38 Verizon (Brew, C++) and 37 Sprint/Cingular (J2ME) handsets; ~800 new subscribers/day after the November launch (Java, J2ME, Brew, C++, Python, MIDP 1.0/2.0)."
+  - "Moviegoer: first US mobile Flash application (early Adobe seeding partner); showtimes, images, trailers, reviews, and maps for US/Canada on a Python backend with 96+ data feeds; Verizon bestseller for four consecutive months (Brew, Flash, Python)."
+  - Rewrote the Vindigo client in PhoneScript against a new asynchronous backend (J2ME, Brew, Symbian, C++, PostScript); ported the original client to Windows Mobile (C#), Palm OS (C), and BlackBerry (J2ME).
+  - Built a new async Java NIO backend (async-j); integrated the new IPAY billing system (Java).
+  - Worked with Adobe on a Flash/ActionScript UI framework for phones; started Dashcode/JavaScript work for iPhone-suitable apps.
 domain:
+  - telecom
   - gaming
 skills:
   - Java
   - C++
+  - Python
+  - C
+  - C#
 signals:
   domains:
+    - telecom
     - gaming
   skills:
     - java
     - c++
+    - python
+    - j2me
+    - brew
     - mobile
     - engineering-management
     - product
-  seniority: hybrid
+  seniority: executive
   impact:
     - people
     - platform
+    - revenue
 proof:
   metrics:
     - label: apps
       value: 50
     - label: carriers
       value: 27
+    - label: MapQuest US share
+      value: "30%"
+    - label: City Guide ads / month
+      value: "$320K"
+    - label: Plaxo signups / day
+      value: 800
   links: []
   source: job
 provenance:
-  type: job_built
+  type: job_ran
   refs: []
-  last_verified: 2026-08-06
+  last_verified: 2026-08-22
 visibility: public

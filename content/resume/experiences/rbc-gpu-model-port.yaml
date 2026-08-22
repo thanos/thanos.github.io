@@ -1,9 +1,9 @@
 id: rbc-gpu-model-port
 kind: built
 title: GPU model port — Numba/Python for pricing & risk
-client: JPMorgan
-org: JPMorgan
-job: jpmorgan
+client: RBC CM
+org: RBC Capital Markets
+job: rbc
 when:
   start: 2015
   end: 2018

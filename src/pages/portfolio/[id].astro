@@ -1,0 +1,242 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+  loadExperiences,
+  kindLabel,
+  formatWhen,
+  formatMetric,
+  metricCaption,
+  atomDomains,
+  atomClient,
+  atomSkills,
+  seoDescription,
+  proofLinks,
+  experiencePath,
+  withBase,
+  sortExperiencesChronological,
+  type ExperienceAtom,
+} from '../../lib/resume-experiences';
+import { personId } from '../../lib/site-identity';
+
+export function getStaticPaths() {
+  return loadExperiences().map((experience) => ({
+    params: { id: experience.id },
+    props: { experience },
+  }));
+}
+
+interface Props {
+  experience: ExperienceAtom;
+}
+
+const { experience } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const all = loadExperiences();
+const chronological = sortExperiencesChronological(all);
+const index = chronological.findIndex((e) => e.id === experience.id);
+const newer = index > 0 ? chronological[index - 1] : undefined;
+const older = index >= 0 && index < chronological.length - 1 ? chronological[index + 1] : undefined;
+
+const client = atomClient(experience);
+const when = formatWhen(experience.when);
+const domains = atomDomains(experience);
+const skills = atomSkills(experience);
+const metrics = experience.proof?.metrics ?? [];
+const links = proofLinks(experience, base);
+const chips = [...domains, ...skills];
+const related = all
+  .filter((e) => e.id !== experience.id && atomClient(e) && atomClient(e) === client)
+  .slice(0, 6);
+
+const description = seoDescription(experience.summary);
+const pagePath = experiencePath(experience.id);
+const site = Astro.site ?? new URL('https://thanos.github.io');
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      headline: experience.title,
+      description,
+      author: { '@id': personId(site.href) },
+      publisher: { '@id': personId(site.href) },
+      mainEntityOfPage: new URL(withBase(pagePath, base), site).href,
+      dateCreated: experience.when?.start ? `${experience.when.start}-01-01` : undefined,
+      dateModified: experience.when?.end ? `${experience.when.end}-12-31` : undefined,
+      keywords: chips,
+      about: client ?? undefined,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: new URL(base, site).href },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Portfolio',
+          item: new URL(withBase('portfolio/', base), site).href,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: experience.title,
+          item: new URL(withBase(pagePath, base), site).href,
+        },
+      ],
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title={`${experience.title} · Thanos Vassilakis`}
+  description={description}
+  canonicalPath={pagePath}
+  authors={['Thanos Vassilakis']}
+  jsonLd={jsonLd}
+>
+  <div class="mx-auto max-w-3xl px-4 py-12 md:py-16">
+    <nav class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-neutral-600" aria-label="Breadcrumb">
+      <a href={base} class="underline-offset-4 hover:text-neutral-900 hover:underline">Home</a>
+      <span aria-hidden="true">/</span>
+      <a
+        href={withBase('portfolio/', base)}
+        class="underline-offset-4 hover:text-neutral-900 hover:underline">Portfolio</a
+      >
+      <span aria-hidden="true">/</span>
+      <a
+        href={withBase('timeline/', base)}
+        class="underline-offset-4 hover:text-neutral-900 hover:underline">Timeline</a
+      >
+    </nav>
+
+    <article class="mt-8">
+      <p class="text-xs font-semibold uppercase tracking-wider text-neutral-500">
+        {[kindLabel(experience.kind), client, when].filter(Boolean).join(' · ')}
+      </p>
+      <h1 class="mt-2 text-3xl font-semibold tracking-tight text-neutral-950 md:text-4xl">
+        {experience.title}
+      </h1>
+      {
+        experience.role ? (
+          <p class="mt-2 text-neutral-600">{experience.role}</p>
+        ) : null
+      }
+
+      <p class="mt-6 text-base leading-relaxed text-neutral-800">{experience.summary}</p>
+
+      {
+        metrics.length > 0 ? (
+          <dl class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
+            {metrics.map((m) => (
+              <div>
+                <dt class="text-[11px] uppercase tracking-wide text-neutral-500">
+                  {metricCaption(m.label)}
+                </dt>
+                <dd class="text-lg font-semibold tabular-nums text-neutral-950">
+                  {formatMetric(m.label, m.value)}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        ) : null
+      }
+
+      {
+        experience.bullets && experience.bullets.length > 0 ? (
+          <ul class="mt-8 list-disc space-y-2 pl-5 text-sm leading-relaxed text-neutral-800">
+            {experience.bullets.map((b) => (
+              <li>{b}</li>
+            ))}
+          </ul>
+        ) : null
+      }
+
+      {
+        chips.length > 0 ? (
+          <div class="mt-8 flex flex-wrap gap-1.5">
+            {chips.map((chip) => (
+              <span class="border border-neutral-200 bg-neutral-50 px-1.5 py-0.5 text-[11px] text-neutral-600">
+                {chip}
+              </span>
+            ))}
+          </div>
+        ) : null
+      }
+
+      {
+        links.length > 0 ? (
+          <p class="mt-8 flex flex-wrap gap-3 text-sm">
+            {links.map((l) => (
+              <a
+                href={l.url}
+                class="font-medium text-neutral-900 underline underline-offset-4"
+                target={l.external ? '_blank' : undefined}
+                rel={l.external ? 'noopener noreferrer' : undefined}
+              >
+                {l.label}
+              </a>
+            ))}
+          </p>
+        ) : null
+      }
+    </article>
+
+    {
+      related.length > 0 ? (
+        <section class="mt-14 border-t border-neutral-200 pt-8">
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-neutral-500">
+            More at {client}
+          </h2>
+          <ul class="mt-4 space-y-2">
+            {related.map((e) => (
+              <li>
+                <a
+                  href={withBase(experiencePath(e.id), base)}
+                  class="text-sm font-medium text-neutral-900 underline-offset-4 hover:underline"
+                >
+                  {e.title}
+                </a>
+                <span class="text-sm text-neutral-500">
+                  {' '}
+                  · {kindLabel(e.kind)}
+                  {formatWhen(e.when) ? ` · ${formatWhen(e.when)}` : ''}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null
+    }
+
+    <nav
+      class="mt-14 flex flex-col gap-4 border-t border-neutral-200 pt-8 text-sm sm:flex-row sm:justify-between"
+      aria-label="Adjacent experiences"
+    >
+      {
+        older ? (
+          <a
+            href={withBase(experiencePath(older.id), base)}
+            class="text-neutral-700 underline-offset-4 hover:text-neutral-950 hover:underline"
+          >
+            <span class="block text-xs uppercase tracking-wider text-neutral-500">Earlier</span>
+            {older.title}
+          </a>
+        ) : (
+          <span />
+        )
+      }
+      {
+        newer ? (
+          <a
+            href={withBase(experiencePath(newer.id), base)}
+            class="text-right text-neutral-700 underline-offset-4 hover:text-neutral-950 hover:underline sm:ml-auto"
+          >
+            <span class="block text-xs uppercase tracking-wider text-neutral-500">Later</span>
+            {newer.title}
+          </a>
+        ) : null
+      }
+    </nav>
+  </div>
+</BaseLayout>

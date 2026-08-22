@@ -1,0 +1,37 @@
+---
+import { loadSiteProfile, withSiteBase } from '../lib/site-identity';
+
+const profile = loadSiteProfile();
+const base = import.meta.env.BASE_URL;
+---
+
+<footer class="border-t border-neutral-200">
+  <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-8 text-sm text-neutral-600 md:flex-row md:items-center md:justify-between">
+    <p>
+      <a href={base} class="font-medium text-neutral-900 underline-offset-4 hover:underline"
+        >{profile.name}</a
+      >
+      <span class="text-neutral-400"> · </span>
+      <a href={withSiteBase('about/', base)} class="underline-offset-4 hover:text-neutral-900 hover:underline"
+        >About</a
+      >
+      <span class="text-neutral-400"> · </span>
+      <a href={withSiteBase('rss.xml', base)} class="underline-offset-4 hover:text-neutral-900 hover:underline"
+        >RSS</a
+      >
+    </p>
+    <p class="flex flex-wrap gap-x-3 gap-y-1">
+      {
+        profile.web.sameAs.map((link) => (
+          <a
+            href={link.url}
+            rel="me noopener noreferrer"
+            class="underline-offset-4 hover:text-neutral-900 hover:underline"
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </p>
+  </div>
+</footer>

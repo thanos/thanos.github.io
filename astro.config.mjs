@@ -21,6 +21,11 @@ export default defineConfig({
     sitemap({
       // Paginated home listings duplicate `/`; keep canonical URLs only.
       filter: (page) => !/\/page\/\d+\/?$/.test(new URL(page).pathname),
+      customPages: [
+        'https://thanos.github.io/rss.xml',
+        'https://thanos.github.io/llms.txt',
+        'https://thanos.github.io/llms-full.txt',
+      ],
       serialize(item) {
         const pathname = new URL(item.url).pathname;
         const lastmod = lastmodByPath.get(pathname);
@@ -30,16 +35,22 @@ export default defineConfig({
           item.changefreq = 'weekly';
           item.priority = 1.0;
         } else if (
+          pathname === '/about/' ||
           pathname === '/articles/' ||
           pathname === '/notes/' ||
-          pathname === '/series/'
+          pathname === '/series/' ||
+          pathname === '/portfolio/' ||
+          pathname === '/timeline/' ||
+          pathname === '/llms.txt' ||
+          pathname === '/llms-full.txt'
         ) {
           item.changefreq = 'weekly';
           item.priority = 0.8;
         } else if (
           pathname.startsWith('/articles/') ||
           pathname.startsWith('/notes/') ||
-          pathname.startsWith('/series/')
+          pathname.startsWith('/series/') ||
+          pathname.startsWith('/portfolio/')
         ) {
           item.changefreq = 'monthly';
           item.priority = 0.7;

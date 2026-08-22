@@ -9,6 +9,8 @@ import {
   atomDomains,
   atomClient,
   atomSkills,
+  experiencePath,
+  withBase,
 } from '../lib/resume-experiences';
 
 const experiences = loadExperiences();
@@ -28,17 +30,11 @@ const base = import.meta.env.BASE_URL;
 function isFeatured(e: (typeof experiences)[number]): boolean {
   return (e.proof?.metrics?.length ?? 0) > 0 || e.kind === 'job_role';
 }
-
-function primaryLink(e: (typeof experiences)[number]): string | null {
-  const links = e.proof?.links ?? [];
-  const withUrl = links.find((l) => l.url);
-  return withUrl?.url ?? null;
-}
 ---
 
 <BaseLayout
   title="Portfolio · Thanos Vassilakis"
-  description="A mosaic of roles, platforms built and run, open source, and writing."
+  description="Portfolio of Thanos Vassilakis — roles, platforms built and run, open source, and writing."
   canonicalPath="/portfolio/"
 >
   <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
@@ -54,7 +50,11 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
       </h1>
       <p class="mt-3 text-neutral-600 leading-relaxed">
         Experiences as tiles — what I’ve run, built, open-sourced, and written. Filter by domain,
-        client, or skill.
+        client, or skill. Open a tile for the full write-up, or see the{' '}
+        <a
+          href={withBase('timeline/', base)}
+          class="font-medium text-neutral-900 underline underline-offset-4">career timeline</a
+        >.
       </p>
     </header>
 
@@ -142,23 +142,18 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
       {
         experiences.map((e) => {
           const featured = isFeatured(e);
-          const href = primaryLink(e);
           const when = formatWhen(e.when);
           const metrics = e.proof?.metrics ?? [];
           const domainsList = atomDomains(e);
           const skillsList = atomSkills(e);
           const client = atomClient(e);
-          const Tag = href ? 'a' : 'article';
           return (
-            <Tag
-              href={href ?? undefined}
-              target={href?.startsWith('http') ? '_blank' : undefined}
-              rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+            <a
+              href={withBase(experiencePath(e.id), base)}
               class:list={[
-                'portfolio-tile group flex flex-col border border-neutral-200 bg-neutral-50/40 p-4 transition',
+                'portfolio-tile group flex flex-col border border-neutral-200 bg-neutral-50/40 p-4 text-left transition',
                 'hover:border-neutral-900 hover:bg-white',
                 featured && 'sm:col-span-2 sm:row-span-1',
-                href && 'cursor-pointer',
               ]}
               data-portfolio-tile
               data-domains={domainsList.join('|')}
@@ -166,7 +161,7 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
               data-skills={skillsList.join('|')}
               data-id={e.id}
             >
-              <div class="flex items-start justify-between gap-3">
+              <div class="flex w-full items-start justify-between gap-3">
                 <span class="text-xs font-semibold uppercase tracking-wider text-neutral-500">
                   {kindLabel(e.kind)}
                   {client ? ` · ${client}` : ''}
@@ -178,7 +173,9 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
               <h2 class="mt-2 text-base font-semibold tracking-tight text-neutral-950 group-hover:underline group-hover:underline-offset-4 md:text-lg">
                 {e.title}
               </h2>
-              <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600">{e.summary}</p>
+              <p class="mt-2 line-clamp-4 flex-1 text-sm leading-relaxed text-neutral-600">
+                {e.summary}
+              </p>
               {metrics.length > 0 ? (
                 <dl class="mt-4 flex flex-wrap gap-4 border-t border-neutral-200 pt-3">
                   {metrics.slice(0, 3).map((m) => (
@@ -206,7 +203,7 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
                   ))}
                 </div>
               )}
-            </Tag>
+            </a>
           );
         })
       }
@@ -288,4 +285,12 @@ function primaryLink(e: (typeof experiences)[number]): string | null {
     for (const chip of chips) chip.setAttribute('aria-pressed', 'false');
     apply();
   });
+
+  const hashId = window.location.hash.replace(/^#/, '');
+  if (hashId) {
+    const tile = tiles.find((t) => t.dataset.id === hashId);
+    if (tile instanceof HTMLAnchorElement) {
+      window.location.replace(tile.href);
+    }
+  }
 </script>

@@ -23,6 +23,7 @@ const { Content } = await render(note);
   tags={note.data.tags}
   authors={note.data.authors}
   canonicalPath={`/notes/${note.id}/`}
+  kind="note"
 >
   <Content />
 </ArticleLayout>

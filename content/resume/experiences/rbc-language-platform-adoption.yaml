@@ -1,8 +1,8 @@
 id: rbc-language-platform-adoption
 kind: built
 title: Language & platform engineering adoption
-client: RBC
-org: RBC
+client: RBC CM
+org: RBC Capital Markets
 job: rbc
 when:
   start: 2010

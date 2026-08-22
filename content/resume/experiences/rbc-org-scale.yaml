@@ -1,9 +1,9 @@
 id: rbc-org-scale
 kind: ran
 title: Engineering organization — scale and operating model
-client: RBC
-org: RBC
-job: rbc
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm 
 role: MD / Distinguished Engineer
 when:
   start: 2010

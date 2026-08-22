@@ -3,13 +3,26 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeIntro from '../components/HomeIntro.astro';
 import HomeArticleFeed from '../components/HomeArticleFeed.astro';
 import { getSortedHomeArticles } from '../lib/home-articles';
+import { loadSiteProfile, collapse, personId } from '../lib/site-identity';
 
 const sorted = await getSortedHomeArticles();
+const profile = loadSiteProfile();
+const site = Astro.site ?? new URL(profile.web.url);
+const description = collapse(profile.web.bio);
 ---
 
 <BaseLayout
-  title="Thanos Vassilakis"
-  description="Writing on software, systems, and notes from the field."
+  title={profile.name}
+  description={description}
+  canonicalPath="/"
+  ogType="profile"
+  jsonLd={{
+    '@type': 'ProfilePage',
+    name: profile.name,
+    description,
+    url: new URL('/', site).href,
+    mainEntity: { '@id': personId(site.href) },
+  }}
 >
   <div class="mx-auto max-w-3xl px-4 py-12 md:py-16">
     <HomeIntro />

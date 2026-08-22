@@ -1,9 +1,9 @@
-id: rbc-gpu-model-port
+id: rbc-gpu-model
 kind: built
 title: GPU Cuda Counter Party Risk
-client: JPMorgan
-org: JPMorgan
-job: jpmorgan
+client: RBC
+org: RBC Capital Markets
+job: rbc
 when:
   start: 2010
   end: 2010

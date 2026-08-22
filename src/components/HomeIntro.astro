@@ -1,28 +1,38 @@
 ---
 import { getCollection } from 'astro:content';
+import { loadSiteProfile, collapse, withSiteBase } from '../lib/site-identity';
 
+const profile = loadSiteProfile();
 const base = import.meta.env.BASE_URL;
 const notes = await getCollection('notes', ({ data }) =>
   import.meta.env.PROD ? !data.draft : true
 );
 const hasNotes = notes.length > 0;
+const photo = withSiteBase(profile.web.image.replace(/^\//, ''), base);
 ---
 
 <header class="mb-12">
   <div class="flex items-center gap-5">
     <img
-      src={`${base}images/thanos-vassilakis.jpg`}
-      alt="Thanos Vassilakis"
+      src={photo}
+      alt={`Portrait of ${profile.name}`}
       width="96"
       height="96"
       class="h-20 w-20 shrink-0 object-cover md:h-24 md:w-24"
     />
-    <h1 class="text-3xl font-semibold tracking-tight text-neutral-950 md:text-2xl">
-      ideas, tests, and Code fragments…
-    </h1>
+    <div>
+      <h1 class="text-3xl font-semibold tracking-tight text-neutral-950 md:text-4xl">
+        {profile.name}
+      </h1>
+      <p class="mt-1 text-sm font-medium text-neutral-800 md:text-base">
+        {profile.web.headline}
+      </p>
+      <p class="mt-1 text-sm text-neutral-500">{profile.web.tagline}</p>
+    </div>
   </div>
+  <p class="mt-5 max-w-2xl text-neutral-700 leading-relaxed">{collapse(profile.web.bio)}</p>
   <p class="mt-4 max-w-2xl text-neutral-600">
-    résumé:{' '}
+    Résumé:{' '}
     <a
       href={`${base}material/thanos-vassilakis-resume.pdf`}
       class="font-medium text-neutral-900 underline underline-offset-4"
@@ -30,20 +40,43 @@ const hasNotes = notes.length > 0;
       PDF
     </a>
     {' · '}
-    <a href={`${base}resume/`} class="font-medium text-neutral-900 underline underline-offset-4">Markdown</a> <br />
+    <a href={`${base}resume/`} class="font-medium text-neutral-900 underline underline-offset-4"
+      >Markdown</a
+    >
   </p>
-    <p class="mt-2 mb-8 max-w-2xl text-neutral-600">
-    <a href="https://crates.io/users/thanos" class="text-sm font-medium text-neutral-900 underline underline-offset-4">crates.io</a>  · 
-   <a href="https://github.com/thanos" class="text-sm font-medium text-neutral-900 underline underline-offset-4">github</a>  ·
-   <a href="https://hex.pm/users/thanos" class="text-sm font-medium text-neutral-900 underline underline-offset-4">hex.pm</a>  ·
-   <a href="https://pypi.org/user/thanos/" class="text-sm font-medium text-neutral-900 underline underline-offset-4">PyPi</a>  ·
-   <a href="https://zigistry.dev/profiles/github/thanos" class="text-sm font-medium text-neutral-900 underline underline-offset-4">zigistry</a>
+  <p class="mt-2 mb-8 max-w-2xl text-neutral-600">
+    {
+      profile.web.sameAs.map((link, i) => (
+        <>
+          {i > 0 ? ' · ' : null}
+          <a
+            href={link.url}
+            rel="me noopener noreferrer"
+            class="text-sm font-medium text-neutral-900 underline underline-offset-4"
+          >
+            {link.label}
+          </a>
+        </>
+      ))
+    }
   </p>
   <p class="mt-3 max-w-2xl text-neutral-600">
     Browse{' '}
-    <a href={`${base}portfolio/`} class="font-medium text-neutral-900 underline underline-offset-4">portfolio</a>,{' '}
-    <a href={`${base}articles/`} class="font-medium text-neutral-900 underline underline-offset-4">all articles</a>,{' '}
-    <a href={`${base}series/`} class="font-medium text-neutral-900 underline underline-offset-4">series</a>
+    <a href={`${base}about/`} class="font-medium text-neutral-900 underline underline-offset-4"
+      >about</a
+    >,{' '}
+    <a href={`${base}portfolio/`} class="font-medium text-neutral-900 underline underline-offset-4"
+      >portfolio</a
+    >,{' '}
+    <a href={`${base}timeline/`} class="font-medium text-neutral-900 underline underline-offset-4"
+      >timeline</a
+    >,{' '}
+    <a href={`${base}articles/`} class="font-medium text-neutral-900 underline underline-offset-4"
+      >all articles</a
+    >,{' '}
+    <a href={`${base}series/`} class="font-medium text-neutral-900 underline underline-offset-4"
+      >series</a
+    >
     {
       hasNotes ? (
         <>

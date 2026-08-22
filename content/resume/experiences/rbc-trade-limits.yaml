@@ -1,9 +1,9 @@
 id: rbc-trade-limits
 kind: built
 title: Market Access & Trade Limits (Rule 15c3-5)
-client: RBC
-org: RBC
-job: rbc
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
 when:
   start: 2023
   end: null

@@ -1,11 +1,13 @@
 id: icap
 org: ICAP
 titles:
-  - Head of Front-End Development
+  - Front-End Development Leader
 when:
   start: 2004
   end: 2006
 current: false
 summary: >
-  Built in-house fixed income trading UI and distributed trading services.
+  Led ICAP’s in-house BrokerTec fixed-income front-end team in New York:
+  Swing trading app, iConnect, lightweight emerging-markets client,
+  config-driven GUI framework, BlackBerry POC, and Jabber trading services.
 visibility: public

@@ -1,30 +1,44 @@
 id: icap-fixed-income
-kind: built
-title: Fixed income trading systems leadership
+kind: ran
+title: Front-End Development Leader — BrokerTec fixed income
 client: ICAP
 org: ICAP
 job: icap
-role: Head of Front-End Development
+role: Front-End Development Leader
 when:
   start: 2004
   end: 2006
-summary: In-house FI trading systems and high-performance distributed services.
+summary: >
+  Set up and managed ICAP’s in-house front-end development team in New York
+  for the BrokerTec fixed-income trading system: the mainstream Java/Swing
+  app with Random Walk, iConnect conversion, a sub-10 MB emerging-markets
+  web client, a config-driven GUI framework (six-week front-end), BlackBerry
+  proof-of-concept trading, Jabber/async-j backend services, and Python
+  market-conformance tools.
 bullets:
-  - Established and led in-house development for fixed income trading systems.
-  - High-performance distributed trading services and mobile trading platforms.
+  - "BrokerTec fixed-income trading app (Java/Swing, C++), with Random Walk: Java 1.4→1.5 migration; joystick trading, quick order-entry windows, net-position and P&L tables, batch/bulk order management, and anonymous workup."
+  - Converted the main trading platform to iConnect (Java, SWIG, C++).
+  - "BrokerTec lightweight emerging-markets trading app (Java, visualt, AJAX): web client for actives, repos, CDs, and mortgages on a non-Swing GUI, running under 10 MB."
+  - "Lightweight GUI framework for trading systems (Java): screens, menus, panels, dialogs, columns, and instruments specified in config and laid out dynamically so new UI could ship without changing existing code; used to deliver a trading front-end in six weeks."
+  - "BrokerTec/BlackBerry fixed-income trading (C++, WebSphere, J2EE): Spartan but fully functional real-time, benchmarks-only handheld proof of concept."
+  - "Distributed trading backend services (Java, async-j, NIO, Jabber): non-threaded, high-performance read-only and position-management fan-out so hundreds of clients could share one guest account against BrokerTec services, improving performance and security."
+  - Designed market-conformance analysis and monitoring tools (Python, iLabs, WxWindows).
 domain:
   - finance
   - trading
 skills:
-  - C++
   - Java
+  - C++
+  - Python
 signals:
   domains:
     - finance
     - trading
   skills:
-    - c++
     - java
+    - c++
+    - python
+    - swing
     - trading-systems
     - distributed-systems
     - engineering-management
@@ -32,12 +46,17 @@ signals:
   impact:
     - platform
     - people
+    - scale
 proof:
-  metrics: []
+  metrics:
+    - label: lightweight client
+      value: "<10 MB"
+    - label: config-driven front-end
+      value: "6 weeks"
   links: []
   source: job
 provenance:
-  type: job_built
+  type: job_ran
   refs: []
-  last_verified: 2026-08-06
+  last_verified: 2026-08-22
 visibility: public

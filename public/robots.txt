@@ -1,5 +1,34 @@
-# Search engines and LLM crawlers (GPTBot, ClaudeBot, Google-Extended, etc.)
+# Search engines and LLM crawlers
 User-agent: *
 Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Identity for language models
+# https://thanos.github.io/llms.txt
+# https://thanos.github.io/llms-full.txt
+# https://thanos.github.io/rss.xml
 
 Sitemap: https://thanos.github.io/sitemap-index.xml

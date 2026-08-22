@@ -1,9 +1,9 @@
 id: rbc-shared-data-services
 kind: built
 title: Shared Data Services — discoverable bank-wide data fabric
-client: RBC
-org: RBC
-job: rbc
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
 role: Distinguished Engineer & Head of Shared Data Services
 when:
   start: 2019

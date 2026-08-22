@@ -1,33 +1,45 @@
 id: jpm-athena-energy
 kind: built
-title: Athena / energy trading — FIX, feeds, Gauss
+title: Athena energy trade feeds — framework, CME/ICE, ops tooling
 client: JPMorgan
 org: JPMorgan
 job: jpmorgan
 when:
   start: 2007
   end: 2007
-summary: Athena profiler, native FIX, CME/ICE gateways, Gauss performance.
+summary: >
+  Trade-feed framework that collected, filtered, and processed energy deals
+  into JPMorgan’s Athena Python analytics platform, plus CME and ICE FIX
+  gateways, reconciliation, profiling, and a shared alerting stack.
 bullets:
-  - "Athena: code profiler and native FIX engine."
-  - Standardized trade feed framework; CME and ICE gateways for energy trading.
-  - Optimized network and compute for counterparty risk system (Gauss).
+  - Built a C/Python trade-feed framework that collected, filtered, and processed deals, then booked them into Athena.
+  - Implemented a CME FIX gateway to the Athena trade feed for energy deals on that framework (Python).
+  - Enhanced an existing ICE-to-Athena FIX trade feed for energy deals (Java, Python).
+  - Built reconciliation toolsets for the CME and ICE feeds.
+  - Wrote a WxWindows/Python code profiler for performance and memory issues on the Athena stack.
+  - Delivered an alert and logging framework for all energy feeds, combining the useful parts of Nagios and Big Brother.
+  - Built additional tools to process and manage deals, events, and portfolios.
 domain:
   - finance
   - trading
+  - commodities
 skills:
-  - C++
+  - C
   - Python
+  - Java
 signals:
   domains:
     - finance
     - trading
+    - commodities
   skills:
-    - c++
+    - c
     - python
+    - java
     - fix
-    - performance
     - trading-systems
+    - performance
+    - observability
   seniority: hands-on
   impact:
     - platform
@@ -39,5 +51,5 @@ proof:
 provenance:
   type: job_built
   refs: []
-  last_verified: 2026-08-06
+  last_verified: 2026-08-22
 visibility: public

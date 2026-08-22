@@ -1,9 +1,9 @@
 id: rbc-global-market-supervision
 kind: built
 title: Global Market Supervision
-client: RBC
-org: RBC
-job: rbc
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
 when:
   start: 2023
   end: null
