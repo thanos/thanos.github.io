@@ -1,8 +1,8 @@
 id: rbc-ml-pricing
 kind: built
 title: ML Pricing Service — Munis & Credit Derivatives
-client: RBC
-org: RBC
+client: RBC CM
+org: RBC Capital Markets
 job: rbc
 when:
   start: 2020
