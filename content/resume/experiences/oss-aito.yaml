@@ -1,0 +1,44 @@
+id: oss-aito
+kind: oss
+title: Aito Hash - Verus Coin Miner for macOS
+client: null
+org: null
+job: null
+when:
+  start: 2024
+  end: null
+summary: A production-quality, user-centric CPU miner for Verus Coin (VRSC) optimized for Apple Silicon Macs.
+bullets:
+  - Built Aito Hash frontend in SwiftUI for macOS.
+  - Built Aito Hash backend in Zig with Metal/AMX acceleration for Verus Coin mining on Apple Silicon.
+  - 65% fasters than the original miner, with 99.9% of the hashrate.
+domain:
+  - AI
+  - crypto
+skills:
+  - Zig
+  - SwiftUI
+  - Swift
+  - Metal
+  - macOS
+signals:
+  domains:
+    - crypto
+  skills:
+    - zig
+    - swiftui
+    - swift
+    - metal
+    - macos
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs: []
+  last_verified: 2026-08-06
+visibility: public
