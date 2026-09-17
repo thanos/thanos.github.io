@@ -1,7 +1,7 @@
 ---
 title: "FlyBy: A Simulator Before the Hardware"
 description: "Part 1: why FlyBy ships a first-class simulator, how VirtualNic and virtual time work, and how to run the constant_rate baseline at 100 kpps without privileged networking."
-date: 2026-08-22
+date: 2026-07-22
 tags:
   - Rust
   - SPDK

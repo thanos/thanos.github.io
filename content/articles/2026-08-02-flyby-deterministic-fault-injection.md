@@ -1,7 +1,7 @@
 ---
 title: "FlyBy: Deterministic Fault Injection"
 description: "Part 2: LCG-seeded packet drops in FlyBy’s packet_loss scenario—5% drop at 10 kpps for 10 virtual seconds, with counters you can assert in CI."
-date: 2026-08-22
+date: 2026-08-02
 tags:
   - simulator
   - fault injection

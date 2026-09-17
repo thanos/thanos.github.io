@@ -1,7 +1,7 @@
 ---
 title: "FlyBy: Protocol-Aware Traffic Generators"
 description: "Part 3: FlyBy’s protocol_quotes scenario fills 34-byte binary market quotes (AAPL) through VirtualNic so decoders see structured payloads, not random pads."
-date: 2026-08-22
+date: 2026-08-11
 tags:
   - market data
   - binary protocols
