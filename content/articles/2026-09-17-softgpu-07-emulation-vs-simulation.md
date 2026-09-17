@@ -1,7 +1,7 @@
 ---
 title: "SoftGPU: Emulation Versus Simulation"
 description: "People say GPU emulator when they mean four different things. SoftGPU names which kind of execution it is performing, or it will claim hardware fidelity it does not have."
-date: 2026-09-17
+date: 2026-09-01
 tags:
   - SoftGPU
   - emulation
