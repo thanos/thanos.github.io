@@ -1,7 +1,7 @@
 ---
 title: "FlyBy: Replaying Classic Pcap Captures"
 description: "Part 4: replay FlyBy’s udp_quotes.pcap through the simulator—20 UDP binary quotes, full-speed or original timing, classic pcap only."
-date: 2026-08-22
+date: 2026-08-13
 tags:
   - pcap
   - market data
