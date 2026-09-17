@@ -1,7 +1,7 @@
 ---
 title: "SoftGPU: Decoding an AMD GPU ISA Responsibly"
 description: "ISA tables are easy to invent and hard to defend. SoftGPU’s gfx1201 subset is sourced from llvm-mc goldens, traps unknown encodings, and still does not claim a full GPU."
-date: 2026-09-17
+date: 2026-09-13
 tags:
   - SoftGPU
   - AMDGPU

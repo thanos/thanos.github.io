@@ -1,7 +1,7 @@
 ---
 title: "SoftGPU: Grids, Workgroups, Waves, and Barriers"
 description: "Wave, warp, and subgroup mean different things on different vendors. SoftGPU defines a software semantic machine without pretending it is gfx1201 silicon."
-date: 2026-09-17
+date: 2026-09-07
 tags:
   - SoftGPU
   - waves

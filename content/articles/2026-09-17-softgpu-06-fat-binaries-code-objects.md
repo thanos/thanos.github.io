@@ -1,7 +1,7 @@
 ---
 title: "SoftGPU: Fat Binaries, ELF Notes, and gfx1201"
 description: "HIP ships device binaries, not source. SoftGPU reads AMDGPU metadata notes with a bounded parser — and still does not execute the ISA bytes."
-date: 2026-09-17
+date: 2026-08-22
 tags:
   - SoftGPU
   - ELF

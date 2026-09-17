@@ -1,7 +1,7 @@
 ---
 title: "SoftGPU: Impersonating a GPU Without Lying"
 description: "Discovery APIs tempt emulators to invent CU counts and wave sizes. SoftGPU treats device identity as a contract with provenance."
-date: 2026-09-17
+date: 2026-08-10
 tags:
   - SoftGPU
   - HSA

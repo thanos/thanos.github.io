@@ -1,7 +1,7 @@
 ---
 title: "SoftGPU: Building GPU Sanitizers"
 description: "Hardware hides memory and sync defects until a rare schedule hits them. SoftGPU detects a declared class of defects with workgroup, wave, and lane context."
-date: 2026-09-17
+date: 2026-09-09
 tags:
   - SoftGPU
   - sanitizer

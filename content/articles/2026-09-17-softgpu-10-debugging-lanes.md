@@ -1,7 +1,7 @@
 ---
 title: "SoftGPU: Debugging a Machine Made of Lanes"
 description: "A sanitizer finding is only useful if another engineer can reproduce it, stop at the responsible step, and inspect wave and lane state."
-date: 2026-09-17
+date: 2026-09-11
 tags:
   - SoftGPU
   - debugger

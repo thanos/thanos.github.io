@@ -1,7 +1,7 @@
 ---
 title: "SoftGPU: The GPU Stack from HIP to Silicon"
 description: "Applications talk HIP. Silicon speaks packets and firmware. SoftGPU substitutes at ROCr/HSA so the real compiler and runtime stay in the path."
-date: 2026-09-17
+date: 2026-08-06
 tags:
   - SoftGPU
   - HIP

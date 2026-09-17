@@ -1,7 +1,7 @@
 ---
 title: "Why We’re Building SoftGPU"
 description: "A developer-oriented virtual GPU, built around a simple requirement: explain what happened, and be honest about what you know."
-date: 2026-09-13
+date: 2026-08-04
 tags:
   - SoftGPU
   - Rust

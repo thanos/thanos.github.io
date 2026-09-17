@@ -1,7 +1,7 @@
 ---
 title: "SoftGPU: HSA Queues and Signals"
 description: "HIP eventually submits work through user-mode queues. SoftGPU proves observation, wraparound, and wait-cancel before it ever runs a kernel."
-date: 2026-09-17
+date: 2026-08-13
 tags:
   - SoftGPU
   - HSA

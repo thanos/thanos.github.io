@@ -1,7 +1,7 @@
 ---
 title: "SoftGPU: HSA/AQL Dispatch, Without Running the Kernel"
 description: "A HIP launch ends as a 64-byte AQL packet. SoftGPU validates, traces, and diagnostically completes that packet — and still does not execute it."
-date: 2026-09-17
+date: 2026-08-20
 tags:
   - SoftGPU
   - AQL

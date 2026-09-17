@@ -1,7 +1,7 @@
 ---
 title: "SoftGPU: The First gfx1201 Kernel"
 description: "Dispatch to machine code to a memory result for tiny_add — a named gfx1201 subset, a SoftGPU calling convention, and still not unrestricted hipLaunchKernel."
-date: 2026-09-17
+date: 2026-09-15
 tags:
   - SoftGPU
   - gfx1201
