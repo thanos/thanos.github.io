@@ -17,9 +17,12 @@ tags:
 draft: false
 authors:
   - Thanos Vassilakis
+series: softgpu
 ---
 
 *A developer-oriented virtual GPU, built around a simple requirement: explain what happened, and be honest about what you know.*
+
+This is part 1 of [SoftGPU](https://thanos.github.io/series/softgpu/). The rest of the series follows the stack from HIP down to a named gfx1201 subset, without letting a green test mean more than the evidence behind it.
 
 Consider a kernel that passes every test until you change the size of the input. Now it occasionally returns the wrong answer. Add some logging and the problem disappears. Change the driver and it comes back differently.
 
@@ -105,10 +108,14 @@ Rust is our host implementation language because ownership, explicit types, and 
 
 ## What we can claim today
 
-As of the repository’s September 13, 2026 status snapshot, the foundation includes profile validation, a minimal HSA compatibility library with explicit failure stubs, and virtual-agent discovery tested at unit level. The HIP-linked load-proof harness is implemented, but the project requires a green pinned Linux x86-64 integration job before treating that path as verified. Queues, dispatch packets, kernel execution, and kernel sanitizers remain future work. The [status document](https://github.com/thanos/softgpu/blob/main/docs/status.md) tracks those boundaries.
+As of the repository’s 13 September 2026 status snapshot, the foundation included profile validation, a minimal HSA compatibility library with explicit failure stubs, and virtual-agent discovery tested at unit level. The HIP-linked load-proof harness was implemented, but the project still required a green pinned Linux x86-64 integration job before treating that path as verified. Queues, dispatch packets, kernel execution, and kernel sanitizers were future work.
 
-That leaves a lot to build. It also gives us a sensible sequence: establish that the application reaches us, establish that we understand the work it submits, then execute a declared subset and explain its behavior. Each step should leave behind evidence that the next step can rely on.
+That snapshot is the starting line of this series, not the last word. Later installments record the gates as they landed. The living ledger is the [status document](https://github.com/thanos/softgpu/blob/main/docs/status.md).
+
+The sequence is still the same: establish that the application reaches us, establish that we understand the work it submits, then execute a declared subset and explain its behavior. Each step should leave behind evidence that the next step can rely on.
 
 Real GPUs, CPU references, sanitizers, and simulators will remain part of the workflow. SoftGPU will have to demonstrate where it adds value alongside them.
 
 The result I want is practical: a small failing test, an explanation of what went wrong, and enough recorded context for another developer to reproduce it. If we can make that a dependable part of GPU development, this will have been worth coding.
+
+Next: [the GPU software stack from HIP to silicon](https://thanos.github.io/articles/2026-09-17-softgpu-02-hip-to-silicon/).
