@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
-import { getCollection } from 'astro:content';
 import { loadSiteProfile, collapse } from '../lib/site-identity';
+import { loadLlmsContent } from '../lib/llms-content';
 import {
   loadExperiences,
   loadJobs,
@@ -14,9 +14,7 @@ export const GET: APIRoute = async ({ site }) => {
   const origin = (site ?? new URL(profile.web.url)).href.replace(/\/+$/, '') + '/';
   const jobs = loadJobs();
   const experiences = loadExperiences();
-  const articles = (
-    await getCollection('articles', ({ data }) => (import.meta.env.PROD ? !data.draft : true))
-  ).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  const { series, notes, articlesBySeries, standalone } = await loadLlmsContent();
 
   const jobLines = jobs
     .map((j) => {
@@ -40,10 +38,30 @@ ${collapse(e.summary)}`;
     })
     .join('\n\n');
 
-  const articleLines = articles
+  const seriesLines = series
+    .map((s) => {
+      const parts = articlesBySeries.get(s.id) ?? [];
+      const partLines = parts
+        .map((a) => `- [${a.data.title}](${origin}articles/${a.id}/) — ${a.data.description}`)
+        .join('\n');
+      return `### ${s.data.title}
+${origin}series/${s.id}/
+${s.data.description}
+${partLines}`.trim();
+    })
+    .join('\n\n');
+
+  const standaloneLines = standalone
     .map((a) => {
       const d = a.data.date.toISOString().slice(0, 10);
       return `- ${d} [${a.data.title}](${origin}articles/${a.id}/) — ${a.data.description}`;
+    })
+    .join('\n');
+
+  const noteLines = notes
+    .map((n) => {
+      const d = n.data.date.toISOString().slice(0, 10);
+      return `- ${d} [${n.data.title}](${origin}notes/${n.id}/) — ${n.data.description}`;
     })
     .join('\n');
 
@@ -69,9 +87,17 @@ ${jobLines}
 
 ${expLines}
 
+## Series
+
+${seriesLines}
+
 ## Articles
 
-${articleLines}
+${standaloneLines}
+
+## Notes
+
+${noteLines || '(none)'}
 `;
 
   return new Response(body, {

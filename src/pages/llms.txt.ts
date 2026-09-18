@@ -1,13 +1,11 @@
 import type { APIRoute } from 'astro';
-import { getCollection } from 'astro:content';
 import { loadSiteProfile, collapse } from '../lib/site-identity';
+import { loadLlmsContent } from '../lib/llms-content';
 
 export const GET: APIRoute = async ({ site }) => {
   const profile = loadSiteProfile();
   const origin = (site ?? new URL(profile.web.url)).href.replace(/\/+$/, '') + '/';
-  const articles = (
-    await getCollection('articles', ({ data }) => (import.meta.env.PROD ? !data.draft : true))
-  ).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  const { articles, series } = await loadLlmsContent();
 
   const body = `# ${profile.name}
 
@@ -23,6 +21,7 @@ export const GET: APIRoute = async ({ site }) => {
 - [Résumé](${origin}resume/): full curriculum vitae
 - [Portfolio](${origin}portfolio/): roles, systems, open source, and writing
 - [Timeline](${origin}timeline/): chronological career view
+- [Notes](${origin}notes/): short notes
 - [RSS](${origin}rss.xml): article feed
 - [Full source for language models](${origin}llms-full.txt)
 
@@ -30,18 +29,23 @@ export const GET: APIRoute = async ({ site }) => {
 
 ${profile.web.sameAs.map((s) => `- [${s.label}](${s.url})`).join('\n')}
 
+## Series
+
+- [All series](${origin}series/)
+${series
+  .map((s) => `- [${s.data.title}](${origin}series/${s.id}/): ${s.data.description}`)
+  .join('\n')}
+
 ## Writing
 
 - [All articles](${origin}articles/)
-- [Series](${origin}series/)
 ${articles
-  .slice(0, 20)
   .map((a) => `- [${a.data.title}](${origin}articles/${a.id}/): ${a.data.description}`)
   .join('\n')}
 
 ## Optional
 
-- [llms-full.txt](${origin}llms-full.txt) — longer machine-readable summary of experiences and articles
+- [llms-full.txt](${origin}llms-full.txt) — longer machine-readable summary of experiences, series, and articles
 `;
 
   return new Response(body, {
