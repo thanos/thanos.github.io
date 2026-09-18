@@ -5,6 +5,8 @@
 **Distinguished Engineer**
 MD, Head of AI and Architecture for Finance IT.
 
+[What does Google say about Thanos](/notes/what-google-says-about-me/)
+
 ---
 
 ## Executive Summary
