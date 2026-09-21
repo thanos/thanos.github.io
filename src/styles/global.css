@@ -50,7 +50,7 @@
   }
 
   .article-body img {
-    @apply my-8 w-full max-h-80 rounded-lg object-cover shadow-sm ring-1 ring-neutral-200;
+    @apply my-8 w-full max-h-[32rem] rounded-lg object-contain shadow-sm ring-1 ring-neutral-200 bg-neutral-50;
   }
 
   .article-body table {
