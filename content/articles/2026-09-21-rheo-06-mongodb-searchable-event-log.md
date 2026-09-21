@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - MongoDB
-draft: false
+draft: true
 authors:
   - Thanos Vassilakis
 series: rheo

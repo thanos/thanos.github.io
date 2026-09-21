@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - search
-draft: false
+draft: true
 authors:
   - Thanos Vassilakis
 series: rheo

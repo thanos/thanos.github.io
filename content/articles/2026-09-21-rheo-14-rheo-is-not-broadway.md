@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - Broadway
-draft: false
+draft: true
 authors:
   - Thanos Vassilakis
 series: rheo
