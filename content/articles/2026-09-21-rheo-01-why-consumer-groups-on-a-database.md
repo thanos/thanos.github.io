@@ -18,42 +18,42 @@ series: rheo
 
 This is part 1 of [Rheo](https://thanos.github.io/series/rheo/). Brokers deliver. Databases remember. Some workloads need both from the same log.
 
-Message brokers are excellent at a specific job: get this payload to a consumer, compete for it, retry it, dead-letter it. Ask a broker “what happened to EUR-EURIBOR-6M at 13:04?” and you have left the product’s comfort zone. You are now in log shipping, retention tickets, and a second index you built because the broker was never a system of record.
+Message brokers are good for enabling decoupled services to consume messages asynchronously, reliably, and in a load-balanced manner.
 
-Databases are excellent at the opposite job. They store durable, indexed history and they answer investigative questions. Ask Postgres or Mongo to behave like a consumer group — leases, fencing, competing workers, independent progress per team — and you will invent a broker inside a table, badly.
+Databases store history and answer questions. But consuming from a database in a load balanced _consumer group_ manner is hard — you have to code leases, fencing, competing workers, lag management, retries etc.
 
-Rheo exists for the workloads that refuse to pick one:
+Rheo is for when you need both:
 
 - deliver the next event to a consumer group
 - find the event that explains what happened
 
-If your domain is market data, orders, risk signals, audit trails, or anything else where *delivery* and *investigation* share a timeline, that split is the whole product problem.
+That is a common problem in market data, orders, risk, and audit trails.
 
-## The false choice
+## What teams usually do
 
-Teams usually resolve the tension in one of three ways.
+They keep the queue and put a database behind it as the golden record. They stand up a dedicated consumer that copies the events to the database and then ACKs. After a while they purge the queues. Less often they spool off the database to S3 and purge that too.
 
-**Stand up Kafka (or Pulsar, or Redpanda).** You get partitions, consumer groups, and a mature ops story. You also get a cluster that is not your application database, a second backup story, and historical search that is possible but operationally heavy. Kafka is a log. It is not a query engine.
+They maintain two systems.
 
-**Use RabbitMQ or NATS.** You get routing and ACKs. You do not get an immutable searchable event log. After ACK, the message is gone, or it is sitting in a retention policy that was never designed for “show me every curve update for this instrument last quarter.”
-
-**Roll a queue table.** `FOR UPDATE SKIP LOCKED` is a fine claiming trick. It is not a consumer group. You still have to invent fencing tokens, independent groups on the same events, replay without copying rows, lag that does not lie, and a story for what happens when the worker that processed the row dies before the UPDATE commits.
-
-Rheo’s claim is narrower than “databases replace brokers.” Brokers remain better for massive fan-out, ultra-low-latency messaging, and shops already standardized on them. The claim is: *if you already run a store that can hold an immutable log, the consumer-group machinery can live in OTP on top of that store.*
+Rheo gives you one more choice. Use you can use a databae but you dont loose your scalability. 
 
 ## Brokers vs databases vs Rheo
 
-| System | Delivery | Historical search |
-|---|---|---|
-| RabbitMQ | Strong queues and ACKs | Weak long-term query |
-| NATS / JetStream | Fast streams | Limited investigative query |
-| Kafka | Partitioned log + groups | Possible, operationally heavy |
-| MongoDB alone | Do it yourself | Strong indexes and query |
-| PostgreSQL / SQLite alone | Do it yourself | Strong SQL and indexes |
-| Redis Streams alone | Native PEL and groups | History search is secondary |
-| **Rheo + those stores** | Leases, groups, fencing in OTP | First-class `Rheo.query/2` plus the store’s own query |
+Brokers and Rheo both let you consume some events and not others. They do not do it in the same place.
 
-The last row is the product. Same public API. Different backends. The log stays queryable because consumption is not deletion.
+| | Interest model | Consume unit |
+|---|---|---|
+| **NATS JetStream** | Subject hierarchy and wildcards (`*`, `>`) | A consumer can pull from many matching subjects |
+| **RabbitMQ** | Exchanges and bindings (routing keys, `#` / `*`) | A queue is bound to patterns; one queue can fan-in many routes |
+| **Redis Streams** | Named stream key. `XREAD` can list several keys; no subject tree | A consumer group (`XGROUP`) is one stream, with a native PEL |
+| **Rheo** | Explicit stream name | One group ↔ one stream. Filters are inside the log (type, key, query), not across stream names |
+| **Mongo / Postgres / SQLite alone** | Whatever you query | No consumer group unless you write one |
+
+Rheo can filter. It does not subscribe to a subject tree. You pick a stream. Then you search or query inside that log.
+
+Rheo is not a topic bus. If you need pattern fan-in, run more than one group, or put the topic on the event and query it.
+
+What you get instead is searchable history, leases and frontiers, and the database you already run. Same public API on each backend. Consumption does not delete the event.
 
 ## Rheo’s split
 
@@ -85,9 +85,7 @@ Use Rheo when you want:
 
 Skip it when you need a dedicated broker (cross-language clients, huge fan-out, exactly-once *claims*), or when a job queue is actually the problem. Oban is a better job system. Broadway is a better pipeline topology. Rheo is the durable log those things can read from.
 
-## The sentence to keep
-
-Databases already store and search historical events well. Message brokers already coordinate consumers well. Rheo combines those strengths in a library you embed, not a server you operate.
+Databases already store and search historical events well. Message brokers already coordinate consumers well. Rheo combines those in a library you embed, not a server you operate.
 
 Next: what a consumer group actually is — streams, competing workers, and independent progress.
 
