@@ -15,13 +15,11 @@ authors:
 series: rheo
 ---
 
-This is part 15 of [Rheo](https://thanos.github.io/series/rheo/). v0.8 adds no backend. It corrects the meanings of the ones you already have.
+This is part 15 of [Rheo](https://thanos.github.io/series/rheo/). v0.1 through v0.7 were discovery releases. They proved a consumer group can live over a searchable database: an immutable log, leases with fencing tokens, retries and dead-letters, partitions with a contiguous ACK frontier, replay without copying events, ETS, MongoDB, PostgreSQL and SQLite, and a GenStage producer that feeds Broadway.
 
-v0.1 through v0.7 were discovery releases. They proved a consumer group can live over a searchable database: an immutable log, leases with fencing tokens, retries and dead-letters, partitions with a contiguous ACK frontier, replay without copying events, ETS, MongoDB, PostgreSQL and SQLite, and a GenStage producer that feeds Broadway.
+v0.8 adds no backend. It is the release where I corrected the abstractions while almost nobody depended on them.
 
-v0.8 adds no backend. It is the release where the abstractions are corrected while almost nobody depends on them.
-
-That sounds like churn. It is the opposite of churn. It is paying the break *once*, before SemVer makes each correction a major version with a compatibility layer you will hate.
+That sounds like churn. I think of it the other way: pay the break once, before SemVer makes each correction a major version with a compatibility layer you will hate.
 
 ## Why more backends expose false abstractions
 
@@ -62,7 +60,7 @@ Rheo orders events with an integer `sequence` per partition. Redis orders them w
 
 v0.8 keeps both. `event.sequence` stays the portable order. `lease.receipt` carries the backend’s claim identity (ADR 021). Settle callbacks fence on `lease_id` and, when set, on the receipt.
 
-A test double shaped like a native stream runs the full conformance suite with exactly this layout — *before* Redis ships. That double is the point of 0.8. 0.9 is just the double coming true.
+A test double shaped like a native stream runs the full conformance suite with exactly this layout — before Redis ships. That double is the point of 0.8. 0.9 is just the double coming true.
 
 ## One runtime, not two
 
@@ -82,7 +80,7 @@ The bridge process that started or joined a group is gone too. A consumer module
 
 A handler can succeed and the ACK can still fail. `Rheo.Settle` classifies the failure and the runtime acts on the class: lost lease dropped, definite failure nacked, unavailable or ambiguous left to expire because the ACK may already be durable. Telemetry carries the class, not the driver exception.
 
-This is Part 3, promoted from “good advice” to “the runtime does it.”
+This is part 3, promoted from “good advice” to “the runtime does it.”
 
 ## Dependencies in libraries
 
@@ -98,7 +96,7 @@ The executable definition of a Rheo backend is `test/support/backend_contract.ex
 
 If `Rheo.Backend.Redis` can ship in 0.9 without touching `Rheo.Consumer`, `Rheo.Group`, `Rheo.Event`, `Rheo.Query`, or the frontier arithmetic, the reset did its job.
 
-Spoiler: it did.
+It did.
 
 **Read next:** [Rheo on Redis Streams: Portable Sequence, Native PEL](https://thanos.github.io/articles/2026-09-21-rheo-16-redis-streams/)
 

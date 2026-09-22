@@ -1,6 +1,6 @@
 ---
 title: "MongoDB as a Searchable Event Log"
-description: "The first backend was Mongo because the product is “query the history,” not “pop a queue.”"
+description: "The first backend was Mongo because I wanted to query the history, not just pop a queue."
 date: 2026-09-21
 tags:
   - Rheo
@@ -15,9 +15,7 @@ authors:
 series: rheo
 ---
 
-This is part 6 of [Rheo](https://thanos.github.io/series/rheo/). The first backend was Mongo because the product is “query the history,” not “pop a queue.”
-
-Rheo’s first durable backend is MongoDB for a reason that has nothing to do with fashion. Mongo is an indexed document store that is already good at the question brokers dodge: *what happened?*
+This is part 6 of [Rheo](https://thanos.github.io/series/rheo/). The first durable backend is MongoDB for a reason that has nothing to do with fashion. Mongo is an indexed document store that is already good at the question brokers dodge: what happened?
 
 If your events look like market-data updates — a curve, a currency, a producer, a correlation id — you want a document you can filter without reconstructing a payload from a byte log.
 
@@ -37,7 +35,7 @@ If your events look like market-data updates — a curve, a currency, a producer
 }
 ```
 
-That document is the system of record. Consumption does not update it. Consumption writes a *delivery* somewhere else.
+That document is the system of record. Consumption does not update it. Consumption writes a delivery somewhere else.
 
 ## Sequences are integrity, not decoration
 
@@ -49,11 +47,11 @@ Sequences are integers on purpose. They travel across backends. Redis has its ow
 
 `deliveries` documents track per-group status: `available`, `leased`, `acked`, `rejected`. Claiming work is `findOneAndUpdate` with status and expiry predicates. The update carries a new `lease_id`. If the predicate does not match, you did not get the work.
 
-That shape — one row per `{group, event}` and a compare-and-set on the token — is what ETS and Ecto also implement. It is a fine model for row stores. It is the model Redis later refused to pretend to be. Remember that tension; Part 15 exists because of it.
+That shape — one row per `{group, event}` and a compare-and-set on the token — is what ETS and Ecto also implement. It is a fine model for row stores. It is the model Redis later refused to pretend to be. Part 15 exists because of that.
 
-## Query is product surface
+## Query is part of the product
 
-`Rheo.query/2` is not an admin afterthought. It is why you used a database.
+`Rheo.query/2` is not an admin afterthought. It is why I used a database.
 
 ```elixir
 Rheo.query("market-events",
@@ -76,11 +74,11 @@ ADR 008 is the schema and index list. You should not be inventing a unique key o
 
 ## Why Mongo first, not only
 
-Mongo-first was a bet: if the log is searchable by default, people will stop treating history as a dump they might get to later. The later backends had to keep that promise or the product became “a Mongo library with extra steps.”
+Mongo-first was a bet: if the log is searchable by default, people will stop treating history as a dump they might get to later. The later backends had to keep that promise or the product became a Mongo library with extra steps.
 
 They kept it. Postgres stores `jsonb` payloads you can query in SQL. SQLite stores JSON text. ETS answers the same `%Rheo.Query{}` in memory. Redis walks the stream and admits it is not RediSearch.
 
-The document above is still the clearest picture of what an event *is*. Everything after Part 6 is that picture surviving contact with other stores.
+The document above is still the clearest picture of what an event is. Everything after part 6 is that picture surviving contact with other stores.
 
 **Read next:** [Killing Consumers on Purpose](https://thanos.github.io/articles/2026-09-21-rheo-07-killing-consumers/)
 

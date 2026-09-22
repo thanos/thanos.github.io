@@ -1,6 +1,6 @@
 ---
 title: "Why ACK Is Harder Than It Looks"
-description: "The happy path is one line. The failure timeline is the product."
+description: "Acknowledging a message looks like one line. The failure cases are the part I actually had to design."
 date: 2026-09-21
 tags:
   - Rheo
@@ -15,9 +15,7 @@ authors:
 series: rheo
 ---
 
-This is part 3 of [Rheo](https://thanos.github.io/series/rheo/). The happy path is one line. The failure timeline is the product.
-
-Acknowledging a message is the easiest function in every queue library and the hardest invariant in every one that has been to production.
+This is part 3 of [Rheo](https://thanos.github.io/series/rheo/). Acknowledging a message is the easiest function in every queue library I have used, and the hardest invariant in every one that has been to production.
 
 Happy path:
 
@@ -29,7 +27,7 @@ Happy path:
 
 That looks like a transaction. It is not. Between `fetch` and `ack` the worker can die, the network can partition, the ACK can land after a newer lease has been issued for the same event, and a restarted worker can try to settle work it no longer owns.
 
-If any of those cases silently “succeed,” you have either lost an event or double-committed with a smile.
+If any of those cases silently succeed, you have either lost an event or double-committed.
 
 ## The timeline that matters
 
@@ -48,7 +46,7 @@ Rheo fences ACKs with an opaque `lease_id`. Only the current lease holder can ac
 
 On backends with a native claim identity — Redis entry ids, for example — there is a second token: `lease.receipt`. Settle fences on the lease id and, when a receipt is present, on the receipt. Handlers must not interpret receipts. They are the adapter’s private claim identity traveling with the lease.
 
-## At-least-once is a decision, not a footnote
+## At-least-once is a decision
 
 Between t1 and t5, event E may have been processed twice. Worker A might have done the side effect and died before ACK. Worker B will do it again.
 
@@ -67,7 +65,7 @@ If your side effect cannot be made idempotent, you do not have an ACK problem. Y
 
 The timeline above is the crash case. There is a nastier one: the handler returned `:ack`, `Rheo.ack/2` was called, and the backend said something other than `:ok`.
 
-`Rheo.Settle` classifies every settle, renew, and fetch error into a portable vocabulary:
+`Rheo.Settle` classifies every settle, renew, and fetch error:
 
 | Class | Runtime policy |
 |---|---|
@@ -75,11 +73,11 @@ The timeline above is the crash case. There is a nastier one: the handler return
 | `:backend_unavailable` or `{:ambiguous, _}` | Leave the lease to expire. The ACK might already be durable. |
 | `{:failed, _}` or `{:invalid, _}` | Nack for immediate redelivery. |
 
-The ambiguous case is the one people want to “just retry.” Don’t. If the write timed out, the ACK may have committed. Retrying the ACK with the same token is fine; inventing a nack on top of a possible commit is how you create a hole and a duplicate at the same time. Fencing makes the redelivery safe either way. Telemetry carries the classified reason, not the driver exception.
+The ambiguous case is the one people want to just retry. Don’t. If the write timed out, the ACK may have committed. Retrying the ACK with the same token is fine; inventing a nack on top of a possible commit is how you create a hole and a duplicate at the same time. Fencing makes the redelivery safe either way. Telemetry carries the classified reason, not the driver exception.
 
 ## Tests that do not sleep
 
-A lease system tested with `Process.sleep(lease_ms + 50)` is a system that will flake in CI and lie on a slow machine. Rheo injects a clock.
+A lease system tested with `Process.sleep(lease_ms + 50)` will flake in CI and lie on a slow machine. Rheo injects a clock.
 
 `Rheo.Clock.Frozen` lets the suite advance lease time without waiting for the wall. `test/rheo/lease_test.exs` covers stale ACK, expiry, retry, max attempts, and reject that way. If you are building your own backend, this is the first suite that should stay green when you pull the power cord in software.
 
@@ -91,9 +89,9 @@ After this article, “we processed the event” should mean three separate fact
 2. That worker still held the fencing token when it settled.
 3. The group’s committed frontier — not the max sequence anyone has seen — moved past that event.
 
-(3) is Part 12. (1) without (2) is a ghost write. (2) without idempotency is a duplicate that you chose to accept.
+(3) is part 12. (1) without (2) is a ghost write. (2) without idempotency is a duplicate that you chose to accept.
 
-Kill the process on purpose and watch the lease move. That is not chaos engineering as theater. That is the smallest demo that proves you built infrastructure.
+I like to kill the process on purpose and watch the lease move. That is the smallest demo that proves you built infrastructure.
 
 **Read next:** [Building Rheo as an Elixir/OTP Library](https://thanos.github.io/articles/2026-09-21-rheo-04-rheo-as-otp-library/)
 

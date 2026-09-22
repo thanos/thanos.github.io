@@ -1,6 +1,6 @@
 ---
 title: "Freezing Rheo Before 1.0"
-description: "v0.12 draws the line hosts and adapter authors may depend on before SemVer starts counting."
+description: "v0.12 writes down what will require a major version to change, before SemVer starts counting."
 date: 2026-09-21
 tags:
   - Rheo
@@ -15,11 +15,9 @@ authors:
 series: rheo
 ---
 
-This is part 17 of [Rheo](https://thanos.github.io/series/rheo/). v0.12 draws the line hosts and adapter authors may depend on before SemVer starts counting.
+This is part 17 of [Rheo](https://thanos.github.io/series/rheo/). v0.8 corrected the abstractions. v0.9–v0.11 filled Redis Streams, an ops inspect surface, and a Mnesia backend. v0.12 does not add a backend. It writes down what will require a major version to change.
 
-v0.8 corrected the abstractions. v0.9–v0.11 filled Redis Streams, an ops inspect surface, and a Mnesia backend. v0.12 does not add a backend. It writes down what will require a major version to change.
-
-A freeze candidate is not a promise that nothing will ever change. It is a promise about *what* change costs.
+A freeze candidate is not a promise that nothing will ever change. It is a promise about what change costs.
 
 ## What “API freeze candidate” means
 
@@ -31,7 +29,7 @@ After **1.0.0**, changing a frozen module’s public contract requires a major v
 
 ## The published surface
 
-HexDocs groups modules into Facade, Consume, Values, Backend, Runtime, and Ops. That list *is* the freeze (ADR 029). If a module is missing from HexDocs, treat it as internal even if it compiles in your project.
+HexDocs groups modules into Facade, Consume, Values, Backend, Runtime, and Ops. That list is the freeze (ADR 029). If a module is missing from HexDocs, treat it as internal even if it compiles in your project.
 
 ```text
 Rheo  ──► Backend (ETS | Mnesia | Mongo | Ecto | Redis)
@@ -87,19 +85,13 @@ Portable reasons returned by `Rheo` and backends:
 
 ## How to upgrade into the freeze
 
-From 0.11.1, no code changes are required if you already use the public APIs. See [0.11.1 → 0.12](https://hexdocs.pm/rheo/0-11-1-to-0-12.html). From earlier minors, walk the migration guides in order. They exist because the project broke itself on purpose while it still could (Parts 9 and 15).
+From 0.11.1, no code changes are required if you already use the public APIs. See [0.11.1 → 0.12](https://hexdocs.pm/rheo/0-11-1-to-0-12.html). From earlier minors, walk the migration guides in order. They exist because I broke the project on purpose while I still could (parts 9 and 15).
 
-## The series, closed
+## Closing
 
-Seventeen articles, one claim:
-
-**Put consumer groups in front of a database you already run. Keep the events. Fence the ACKs. Bound the demand. Make the backend prove the contract twice. Break the wrong abstraction before 1.0. Then stop.**
-
-Rheo is an OTP library, not a broker. Delivery is at-least-once. Order is per partition. Consumption never deletes the log. Search and replay are first-class because of that last sentence.
+Rheo is an OTP library, not a broker. Delivery is at-least-once. Order is per partition. Consumption never deletes the log. Search and replay work because of that last sentence.
 
 If you build a backend, the conformance suite is the spec. If you build a consumer, `handle_event/2` returning `:ack | {:retry, _} | {:reject, _}` is the spec. Everything else is mechanism.
-
-Install it:
 
 ```elixir
 def deps do

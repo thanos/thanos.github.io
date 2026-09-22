@@ -1,6 +1,6 @@
 ---
 title: "ACKs Are Not a Cursor"
-description: "If progress is “max acked sequence,” lag lies and replay skips holes."
+description: "If progress is the max acked sequence, lag lies and replay skips holes."
 date: 2026-09-21
 tags:
   - Rheo
@@ -15,9 +15,7 @@ authors:
 series: rheo
 ---
 
-This is part 12 of [Rheo](https://thanos.github.io/series/rheo/). If progress is “max acked sequence,” lag lies and replay skips holes.
-
-At-least-once delivery means you can ACK event 1003 while 1002 is still inflight. That is not a corner case. That is concurrency.
+This is part 12 of [Rheo](https://thanos.github.io/series/rheo/). At-least-once delivery means you can ACK event 1003 while 1002 is still inflight. That is not a corner case. That is concurrency.
 
 If the system treats “progress” as the highest sequence anyone has acknowledged, two disasters follow:
 

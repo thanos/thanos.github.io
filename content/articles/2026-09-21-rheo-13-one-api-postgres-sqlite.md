@@ -16,9 +16,7 @@ authors:
 series: rheo
 ---
 
-This is part 13 of [Rheo](https://thanos.github.io/series/rheo/). v0.6 adds Ecto. The handler does not change. The host keeps the Repo.
-
-Rheo’s public surface — `Rheo.Consumer`, leases, ACK, query, replay, lag — does not change when you switch backends. That sentence is cheap until a second *durable* backend exists. ETS proved the contract in memory. v0.6 has to prove it on SQL.
+This is part 13 of [Rheo](https://thanos.github.io/series/rheo/). Rheo’s public surface — `Rheo.Consumer`, leases, ACK, query, replay, lag — does not change when you switch backends. That sentence is cheap until a second durable backend exists. ETS proved the contract in memory. v0.6 has to prove it on SQL.
 
 `Rheo.Backend.Ecto` sits on a host-owned `Ecto.Repo`. PostgreSQL or SQLite. Same OTP tree.
 
@@ -62,7 +60,7 @@ On PostgreSQL, `metadata` and `payload` as `jsonb` means the event log stays que
 
 ## What “Ecto” does not mean
 
-Mongo stays on `Rheo.Backend.Mongo`. Ecto here means **SQL**, not `mongodb_ecto`. One adapter, two dialects (Postgres and SQLite), host-owned repo. If you fold Mongo into Ecto you inherit a lowest-common-denominator schema and lose the Mongo indexes Part 6 cared about.
+Mongo stays on `Rheo.Backend.Mongo`. Ecto here means **SQL**, not `mongodb_ecto`. One adapter, two dialects (Postgres and SQLite), host-owned repo. If you fold Mongo into Ecto you inherit a lowest-common-denominator schema and lose the Mongo indexes part 6 cared about.
 
 ## What stays true on SQL
 
@@ -80,7 +78,7 @@ ETS is a tutorial. Mongo is a commitment some Elixir shops do not want. Postgres
 
 SQLite is the version that does not start with “first, install a database.”
 
-Same handler. Same leases. Different durability story. That is what database-agnostic was supposed to feel like.
+Same handler. Same leases. Different durability story.
 
 **Read next:** [Rheo Is Not Broadway — It Feeds Broadway](https://thanos.github.io/articles/2026-09-21-rheo-14-rheo-is-not-broadway/)
 

@@ -1,6 +1,6 @@
 ---
 title: "Search and Replay the Event History"
-description: "Queues that delete on ACK cannot answer “what happened last Tuesday?” Replay should not copy the log."
+description: "Queues that delete on ACK cannot answer what happened last Tuesday. Replay should not copy the log."
 date: 2026-09-21
 tags:
   - Rheo
@@ -15,9 +15,7 @@ authors:
 series: rheo
 ---
 
-This is part 11 of [Rheo](https://thanos.github.io/series/rheo/). Queues that delete on ACK cannot answer “what happened last Tuesday?” Replay should not copy the log.
-
-Parts 6 and 8 argued that search belongs on the event log. This article is the operational half of that argument: pagination, lineage, and re-driving a group without cloning millions of events into a “replay topic.”
+This is part 11 of [Rheo](https://thanos.github.io/series/rheo/). Parts 6 and 8 argued that search belongs on the event log. This article is the operational half: pagination, lineage, and re-driving a group without cloning millions of events into a “replay topic.”
 
 The picture is two structures, not one:
 
@@ -86,7 +84,7 @@ Rheo.query("market-events", correlation_id: "trade-42")
 
 ## Replay without copying events
 
-Three tools, in the order you should prefer them.
+Three tools, in the order I prefer them.
 
 **1. A new group with a start cursor.** Best default. The original group keeps its frontier. The replay group is a new independent consumer with a name you can kill later.
 

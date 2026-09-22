@@ -1,6 +1,6 @@
 ---
 title: "Rheo"
-description: "A 17-part design series about putting durable consumer groups in front of a searchable event log — without standing up Kafka."
+description: "Notes on putting consumer groups in front of a database you already run, instead of standing up a second cluster."
 date: 2026-09-21
 tags:
   - Rheo
@@ -18,30 +18,20 @@ authors:
   - Thanos Vassilakis
 ---
 
-Rheo: consumer groups on the database you already run.
+I wrote [Rheo](https://hex.pm/packages/rheo) because I kept needing two things from the same events: deliver the next one to a group of workers, and look up what happened last Tuesday. Most setups solve that with a broker plus a database. I wanted the consumer-group machinery in OTP, on a store I was already running.
 
-Most teams that need “deliver this event, then find out what happened last Tuesday” end up running two systems: a broker for delivery and a database for history. Rheo is an Elixir/OTP library that refuses that split. It embeds in your supervision tree and gives you leases, competing consumers, ACK fencing, partitions, lag, replay, and query over a store you already run: MongoDB, PostgreSQL, SQLite, Redis Streams, Mnesia, or ETS.
-
-This series is the design argument behind that library. It follows the official Rheo tutorials — the long-form essays in the repo — expanded into pieces you can read on the train and then take back to a `mix.exs`.
+Rheo is an Elixir library. You put it in your supervision tree. It gives you leases, competing consumers, ACK fencing, partitions, lag, replay, and query over MongoDB, PostgreSQL, SQLite, Redis Streams, Mnesia, or ETS.
 
 **Library:** [hex.pm/packages/rheo](https://hex.pm/packages/rheo) · **Docs:** [rheo.hexdocs.pm](https://rheo.hexdocs.pm/readme.html) · **Source:** [github.com/thanos/rheo](https://github.com/thanos/rheo)
 
-Delivery is **at-least-once**. Ordering is **per partition**. Consumption **never deletes events**. Those three sentences are the whole plot.
+Delivery is at-least-once. Order is per partition. Consuming an event does not delete it.
 
 ![Rheo example control — append events, inspect groups, watch lag](https://thanos.github.io/images/rheo/Rheo-Screenshot-Example-Control.jpg)
 
-*The example app: append to the log, inspect groups, watch lag. The database is the system of record.*
+*The example app: append to the log, inspect groups, watch lag.*
 
-## Who this series is for
+Parts 1–8 are the idea and the mechanics. Parts 9–17 are why the API moved: the 0.2 break, ETS as a second witness, Redis forcing a rewrite of what the callbacks *mean*, and what I froze before 1.0.
 
-- Elixir engineers who already run Postgres, Mongo, Redis, or Mnesia and do not want a second cluster just to get consumer groups.
-- People comparing Broadway, Oban, Kafka, and “we’ll just poll the table.”
-- Anyone who has been burned by “the cursor moved, so we must have processed it.”
+If you want to try it, `mix rheo.demo` and the [Livebook demos](https://hexdocs.pm/rheo/rheo_demo.html) are the hands-on version. HexDocs is the contract. These articles are the argument.
 
-## How to read it
-
-Read 1–8 if you want the product idea. Read 9–17 if you want the architectural evolution — why the API broke, how ETS proved the contract, why Redis forced a rewrite of the *meanings* of the callbacks, and what is frozen before 1.0.
-
-Hands-on companion: `mix rheo.demo` and the [Livebook demos](https://hexdocs.pm/rheo/rheo_demo.html).
-
-Canonical technical source of truth remains HexDocs — these articles are the argument, not the API contract.
+I wrote them so I could remember why I made the choices I did, and so you can decide whether the library is for you.

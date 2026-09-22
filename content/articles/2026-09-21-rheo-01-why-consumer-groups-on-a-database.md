@@ -1,6 +1,6 @@
 ---
 title: "Why Put Consumer Groups in Front of a Database?"
-description: "Brokers deliver. Databases remember. Some workloads need both from the same log."
+description: "I wanted to deliver events to a group of workers and still be able to look those events up later, without running two systems."
 date: 2026-09-21
 tags:
   - Rheo
@@ -16,26 +16,26 @@ authors:
 series: rheo
 ---
 
-This is part 1 of [Rheo](https://thanos.github.io/series/rheo/). Brokers deliver. Databases remember. Some workloads need both from the same log.
+This is part 1 of [Rheo](https://thanos.github.io/series/rheo/). I started this series because I kept needing two things from the same events: deliver the next one to a group of workers, and find the one that explains what happened at 13:04.
 
-Message brokers are good for enabling decoupled services to consume messages asynchronously, reliably, and in a load-balanced manner.
+Message brokers are good at the first part. They get a payload to a consumer, compete for it, retry it, dead-letter it. They are not good at the second. Ask a broker what happened to EUR-EURIBOR-6M and you end up with log shipping, retention tickets, and a second index, because the broker was never a system of record.
 
-Databases store history and answer questions. But consuming from a database in a load balanced _consumer group_ manner is hard — you have to code leases, fencing, competing workers, lag management, retries etc.
+Databases store history and answer questions. But consuming from a database as a load-balanced consumer group is hard. You have to write leases, fencing, competing workers, lag, retries, and so on. I have written that code more than once. It is always worse than I thought it would be.
 
 Rheo is for when you need both:
 
 - deliver the next event to a consumer group
 - find the event that explains what happened
 
-That is a common problem in market data, orders, risk, and audit trails.
+That comes up a lot in market data, orders, risk, and audit trails.
 
 ## What teams usually do
 
-They keep the queue and put a database behind it as the golden record. They stand up a dedicated consumer that copies the events to the database and then ACKs. After a while they purge the queues. Less often they spool off the database to S3 and purge that too.
+They keep the queue and put a database behind it as the golden record. A dedicated consumer copies each event into the database and then ACKs. After a while they purge the queues. Less often they spool the database off to S3 and purge that too.
 
-They maintain two systems.
+Now they maintain two systems, and they still throw the history away. They just do it in stages.
 
-Rheo gives you one more choice. Use you can use a databae but you dont loose your scalability. 
+I wanted something simpler. One database you already run, consumer groups on top, and you can still scale out workers.
 
 ## Brokers vs databases vs Rheo
 
@@ -46,23 +46,21 @@ Brokers and Rheo both let you consume some events and not others. They do not do
 | **NATS JetStream** | Subject hierarchy and wildcards (`*`, `>`) | A consumer can pull from many matching subjects |
 | **RabbitMQ** | Exchanges and bindings (routing keys, `#` / `*`) | A queue is bound to patterns; one queue can fan-in many routes |
 | **Redis Streams** | Named stream key. `XREAD` can list several keys; no subject tree | A consumer group (`XGROUP`) is one stream, with a native PEL |
-| **Rheo** | Explicit stream name | One group ↔ one stream. Filters are inside the log (type, key, query), not across stream names |
+| **Rheo** | Explicit stream name | One group on one stream. Filters are inside the log (type, key, query), not across stream names |
 | **Mongo / Postgres / SQLite alone** | Whatever you query | No consumer group unless you write one |
 
-Rheo can filter. It does not subscribe to a subject tree. You pick a stream. Then you search or query inside that log.
+Rheo can filter. It does not subscribe to a subject tree. You pick a stream, then you search or query inside that log. One group, one stream. If you need pattern fan-in, run more than one group, or put the topic on the event and query it. Rheo is not a topic bus.
 
-Rheo is not a topic bus. If you need pattern fan-in, run more than one group, or put the topic on the event and query it.
+What you get instead is searchable history, leases and frontiers, and the database you already run. Same public API on each backend. Consumption does not delete the event. No second cluster.
 
-What you get instead is searchable history, leases and frontiers, and the database you already run. Same public API on each backend. Consumption does not delete the event.
+## Two kinds of data
 
-## Rheo’s split
+I ended up with a simple split.
 
-Two kinds of data, two kinds of mutability:
-
-- **Events are immutable.** They live in the backend forever, until a retention policy you chose says otherwise. An event has a stream, a partition, a per-partition sequence, a type, a payload, and optional lineage metadata.
+- **Events are immutable.** They stay in the backend until a retention policy you chose says otherwise. An event has a stream, a partition, a per-partition sequence, a type, a payload, and optional lineage metadata.
 - **Delivery state is mutable and per group.** Leases, ACKs, retries, dead letters, the materialization cursor, and the committed frontier live beside the log, not inside it.
 
-That split is what lets two teams consume the same stream independently. Risk and surveillance both see every `curve_update`. Neither deletes the row the other still needs. When someone asks what the price was at 13:04, you query the log — you do not reconstruct it from a queue that already forgot.
+That is what lets two teams consume the same stream independently. Risk and surveillance both see every `curve_update`. Neither deletes the row the other still needs. When someone asks what the price was at 13:04, you query the log. You do not reconstruct it from a queue that already forgot.
 
 ```text
 append  →  immutable event log
@@ -72,23 +70,16 @@ append  →  immutable event log
 query   →  the same log, no group involved
 ```
 
-## When to use it
+## When I use it
 
-Use Rheo when you want:
+I use Rheo when I want an immutable, queryable event log in a database I already run, with consumer groups, leases, ACK, retry, and dead-lettering. Competing consumers on one group, or independent groups on the same stream. Partitions with key routing. A durable source for Broadway, if I need a pipeline.
 
-- an immutable, queryable event log in a database you already run
-- consumer groups with leases, ACK, retry, and dead-lettering
-- competing consumers *and* independent groups on the same stream
-- partitions with key routing and honest lag
-- a durable source for Broadway, instead of a second broker
-- OTP-native demand and lease renewal, without a Kafka cluster
+I do not use it when I need a dedicated broker (many languages on one bus, huge fan-out, exactly-once *claims*), or when the problem is really a job queue. Oban is a better job system. Broadway is a better pipeline topology. Rheo is the durable log those things can read from.
 
-Skip it when you need a dedicated broker (cross-language clients, huge fan-out, exactly-once *claims*), or when a job queue is actually the problem. Oban is a better job system. Broadway is a better pipeline topology. Rheo is the durable log those things can read from.
+Brokers add latency — extra hops, persistence, ACK rounds. If you care about microseconds you do not use a broker; you use ZeroMQ or something else that is not a broker. People keep Kafka or Rabbit when they already have it.
 
-Databases already store and search historical events well. Message brokers already coordinate consumers well. Rheo combines those in a library you embed, not a server you operate.
+Rheo is about keeping the rest simple: a library you embed, not a server you operate.
 
-Next: what a consumer group actually is — streams, competing workers, and independent progress.
-
-<!-- **Read next:** [What Is a Consumer Group?](https://thanos.github.io/articles/2026-09-21-rheo-02-what-is-a-consumer-group/) -->
+Next I will explain what I mean by a consumer group.
 
 *Docs: [Rheo README](https://rheo.hexdocs.pm/readme.html) · [Architecture](https://rheo.hexdocs.pm/architecture.html)*

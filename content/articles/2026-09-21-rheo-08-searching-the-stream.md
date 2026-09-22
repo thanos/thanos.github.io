@@ -1,6 +1,6 @@
 ---
 title: "Searching the Stream"
-description: "After ACK, the question is still “what happened?” The log is still there to answer it."
+description: "After ACK I still want to ask what happened. The log is still there."
 date: 2026-09-21
 tags:
   - Rheo
@@ -15,9 +15,7 @@ authors:
 series: rheo
 ---
 
-This is part 8 of [Rheo](https://thanos.github.io/series/rheo/). After ACK, the question is still “what happened?” The log is still there to answer it.
-
-Queue-then-delete systems have a clean ops story and a hole where the business lives. Once the consumer ACKs, the payload is gone. Tomorrow’s incident review becomes “we think it processed” plus whatever side table you remembered to write.
+This is part 8 of [Rheo](https://thanos.github.io/series/rheo/). Queue-then-delete systems have a clean ops story and a hole where the business lives. Once the consumer ACKs, the payload is gone. Tomorrow’s incident review becomes “we think it processed” plus whatever side table you remembered to write.
 
 Rheo keeps the events. Search is not an export job. It is the same API you used to consume.
 
@@ -32,13 +30,13 @@ Rheo.query("market-events", correlation_id: "abc")
 Rheo.query("market-events", producer: "pricing-service-v3")
 ```
 
-That is the differentiator versus brokers you drain and databases you poll. The log remains the system of record for what happened, *and* it is the thing consumer groups walk.
+The log remains the system of record for what happened, and it is the thing consumer groups walk.
 
 ## Query without joining a group
 
 `Rheo.query/2` does not take a group name. It does not mark anything leased. It does not advance a frontier. You can search a stream that has ten groups or zero. Investigation is not consumption.
 
-This sounds obvious until someone wires a “replay dashboard” that fetches leases and ACKs them to “look at the payload.” That dashboard just stole work from `risk`. Inspect APIs (`Rheo.read/3`, `Rheo.query/2`, `Rheo.dead_letters/3`, `Rheo.group_info/3`) are the read side. Fetch is the write side of delivery state.
+This sounds obvious until someone wires a “replay dashboard” that fetches leases and ACKs them to look at the payload. That dashboard just stole work from `risk`. Inspect APIs (`Rheo.read/3`, `Rheo.query/2`, `Rheo.dead_letters/3`, `Rheo.group_info/3`) are the read side. Fetch is the write side of delivery state.
 
 ## What you can ask
 
@@ -87,7 +85,7 @@ If you do not put `correlation_id` in, Rheo will not invent it from the payload.
 
 Part 11 is the full search-and-replay piece: new groups with start cursors, `Rheo.replay/3` on an existing group, and the loud `reset_group` that refuses to run without `confirm: true`.
 
-For this article, keep the smaller point: ACK does not delete. The investigative question stays cheap only because that is true.
+For this article, the smaller point: ACK does not delete. The investigative question stays cheap only because that is true.
 
 **Read next:** [Why Rheo 0.2 Broke Its 0.1 API](https://thanos.github.io/articles/2026-09-21-rheo-09-why-rheo-0-2-broke-its-0-1-api/)
 

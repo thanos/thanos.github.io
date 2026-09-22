@@ -1,6 +1,6 @@
 ---
 title: "Why Rheo 0.2 Broke Its 0.1 API"
-description: "0.1 proved the idea. 0.1 also painted the architecture into a corner. The break was the point."
+description: "0.1 proved the idea and also painted the architecture into a corner. I broke the API while I still could."
 date: 2026-09-21
 tags:
   - Rheo
@@ -15,21 +15,19 @@ authors:
 series: rheo
 ---
 
-This is part 9 of [Rheo](https://thanos.github.io/series/rheo/). 0.1 proved the idea. 0.1 also painted the architecture into a corner. The break was the point.
-
-Rheo 0.1 was a good demo that accidentally became an API. Durable consumer groups on MongoDB: immutable events, leases, ACK, competing consumers, a convenient `Rheo.Consumer` GenServer. That shape was good enough to ship. It was also sharp enough to lock in three lies:
+This is part 9 of [Rheo](https://thanos.github.io/series/rheo/). Rheo 0.1 was a good demo that accidentally became an API. Durable consumer groups on MongoDB: immutable events, leases, ACK, competing consumers, a convenient `Rheo.Consumer` GenServer. That shape was good enough to ship. It was also sharp enough to lock in three mistakes:
 
 - the consumer process *is* the group
 - `concurrency` means something
 - there is one topology, and it looks like Mongo
 
-0.2 broke the API so 0.3 and friends could add backends without carrying those lies as compatibility.
+0.2 broke the API so later versions could add backends without carrying those as compatibility.
 
 ## Process topology is not durable truth
 
-In 0.1, each consumer process polled the backend and ACKed inline. It felt like the consumer *was* the group. Crashes were “handled” by lease expiry — which is correct — but the OTP tree and the durable group were casually the same noun in the docs.
+In 0.1, each consumer process polled the backend and ACKed inline. It felt like the consumer *was* the group. Crashes were handled by lease expiry — which is correct — but the OTP tree and the durable group were casually the same noun in the docs.
 
-In 0.2, a local `Rheo.Group` is an **OTP lifecycle boundary**: demand, workers, renewals, drain. The backend remains the authority for leases and ACKs. Multiple nodes may run Groups for the same durable group; the store arbitrates.
+In 0.2, a local `Rheo.Group` is an OTP lifecycle boundary: demand, workers, renewals, drain. The backend remains the authority for leases and ACKs. Multiple nodes may run Groups for the same durable group; the store arbitrates.
 
 That split is why the Consumer API changed from “I am a poll loop” to “I join a Group with a handler module.” The words are similar. The ownership is not.
 
@@ -49,7 +47,7 @@ A documented option that does nothing is worse than a missing option. People siz
 
 0.2 introduced an opaque `Rheo.Backend.handle` plus named `Rheo.Instance` processes. Callers pass `rheo: SomeName`. Backends start whatever child they need. ETS can own tables. Redis can own two connections. Ecto can own nothing and borrow your Repo.
 
-This had to happen *before* the second backend, not after. An abstraction designed around one process name is not an abstraction.
+This had to happen before the second backend, not after. An abstraction designed around one process name is not an abstraction.
 
 ## Queries should travel
 
@@ -61,7 +59,7 @@ Event decoding moved toward the backend for the same reason. The public event is
 
 ## Break it while the user count is the author
 
-Pre-1.0 is a privilege. 0.2 used it.
+Pre-1.0 is a privilege. I used it.
 
 The broken surfaces were supervision opts, Consumer startup, query sort, and Event decoding. Each one would have been a major version after 1.0, plus a compatibility layer that existed only to protect accidents.
 

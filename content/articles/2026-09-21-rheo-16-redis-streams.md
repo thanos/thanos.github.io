@@ -1,6 +1,6 @@
 ---
 title: "Rheo on Redis Streams: Portable Sequence, Native PEL"
-description: "v0.8 asked whether the abstractions could describe Redis without pretending Redis is a deliveries table. v0.9 answers in code."
+description: "v0.8 asked whether the abstractions could describe Redis without pretending Redis is a deliveries table. v0.9 is the code."
 date: 2026-09-21
 tags:
   - Rheo
@@ -15,15 +15,13 @@ authors:
 series: rheo
 ---
 
-This is part 16 of [Rheo](https://thanos.github.io/series/rheo/). v0.8 asked whether the abstractions could describe Redis without pretending Redis is a deliveries table. v0.9 answers in code.
-
-This is the narrative companion to ADR 026 and the Redis guide. Part 15 set up the question. This article records what shipped.
+This is part 16 of [Rheo](https://thanos.github.io/series/rheo/). This is the narrative companion to ADR 026 and the Redis guide. Part 15 set up the question. This article records what shipped.
 
 ## The exit test, answered
 
-Which core modules changed their *meaning* for Redis?
+Which core modules changed their meaning for Redis?
 
-**None.** `Rheo.Consumer`, `Rheo.Event`, `Rheo.Query`, partition order, and the at-least-once / fencing invariants are the same as in v0.8.
+None. `Rheo.Consumer`, `Rheo.Event`, `Rheo.Query`, partition order, and the at-least-once / fencing invariants are the same as in v0.8.
 
 What landed:
 
@@ -65,11 +63,11 @@ Capabilities declare what Redis actually provides:
 
 Guarantees (`durable`, `distributed`, `partitions`, `contiguous_frontier`, `replay`) stay honest. Conformance gates optional cases on those flags. It never skips fencing.
 
-This is the part people want to fudge in a README. “We have Redis, so search is fine.” Search is *possible*. It is not indexed. Say that, then let the caller pick Postgres when investigation is the product.
+This is the part people want to fudge in a README. “We have Redis, so search is fine.” Search is possible. It is not indexed. Say that, then let the caller pick Postgres when investigation is the product.
 
 ## Wakeup without blocking the Group
 
-A Redix connection that runs `XREAD … BLOCK` cannot also serve appends and acks on the same TCP session. v0.9 starts **two** connections per instance: the handle for commands, and a `….Waiter` used only by `wait/2`.
+A Redix connection that runs `XREAD … BLOCK` cannot also serve appends and acks on the same TCP session. v0.9 starts two connections per instance: the handle for commands, and a `….Waiter` used only by `wait/2`.
 
 The Group and Producer keep their poll timers. A reader Task may send an early `:fetch` hint (ADR 025). Lost wakeups only cost latency. Correctness never depends on the hint arriving.
 
@@ -107,9 +105,7 @@ Handlers still return `:ack | {:retry, reason} | {:reject, reason}`. Broadway st
 - Redix connection pools
 - Treating ops / LiveDashboard as Redis-specific — the inspect API is portable
 
-Skipping is a feature. Each of those items is a way to smuggle a new abstraction through a backend-shaped door. The freeze in Part 17 only works if Redis did not force a rewrite.
-
-## Takeaway
+Skipping is useful. Each of those items is a way to smuggle a new abstraction through a backend-shaped door. The freeze in part 17 only works if Redis did not force a rewrite.
 
 v0.8 fixed the abstractions so a native stream backend would not force another core rewrite. v0.9 is that backend. Portable sequence, native PEL, fenced settle, optional dependency — and the same Consumer API you already have.
 

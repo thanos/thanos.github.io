@@ -1,6 +1,6 @@
 ---
 title: "Rheo Is Not Broadway — It Feeds Broadway"
-description: "Broadway is a topology. Rheo is a durable source. v0.7 stops asking you to choose."
+description: "Broadway is a topology. Rheo is a durable source. v0.7 lets you use both."
 date: 2026-09-21
 tags:
   - Rheo
@@ -15,11 +15,9 @@ authors:
 series: rheo
 ---
 
-This is part 14 of [Rheo](https://thanos.github.io/series/rheo/). Broadway is a topology. Rheo is a durable source. v0.7 stops asking you to choose.
+This is part 14 of [Rheo](https://thanos.github.io/series/rheo/). Every time I describe Rheo as “consumer groups in Elixir,” someone asks: isn’t that Broadway?
 
-Every time Rheo gets described as “consumer groups in Elixir,” someone asks the same question: isn’t that Broadway?
-
-It is a fair question. It is also a category error.
+It is a fair question. They are not the same kind of thing.
 
 **Broadway** is a topology. Processors, batchers, concurrency, rate limiting, partitioning, graceful draining. It expects something else to be the source of data — SQS, Kafka, RabbitMQ, a custom GenStage producer.
 
@@ -70,11 +68,11 @@ Broadway owns the pipeline shape. Rheo owns what “processed” means.
 
 ## The interesting problem: who renews the lease?
 
-Rheo leases are fenced. A `lease_id` is the only thing that authorizes an ACK. A lease that is not renewed expires so another worker can pick the event up. *Something* has to renew a lease while its message is inflight.
+Rheo leases are fenced. A `lease_id` is the only thing that authorizes an ACK. A lease that is not renewed expires so another worker can pick the event up. Something has to renew a lease while its message is inflight.
 
 In Broadway, the process that fetches is not the process that acknowledges. The producer fetches. An acknowledger, invoked from a processor or a batcher, acknowledges. Lease ownership and lease settlement are split across processes by construction.
 
-Rheo resolves this in two moves.
+I resolved this in two moves.
 
 **1. The producer owns fetch and renewal.** It tracks inflight leases and renews them on a timer at half the TTL, exactly as `Rheo.Group` does. A renewal that comes back `:stale_lease` drops the lease so the backend can redeliver it.
 
@@ -103,9 +101,9 @@ Forget `confirm` and the producer keeps renewing a lease you already settled —
 | `Rheo.Producer` `:max_demand` | unsettled leases held at once |
 | Broadway `processors: [default: [concurrency: n]]` | messages being worked on |
 
-They are not the same number. `:max_demand` is a claim on the database. Broadway’s `:concurrency` is a claim on schedulers. Setting concurrency far above `:max_demand` starves processors. Setting `max_demand` far above concurrency recreates the redelivery storm Part 5 warned about, only now with batchers.
+They are not the same number. `:max_demand` is a claim on the database. Broadway’s `:concurrency` is a claim on schedulers. Setting concurrency far above `:max_demand` starves processors. Setting `max_demand` far above concurrency recreates the redelivery storm part 5 warned about, only now with batchers.
 
-Producer concurrency should stay `1` unless you have a reason. One producer owns one inflight set. That is the point of the coordinator.
+Producer concurrency should stay `1` unless you have a reason. One producer owns one inflight set.
 
 ## Failure mapping
 
