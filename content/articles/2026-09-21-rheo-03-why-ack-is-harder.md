@@ -1,7 +1,7 @@
 ---
 title: "Why ACK Is Harder Than It Looks"
 description: "Acknowledging a message looks like one line. The failure cases are the part I actually had to design."
-date: 2026-09-21
+date: 2026-09-25
 tags:
   - Rheo
   - Elixir
@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - ACK
-draft: true
+draft: false
 authors:
   - Thanos Vassilakis
 series: rheo
