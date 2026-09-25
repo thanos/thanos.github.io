@@ -1,0 +1,38 @@
+id: oss-apo
+kind: oss
+title: APO — engineering evidence from Git repos
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Rust analyzer that reports observable engineering controls — docs, tests, supply-chain, delivery — not code-quality grades.
+bullets:
+  - Rules emit evidence only; a separate policy layer scores categories. Scans a local checkout or remote Git URI.
+domain: []
+skills:
+  - Rust
+signals:
+  domains: []
+  skills:
+    - rust
+    - git
+    - engineering-evidence
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/apo
+    - label: crates.io
+      url: https://crates.io/crates/apo
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

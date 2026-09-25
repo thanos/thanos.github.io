@@ -1,0 +1,39 @@
+id: oss-ex-editor
+kind: oss
+title: ExEditor — headless LiveView code editor
+client: null
+org: null
+job: null
+when:
+  start: 2025
+  end: null
+summary: Pure-Elixir headless editor — incremental diffs, native caret, syntax highlighting, plugin behaviour.
+bullets:
+  - Built a double-buffered LiveView editor (invisible textarea + highlight layer) with JS-managed line numbers and undo/redo.
+domain: []
+skills:
+  - Elixir
+  - JavaScript
+signals:
+  domains: []
+  skills:
+    - elixir
+    - javascript
+    - liveview
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/ex_editor
+    - label: hex
+      url: https://hex.pm/packages/ex_editor
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

@@ -1,0 +1,40 @@
+id: oss-kathikon
+kind: oss
+title: Kathikon — BEAM-native durable job queue
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Elixir/OTP job platform on Mnesia — retries, cron, uniqueness, rate limits, batches, LiveDashboard — no Postgres, Redis, or broker.
+bullets:
+  - Built Kathikon as durable job obligations with a formal state machine, dead-letter rerun, and scheduler adapters.
+  - Shipped ops CLI, Erlang-distribution RPC, and a Phoenix LiveDashboard page (pause, retry, search).
+domain: []
+skills:
+  - Elixir
+signals:
+  domains: []
+  skills:
+    - elixir
+    - otp
+    - mnesia
+    - job-queue
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/AnimaLogica/kathikon
+    - label: hex
+      url: https://hex.pm/packages/kathikon
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

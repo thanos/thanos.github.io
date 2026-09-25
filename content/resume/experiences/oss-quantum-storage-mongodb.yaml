@@ -1,0 +1,37 @@
+id: oss-quantum-storage-mongodb
+kind: oss
+title: quantum_storage_mongodb — Quantum cron on MongoDB
+client: null
+org: null
+job: null
+when:
+  start: 2024
+  end: null
+summary: Persistent Quantum scheduler storage adapter for shops that only have MongoDB and ephemeral disks.
+bullets:
+  - Ported Quantum’s ETS persistence to MongoDB so cron state survives VMs without durable block storage.
+domain: []
+skills:
+  - Elixir
+signals:
+  domains: []
+  skills:
+    - elixir
+    - mongodb
+    - scheduling
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/baoulo/quantum-storage-mongodb
+    - label: hex
+      url: https://hex.pm/packages/quantum_storage_mongodb
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

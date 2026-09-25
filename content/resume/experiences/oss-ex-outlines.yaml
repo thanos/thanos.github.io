@@ -1,0 +1,40 @@
+id: oss-ex-outlines
+kind: oss
+title: ex_outlines — structured LLM output for Elixir
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Schema-validated, type-safe LLM outputs with automatic repair — an Elixir take on Python Outlines.
+bullets:
+  - Built ExOutlines to validate LLM JSON against schemas and retry/repair invalid, mistyped, or wrapped output.
+domain:
+  - AI
+skills:
+  - Elixir
+signals:
+  domains:
+    - AI
+  skills:
+    - elixir
+    - llm
+    - structured-generation
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/AnimaLogica/ex_outlines
+    - label: hex
+      url: https://hex.pm/packages/ex_outlines
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

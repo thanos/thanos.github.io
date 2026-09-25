@@ -1,0 +1,40 @@
+id: oss-gnosis
+kind: oss
+title: Gnosis — local-first knowledge compiler
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Rust tool that discovers objects in a repo or S3, extracts structured knowledge, and exports an OKF-style bundle.
+bullets:
+  - Deterministic providers (Tree-sitter and document/data parsers), live TUI, no chat UI or vector database.
+domain:
+  - AI
+skills:
+  - Rust
+signals:
+  domains:
+    - AI
+  skills:
+    - rust
+    - knowledge-graph
+    - tree-sitter
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/gnosis
+    - label: crates.io
+      url: https://crates.io/crates/gnosis
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

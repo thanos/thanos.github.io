@@ -1,0 +1,45 @@
+id: oss-rheo
+kind: oss
+title: Rheo — database-backed consumer groups
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Embeddable Elixir/OTP library — searchable event log plus leases, ACK, retry, and dead letters on stores you already run.
+bullets:
+  - Shipped Rheo 1.0 with Mnesia, Redis Streams, MongoDB, PostgreSQL/SQLite, and ETS backends, plus a Broadway producer.
+  - At-least-once delivery, partition-local order, competing consumers, and independent groups on one stream — documented in a 17-part series.
+domain: []
+skills:
+  - Elixir
+signals:
+  domains: []
+  skills:
+    - elixir
+    - otp
+    - consumer-groups
+    - streaming
+    - architecture
+    - distributed-systems
+  seniority: hands-on
+  impact:
+    - platform
+    - scale
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/rheo
+    - label: hex
+      url: https://hex.pm/packages/rheo
+    - label: series
+      url: /series/rheo/
+  source: github
+provenance:
+  type: github
+  refs:
+    - path: content/series/rheo.md
+  last_verified: 2026-09-25
+visibility: public

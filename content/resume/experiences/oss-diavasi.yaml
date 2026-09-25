@@ -1,0 +1,41 @@
+id: oss-diavasi
+kind: oss
+title: Diavasi — durable consumer groups on existing databases
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Private platform — turn a connection + query + ordering contract into a resumable, parallel stream without changing producers.
+bullets:
+  - Built Diavasi as at-least-once consumer groups with a logical checkpoint, separate HTTP/CLI control plane, and TLS gRPC data plane.
+  - Shipped adapters for PostgreSQL keyset, MongoDB find, Redis Streams, and ScyllaDB; SDKs in Elixir, Rust, Python, Go, Java, and C#.
+domain: []
+skills:
+  - Python
+  - Elixir
+  - Rust
+signals:
+  domains: []
+  skills:
+    - python
+    - elixir
+    - rust
+    - consumer-groups
+    - databases
+    - distributed-systems
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+    - scale
+proof:
+  metrics: []
+  links: []
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

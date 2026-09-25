@@ -1,0 +1,40 @@
+id: oss-stabilos
+kind: oss
+title: Stabilos — policy-driven programmable money
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Private research and architecture for policy-constrained stablecoin issuance, EVM enforcement, and a LiveView control console.
+bullets:
+  - Wrote the 2026 stablecoin study covering reserve models, MiCA/GENIUS-era rails, and programmable settlement.
+  - Split the design into a policy language and validator, an EVM enforcement layer (issuance, transfer restrictions, supply integrity), and a LiveView console for approvals and supply visibility.
+domain:
+  - crypto
+  - finance
+skills:
+  - Elixir
+signals:
+  domains:
+    - crypto
+    - finance
+  skills:
+    - elixir
+    - evm
+    - policy
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+    - risk
+proof:
+  metrics: []
+  links: []
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

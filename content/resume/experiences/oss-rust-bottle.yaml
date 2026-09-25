@@ -1,0 +1,40 @@
+id: oss-rust-bottle
+kind: oss
+title: rust-bottle — Bottle RFC message containers
+client: null
+org: null
+job: null
+when:
+  start: 2025
+  end: null
+summary: Rust library for layered Bottle envelopes — classical and post-quantum encryption and signatures.
+bullets:
+  - Implemented Bottle containers with ECDH/X25519/P-256, RSA-OAEP, AES-256-GCM, ECDSA/Ed25519, plus ML-KEM, ML-DSA, SLH-DSA.
+  - IDCards, keychains, and signed group memberships for key purpose and lifecycle.
+domain:
+  - crypto
+skills:
+  - Rust
+signals:
+  domains:
+    - crypto
+  skills:
+    - rust
+    - post-quantum
+    - cryptography
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+    - risk
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/rust-bottle
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

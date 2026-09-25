@@ -1,0 +1,42 @@
+id: oss-darial
+kind: oss
+title: Darial — privacy-preserving LLM gateway
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Rust OpenAI-compatible loopback gateway — auth, policy, allowlisted providers, optional HPKE-protected relay.
+bullets:
+  - Designed Darial as an authorized LLM gateway, not a general proxy — destinations come only from admin allowlists.
+  - Direct TLS mode plus a content-blind relay so the forwarder cannot read prompts.
+domain:
+  - AI
+skills:
+  - Rust
+signals:
+  domains:
+    - AI
+  skills:
+    - rust
+    - llm
+    - privacy
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+    - risk
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/latentmeta/darial
+    - label: crates.io
+      url: https://crates.io/crates/darial
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

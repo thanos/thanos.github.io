@@ -1,0 +1,37 @@
+id: oss-smile-ex
+kind: oss
+title: smile_ex — Smile binary JSON for Elixir
+client: null
+org: null
+job: null
+when:
+  start: 2018
+  end: null
+summary: Complete Elixir encoder/decoder for FasterXML Smile — compact binary JSON with back-references.
+bullets:
+  - Implemented Smile encode/decode because a bank stack required it; complete, not claimed as fast.
+domain: []
+skills:
+  - Elixir
+signals:
+  domains: []
+  skills:
+    - elixir
+    - serialization
+    - smile
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/smile_ex
+    - label: hex
+      url: https://hex.pm/packages/smile_ex
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

@@ -1,0 +1,40 @@
+id: oss-couchbase-zig
+kind: oss
+title: couchbase-zig-client — Zig Couchbase + Elixir port
+client: null
+org: null
+job: null
+when:
+  start: 2025
+  end: null
+summary: Zig port of the C Couchbase client (KV, N1QL, analytics, transactions) and an Elixir wrapper over a Zig port.
+bullets:
+  - Ported libcouchbase-class operations to Zig — collections, durability, N1QL, ACID transactions, X.509, DNS SRV.
+  - Built couchbase_ex on that port for CRUD, subdocs, and parameterized queries.
+domain: []
+skills:
+  - Zig
+  - Elixir
+signals:
+  domains: []
+  skills:
+    - zig
+    - elixir
+    - couchbase
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/couchbase-zig-client
+    - label: hex
+      url: https://hex.pm/packages/couchbase_ex
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

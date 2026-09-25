@@ -1,0 +1,39 @@
+id: oss-phoenix-prerender
+kind: oss
+title: phoenix_prerender — static generation and ISR for Phoenix
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Build-time HTML for Phoenix routes, plug-served from disk, with Next.js-style incremental regeneration.
+bullets:
+  - Render marked routes through the full endpoint pipeline at build time and serve them before the router.
+  - Background ISR with ETS locks so only one regeneration runs per path.
+domain: []
+skills:
+  - Elixir
+signals:
+  domains: []
+  skills:
+    - elixir
+    - phoenix
+    - liveview
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/phoenix_prerender
+    - label: hex
+      url: https://hex.pm/packages/phoenix_prerender
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

@@ -1,0 +1,52 @@
+id: oss-softgpu
+kind: oss
+title: SoftGPU — Rust GPU emulation and sanitizer runtime
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Developer-oriented GPU emulation for HIP/ROCr — ABI, protocol, functional, and gfx1201 ISA fidelity levels, fail-closed.
+bullets:
+  - Built SoftGPU so AMD HIP userspace can talk to a ROCr/HSA adapter and run kernels on a vendor-neutral core in CI.
+  - Named fidelity levels (ABI through hardware-conformant); will not claim R9700 compatibility without evidence.
+domain:
+  - AI
+skills:
+  - Rust
+  - GPU
+  - HIP
+  - Metal
+  - Vulkan
+  - OSX
+  - Linux
+signals:
+  domains:
+    - AI
+  skills:
+    - rust
+    - gpu
+    - hip
+    - metal
+    - vulkan
+    - osx
+    - linux
+    - architecture
+    - testing
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/SoftGPU
+    - label: crates.io
+      url: https://crates.io/crates/softgpu
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

@@ -1,0 +1,39 @@
+id: oss-ex-codecs
+kind: oss
+title: ExCodecs — codec framework for the Elixir data stack
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Extensible BEAM codec framework — compression, binary encodings, checksums, hashing, and spatial formats behind one API.
+bullets:
+  - Designed ExCodecs as a category-based framework (binary codecs vs Spatial) rather than a single compression library.
+  - Hid native packaging (including C-Blosc2 chunks) behind a consistent encode/decode surface.
+domain: []
+skills:
+  - Elixir
+signals:
+  domains: []
+  skills:
+    - elixir
+    - codecs
+    - compression
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/AnimaLogica/codecs
+    - label: hex
+      url: https://hex.pm/packages/ex_codecs
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

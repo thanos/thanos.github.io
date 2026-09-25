@@ -1,0 +1,40 @@
+id: oss-terminusdb-client
+kind: oss
+title: terminusdb_ex — Elixir client for TerminusDB
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Idiomatic Req-based Elixir client for TerminusDB; connection context is immutable data.
+bullets:
+  - Wrote terminusdb_client for the document graph database with version control, concurrent-safe config, and schema-aware database create.
+domain:
+  - AI
+skills:
+  - Elixir
+signals:
+  domains:
+    - AI
+  skills:
+    - elixir
+    - knowledge-graph
+    - terminusdb
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/AnimaLogica/terminusdb-client-elixir
+    - label: hex
+      url: https://hex.pm/packages/terminusdb_client
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

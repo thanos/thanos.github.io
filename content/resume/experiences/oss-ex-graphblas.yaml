@@ -1,0 +1,43 @@
+id: oss-ex-graphblas
+kind: oss
+title: ex_graphblas — sparse linear algebra for Elixir
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: GraphBLAS-inspired sparse matrices and graph algorithms with a pure-Elixir backend and SuiteSparse NIFs.
+bullets:
+  - Implemented sparse matrices/vectors, 12 semirings, BFS, SSSP, PageRank, triangles, and knowledge-graph traversal.
+  - Same API on a reference Elixir backend and SuiteSparse:GraphBLAS via Zigler NIFs.
+domain:
+  - AI
+skills:
+  - Elixir
+  - Zig
+signals:
+  domains:
+    - AI
+  skills:
+    - elixir
+    - zig
+    - graphblas
+    - linear-algebra
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/AnimaLogica/ex_graphblas
+    - label: hex
+      url: https://hex.pm/packages/ex_graphblas
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

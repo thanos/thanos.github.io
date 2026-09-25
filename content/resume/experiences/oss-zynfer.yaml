@@ -1,0 +1,47 @@
+id: oss-zynfer
+kind: oss
+title: Zynfer — from-scratch LLM inference in Zig
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Narrow inference runtime aimed at AMD RDNA 4 (gfx1201) and Qwen; Apple Metal path is complete through Qwen3-4B int8.
+bullets:
+  - Wrote CPU f32 reference ops, Metal kernels, KV cache, tokenizer/sampling, and a quantized Qwen3-4B Metal schedule.
+  - Next work is the AMD gfx1201 / HIP path — not a universal ML framework.
+domain:
+  - AI
+skills:
+  - Zig
+  - GPU
+  - Metal
+  - HIP
+  - OSX
+  - Linux
+  - Inference
+signals:
+  domains:
+    - AI
+  skills:
+    - zig
+    - gpu
+    - llm
+    - metal
+    - architecture
+    - inference
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/zynfer
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

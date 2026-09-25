@@ -1,0 +1,43 @@
+id: oss-elixir-utcp
+kind: oss
+title: elixir-utcp — Universal Tool Calling Protocol for Elixir
+client: null
+org: null
+job: null
+when:
+  start: 2025
+  end: null
+summary: Official Elixir UTCP implementation — HTTP, CLI, WebSocket, gRPC, GraphQL, MCP, and more.
+bullets:
+  - Implemented ExUtcp with streaming transports, OpenAPI-to-tools conversion, OAuth2/API-key auth, and telemetry.
+  - Sole main author of the Elixir implementation in the UTCP org (not the Python/Go/Rust stacks).
+domain:
+  - AI
+skills:
+  - Elixir
+signals:
+  domains:
+    - AI
+  skills:
+    - elixir
+    - llm
+    - agents
+    - utcp
+    - architecture
+    - distributed-systems
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/universal-tool-calling-protocol/elixir-utcp
+    - label: hex
+      url: https://hex.pm/packages/ex_utcp
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

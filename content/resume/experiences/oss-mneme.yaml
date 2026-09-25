@@ -1,0 +1,42 @@
+id: oss-mneme
+kind: oss
+title: mneme — embedded vector / memory database
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Zig in-process vector engine (exact + HNSW, C ABI) with Python ctypes and Elixir Zigler clients.
+bullets:
+  - Wrote mneme as a local library, not a server — explicit ownership, persistence, HNSW, and a stable C ABI.
+  - Added mneme-python (ctypes over the C ABI) and a scaffolded Elixir NIF client.
+domain:
+  - AI
+skills:
+  - Zig
+  - Python
+  - Elixir
+signals:
+  domains:
+    - AI
+  skills:
+    - zig
+    - python
+    - elixir
+    - vector-database
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/mneme-db/mneme
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

@@ -1,0 +1,41 @@
+id: oss-oratos
+kind: oss
+title: Oratos — website visibility intelligence
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Rust CLI/library that audits local HTML, static exports, and live URLs for SEO, accessibility, metadata, and AI readiness.
+bullets:
+  - Shipped Oratos as a single crate with brew/scoop/script installs so CI can run it without a Rust toolchain.
+domain:
+  - AI
+skills:
+  - Rust
+signals:
+  domains:
+    - AI
+  skills:
+    - rust
+    - seo
+    - accessibility
+    - cli
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/latentmeta/oratos
+    - label: crates.io
+      url: https://crates.io/crates/oratos
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

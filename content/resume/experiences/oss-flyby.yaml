@@ -1,0 +1,39 @@
+id: oss-flyby
+kind: oss
+title: FlyBy — composable data-ingestion pipelines
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Rust pipeline framework (Source → Decode → Transform → Route → Sink) with a shared-memory SPSC sink and simulators.
+bullets:
+  - Shipped core traits, file source + framing + replay, SimplePipeline, and a FlyScenario product simulator.
+  - AF_XDP / DPDK / io_uring / SPDK are declared stubs, not pretended implementations.
+domain: []
+skills:
+  - Rust
+signals:
+  domains: []
+  skills:
+    - rust
+    - streaming
+    - pipelines
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/flyby
+    - label: crates.io
+      url: https://crates.io/crates/flyby
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

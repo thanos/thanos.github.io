@@ -1,0 +1,38 @@
+id: oss-ex-flow-graph
+kind: oss
+title: ExFlowGraph — LiveView node editor
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Interactive workflow canvas for Phoenix LiveView — nodes, edges, undo/redo, server-side graph state.
+bullets:
+  - Built a LiveView-native node editor with drag-and-drop, edge creation, multi-select, and command-pattern history.
+domain: []
+skills:
+  - Elixir
+signals:
+  domains: []
+  skills:
+    - elixir
+    - phoenix
+    - liveview
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/ExFlowGraph
+    - label: hex
+      url: https://hex.pm/packages/ex_flow_graph
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

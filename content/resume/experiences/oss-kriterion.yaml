@@ -1,0 +1,39 @@
+id: oss-kriterion
+kind: oss
+title: Kriterion — AI-assisted evaluation platform
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Phoenix LiveView app for spec-vs-submissions ranking with explainable scores and encrypted storage.
+bullets:
+  - Built the secure shell — master-password bootstrap, encrypted session, lock screen — and assignment workspaces for specs plus candidate artifacts.
+domain:
+  - AI
+skills:
+  - Elixir
+signals:
+  domains:
+    - AI
+  skills:
+    - elixir
+    - phoenix
+    - liveview
+    - llm
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/kriterion
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

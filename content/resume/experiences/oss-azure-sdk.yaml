@@ -1,0 +1,35 @@
+id: oss-azure-sdk
+kind: oss
+title: azure_sdk — modern Azure SDK for Elixir
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Elixir Azure client — Blob, Queues, Tables, auth, streaming, Req transport, Livebook.
+bullets:
+  - Wrote a BEAM-native Azure SDK covering storage services and authentication without the official language SDKs.
+domain: []
+skills:
+  - Elixir
+signals:
+  domains: []
+  skills:
+    - elixir
+    - azure
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/azure_sdk
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

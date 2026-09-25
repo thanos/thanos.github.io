@@ -1,0 +1,42 @@
+id: oss-logistiki
+kind: oss
+title: Logistiki — embedded accounting engine
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: OTP accounting execution layer — double-entry journals, Datalog-backed rules, Beancount oracle — not a bank or ERP.
+bullets:
+  - Built immutable journals, hierarchical entities/accounts, trial balance / GL / P&L, and deterministic replay.
+  - Pluggable ledger backends with a Beancount-backed accounting oracle.
+domain:
+  - finance
+skills:
+  - Elixir
+signals:
+  domains:
+    - finance
+  skills:
+    - elixir
+    - otp
+    - accounting
+    - datalog
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/logistiki
+    - label: hex
+      url: https://hex.pm/packages/logistiki
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

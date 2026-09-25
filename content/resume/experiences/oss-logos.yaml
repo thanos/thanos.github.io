@@ -1,0 +1,39 @@
+id: oss-logos
+kind: oss
+title: Logos — contracts that compile to EVM
+client: null
+org: null
+job: null
+when:
+  start: 2025
+  end: null
+summary: Elixir compiler for a legal-prose smart-contract language targeting Solidity and EVM bytecode.
+bullets:
+  - Compiled Logos DSL (parties, clauses, provided-that) into Solidity/EVM so a work-for-hire contract reads like the agreement.
+domain:
+  - crypto
+skills:
+  - Elixir
+signals:
+  domains:
+    - crypto
+  skills:
+    - elixir
+    - evm
+    - solidity
+    - compilers
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/logos
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

@@ -1,0 +1,37 @@
+id: oss-zinto
+kind: oss
+title: Zinto — Zig desktop apps with Svelte
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Single-binary desktop framework — Zig + libxev backend, SvelteKit frontend, Bun toolchain, assets served from memory.
+bullets:
+  - Embedded the production frontend in the binary and dispatched Svelte↔Zig commands via comptime JSON IPC.
+domain: []
+skills:
+  - Zig
+  - JavaScript
+signals:
+  domains: []
+  skills:
+    - zig
+    - javascript
+    - svelte
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/zinto
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public

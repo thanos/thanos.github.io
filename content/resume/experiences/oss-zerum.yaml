@@ -1,0 +1,42 @@
+id: oss-zerum
+kind: oss
+title: Zerum — deterministic Python code governance
+client: null
+org: null
+job: null
+when:
+  start: 2026
+  end: null
+summary: Rust analyzer (~75 native checks) for maintainability, architecture boundaries, and AI-slop patterns; optional Ruff orchestration.
+bullets:
+  - Built Zerum with human/JSON/SARIF output and a `--remediation-prompt` brief for editor agents — no model call inside Zerum.
+  - Distributed via crates.io, PyPI wheels, Homebrew, and GitHub Releases.
+domain:
+  - AI
+skills:
+  - Rust
+  - Python
+signals:
+  domains:
+    - AI
+  skills:
+    - rust
+    - python
+    - static-analysis
+    - architecture
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/latentmeta/zerum
+    - label: crates.io
+      url: https://crates.io/crates/zerum
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-09-25
+visibility: public
