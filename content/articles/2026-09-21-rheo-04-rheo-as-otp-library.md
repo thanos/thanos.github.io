@@ -1,7 +1,7 @@
 ---
 title: "Building Rheo as an Elixir/OTP Library"
 description: "Rheo is not a server you run. It is a child spec you supervise. The database keeps the truth."
-date: 2026-09-21
+date: 2026-09-28
 tags:
   - Rheo
   - Elixir
@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - supervision
-draft: true
+draft: false
 authors:
   - Thanos Vassilakis
 series: rheo
