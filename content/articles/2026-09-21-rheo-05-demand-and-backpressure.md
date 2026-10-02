@@ -1,7 +1,7 @@
 ---
 title: "Demand, Backpressure, and Database Consumers"
 description: "If you fetch without a bound, a crash turns into a redelivery storm. I use max_demand for that."
-date: 2026-09-21
+date: 2026-10-02
 tags:
   - Rheo
   - Elixir
@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - backpressure
-draft: true
+draft: false
 authors:
   - Thanos Vassilakis
 series: rheo
