@@ -8,5 +8,7 @@ dist/
 # Resume flavor targets (briefs + generated output stay local)
 content/resume/briefs/
 content/resume/out/
+content/resume/specs/**
 !content/resume/briefs/.gitkeep
 !content/resume/out/.gitkeep
+!content/resume/specs/README.md

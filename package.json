@@ -10,7 +10,8 @@
     "preview": "astro preview",
     "resume:pack": "node scripts/resume/pack.mjs",
     "resume:generate": "node scripts/resume/generate.mjs",
-    "resume:flavor": "node scripts/resume/flavor.mjs"
+    "resume:flavor": "node scripts/resume/flavor.mjs",
+    "resume:pdf": "node scripts/resume/render-pdf.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

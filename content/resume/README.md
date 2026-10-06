@@ -2,7 +2,9 @@
 
 Committed: `profile.yaml`, `jobs/`, `experiences/`, `taxonomy.yaml`, plus `scripts/resume/` and `.cursor/skills/resume-flavor/`.
 
-Local only (**gitignored**): `briefs/`, `out/`, `.env`.
+Local only (**gitignored**): `briefs/`, `out/`, `specs/<slug>/`, `.env`.
+
+Job specs: drop a posting in `content/resume/specs/<slug>/spec.md` and ask the agent to flavor it (see `.cursor/skills/resume-flavor/`).
 
 ## Experience atom fields (portfolio filters)
 

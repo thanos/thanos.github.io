@@ -1,7 +1,7 @@
 ---
 title: "MongoDB as a Searchable Event Log"
 description: "The first backend was Mongo because I wanted to query the history, not just pop a queue."
-date: 2026-09-21
+date: 2026-10-06
 tags:
   - Rheo
   - Elixir
@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - MongoDB
-draft: true
+draft: false
 authors:
   - Thanos Vassilakis
 series: rheo
