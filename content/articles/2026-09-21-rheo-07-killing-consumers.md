@@ -1,7 +1,7 @@
 ---
 title: "Killing Consumers on Purpose"
 description: "If killing the worker loses the message, you built a demo. I like a rude one."
-date: 2026-09-21
+date: 2026-10-08
 tags:
   - Rheo
   - Elixir
@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - LiveDashboard
-draft: true
+draft: false
 authors:
   - Thanos Vassilakis
 series: rheo
