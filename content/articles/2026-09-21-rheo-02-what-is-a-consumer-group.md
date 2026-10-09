@@ -1,5 +1,5 @@
 ---
-title: "What Is a Consumer Group?"
+title: "Rheo: What Is a Consumer Group?"
 description: "A stream is the log. A group is independent progress on that log. Workers in a group compete. Groups do not."
 date: 2026-09-24
 tags:

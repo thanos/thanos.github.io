@@ -1,5 +1,5 @@
 ---
-title: "MongoDB as a Searchable Event Log"
+title: "Rheo: MongoDB as a Searchable Event Log"
 description: "The first backend was Mongo because I wanted to query the history, not just pop a queue."
 date: 2026-10-06
 tags:

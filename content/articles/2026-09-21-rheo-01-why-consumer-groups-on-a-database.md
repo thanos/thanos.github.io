@@ -1,5 +1,5 @@
 ---
-title: "Why Put Consumer Groups in Front of a Database?"
+title: "Rheo: Why Put Consumer Groups in Front of a Database?"
 description: "I wanted to deliver events to a group of workers and still be able to look those events up later, without running two systems."
 date: 2026-09-21
 tags:

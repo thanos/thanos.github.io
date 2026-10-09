@@ -1,5 +1,5 @@
 ---
-title: "Why ACK Is Harder Than It Looks"
+title: "Rheo: Why ACK Is Harder Than It Looks"
 description: "Acknowledging a message looks like one line. The failure cases are the part I actually had to design."
 date: 2026-09-25
 tags:

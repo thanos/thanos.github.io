@@ -1,5 +1,5 @@
 ---
-title: "Demand, Backpressure, and Database Consumers"
+title: "Rheo: Demand, Backpressure, and Database Consumers"
 description: "If you fetch without a bound, a crash turns into a redelivery storm. I use max_demand for that."
 date: 2026-10-02
 tags:
