@@ -1,5 +1,5 @@
 ---
-title: "Searching the Stream"
+title: "Rheo: Searching the Stream"
 description: "After ACK I still want to ask what happened. The log is still there."
 date: 2026-09-21
 tags:
@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - search
-draft: true
+draft: false
 authors:
   - Thanos Vassilakis
 series: rheo
