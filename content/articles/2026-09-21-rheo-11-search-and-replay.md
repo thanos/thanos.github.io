@@ -1,7 +1,7 @@
 ---
 title: "Search and Replay the Event History"
 description: "Queues that delete on ACK cannot answer what happened last Tuesday. Replay should not copy the log."
-date: 2026-09-21
+date: 2026-10-12
 tags:
   - Rheo
   - Elixir

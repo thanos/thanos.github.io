@@ -1,7 +1,7 @@
 ---
 title: "If Rheo Really Is Database-Agnostic, Prove It with ETS"
 description: "An abstraction with one implementation is a hope. v0.3 made ETS the second witness."
-date: 2026-09-21
+date: 2026-09-11
 tags:
   - Rheo
   - Elixir

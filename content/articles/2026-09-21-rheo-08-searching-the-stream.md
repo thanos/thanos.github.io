@@ -1,7 +1,7 @@
 ---
 title: "Rheo: Searching the Stream"
 description: "After ACK I still want to ask what happened. The log is still there."
-date: 2026-09-21
+date: 2026-10-09
 tags:
   - Rheo
   - Elixir

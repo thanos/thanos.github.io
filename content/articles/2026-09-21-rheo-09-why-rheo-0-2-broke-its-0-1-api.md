@@ -1,7 +1,7 @@
 ---
 title: "Why Rheo 0.2 Broke Its 0.1 API"
 description: "0.1 proved the idea and also painted the architecture into a corner. I broke the API while I still could."
-date: 2026-09-21
+date: 2026-10-10
 tags:
   - Rheo
   - Elixir
