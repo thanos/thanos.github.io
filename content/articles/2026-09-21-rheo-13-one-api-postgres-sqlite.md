@@ -10,7 +10,7 @@ tags:
   - distributed-systems
   - PostgreSQL
   - SQLite
-draft: true
+draft: false
 authors:
   - Thanos Vassilakis
 series: rheo
