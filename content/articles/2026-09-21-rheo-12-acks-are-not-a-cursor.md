@@ -1,7 +1,7 @@
 ---
 title: "ACKs Are Not a Cursor"
 description: "If progress is the max acked sequence, lag lies and replay skips holes."
-date: 2026-09-21
+date: 2026-10-14
 tags:
   - Rheo
   - Elixir
