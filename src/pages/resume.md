@@ -49,10 +49,10 @@ A multi national group of 166, 47% diversity, and with full-time teams in Canada
 
 ### Strategic Cost Optimization & Vendor Consolidation
 
-- **Enterprise Reconciliation Service (2024):** Architected an in-house solution using ML and GPU matching to displace legacy vendor products, securing **$7M in annual savings**.
+- **Enterprise Reconciliation Service (2025):** Architected an in-house solution using ML and GPU matching to displace legacy vendor products, securing **$7M in annual savings**.
 - **Trade Expense Services (2024):** Deployed agentic invoice processing to modernize expense management, eliminating external vendor dependencies for **$11M/year savings**.
 - **Global Market Supervision (2023):** Engineered an event-driven, real-time supervision service that replaced third-party systems.
-- **Post-Trade Modernization (2023):** Built T+1 infrastructure and post-trade processing services, ensuring regulatory compliance.
+- **Post-Trade Modernization (2024):** Built T+1 infrastructure and post-trade processing services, ensuring regulatory compliance.
 - **Access Control Modernization (2023):** Centralized application access control for over 1,000 apps.
 - **Governance & Data (2023):** Internalized Reference Data Services and ML-based Trade Limits Governance.
 
@@ -126,13 +126,13 @@ After stints in Europe -- advising the European Parliament, building Erlang syst
 | Achievement | Description |
 |-------------|-------------|
 | Europe's 1st Missing Children's Registry | Built a central online database of missing children and was awarded a citation from the European Parliament. |
-| Top earning US mobile app | MapQuest |
+| European Parliament workflow service | Handles the complete workflow of all artifacts in the European Parliament |
+| Top earning US mobile apps | MapQuest Mobile and eBay's first mobile app |
 | Phonescript | 1st phone programming language |
-| eBay's first mobile app | Developed the initial mobile application for eBay |
 | 1st Python trading service | Built for SIAC/NYSE |
+| ICAP's fixed income trading platform | Still used by most banks for fixed income trading. |
 | 1st C++ debugger & Numeric library | Coded standard libraries for Walter Bright's C++ distribution |
 | 1st Internet Casino | Caesars Casino |
-| 1st Chess app for iPhone | Reached to #23 in games in App Store |
 | 1st Web framework for Python (PSO) | Included in Debian Linux and used by European Parliament, NASA, SIAC, JP Morgan |
 | Byteeasy | Anonymous crypto exchange |
 | BTC Terminal | Cross-exchange custodial crypto trading platform |

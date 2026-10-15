@@ -15,6 +15,7 @@ bullets:
     languages, 12k+ document types.
   - "Technical consultant for EP internet/intranet: CGIs, search, dynamic document generation."
   - Built general client/server libraries (TCP/IP) ported across platforms for EPADES.
+  - Handles the complete workflow of all artifacts in the European Parliament.
 domain:
   - finance
 skills:
@@ -40,5 +41,5 @@ provenance:
   type: job_built
   refs:
     - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
-  last_verified: 2026-08-06
+  last_verified: 2026-10-15
 visibility: public

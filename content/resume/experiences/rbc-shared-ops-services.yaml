@@ -11,7 +11,7 @@ summary: UI platforms, reporting, queuing, notifications, FAS, T+1, trade reposi
 bullets:
   - "Own shared operation services: UI platforms, Reporting, central queuing, Notification, FAS, T+1
     reporting, Trade Repository across CM, Wealth, and Cash Management."
-  - Built T+1 infrastructure and post-trade processing services (2023).
+  - Built T+1 infrastructure and post-trade processing services (2024).
 domain:
   - finance
   - trading
@@ -42,5 +42,5 @@ proof:
 provenance:
   type: job_ran
   refs: []
-  last_verified: 2026-08-06
+  last_verified: 2026-10-15
 visibility: public

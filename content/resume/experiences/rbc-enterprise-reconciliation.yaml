@@ -5,12 +5,12 @@ client: RBC
 org: RBC
 job: rbc
 when:
-  start: 2024
+  start: 2025
   end: null
 summary: In-house ML + GPU matching reconciliation displacing vendor products.
 bullets:
   - Architected in-house reconciliation using ML and GPU matching (300 realtime / 2k+ daily).
-  - Displaced legacy vendor products for ~$7M annual savings (2024).
+  - Displaced legacy vendor products for ~$7M annual savings (2025).
 domain:
   - finance
   - trading
@@ -48,5 +48,5 @@ proof:
 provenance:
   type: job_built
   refs: []
-  last_verified: 2026-08-06
+  last_verified: 2026-10-15
 visibility: public
