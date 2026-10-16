@@ -1,7 +1,7 @@
 ---
 title: "Rheo Is Not Broadway — It Feeds Broadway"
 description: "Broadway is a topology. Rheo is a durable source. v0.7 lets you use both."
-date: 2026-09-21
+date: 2026-10-16
 tags:
   - Rheo
   - Elixir
@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - Broadway
-draft: true
+draft: false
 authors:
   - Thanos Vassilakis
 series: rheo

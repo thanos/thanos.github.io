@@ -11,7 +11,7 @@ summary: Eclectic systems background; early Python finance systems; notable indu
 bullets:
   - Rewrote Caesars internet casino from 40k LOC C++ to 4k LOC Python — lifelong Python evangelist.
   - Industry firsts include early Python trading at SIAC/NYSE, PhoneScript, PSO web framework,
-    MapQuest Mobile and eBay's first mobile app, ICAP's fixed-income trading platform,
+    MapQuest, eBay, NBC Weather, and New York Times mobile, ICAP's fixed-income trading platform,
     the European Parliament workflow service, Nimalana, Aegis.
 domain:
   - gaming

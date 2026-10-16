@@ -121,7 +121,7 @@ After stints in Europe -- advising the European Parliament, building Erlang syst
 |-------------|-------------|
 | Europe's 1st Missing Children's Registry | Built a central online database of missing children and was awarded a citation from the European Parliament. |
 | European Parliament workflow service | Handles the complete workflow of all artifacts in the European Parliament |
-| Top earning US mobile apps | MapQuest Mobile and eBay's first mobile app |
+| Top earning US mobile apps | including MapQuest, eBay, NBC Weather, New York Times |
 | Phonescript | 1st phone programming language |
 | 1st Python trading service | Built for SIAC/NYSE |
 | ICAP's fixed income trading platform | Still used by most banks for fixed income trading. |
