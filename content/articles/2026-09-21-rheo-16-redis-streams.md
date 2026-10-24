@@ -1,7 +1,7 @@
 ---
 title: "Rheo on Redis Streams: Portable Sequence, Native PEL"
 description: "v0.8 asked whether the abstractions could describe Redis without pretending Redis is a deliveries table. v0.9 is the code."
-date: 2026-09-21
+date: 2026-10-19
 tags:
   - Rheo
   - Elixir
@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - Redis
-draft: true
+draft: false
 authors:
   - Thanos Vassilakis
 series: rheo

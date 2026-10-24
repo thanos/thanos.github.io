@@ -1,7 +1,7 @@
 ---
 title: "One Consumer API, PostgreSQL and SQLite Underneath"
 description: "v0.6 adds Ecto. The handler does not change. The host keeps the Repo."
-date: 2026-09-21
+date: 2026-10-15
 tags:
   - Rheo
   - Elixir

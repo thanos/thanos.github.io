@@ -1,7 +1,7 @@
 ---
 title: "Breaking Rheo Before Anyone Depends on the Wrong Abstraction"
 description: "v0.8 adds no backend. It corrects the meanings of the ones you already have."
-date: 2026-09-21
+date: 2026-10-17
 tags:
   - Rheo
   - Elixir
@@ -9,7 +9,7 @@ tags:
   - event-sourcing
   - distributed-systems
   - architecture
-draft: true
+draft: false
 authors:
   - Thanos Vassilakis
 series: rheo

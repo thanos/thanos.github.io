@@ -12,3 +12,7 @@ content/resume/specs/**
 !content/resume/briefs/.gitkeep
 !content/resume/out/.gitkeep
 !content/resume/specs/README.md
+.cursor/
+.env.example
+content/.DS_Store
+roughs/
