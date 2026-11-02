@@ -39,7 +39,11 @@ const pathname = rawPath.startsWith(base) ? rawPath : `${base}${rawPath.replace(
 const site = Astro.site ?? new URL(profile.web.url);
 const canonical = new URL(pathname, site);
 const fullTitle = pageTitle(title, profile.name);
-const image = absoluteUrl(profile.web.image, site.href);
+const image = absoluteUrl(profile.web.og_image ?? profile.web.image, site.href);
+const imageAlt =
+  profile.web.og_image && profile.web.og_image !== profile.web.image
+    ? fullTitle
+    : `Portrait of ${profile.name}`;
 const jsonLdText = JSON.stringify(graphJsonLd(jsonLd ? [jsonLd] : [], site.href)).replace(
   /</g,
   '\\u003c'
@@ -73,7 +77,10 @@ const jsonLdText = JSON.stringify(graphJsonLd(jsonLd ? [jsonLd] : [], site.href)
     <meta property="og:url" content={canonical.href} />
     <meta property="og:type" content={ogType} />
     <meta property="og:image" content={image} />
-    <meta property="og:image:alt" content={`Portrait of ${profile.name}`} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:image:type" content={image.endsWith('.gif') ? 'image/gif' : 'image/jpeg'} />
+    <meta property="og:image:width" content="175" />
+    <meta property="og:image:height" content="173" />
     <meta property="og:locale" content="en_US" />
     {
       publishedTime && (

@@ -97,7 +97,7 @@ Maturity key: **reference** = de facto / official; **strong** = production-grade
 | ASDF | reference | strong | thin | read-oriented | gap | gap | gap | gap | gap |
 | BAM/CRAM/VCF | reference | reference (HTSlib) | strong | reference (htsjdk) | thin | gap | gap | usable (aging FFI) | gap |
 
-### Python — still the scientific front door
+### Python — still the easiest entry point
 
 If a format matters, Python usually has the nicest API and the most examples.
 
@@ -110,9 +110,9 @@ If a format matters, Python usually has the nicest API and the most examples.
 | Parquet / Arrow | `pyarrow`, `fastparquet`, Polars/pandas | Arrow is the shared memory story |
 | Geospatial | `rasterio`, `rioxarray`, GDAL bindings | COG/GeoTIFF via GDAL |
 
-**Verdict:** richest ecosystem. Production science pipelines still default here for interactive work and for defining interchange.
+**Current status:** richest ecosystem. Production science pipelines still default here for interactive work and for defining interchange.
 
-### C — where the durable cores live
+### C — the core libraries
 
 | Format | Libraries | Notes |
 | --- | --- | --- |
@@ -123,7 +123,7 @@ If a format matters, Python usually has the nicest API and the most examples.
 | ASDF | asdf-c | Spec-track C implementation |
 | Arrow | Arrow C / nanoarrow | C Data Interface for zero-copy handoff |
 
-**Verdict:** if you need longevity, MPI, or something every other language wraps, start in C (or accept that you will).
+**Current status:** if you need longevity, MPI, or something every other language wraps, start in C (or accept that you will).
 
 ### Fortran — still first-class for arrays on disk
 
@@ -134,7 +134,7 @@ If a format matters, Python usually has the nicest API and the most examples.
 | FITS | CFITSIO Fortran API | Same core as C |
 | Parquet / Zarr / Arrow | — | Generally gap; call C or preprocess |
 
-**Verdict:** excellent for HDF5/NetCDF/FITS in HPC models. Columnar cloud formats are not where Fortran spends its energy.
+**Current status:** excellent for HDF5/NetCDF/FITS in HPC models. Columnar cloud formats are not where Fortran spends its energy.
 
 ### Java — enterprise science and genomics tooling
 
@@ -148,7 +148,7 @@ If a format matters, Python usually has the nicest API and the most examples.
 | Genomics | **htsjdk** | BAM/CRAM/VCF with HTSlib-class gravity |
 | Parquet / Arrow | parquet-java, Arrow Java | First-class analytics stack |
 
-**Verdict:** strongest non-Python home for genomics (htsjdk) and a serious NetCDF/HDF5/Zarr story for Earth science JVMs.
+**Current status:** strongest non-Python home for genomics (htsjdk) and a serious NetCDF/HDF5/Zarr story for Earth science JVMs.
 
 ### C# / .NET — managed readers catching up
 
@@ -161,7 +161,7 @@ If a format matters, Python usually has the nicest API and the most examples.
 | NetCDF / Zarr | thinner / bindings | Often via C APIs or conversion |
 | Genomics | thin | Prefer JVM or Python pipelines |
 
-**Verdict:** Parquet and HDF5 are genuinely good on modern .NET. Domain formats (Zarr, CRAM, ASDF) lag.
+**Current status:** Parquet and HDF5 are genuinely good on modern .NET. Domain formats (Zarr, CRAM, ASDF) lag.
 
 ### Rust — safe reimplementations and good FFI
 
@@ -173,9 +173,9 @@ If a format matters, Python usually has the nicest API and the most examples.
 | Genomics | **noodles** | Pure Rust BAM/CRAM/VCF/FASTA/… |
 | ASDF | limited | Prefer Python for authorship |
 
-**Verdict:** Arrow/Parquet/Zarr/noodles are the places Rust already feels production-native. Hierarchical science formats are improving but still dual-track (FFI vs pure).
+**Current status:** Arrow/Parquet/Zarr/noodles are the places Rust already feels production-native. Hierarchical science formats are improving but still dual-track (FFI vs pure).
 
-### Elixir — BEAM-native where it counts
+### Elixir — BEAM-native -  where it counts
 
 | Format | Libraries | Notes |
 | --- | --- | --- |
@@ -183,7 +183,7 @@ If a format matters, Python usually has the nicest API and the most examples.
 | Arrow / Parquet | **ex_arrow** | IPC, Flight, ADBC, Parquet, Dataset |
 | HDF5 / NetCDF / FITS / HTS | — | Convert or NIF to C; not BEAM-native yet |
 
-**Verdict:** for cloud-chunked arrays and columnar interchange on the BEAM, the story is real. For FITS/HDF5/CRAM, plan a boundary service or NIF.
+**Current status:** for cloud-chunked arrays and columnar interchange on the BEAM, the story is real. For FITS/HDF5/CRAM, plan a boundary service or NIF.
 
 ### Ruby — bindings and BioRuby, not format leadership
 
@@ -193,7 +193,7 @@ If a format matters, Python usually has the nicest API and the most examples.
 | Genomics | bio-samtools (FFI to samtools/HTSlib) | Works; maintenance is uneven |
 | FITS / HDF5 / Zarr | thin / archived gems | Prefer conversion pipelines |
 
-**Verdict:** fine as a consumer via Arrow or bio-samtools. Not where new scientific format work happens.
+**Current status:** fine as a consumer via Arrow or bio-samtools. Not where new scientific format work happens.
 
 ### Zig — early but pointed at columnar I/O
 
@@ -203,7 +203,7 @@ If a format matters, Python usually has the nicest API and the most examples.
 | Arrow | zarrow, arrow-zig | Native layouts + IPC; maturing |
 | HDF5 / NetCDF / Zarr / FITS / HTS | gap | Bind C or stay in another language |
 
-**Verdict:** Zig’s interesting scientific niche today is *columnar* (Parquet/Arrow), not the classic HPC hierarchy formats. Expect rapid change.
+**Current status:** Zig’s interesting scientific niche today is *columnar* (Parquet/Arrow), not the classic HPC hierarchy formats. Expect rapid change.
 
 ## How to choose
 

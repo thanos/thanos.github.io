@@ -23,6 +23,8 @@ export interface SiteProfile {
     works_for: string;
     location: string;
     image: string;
+    /** Social-card image for embeds; falls back to `image` when omitted. */
+    og_image?: string;
     bio: string;
     sameAs: SameAsLink[];
     knowsAbout: string[];

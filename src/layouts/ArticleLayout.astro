@@ -48,7 +48,7 @@ const jsonLd = [
     dateModified: date.toISOString(),
     inLanguage: 'en',
     keywords: tags,
-    image: new URL(profile.web.image.replace(/^\//, ''), site).href,
+    image: new URL((profile.web.og_image ?? profile.web.image).replace(/^\//, ''), site).href,
     author: { '@id': personId(site.href) },
     publisher: { '@id': personId(site.href) },
     mainEntityOfPage: new URL(canonicalPath.replace(/^\//, ''), site).href,
