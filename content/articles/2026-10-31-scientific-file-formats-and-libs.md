@@ -88,14 +88,14 @@ Maturity key: **reference** = de facto / official; **strong** = production-grade
 
 | Format | Python | C | Rust | Java | C# | Elixir | Fortran | Ruby | Zig |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| HDF5 | reference | reference | strong / evolving | strong | strong | thin (via FFI / convert) | reference | thin | gap |
-| NetCDF | reference | reference | usable | strong | usable | thin | reference | thin | gap |
+| HDF5 | reference | reference | strong / evolving | strong | strong | gap | reference | thin | gap |
+| NetCDF | reference | reference | usable | strong | usable | usable (NIFs) | reference | thin | gap |
 | Zarr | reference | via NetCDF-C / C++ | strong | strong | thin | strong | thin | gap | gap |
-| Parquet | reference | via Arrow C++ | reference | reference | strong | strong (via Arrow) | gap | usable | usable → strong |
+| Parquet | reference | via Arrow C++ | reference | reference | strong | strong | gap | usable | usable → strong |
 | Arrow | reference | reference (C / C++) | reference | reference | strong | strong | thin | strong (C GLib) | usable |
-| FITS | reference | reference (CFITSIO) | usable | strong | usable | gap | via CFITSIO | thin | gap |
+| FITS | reference | reference (CFITSIO) | usable | strong | usable | usable (CFITSIO NIF) | via CFITSIO | thin | gap |
 | ASDF | reference | strong | thin | read-oriented | gap | gap | gap | gap | gap |
-| BAM/CRAM/VCF | reference | reference (HTSlib) | strong | reference (htsjdk) | thin | gap | gap | usable (aging FFI) | gap |
+| BAM/CRAM/VCF | reference | reference (HTSlib) | strong | reference (htsjdk) | thin | VCF usable; BAM/CRAM gap | gap | usable (aging FFI) | gap |
 
 ### Python — still the easiest entry point
 
@@ -175,15 +175,19 @@ If a format matters, Python usually has the nicest API and the most examples.
 
 **Current status:** Arrow/Parquet/Zarr/noodles are the places Rust already feels production-native. Hierarchical science formats are improving but still dual-track (FFI vs pure).
 
-### Elixir — BEAM-native -  where it counts
+### Elixir — BEAM-native where it counts
 
 | Format | Libraries | Notes |
 | --- | --- | --- |
-| Zarr | **ExZarr** | Pure Elixir v2/v3; CI-tested against zarr-python |
-| Arrow / Parquet | **ex_arrow** | IPC, Flight, ADBC, Parquet, Dataset |
-| HDF5 / NetCDF / FITS / HTS | — | Convert or NIF to C; not BEAM-native yet |
+| Zarr | **[ex_zarr](https://hex.pm/packages/ex_zarr)** | Pure Elixir v2/v3; CI-tested against zarr-python |
+| Arrow / Parquet | **[ex_arrow](https://hex.pm/packages/ex_arrow)**, [parquex](https://hex.pm/packages/parquex), [adbc](https://hex.pm/packages/adbc) | ex_arrow: IPC, Flight, ADBC, Parquet, Dataset; parquex: Rust-powered Parquet streaming (local/S3); early pure-Elixir Arrow experiments also exist (`arrow`, `errow`) |
+| NetCDF | **[netcdf](https://hex.pm/packages/netcdf)**, [excdf](https://hex.pm/packages/excdf), [netcdf_nif](https://hex.pm/packages/netcdf_nif) | NIF bindings to the NetCDF C library; `excdf` is the newer read/write-oriented packaging (2026); `netcdf` is the longer-lived Hex package |
+| FITS | **[exfits](https://hex.pm/packages/exfits)** | Elixir bindings to CFITSIO |
+| GeoTIFF | [geotiff](https://hex.pm/packages/geotiff) | Early reader (0.1.x); COG/cloud workflows still thin |
+| VCF | **[vcf](https://hex.pm/packages/vcf)** | Pure Elixir VCF 4.1–4.5 parse / validate / stream / write |
+| HDF5 / BAM / CRAM / ASDF | — | Nothing yet  |
 
-**Current status:** for cloud-chunked arrays and columnar interchange on the BEAM, the story is real. For FITS/HDF5/CRAM, plan a boundary service or NIF.
+**Current status:** Zarr and Arrow/Parquet are first-class on the BEAM. NetCDF and FITS are available via C NIFs (`netcdf` / `excdf`, `exfits`). Variants have a Hex VCF library; alignments (BAM/CRAM) and HDF5 still mean a boundary service or a new NIF.
 
 ### Ruby — bindings and BioRuby, not format leadership
 
@@ -211,7 +215,7 @@ If a format matters, Python usually has the nicest API and the most examples.
 2. **Climate / Earth arrays on object stores** — Zarr (+ xarray); NetCDF-4 when the model community demands it.
 3. **Genomics alignments and variants** — HTSlib / pysam / htsjdk / noodles; CRAM for cold storage.
 4. **Analytics over tables** — Parquet on disk, Arrow in process; language choice matters less once Arrow is the glue.
-5. **BEAM services** — ExZarr and ex_arrow for Zarr/Arrow/Parquet; do not pretend HDF5 or CRAM are first-class on Elixir yet.
+5. **BEAM services** — `ex_zarr` / `ex_arrow` (and `parquex`) for Zarr/Arrow/Parquet; `exfits` and `netcdf`/`excdf` when you accept CFITSIO/NetCDF NIFs; HDF5 and BAM/CRAM still need another language or a new binding.
 6. **Systems languages without a science runtime** — C cores, or Rust when you want memory safety and are willing to live with crate churn.
 
 ## Closing
@@ -231,9 +235,12 @@ If you are picking a stack for a new pipeline, pick the **format** for the acces
 7. [Apache Arrow implementation status](https://arrow.apache.org/docs/status.html)
 8. [HTSlib](https://github.com/samtools/htslib)
 9. [noodles (Rust)](https://docs.rs/noodles/latest/noodles/)
-10. [ExZarr](https://hex.pm/packages/ex_zarr)
+10. [ex_zarr](https://hex.pm/packages/ex_zarr)
 11. [ex_arrow](https://hex.pm/packages/ex_arrow)
-12. [PureHDF](https://apollo3zehn.github.io/PureHDF/)
-13. [Parquet.Net](https://github.com/aloneguid/parquet-dotnet/)
-14. [zig-parquet](https://github.com/akeating/zig-parquet)
-15. [F3 — Future-proof File Format](https://github.com/future-file-format/f3)
+12. [exfits](https://hex.pm/packages/exfits)
+13. [netcdf](https://hex.pm/packages/netcdf) · [excdf](https://hex.pm/packages/excdf)
+14. [parquex](https://hex.pm/packages/parquex) · [vcf](https://hex.pm/packages/vcf)
+15. [PureHDF](https://apollo3zehn.github.io/PureHDF/)
+16. [Parquet.Net](https://github.com/aloneguid/parquet-dotnet/)
+17. [zig-parquet](https://github.com/akeating/zig-parquet)
+18. [F3 — Future-proof File Format](https://github.com/future-file-format/f3)
