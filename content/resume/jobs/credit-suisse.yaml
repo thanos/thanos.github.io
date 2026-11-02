@@ -1,10 +1,12 @@
 id: credit-suisse
-org: Credit Suisse
+org: Credit Suisse First Boston
 titles:
-  - Contractor, Commodities
+  - Consultant
 when:
   start: 2007
   end: 2010
+  start_month: 10
+  end_month: 9
 current: false
 summary: >
   Commodities risk, trade repository, and market data services.

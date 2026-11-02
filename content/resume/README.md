@@ -1,6 +1,8 @@
 # Resume experience corpus
 
-Committed: `profile.yaml`, `jobs/`, `experiences/`, `taxonomy.yaml`, plus `scripts/resume/` and `.cursor/skills/resume-flavor/`.
+Committed: `profile.yaml`, `jobs/`, `experiences/`, `taxonomy.yaml`, `work-timeline.yaml` (static employment titles/dates), plus `scripts/resume/` and `.cursor/skills/resume-flavor/`.
+
+Employment titles and dates on flavored résumés come only from `work-timeline.yaml` — do not invent or go earlier than NYSE/SIAC.
 
 Local only (**gitignored**): `briefs/`, `out/`, `specs/<slug>/`, `.env`.
 

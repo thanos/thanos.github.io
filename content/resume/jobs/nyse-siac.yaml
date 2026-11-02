@@ -1,12 +1,14 @@
 id: nyse-siac
 org: NYSE / SIAC
 titles:
-  - Director, Specialist Trading Services
+  - Technical Director / Display Book
 when:
-  start: 1997
+  start: 2000
   end: 2004
+  start_month: 10
+  end_month: 10
 current: false
 summary: >
-  Market surveillance, stock information servers, regulatory reporting,
-  early Python trading services for specialists.
+  Technical Director / Display Book: market surveillance, stock information
+  servers, regulatory reporting, early Python trading services for specialists.
 visibility: public

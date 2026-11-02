@@ -7,7 +7,7 @@ job: infinigon
 role: Head of Development
 when:
   start: 2012
-  end: 2015
+  end: 2014
 summary: Custodial cross-exchange crypto trading platform (BTC Terminal lineage).
 bullets:
   - Created a cross-exchange custodial cryptocurrency trading platform.

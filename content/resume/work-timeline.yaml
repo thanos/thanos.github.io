@@ -1,0 +1,89 @@
+# Canonical employment timeline for all résumé flavors.
+# Work experience is STATIC: copy titles/dates from here. Do not invent,
+# omit bridge employers, or go earlier than the last entry.
+# Bullets under "Current job" may still be packed from experience atoms;
+# tenure labels and dates must match this file.
+#
+# Open question: Jan 2016 – Nov 2016 has no role listed (ask before filling).
+
+# Display order below is reverse-chronological (as on the résumé).
+
+employers:
+  - id: rbc
+    org: RBC Capital Markets
+    location: New York
+    tenures:
+      - title: Distinguished Engineer, Managing Director, Head of AI and Architecture for Finance IT
+        start: 2025-09
+        end: null
+        current: true
+      - title: Managing Director, Distinguished Engineer, Operations Infrastructure
+        start: 2023-09
+        end: 2025-09
+      - title: Distinguished Engineer, Head of Technology
+        start: 2022-01
+        end: 2023-09
+      - title: Head of Shared Trading Services, Head of R&D for Technology & Head of Reporting Services
+        start: 2016-11
+        end: 2022-01
+      - title: Head of R&D for Technology
+        start: 2014-11
+        end: 2016-01
+
+  - id: infinigon
+    org: Infinigon Group Inc
+    tenures:
+      - title: Head of Development
+        start: 2012
+        end: 2014
+
+  - id: rbc-consultant
+    org: RBC Capital Markets
+    tenures:
+      - title: Consultant
+        start: 2010-09
+        end: 2012-01
+        bullets:
+          - Built commodities platform for oil, gas and LME.
+
+  - id: credit-suisse
+    org: Credit Suisse First Boston
+    tenures:
+      - title: Consultant
+        start: 2007-10
+        end: 2010-09
+
+  - id: jpmorgan
+    org: JPMorganChase
+    tenures:
+      - title: Consultant
+        start: 2007-02
+        end: 2007-11
+
+  - id: zingy
+    org: Zingy
+    tenures:
+      - title: Director of Mobile Applications
+        start: 2006-01
+        end: 2007-02
+
+  - id: icap
+    org: ICAP
+    tenures:
+      - title: Director of Front-End Development
+        start: 2004-02
+        end: 2006-01
+
+  - id: nyse-siac
+    org: NYSE / SIAC
+    tenures:
+      - title: Technical Director / Display Book
+        start: 2000-10
+        end: 2004-10
+
+# Do not list employers earlier than nyse-siac on flavored résumés.
+stop_before: nyse-siac
+notes:
+  - RBC consultant tenure is listed after Infinigon (not with later RBC titles).
+  - ICAP and NYSE/SIAC overlap (2004); keep both.
+  - Gap Jan 2016 – Nov 2016: not in source list — ask before inventing a role.

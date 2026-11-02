@@ -1,9 +1,34 @@
 id: rbc
-org: RBC Capital Markets / Finance IT
+org: RBC Capital Markets
 titles:
-  - Distinguished Engineer
-  - Managing Director
-  - Head of AI and Architecture for Finance IT
+  - Distinguished Engineer, Managing Director, Head of AI and Architecture for Finance IT
+  - Managing Director, Distinguished Engineer, Operations Infrastructure
+  - Distinguished Engineer, Head of Technology
+  - Head of Shared Trading Services, Head of R&D for Technology & Head of Reporting Services
+  - Head of R&D for Technology
+  - Consultant
+tenures:
+  - title: Distinguished Engineer, Managing Director, Head of AI and Architecture for Finance IT
+    start: 2025-09
+    end: null
+  - title: Managing Director, Distinguished Engineer, Operations Infrastructure
+    start: 2023-09
+    end: 2025-09
+  - title: Distinguished Engineer, Head of Technology
+    start: 2022-01
+    end: 2023-09
+  - title: Head of Shared Trading Services, Head of R&D for Technology & Head of Reporting Services
+    start: 2016-11
+    end: 2022-01
+  - title: Head of R&D for Technology
+    start: 2014-11
+    end: 2016-01
+  - title: Consultant
+    start: 2010-09
+    end: 2012-01
+    display_after: infinigon
+    bullets:
+      - Built commodities platform for oil, gas and LME.
 when:
   start: 2010
   end: null

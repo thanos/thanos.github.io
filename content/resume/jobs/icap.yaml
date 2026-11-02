@@ -1,10 +1,12 @@
 id: icap
 org: ICAP
 titles:
-  - Front-End Development Leader
+  - Director of Front-End Development
 when:
   start: 2004
   end: 2006
+  start_month: 2
+  end_month: 1
 current: false
 summary: >
   Led ICAP’s in-house BrokerTec fixed-income front-end team in New York:

@@ -1,13 +1,15 @@
 id: zingy
 org: Zingy
 titles:
-  - MD, Head of Mobile Development
+  - Director of Mobile Applications
 when:
   start: 2006
   end: 2007
+  start_month: 1
+  end_month: 2
 current: false
 summary: >
-  MD, Head of Mobile Development in New York: 50+ carrier-deck apps across
+  Director of Mobile Applications in New York: 50+ carrier-deck apps across
   27 carriers, including MapQuest Mobile, eBay Mobile, New York Times Mobile,
   and NBC/NBA/NFA/NHL fantasy gaming.
 visibility: public

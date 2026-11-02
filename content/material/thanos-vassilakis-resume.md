@@ -2,8 +2,8 @@
 
 **Email:** [thanosv@gmail.com](mailto:thanosv@gmail.com) | **Phone:** +1-917-517-5912 | **GitHub:** [github.com/thanos](https://github.com/thanos)
 
-**Distinguished Engineer**
-MD, Head of AI and Architecture for Finance IT.
+**Distinguished Engineer, Managing Director**
+Head of AI and Architecture for Finance IT, RBC Capital Markets (Sep 2025 – Present).
 
 [What does Google say about Thanos](/notes/what-google-says-about-me/)
 
@@ -71,35 +71,43 @@ A multi national group of 166, 47% diversity, and with full-time teams in Canada
 
 ---
 
-## Previous Work
+## Work experience
 
-**Infinigon Group** | Head of Development | 2012 - 2015
+**RBC Capital Markets** | New York
+
+- Distinguished Engineer, Managing Director, Head of AI and Architecture for Finance IT — Sep 2025 – Present
+- Managing Director, Distinguished Engineer, Operations Infrastructure — Sep 2023 – Sep 2025
+- Distinguished Engineer, Head of Technology — Jan 2022 – Sep 2023
+- Head of Shared Trading Services, Head of R&D for Technology & Head of Reporting Services — Nov 2016 – Jan 2022
+- Head of R&D for Technology — Nov 2014 – Jan 2016
+
+**Infinigon Group Inc** | Head of Development | 2012 – 2014
 - Created a cross-exchange custodial cryptocurrency trading platform.
 - Built a machine learning analytics platform utilizing real-time data and social media sentiment.
 
-**Credit Suisse** | Contractor, Commodities | 2007 - 2010
+**RBC Capital Markets** | Consultant | Sep 2010 – Jan 2012
+- Built commodities platform for oil, gas and LME.
+
+**Credit Suisse First Boston** | Consultant | Oct 2007 – Sep 2010
 - Architected a risk system for complex commodities trades and integrated external pricing models for OpenLink.
 - Built a central trade repository and market data services for commodities.
 
-**JPMorgan** | Contractor, Energy Trading Systems | 2007
+**JPMorganChase** | Consultant | Feb 2007 – Nov 2007
 - Contributed to the Athena platform, developing a code profiler and native FIX engine.
 - Developed a standardized trade feed framework and implemented gateways for CME and ICE to streamline energy trading operations.
 - Optimized network and computation performance for the counterparty risk system (Gauss).
 
-**Zingy** | Head of Mobile Development | 2006 - 2007
+**Zingy** | Director of Mobile Applications | Jan 2006 – Feb 2007
 - Managed development and operations for 50+ mobile applications across 27 carriers and multiple platforms.
 - Led the development of innovative mobile products, including the top-selling MapQuest mobile application.
 
-**ICAP** | Head of Front-End Development | 2004 - 2006
+**ICAP** | Director of Front-End Development | Feb 2004 – Jan 2006
 - Established and led the in-house development team for fixed income trading systems.
 - Developed high-performance distributed trading services and mobile trading platforms.
 
-**NYSE/SEC/SIAC** | Director, Specialist Trading Services | 1997 - 2004
+**NYSE / SIAC** | Technical Director / Display Book | Oct 2000 – Oct 2004
 - Architected and implemented market surveillance systems, stock information servers, and regulatory reporting services.
 - Developed innovative Python-based trading services for specialists.
-
-**ERICSSON** | Contractor, Telecom Switches | 1995 - 1997
-- Built a remote telecom switch management system.
 
 ---
 
