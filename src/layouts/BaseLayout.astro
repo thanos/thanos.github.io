@@ -39,11 +39,17 @@ const pathname = rawPath.startsWith(base) ? rawPath : `${base}${rawPath.replace(
 const site = Astro.site ?? new URL(profile.web.url);
 const canonical = new URL(pathname, site);
 const fullTitle = pageTitle(title, profile.name);
-const image = absoluteUrl(profile.web.og_image ?? profile.web.image, site.href);
+const socialImagePath = profile.web.og_image ?? profile.web.image;
+const image = absoluteUrl(socialImagePath, site.href);
 const imageAlt =
   profile.web.og_image && profile.web.og_image !== profile.web.image
     ? fullTitle
     : `Portrait of ${profile.name}`;
+const faviconType = socialImagePath.endsWith('.gif')
+  ? 'image/gif'
+  : socialImagePath.endsWith('.png')
+    ? 'image/png'
+    : 'image/jpeg';
 const jsonLdText = JSON.stringify(graphJsonLd(jsonLd ? [jsonLd] : [], site.href)).replace(
   /</g,
   '\\u003c'
@@ -69,8 +75,8 @@ const jsonLdText = JSON.stringify(graphJsonLd(jsonLd ? [jsonLd] : [], site.href)
       title={`${profile.name} articles`}
       href={new URL('rss.xml', site).href}
     />
-    <link rel="icon" href={profile.web.image} type="image/jpeg" />
-    <link rel="apple-touch-icon" href={profile.web.image} />
+    <link rel="icon" href={socialImagePath} type={faviconType} />
+    <link rel="apple-touch-icon" href={socialImagePath} />
     <meta property="og:site_name" content={profile.name} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
