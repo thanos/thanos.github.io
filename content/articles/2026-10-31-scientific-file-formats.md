@@ -19,7 +19,7 @@ authors:
   - Thanos Vassilakis
 ---
 
-There are hundreds of niche scientific extensions. The interesting story is not the long tail — it is how cutting-edge work has consolidated around a smaller set of next-generation, high-performance, multi-dimensional open formats: cloud-optimized chunks, columnar analytics, and parallel I/O that survive petabyte pipelines.
+There are hundreds of niche scientific extensions. What's interesting is how cutting-edge work has consolidated around a smaller set of next-generation, high-performance, multi-dimensional open formats: cloud-optimized chunks, columnar analytics, and parallel I/O that survive petabyte pipelines.
 
 This is a map of those formats by domain, then a comparative look at what you can actually call from Java, C#, C, Zig, Rust, Python, Elixir, Fortran, and Ruby. The library picture changes faster than the formats; treat the tables as a field guide, not a warranty.
 
