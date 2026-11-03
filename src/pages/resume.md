@@ -11,8 +11,6 @@ description: Distinguished Engineer, MD, Head of AI and Architecture for Finance
 **Distinguished Engineer, Managing Director**
 Head of AI and Architecture for Finance IT, RBC Capital Markets (Sep 2025 – Present).
 
-[What does Google say about Thanos](/notes/what-google-says-about-me/)
-
 ---
 
 ## Executive Summary
