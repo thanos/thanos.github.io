@@ -24,6 +24,7 @@ Accomplished technology executive with over 20 years of experience driving trans
 
 A multi national group of 166, 47% diversity, and with full-time teams in Canada, US, UK, Malaysia, Mexico, and consultants in India with a current budget of just over 30m.
 
+- **AI solutions and modernization for the General Ledger and ERP.**
 - **Architecture for Operations** -- driving modernizing in reporting, monitoring, and the confirmation and settlement landscape, plus overseeing all development and vendor acquisitions in operations.
 - **Access Control** -- a central access management services for 1k+ apps and services in Capital Markets.
 - **Enterprise Reconciliation Service** -- built in-house processing 300 realtime and 2k+ daily reconciliations using ML and GPU matching.
@@ -39,6 +40,15 @@ A multi national group of 166, 47% diversity, and with full-time teams in Canada
 
 ## Key Achievements & Deliverables
 
+### AI, Machine Learning & Quantitative Platforms
+
+- Designed the Strategy for Data for AI.
+- Modernization of the GL and Posting Engines with AI.
+- **Pricing & Risk:** Developed ML-based real-time pricing models for municipal bonds and credit derivatives, alongside real-time Position and PnL systems (2020).
+- **ML Infrastructure:** Delivered an ML Model execution and scoring service (2018) to operationalize data science initiatives.
+- **Data Strategy:** Established the Capital Markets Data Lake (2016) and a Single Data Interface SDK (2019) to standardize data access.
+
+<!-- pagebreak -->
 ### Strategic Cost Optimization & Vendor Consolidation
 
 - **Enterprise Reconciliation Service (2025):** Architected an in-house solution using ML and GPU matching to displace legacy vendor products, securing **$7M in annual savings**.
@@ -47,12 +57,6 @@ A multi national group of 166, 47% diversity, and with full-time teams in Canada
 - **Post-Trade Modernization (2024):** Built T+1 infrastructure and post-trade processing services, ensuring regulatory compliance.
 - **Access Control Modernization (2023):** Centralized application access control for over 1,000 apps.
 - **Governance & Data (2023):** Internalized Reference Data Services and ML-based Trade Limits Governance.
-
-### AI, Machine Learning & Quantitative Platforms
-
-- **Pricing & Risk:** Developed ML-based real-time pricing models for municipal bonds and credit derivatives, alongside real-time Position and PnL systems (2020).
-- **ML Infrastructure:** Delivered an ML Model execution and scoring service (2018) to operationalize data science initiatives.
-- **Data Strategy:** Established the Capital Markets Data Lake (2016) and a Single Data Interface SDK (2019) to standardize data access.
 
 ### Core Infrastructure & Technology Transformation
 
@@ -184,7 +188,7 @@ C, C++, Erlang, Elixir, Fortran, Go, Java, JavaScript, Python, Solidity, Zig, so
 - Kabir Reike, MD Head of Data Architecture, Bank of America
 - Sid Belzberg, CFO, Infinigon Group - ex Captain of the Canadian Chess Team
 - Endri Mani, MD Head of GenAI, RBC CM
-- Yaroslav Chinskiy, MD, Head of Data Architecture, JP Morgan
+- Yarik Chinskiy, Head of Data, AI and Corporate Tech, TD
 - Geraud Boyer, Director of Engineering, Datadog
 
 ## Personal References

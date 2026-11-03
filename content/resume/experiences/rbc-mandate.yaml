@@ -10,6 +10,9 @@ when:
   end: null
 summary: Technical ownership of GL migration and Finance IT AI/modernization.
 bullets:
+  - AI solutions and modernization for the General Ledger and ERP.
+  - Designed the Strategy for Data for AI.
+  - Modernization of the GL and Posting Engines with AI.
   - Technical ownership of GL migration from zOS/DB2 to Linux/Oracle and Sub-ledger modernization.
   - Drive modernization and AI adoption across RBC Finance IT.
 domain:
