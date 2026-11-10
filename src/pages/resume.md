@@ -1,15 +1,14 @@
 ---
 layout: ../layouts/ResumePageLayout.astro
 title: Résumé — Thanos Vassilakis
-description: Distinguished Engineer, MD, Head of AI and Architecture for Finance IT.
+description: Distinguished Engineer, Head of AI and Architecture for Finance IT.
 ---
 
 # Thanos Vassilakis
 
 **Email:** [thanosv@gmail.com](mailto:thanosv@gmail.com) | **Phone:** +1-917-517-5912 | **GitHub:** [github.com/thanos](https://github.com/thanos)
 
-**Distinguished Engineer, Managing Director**
-Head of AI and Architecture for Finance IT, RBC Capital Markets (Sep 2025 – Present).
+**Distinguished Engineer, Head of AI and Architecture for Finance IT, RBC Capital Markets (Sep 2025 – Present).**
 
 ---
 
@@ -83,7 +82,7 @@ A multi national group of 166, 47% diversity, and with full-time teams in Canada
 
 **RBC Capital Markets** | New York
 
-- Distinguished Engineer, Managing Director, Head of AI and Architecture for Finance IT — Sep 2025 – Present
+- Distinguished Engineer, Head of AI and Architecture for Finance IT — Sep 2025 – Present
 - Managing Director, Distinguished Engineer, Operations Infrastructure — Sep 2023 – Sep 2025
 - Distinguished Engineer, Head of Technology — Jan 2022 – Sep 2023
 - Head of Shared Trading Services, Head of R&D for Technology & Head of Reporting Services — Nov 2016 – Jan 2022

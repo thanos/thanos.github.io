@@ -31,17 +31,17 @@ defaults:
 web:
   url: https://thanos.github.io
   tagline: Ideas, tests, and code fragments.
-  headline: Distinguished Engineer, Managing Director, Head of AI and Architecture for Finance IT
+  headline: Distinguished Engineer, Head of AI and Architecture for Finance IT
   works_for: RBC Capital Markets
   location: New York
   image: /images/thanos-vassilakis.jpg
   # Open Graph / Twitter card when article (and other) URLs are embedded
   og_image: /images/hers008.gif
   bio: >
-    Thanos Vassilakis is a Distinguished Engineer and Managing Director at RBC Capital
-    Markets, where he leads AI and architecture for Finance IT. He has spent decades
-    building trading, risk, and operations platforms, ships open-source libraries, and
-    writes about systems, data sketches, cryptography, and drones.
+    Thanos Vassilakis is a Distinguished Engineer at RBC Capital Markets, where he
+    leads AI and architecture for Finance IT. He has spent decades building trading,
+    risk, and operations platforms, ships open-source libraries, and writes about
+    systems, data sketches, cryptography, and drones.
   sameAs:
     - label: GitHub
       url: https://github.com/thanos
