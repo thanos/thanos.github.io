@@ -1,0 +1,40 @@
+id: oss-gamma-options
+kind: oss
+title: Gamma Options Exchange — EVM options (IceBlock)
+client: null
+org: IceBlockDev
+job: null
+when:
+  start: 2024
+  end: 2024
+summary: Gamma Options Exchange — EVM options exchange smart contracts and app stack.
+bullets:
+  - Contributed to Gamma Options Exchange (IceBlock) — options exchange smart-contract
+    and app stack on EVM.
+domain:
+  - crypto
+  - trading
+skills:
+  - JavaScript
+  - Solidity
+signals:
+  domains:
+    - crypto
+    - trading
+  skills:
+    - solidity
+    - evm
+    - options
+    - blockchain
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-11-11
+visibility: public

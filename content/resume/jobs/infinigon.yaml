@@ -1,11 +1,12 @@
 id: infinigon
 org: Infinigon Group Inc
 titles:
-  - Head of Development
+  - Chief Technology Officer (CTO)
 when:
   start: 2012
   end: 2014
 current: false
 summary: >
-  Led development for crypto custody trading and ML analytics platforms.
+  CTO for crypto custody trading platforms (BTC Terminal), trading/custody contracts,
+  and related exchange/arbitrage products.
 visibility: public

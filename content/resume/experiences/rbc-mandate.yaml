@@ -6,10 +6,11 @@ org: RBC
 job: rbc
 role: Distinguished Engineer, Head of AI and Architecture for Finance IT
 when:
-  start: 2024
+  start: 2025-09
   end: null
-summary: Technical ownership of GL migration and Finance IT AI/modernization.
+summary: Lead a 16-person Vancouver & Toronto team; GL migration and Finance IT AI/modernization.
 bullets:
+  - Lead a 16-person engineering team in Vancouver and Toronto.
   - AI solutions and modernization for the General Ledger and ERP.
   - Designed the Strategy for Data for AI.
   - Modernization of the GL and Posting Engines with AI.
@@ -31,19 +32,23 @@ signals:
     - architecture
     - migration
     - ai-adoption
-    - executive-leadership
+    - hiring
+    - mentoring
+    - engineering-management
   seniority: executive
   impact:
     - platform
     - people
     - risk
 proof:
-  metrics: []
+  metrics:
+    - label: headcount
+      value: 16
   links: []
   source: job
 provenance:
   type: job_ran
   refs:
     - path: content/material/thanos-vassilakis-resume.md
-  last_verified: 2026-08-06
+  last_verified: 2026-11-11
 visibility: public

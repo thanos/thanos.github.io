@@ -1,0 +1,41 @@
+id: oss-ccxtex
+kind: oss
+title: ccxtex — Elixir interop for multi-exchange crypto APIs
+client: null
+org: null
+job: null
+when:
+  start: 2018
+  end: 2019
+summary: Elixir/Erlang bridge to ccxt for unified crypto exchange market data and trading APIs.
+bullets:
+  - Built ccxtex, Elixir/Erlang interoperability with the ccxt library for unified
+    historical and recent market data across crypto exchanges (GDAX, Bitfinex, Poloniex,
+    Binance, and others).
+domain:
+  - crypto
+  - trading
+skills:
+  - Elixir
+signals:
+  domains:
+    - crypto
+    - trading
+  skills:
+    - elixir
+    - crypto-exchanges
+    - market-data
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/ccxtex
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-11-11
+visibility: public

@@ -1,0 +1,54 @@
+id: oss-decimal-mining
+kind: built
+title: Decimal Group — NFT mining shares & marketplace (Ethereum)
+client: Decimal Group
+org: IceBlockDev
+job: null
+when:
+  start: 2021
+  end: 2022
+summary: >-
+  Client engagement for Decimal Group — ERC-721 mine-share registries, marketplace dapp,
+  and NFT mining product design.
+bullets:
+  - >-
+    For Decimal Group (via IceBlock): authored ShareRegistry ERC-721 (issue shares,
+    dividends, ownership/transfers) and MineShareRegistry for fixed-price mine investor
+    shares on Ethereum; ContractsDB factory to deploy registries.
+  - >-
+    Built marketplace dapp (TypeScript) and investor dapp (Svelte) against ShareRegistry /
+    Database ABIs; public marketing site for Decimal Group.
+  - >-
+    Product design for Decimal-Mining — NFT-indexed Bitcoin mining hardware ownership
+    (batches by miner class, marketplace, wallet withdrawals of earned crypto).
+  - Deployed ShareRegistry / Gold Mine 01 issuance and investor flows on Ethereum.
+domain:
+  - crypto
+  - finance
+skills:
+  - Solidity
+  - TypeScript
+  - Svelte
+signals:
+  domains:
+    - crypto
+    - finance
+  skills:
+    - solidity
+    - ethereum
+    - evm
+    - nft
+    - blockchain
+    - smart-contracts
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-11-11
+visibility: public

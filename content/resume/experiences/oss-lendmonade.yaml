@@ -1,0 +1,42 @@
+id: oss-lendmonade
+kind: oss
+title: Lendmonade — Aave V3 lending on Hedera Testnet
+client: null
+org: IceBlockDev
+job: null
+when:
+  start: 2025
+  end: null
+summary: Lending protocol UI and contract integration — Aave V3 fork on Hedera with Phoenix LiveView.
+bullets:
+  - Built Lendmonade — supply, borrow, repay, withdraw as real smart-contract calls
+    against a deployed Aave V3 fork on Hedera (HashPack / WalletConnect).
+  - Phoenix LiveView dashboard reads positions, health factor, and reserve state live
+    from chain.
+domain:
+  - crypto
+  - finance
+skills:
+  - Elixir
+signals:
+  domains:
+    - crypto
+    - finance
+  skills:
+    - elixir
+    - hedera
+    - defi
+    - blockchain
+    - lending
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links: []
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-11-11
+visibility: public

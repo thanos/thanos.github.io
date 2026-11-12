@@ -4,14 +4,15 @@ title: Cross-exchange custodial crypto trading platform
 client: Infinigon
 org: Infinigon
 job: infinigon
-role: Head of Development
+role: Chief Technology Officer (CTO)
 when:
   start: 2012
   end: 2014
-summary: Custodial cross-exchange crypto trading platform (BTC Terminal lineage).
+summary: As CTO, owned technology strategy and delivery for custodial cross-exchange crypto trading (BTC Terminal) and related platforms.
 bullets:
-  - Created a cross-exchange custodial cryptocurrency trading platform.
-  - Built ML analytics using real-time data and social media sentiment.
+  - As CTO of Infinigon Group, owned technology strategy and product delivery.
+  - Created a cross-exchange custodial cryptocurrency trading platform shipped as BTC Terminal.
+  - Designed and delivered numerous trading and custody contracts for the platform.
 domain:
   - crypto
   - trading
@@ -30,6 +31,7 @@ signals:
     - trading-systems
     - architecture
     - engineering-management
+    - smart-contracts
   seniority: hybrid
   impact:
     - platform
@@ -40,5 +42,5 @@ proof:
 provenance:
   type: job_built
   refs: []
-  last_verified: 2026-08-06
+  last_verified: 2026-11-11
 visibility: public

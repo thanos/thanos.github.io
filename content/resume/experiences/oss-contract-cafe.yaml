@@ -1,0 +1,56 @@
+id: oss-contract-cafe
+kind: built
+title: Contract Cafe — Ethereum outcome ledgers (Byteeasy)
+client: Byteeasy
+org: Byteeasy
+job: null
+when:
+  start: 2020
+  end: 2020
+summary: >-
+  On-chain contract cafe — abstract betting/outcome ledgers in Solidity and Vyper
+  with cafe fees, odds, and payout.
+bullets:
+  - >-
+    Designed and built Contract Cafe for Byteeasy: Ethereum ledgers where a cafe hosts
+    outcome books, ledger owners cover risk, and punters stake against event outcomes.
+  - >-
+    Solidity abstract Ledger (bet, odds, 4% cafe cut, event processing, payout/selfdestruct)
+    plus sample HeadsOrTailsLedger; parallel Vyper outcome_leger with the same model.
+  - >-
+    Truffle/Brownie test suites for bets, wins, payouts, and multi-punter cases; dual
+    Solidity and Vyper implementations of the cafe protocol.
+domain:
+  - crypto
+  - trading
+skills:
+  - Solidity
+  - Vyper
+  - JavaScript
+signals:
+  domains:
+    - crypto
+    - trading
+  skills:
+    - solidity
+    - vyper
+    - ethereum
+    - evm
+    - blockchain
+    - smart-contracts
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/contract_cafe
+    - label: byteeasy
+      url: https://github.com/byteeasy/contract_cafe
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-11-11
+visibility: public

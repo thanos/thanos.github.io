@@ -1,0 +1,37 @@
+id: oss-solana-escrow
+kind: oss
+title: solana-escrow — Solana program (Rust)
+client: null
+org: null
+job: null
+when:
+  start: 2021
+  end: 2021
+summary: Rust Solana program for escrow, built and tested natively and for BPF.
+bullets:
+  - Built solana-escrow, a Rust Solana program with native and BPF build/test paths.
+domain:
+  - crypto
+skills:
+  - Rust
+signals:
+  domains:
+    - crypto
+  skills:
+    - rust
+    - solana
+    - blockchain
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: github
+      url: https://github.com/thanos/solana-escrow
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-11-11
+visibility: public

@@ -3,16 +3,15 @@ kind: ran
 title: Engineering organization — scale and operating model
 client: RBC CM
 org: RBC Capital Markets
-job: rbc-cm 
-role: MD / Distinguished Engineer
+job: rbc-cm
+role: Managing Director, Distinguished Engineer, Head of Wholesale Banking & Post Trade Development, Architecture and Capital Markets Blockchain
 when:
-  start: 2010
-  end: null
-summary: Run a multinational engineering organization with ~$30M budget.
+  start: 2023-09
+  end: 2025-09
+summary: Led a multinational engineering organization (Wholesale Banking & Post Trade tenure).
 bullets:
-  - Lead a multinational group of ~166 people (47% diversity) with teams in Canada, US, UK,
+  - Led a multinational group of ~214 people (47% diversity) with teams in Canada, US, UK,
     Malaysia, Mexico, and India consultants.
-  - Own operating budget just over $30M.
   - Built and scaled high-performance development teams across Kuala Lumpur, Halifax, and Montreal.
 domain:
   - finance
@@ -22,21 +21,17 @@ signals:
     - finance
   skills:
     - people-management
-    - budget
     - hiring
     - mentoring
     - global-teams
   seniority: executive
   impact:
     - people
-    - cost
     - scale
 proof:
   metrics:
     - label: headcount
-      value: 166
-    - label: budget_usd_m
-      value: 30
+      value: 214
     - label: diversity_pct
       value: 47
   links: []
@@ -45,5 +40,5 @@ provenance:
   type: job_ran
   refs:
     - path: content/material/thanos-vassilakis-resume.md
-  last_verified: 2026-08-06
+  last_verified: 2026-11-11
 visibility: public

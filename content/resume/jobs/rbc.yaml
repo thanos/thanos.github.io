@@ -2,7 +2,7 @@ id: rbc
 org: RBC Capital Markets
 titles:
   - Distinguished Engineer, Head of AI and Architecture for Finance IT
-  - Managing Director, Distinguished Engineer, Operations Infrastructure
+  - Managing Director, Distinguished Engineer, Head of Wholesale Banking & Post Trade Development, Architecture and Capital Markets Blockchain
   - Distinguished Engineer, Head of Technology
   - Head of Shared Trading Services, Head of R&D for Technology & Head of Reporting Services
   - Head of R&D for Technology
@@ -11,7 +11,7 @@ tenures:
   - title: Distinguished Engineer, Head of AI and Architecture for Finance IT
     start: 2025-09
     end: null
-  - title: Managing Director, Distinguished Engineer, Operations Infrastructure
+  - title: Managing Director, Distinguished Engineer, Head of Wholesale Banking & Post Trade Development, Architecture and Capital Markets Blockchain
     start: 2023-09
     end: 2025-09
   - title: Distinguished Engineer, Head of Technology
@@ -38,6 +38,8 @@ summary: >
   Technical leadership for Finance IT and Capital Markets platforms —
   architecture, AI/ML adoption, post-trade, supervision, and shared services.
 org_scale: >
-  Multinational group of ~166 people (47% diversity) across Canada, US, UK,
-  Malaysia, Mexico, and India consultants; budget just over $30M.
+  Current (Sep 2025–): 16-person team, Vancouver and Toronto.
+  Prior as MD / Distinguished Engineer, Head of Wholesale Banking & Post Trade Development, Architecture and Capital Markets Blockchain (Sep 2023–Sep 2025):
+  multinational group of ~214 people (47% diversity) across Canada, US, UK,
+  Malaysia, Mexico, and India consultants.
 visibility: public

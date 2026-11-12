@@ -31,10 +31,12 @@ signals:
     - risk
 proof:
   metrics: []
-  links: []
+  links:
+    - label: docs
+      url: https://github.com/stabilos/stabilos_docs
   source: github
 provenance:
   type: github
   refs: []
-  last_verified: 2026-09-25
+  last_verified: 2026-11-11
 visibility: public

@@ -33,6 +33,10 @@ signals:
 proof:
   metrics: []
   links:
+    - label: github
+      url: https://github.com/AdCatenam/tholos-pq
+    - label: elixir-nif
+      url: https://github.com/AdCatenam/ex_tholos-pq
     - label: crates.io
       url: https://crates.io/crates/tholos-pq
     - label: hex
@@ -44,5 +48,5 @@ provenance:
   type: github
   refs:
     - path: content/articles/01-why-pq-multi-recipient.md
-  last_verified: 2026-09-25
+  last_verified: 2026-11-11
 visibility: public

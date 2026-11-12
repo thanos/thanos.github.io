@@ -1,0 +1,40 @@
+id: oss-archeio
+kind: oss
+title: Archeio — Solana token registry (Orphic / IceBlock)
+client: null
+org: IceBlockDev
+job: null
+when:
+  start: 2021
+  end: 2021
+summary: Solana token registry — create records and attributes; Solana Season entry from Orphic Finance.
+bullets:
+  - Built Archeio token-registry flows to create records and define attributes for
+    listed tokens (mint, supply, valuation method, collateralized listing).
+  - Shipped archeio-solanaszn as the Solana Season entry from Orphic Finance (Archeio).
+domain:
+  - crypto
+skills:
+  - Elixir
+signals:
+  domains:
+    - crypto
+  skills:
+    - elixir
+    - solana
+    - blockchain
+    - tokenization
+  seniority: hands-on
+  impact:
+    - platform
+proof:
+  metrics: []
+  links:
+    - label: solana-season
+      url: https://github.com/IceBlockDev/archeio-solanaszn
+  source: github
+provenance:
+  type: github
+  refs: []
+  last_verified: 2026-11-11
+visibility: public

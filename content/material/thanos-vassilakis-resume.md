@@ -21,7 +21,7 @@ Accomplished technology executive with over 20 years of experience driving trans
 
 ## What I've Run at RBC
 
-A multi national group of 166, 47% diversity, and with full-time teams in Canada, US, UK, Malaysia, Mexico, and consultants in India with a current budget of just over 30m.
+A multi national group of 214, 47% diversity, and with full-time teams in Canada, US, UK, Malaysia, Mexico, and consultants in India.
 
 - **AI solutions and modernization for the General Ledger and ERP.**
 - **Architecture for Operations** -- driving modernizing in reporting, monitoring, and the confirmation and settlement landscape, plus overseeing all development and vendor acquisitions in operations.
@@ -77,14 +77,15 @@ A multi national group of 166, 47% diversity, and with full-time teams in Canada
 **RBC Capital Markets** | New York
 
 - Distinguished Engineer, Head of AI and Architecture for Finance IT — Sep 2025 – Present
-- Managing Director, Distinguished Engineer, Operations Infrastructure — Sep 2023 – Sep 2025
+- Managing Director, Distinguished Engineer, Head of Wholesale Banking & Post Trade Development, Architecture and Capital Markets Blockchain — Sep 2023 – Sep 2025
 - Distinguished Engineer, Head of Technology — Jan 2022 – Sep 2023
 - Head of Shared Trading Services, Head of R&D for Technology & Head of Reporting Services — Nov 2016 – Jan 2022
 - Head of R&D for Technology — Nov 2014 – Jan 2016
 
-**Infinigon Group Inc** | Head of Development | 2012 – 2014
-- Created a cross-exchange custodial cryptocurrency trading platform.
-- Built a machine learning analytics platform utilizing real-time data and social media sentiment.
+**Infinigon Group Inc** | Chief Technology Officer (CTO) | 2012 – 2014
+- Owned technology strategy and delivery for Infinigon’s crypto trading platforms.
+- Created a cross-exchange custodial cryptocurrency trading platform (**BTC Terminal**).
+- Designed and delivered numerous trading and custody contracts.
 
 **RBC Capital Markets** | Consultant | Sep 2010 – Jan 2012
 - Built commodities platform for oil, gas and LME.

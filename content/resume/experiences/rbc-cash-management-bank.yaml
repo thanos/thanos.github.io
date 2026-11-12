@@ -9,14 +9,15 @@ when:
   start: 2020
   end: 2023
 summary: "Head of engineering for RBC’s new transactional cash-management bank: virtual accounts,
-  liquidity, payments rails, ERP integrations, KYC/KYB, document store."
+  liquidity, payments rails, ERP integrations, KYC/KYB; tholos-pq on the ledger."
 bullets:
   - Built cash-management core including virtual accounts and liquidity management.
   - Payment manager/rails, ERP integrations, CMS KYC/KYB, evidence and document store.
-  - Stack included Elixir/Phoenix/LiveView, Rust, Python, and blockchain components.
+  - Stack included Elixir/Phoenix/LiveView, Rust, Python; used tholos-pq on the ledger.
 domain:
   - finance
   - accounting
+  - crypto
 skills:
   - Elixir
   - Rust
@@ -25,11 +26,14 @@ signals:
   domains:
     - finance
     - accounting
+    - crypto
   skills:
     - elixir
     - rust
     - python
     - architecture
+    - blockchain
+    - post-quantum
   seniority: hybrid
   impact:
     - platform
@@ -42,5 +46,5 @@ provenance:
   type: job_ran
   refs:
     - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
-  last_verified: 2026-08-06
+  last_verified: 2026-11-11
 visibility: public
