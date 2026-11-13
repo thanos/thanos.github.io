@@ -7,7 +7,7 @@ tags:
   - Elixir
   - streaming
   - columnar
-draft: false
+draft: true
 authors:
   - Thanos Vassilakis
 series: f3

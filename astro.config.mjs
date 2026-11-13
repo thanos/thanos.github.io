@@ -87,6 +87,11 @@ export default defineConfig({
     sitemapXmlAlias(),
   ],
   markdown: {
+    // Leave ```mermaid source intact for client-side Mermaid (see Mermaid.astro).
+    syntaxHighlight: {
+      type: 'shiki',
+      excludeLangs: ['mermaid'],
+    },
     remarkPlugins: [remarkGfm],
   },
 });

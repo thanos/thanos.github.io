@@ -1,7 +1,7 @@
 ---
 title: "F3: Anatomy of an F3 File"
 description: "The 32-byte postscript, then the footer — walking a real fixture from the magic backward."
-date: 2026-11-11
+date: 2026-11-12
 tags:
   - F3
   - Elixir

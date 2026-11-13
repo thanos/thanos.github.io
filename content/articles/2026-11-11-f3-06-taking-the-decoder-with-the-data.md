@@ -8,7 +8,7 @@ tags:
   - WebAssembly
   - Wasmtime
   - security
-draft: false
+draft: true
 authors:
   - Thanos Vassilakis
 series: f3

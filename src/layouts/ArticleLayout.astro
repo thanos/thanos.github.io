@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import Mermaid from '../components/Mermaid.astro';
 import TagList from '../components/TagList.astro';
 import { formatAuthors } from '../lib/authors';
 import { loadSiteProfile, personId, withSiteBase } from '../lib/site-identity';
@@ -131,4 +132,5 @@ const jsonLd = [
       <slot />
     </div>
   </article>
+  <Mermaid />
 </BaseLayout>

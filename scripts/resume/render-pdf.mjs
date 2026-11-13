@@ -4,6 +4,10 @@
  *
  *   node scripts/resume/render-pdf.mjs --slug plexus-eng-manager-prediction-markets
  *   npm run resume:pdf -- --slug <slug>
+ *   npm run resume:pdf -- --material   # content/material → public/material PDF
+ *
+ * Markdown may include `<!-- pagebreak -->` (alone on a line) for an explicit
+ * CSS page break. That marker is never shown as text.
  */
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -19,14 +23,9 @@ function argValue(flag) {
 }
 
 const slug = argValue('--slug');
-if (!slug) {
-  console.error('Pass --slug <flavor-slug>');
-  process.exit(1);
-}
-
-const outDir = path.join(root, 'content/resume/out', slug);
-if (!fs.existsSync(outDir)) {
-  console.error(`Missing ${path.relative(root, outDir)} — pack/generate first`);
+const material = process.argv.includes('--material');
+if (!slug && !material) {
+  console.error('Pass --slug <flavor-slug> or --material');
   process.exit(1);
 }
 
@@ -43,10 +42,13 @@ function escapeHtml(s) {
 
 function inline(s) {
   return escapeHtml(s)
-    .replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/\[([^\]]+)\]\((https?:[^)]+|mailto:[^)]+|\/[^)]+)\)/g, '<a href="$2">$1</a>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>')
     .replace(/`([^`]+)`/g, '<code>$1</code>');
 }
+
+const PAGEBREAK_RE = /^<!--\s*pagebreak\s*-->$/i;
 
 function mdToHtml(md) {
   const lines = md.replace(/\r\n/g, '\n').split('\n');
@@ -74,6 +76,12 @@ function mdToHtml(md) {
       flushList();
       continue;
     }
+    if (PAGEBREAK_RE.test(line.trim())) {
+      flushPara();
+      flushList();
+      out.push('<div class="pagebreak" role="separator" aria-hidden="true"></div>');
+      continue;
+    }
     if (line.startsWith('# ')) {
       flushPara();
       flushList();
@@ -90,6 +98,39 @@ function mdToHtml(md) {
       flushPara();
       flushList();
       out.push(`<h3>${inline(line.slice(4))}</h3>`);
+      continue;
+    }
+    if (/^---+$/.test(line.trim())) {
+      flushPara();
+      flushList();
+      out.push('<hr />');
+      continue;
+    }
+    if (line.trim().startsWith('|')) {
+      flushPara();
+      flushList();
+      const rows = [line.trim()];
+      while (i < lines.length && lines[i].trim().startsWith('|')) {
+        rows.push(lines[i].trim());
+        i += 1;
+      }
+      const parsed = rows
+        .filter((r) => !/^\|\s*:?-+:?\s*(\|\s*:?-+:?\s*)+\|?$/.test(r))
+        .map((r) =>
+          r
+            .replace(/^\|/, '')
+            .replace(/\|$/, '')
+            .split('|')
+            .map((c) => c.trim())
+        );
+      if (parsed.length) {
+        const [header, ...body] = parsed;
+        const thead = `<tr>${header.map((c) => `<th>${inline(c)}</th>`).join('')}</tr>`;
+        const tbody = body
+          .map((cols) => `<tr>${cols.map((c) => `<td>${inline(c)}</td>`).join('')}</tr>`)
+          .join('');
+        out.push(`<table><thead>${thead}</thead><tbody>${tbody}</tbody></table>`);
+      }
       continue;
     }
     if (/^[-*] /.test(line.trim())) {
@@ -129,8 +170,21 @@ const css = `    @page { size: letter; margin: 0.5in 0.58in 0.48in; }
     p { margin: 0 0 5px; }
     ul { margin: 2px 0 6px; padding: 0 0 0 1.05em; }
     li { margin: 0 0 2px; }
+    hr { border: 0; border-top: 0.7pt solid #ccc; margin: 10px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 6px 0 10px; font-size: 9pt; }
+    th, td { border: 0.5pt solid #ccc; padding: 3px 6px; vertical-align: top; text-align: left; }
+    th { font-weight: 700; background: #f5f5f5; }
     a { color: #1a365d; text-decoration: none; }
     code { font-size: 0.92em; }
+    /* Prefer break-before so a trailing marker does not mint a blank last page. */
+    .pagebreak {
+      break-before: page;
+      page-break-before: always;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
     .letter { font-size: 10.4pt; line-height: 1.38; }
     .letter h1 { font-size: 14pt; text-align: left; }
     @page letter { size: letter; margin: 0.75in 0.9in 0.7in; }
@@ -174,6 +228,37 @@ function printPdf(htmlPath, pdfPath) {
   }
   console.log(path.relative(root, pdfPath));
   return true;
+}
+
+if (material) {
+  const mdPath = path.join(root, 'content/material/thanos-vassilakis-resume.md');
+  const outDir = path.join(root, 'public/material');
+  fs.mkdirSync(outDir, { recursive: true });
+  let resumeMd = fs.readFileSync(mdPath, 'utf8');
+  // Drop the self-referential PDF footer line from the printed PDF.
+  resumeMd = resumeMd.replace(/\n\*Also available as \[PDF\][^\n]*\n?/g, '\n');
+  const resumeHtml = path.join(outDir, 'thanos-vassilakis-resume.html');
+  const resumePdf = path.join(outDir, 'thanos-vassilakis-resume.pdf');
+  fs.writeFileSync(resumeHtml, page('Thanos Vassilakis — résumé', mdToHtml(resumeMd)));
+  printPdf(resumeHtml, resumePdf);
+  // Keep DOCX in sync without the literal pagebreak comment.
+  const r = spawnSync(
+    'textutil',
+    ['-convert', 'docx', '-output', path.join(outDir, 'thanos-vassilakis-resume.docx'), resumeHtml],
+    { encoding: 'utf8' }
+  );
+  if (r.status === 0) {
+    console.log(path.relative(root, path.join(outDir, 'thanos-vassilakis-resume.docx')));
+  } else {
+    console.warn('textutil docx conversion skipped:', r.stderr || r.stdout || 'failed');
+  }
+  process.exit(0);
+}
+
+const outDir = path.join(root, 'content/resume/out', slug);
+if (!fs.existsSync(outDir)) {
+  console.error(`Missing ${path.relative(root, outDir)} — pack/generate first`);
+  process.exit(1);
 }
 
 const resumeMd = fs.readFileSync(path.join(outDir, 'resume.md'), 'utf8');
