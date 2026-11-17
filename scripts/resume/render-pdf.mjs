@@ -5,6 +5,8 @@
  *   node scripts/resume/render-pdf.mjs --slug plexus-eng-manager-prediction-markets
  *   npm run resume:pdf -- --slug <slug>
  *   npm run resume:pdf -- --material   # content/material → public/material PDF
+ *   npm run resume:pdf -- --private contracting
+ *   npm run resume:pdf -- --private-all
  *
  * Markdown may include `<!-- pagebreak -->` (alone on a line) for an explicit
  * CSS page break. That marker is never shown as text.
@@ -24,8 +26,10 @@ function argValue(flag) {
 
 const slug = argValue('--slug');
 const material = process.argv.includes('--material');
-if (!slug && !material) {
-  console.error('Pass --slug <flavor-slug> or --material');
+const privateName = argValue('--private');
+const privateAll = process.argv.includes('--private-all');
+if (!slug && !material && !privateName && !privateAll) {
+  console.error('Pass --slug <flavor-slug>, --material, --private <name>, or --private-all');
   process.exit(1);
 }
 
@@ -230,6 +234,49 @@ function printPdf(htmlPath, pdfPath) {
   return true;
 }
 
+function renderDocx(htmlPath, docxPath) {
+  const r = spawnSync(
+    'textutil',
+    ['-convert', 'docx', '-output', docxPath, htmlPath],
+    { encoding: 'utf8' }
+  );
+  if (r.status === 0) {
+    console.log(path.relative(root, docxPath));
+  } else {
+    console.warn('textutil docx conversion skipped:', r.stderr || r.stdout || 'failed');
+  }
+}
+
+function renderPrivateVariant(name) {
+  const outDir = path.join(root, 'content/resume/private', name);
+  const mdPath = path.join(outDir, 'resume.md');
+  if (!fs.existsSync(mdPath)) {
+    console.error(`Missing ${path.relative(root, mdPath)}`);
+    process.exit(1);
+  }
+  const resumeMd = fs.readFileSync(mdPath, 'utf8');
+  const resumeHtml = path.join(outDir, 'resume.html');
+  const resumePdf = path.join(outDir, 'Thanos-Vassilakis-resume.pdf');
+  const resumeDocx = path.join(outDir, 'Thanos-Vassilakis-resume.docx');
+  fs.writeFileSync(resumeHtml, page(`Thanos Vassilakis — ${name}`, mdToHtml(resumeMd)));
+  printPdf(resumeHtml, resumePdf);
+  renderDocx(resumeHtml, resumeDocx);
+}
+
+if (privateAll) {
+  const base = path.join(root, 'content/resume/private');
+  for (const name of fs.readdirSync(base)) {
+    const md = path.join(base, name, 'resume.md');
+    if (fs.existsSync(md)) renderPrivateVariant(name);
+  }
+  process.exit(0);
+}
+
+if (privateName) {
+  renderPrivateVariant(privateName);
+  process.exit(0);
+}
+
 if (material) {
   const mdPath = path.join(root, 'content/material/thanos-vassilakis-resume.md');
   const outDir = path.join(root, 'public/material');
@@ -241,17 +288,7 @@ if (material) {
   const resumePdf = path.join(outDir, 'thanos-vassilakis-resume.pdf');
   fs.writeFileSync(resumeHtml, page('Thanos Vassilakis — résumé', mdToHtml(resumeMd)));
   printPdf(resumeHtml, resumePdf);
-  // Keep DOCX in sync without the literal pagebreak comment.
-  const r = spawnSync(
-    'textutil',
-    ['-convert', 'docx', '-output', path.join(outDir, 'thanos-vassilakis-resume.docx'), resumeHtml],
-    { encoding: 'utf8' }
-  );
-  if (r.status === 0) {
-    console.log(path.relative(root, path.join(outDir, 'thanos-vassilakis-resume.docx')));
-  } else {
-    console.warn('textutil docx conversion skipped:', r.stderr || r.stdout || 'failed');
-  }
+  renderDocx(resumeHtml, path.join(outDir, 'thanos-vassilakis-resume.docx'));
   process.exit(0);
 }
 

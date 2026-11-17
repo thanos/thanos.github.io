@@ -1,0 +1,41 @@
+id: bt-tcpip-router-os
+kind: built
+title: BT — TCP/IP router OS (Hope prototype)
+client: British Telecom
+org: British Telecom
+job: british-telecom
+responsible:
+- built
+when:
+  start: 1992
+  end: 1992
+summary: TCP/IP router programming/configuration embedded software; Hope used to prototype.
+bullets:
+- TCP/IP Router OS — embedded router programming and configuration software; Hope used to prototype.
+domain:
+- telecom
+skills:
+- C++
+- Hope
+signals:
+  domains:
+  - telecom
+  skills:
+  - c++
+  - hope
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

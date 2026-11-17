@@ -1,0 +1,43 @@
+id: infinigon-social-ml
+kind: built
+title: Infinigon — social-media ML trading analytics
+client: Infinigon
+org: Infinigon
+job: infinigon
+responsible:
+- built
+- architected
+when:
+  start: 2012
+  end: 2015
+summary: ML analytics platform using real-time data and social sentiment for trading strategies.
+bullets:
+- Architected and built a machine learning analytics platform using real-time data and social media sentiment
+  for trading strategies.
+domain:
+- finance
+- AI
+skills:
+- Python
+signals:
+  domains:
+  - finance
+  - AI
+  skills:
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

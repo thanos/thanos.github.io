@@ -1,0 +1,48 @@
+id: rbc-ml-platform
+kind: built
+title: Machine Learning Platform — governed model hosting
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+- run
+when:
+  start: 2018
+  end: null
+summary: Secure, scalable ML model management / AI Ops platform for Capital Markets.
+bullets:
+- Architected the ML model management platform (AI Ops) with governance.
+- 'Clients: Aiden, Client First, CreditAI, EMDS, GRA, GTI Data Science, GTO, Insurance, Munis, Quants.'
+- Estimated ~$600k saved per client onboarded; munis pricing was first production client.
+domain:
+- finance
+- AI
+skills:
+- Python
+- Erlang
+signals:
+  domains:
+  - finance
+  - AI
+  skills:
+  - python
+  - erlang
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: savings_per_client_usd
+    value: 600000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

@@ -1,0 +1,42 @@
+id: rbc-nextgen-oms-poc
+kind: built
+title: Next-gen Sales and Trading OMS PoC
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+- run
+when:
+  start: 2017
+  end: null
+summary: Generic plug-and-play OMS on PITOS for the new cross-asset trading platform.
+bullets:
+- Designed a new generic OMS with plug-and-play architecture based on PITOS.
+- Part of next-gen cross-asset trading infrastructure (multi-region, hot releases, five-nines targets).
+domain:
+- finance
+skills:
+- Python
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

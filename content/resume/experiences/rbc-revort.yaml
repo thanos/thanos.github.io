@@ -1,0 +1,42 @@
+id: rbc-revort
+kind: built
+title: REVORT — Broadridge capacity replacement
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+- built
+- run
+when:
+  start: 2023
+  end: null
+summary: REVORT replacing Broadridge for capacity; ~$270k/yr license avoidance.
+bullets:
+- Delivered REVORT as Broadridge replacement for capacity.
+- Cited ~$270k/year license avoidance; related to equity settlement migration off Broadridge.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: license_avoidance_usd_per_year
+    value: 270000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

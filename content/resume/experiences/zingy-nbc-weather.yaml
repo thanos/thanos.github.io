@@ -1,0 +1,43 @@
+id: zingy-nbc-weather
+kind: built
+title: NBC Weather Mobile
+client: Zingy
+org: Zingy
+job: zingy
+responsible:
+- built
+- run
+when:
+  start: 2006
+  end: 2007
+summary: Sprint/Cingular weather app with MNG radar maps and real-time alerts.
+bullets:
+- 35+ MIDP handsets; MNG animated radar maps; real-time weather alerts; tabular screens for small Samsung
+  devices.
+domain:
+- telecom
+- gaming
+skills:
+- Java
+signals:
+  domains:
+  - telecom
+  - gaming
+  skills:
+  - java
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

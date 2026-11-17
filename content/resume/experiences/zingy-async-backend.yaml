@@ -1,0 +1,42 @@
+id: zingy-async-backend
+kind: built
+title: Zingy async-j NIO backend & IPAY billing
+client: Zingy
+org: Zingy
+job: zingy
+responsible:
+- built
+when:
+  start: 2006
+  end: 2007
+summary: New asynchronous Java NIO backend (async-j); IPAY billing integration.
+bullets:
+- Built a new backend server around async-j (Java NIO).
+- Integrated the new version of IPAY billing system.
+domain:
+- telecom
+- gaming
+skills:
+- Java
+signals:
+  domains:
+  - telecom
+  - gaming
+  skills:
+  - java
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

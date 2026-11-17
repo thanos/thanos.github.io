@@ -4,24 +4,27 @@ title: Atari —  ST applications
 client: Atari
 org: Atari
 job: atari
+responsible:
+- built
 when:
   start: 1980
   end: 1984
 summary: Build bundled Atari ST accessory software.
 bullets:
-  - Built bundled telecommunications software for Atari ST.
+- Built bundled telecommunications software for Atari ST.
 domain:
-  - telecom
+- telecom
 skills:
-  - C
+- C
 signals:
   domains:
-    - telecom
+  - telecom
   skills:
-    - c
+  - c
+  - architecture
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links: []
@@ -29,6 +32,6 @@ proof:
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: '2026-11-16'
 visibility: public

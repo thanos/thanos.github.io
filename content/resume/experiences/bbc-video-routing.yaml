@@ -1,0 +1,36 @@
+id: bbc-video-routing
+kind: built
+title: BBC — video routing switches
+client: BBC
+org: BBC
+responsible:
+- built
+when:
+  start: 1989
+  end: 1990
+summary: Video routing switches for the BBC (bio / nomination Before RBC).
+bullets:
+- Video routing switches for the BBC (cited in bio and nomination materials).
+domain:
+- telecom
+skills: []
+signals:
+  domains:
+  - telecom
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

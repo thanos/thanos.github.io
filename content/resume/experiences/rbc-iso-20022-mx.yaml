@@ -1,0 +1,44 @@
+id: rbc-iso-20022-mx
+kind: built
+title: SWIFT FIN/MT → ISO 20022 (MX) migration
+client: RBC
+org: RBC
+job: rbc
+role: Managing Director, Distinguished Engineer, Head of Wholesale Banking & Post Trade Development
+responsible:
+- architected
+- built
+- run
+when:
+  start: 2024
+  end: null
+summary: Migrated payment messaging from SWIFT FIN/MT formats to the XML-based ISO 20022 (MX) standard.
+bullets:
+- Led migration of payment messaging from SWIFT FIN/MT formats to XML-based ISO 20022 (MX).
+- Aligned Wholesale Banking and post-trade flows to the MX message set for payments interoperability.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - iso-20022
+  - swift
+  - payments
+  - messaging
+  - architecture
+  - migration
+  seniority: hybrid
+  impact:
+  - platform
+  - risk
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs: []
+  last_verified: '2026-11-16'
+visibility: public

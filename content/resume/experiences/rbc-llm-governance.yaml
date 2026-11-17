@@ -1,0 +1,42 @@
+id: rbc-llm-governance
+kind: built
+title: Bank-wide LLM services with governance
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+- run
+when:
+  start: 2024
+  end: null
+summary: Bank-wide LLM services with full governance.
+bullets:
+- Modernization program including bank-wide LLM services with full governance.
+domain:
+- finance
+- AI
+skills:
+- Python
+signals:
+  domains:
+  - finance
+  - AI
+  skills:
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

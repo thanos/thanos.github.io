@@ -9,33 +9,33 @@ when:
   end: null
 summary: Blockchain/crypto/ML R&D plus inner-source and open-source stewardship.
 bullets:
-  - Lead R&D spanning blockchain, crypto, and ML model development.
-  - Inner source and open source stewardship inside the bank.
+- Lead R&D spanning blockchain, crypto, and ML model development.
+- Inner source and open source stewardship inside the bank.
 domain:
+- finance
+- AI
+- crypto
+skills:
+- Python
+- Elixir
+- Rust
+signals:
+  domains:
   - finance
   - AI
   - crypto
-skills:
-  - Python
-  - Elixir
-  - Rust
-signals:
-  domains:
-    - finance
-    - AI
-    - crypto
   skills:
-    - python
-    - elixir
-    - rust
-    - oss
-    - r&d
-    - mentoring
-    - architecture
+  - python
+  - elixir
+  - rust
+  - oss
+  - r&d
+  - mentoring
+  - architecture
   seniority: hybrid
   impact:
-    - platform
-    - people
+  - platform
+  - people
 proof:
   metrics: []
   links: []
@@ -43,5 +43,5 @@ proof:
 provenance:
   type: job_ran
   refs: []
-  last_verified: 2026-08-06
+  last_verified: '2026-11-16'
 visibility: public

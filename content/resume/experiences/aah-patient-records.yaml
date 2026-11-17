@@ -5,26 +5,31 @@ client: AAH Meditel
 org: AAH Meditel
 job: aah-meditel
 role: Consultant, Leader
+responsible:
+- built
 when:
   start: 1993
   end: 1994
 summary: Led Unix/C++ patient registration and records product used widely in UK primary care.
 bullets:
-  - Cross-platform C++ patient registration/records — installed with majority of UK doctors/medical
-    centers and health authorities.
-  - Implemented replacement cursor stack for Wyse 50 terminals popular in clinics.
-domain: []
+- Cross-platform C++ patient registration/records — installed with majority of UK doctors/medical centers
+  and health authorities.
+- Implemented replacement cursor stack for Wyse 50 terminals popular in clinics.
+domain:
+- Medical
 skills:
-  - C++
-  - C
+- C++
+- C
 signals:
-  domains: []
+  domains:
+  - Medical
   skills:
-    - c++
-    - c
+  - c++
+  - c
+  - architecture
   seniority: hybrid
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links: []
@@ -32,6 +37,6 @@ proof:
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: '2026-11-16'
 visibility: public

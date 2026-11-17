@@ -1,33 +1,36 @@
 id: rbc-faas-notification
-kind: built
-title: On-prem FaaS (Lambda) and SNS-style notification
+kind: job_role
+title: FaaS + SNS (umbrella)
 client: RBC CM
 org: RBC Capital Markets
 job: rbc-cm
+responsible:
+- architected
+- built
+- run
 when:
   start: 2017
   end: 2018
-summary: Forked/adapted OpenWhisk into bank FaaS then rewrote with streamed-event triggers; built
-  AWS-SNS-like notification used by 90+ apps.
+summary: Umbrella — see rbc-faas and rbc-sns.
 bullets:
-  - Delivered on-prem/cloud-agnostic Function-as-a-Service to cut microservice sprawl and RTB cost.
-  - Simple Notification Service modeled on AWS SNS — eventually serving 92+ applications.
+- See child atoms rbc-faas and rbc-sns.
 domain:
-  - finance
+- finance
 skills:
-  - Python
-  - Erlang
+- Python
+- Erlang
 signals:
   domains:
-    - finance
+  - finance
   skills:
-    - python
-    - erlang
-    - platform-engineering
+  - python
+  - erlang
+  - platform-engineering
+  - architecture
   seniority: hands-on
   impact:
-    - cost
-    - platform
+  - cost
+  - platform
 proof:
   metrics: []
   links: []
@@ -35,6 +38,7 @@ proof:
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: '2026-11-16'
+  note: Thinned after granular split; see child atoms + EXPERIENCES-REVIEW.
 visibility: public

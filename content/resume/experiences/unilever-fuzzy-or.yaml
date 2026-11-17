@@ -1,0 +1,40 @@
+id: unilever-fuzzy-or
+kind: built
+title: Unilever — OR pallet packing & fuzzy-logic control
+client: Unilever
+org: Unilever
+job: unilever
+responsible:
+- built
+when:
+  start: 1982
+  end: 1984
+summary: Operational research pallet packing and fuzzy-logic control systems; robotics.
+bullets:
+- OR (pallet packing) and then fuzzy logic control systems for Unilever.
+- Robotic control programming on PDP-11 FORTRAN.
+domain:
+- robotics
+skills:
+- FORTRAN
+signals:
+  domains:
+  - robotics
+  skills:
+  - fortran
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

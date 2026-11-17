@@ -1,0 +1,42 @@
+id: icap-gui-framework
+kind: built
+title: Lightweight GUI framework for trading systems
+client: ICAP
+org: ICAP
+job: icap
+responsible:
+- built
+when:
+  start: 2004
+  end: 2006
+summary: Config-driven trading UI framework; delivered a front-end in six weeks.
+bullets:
+- Screens/menus/panels/dialogs/columns/instruments specified in config and laid out dynamically.
+- Used to deliver a trading front-end in six weeks.
+domain:
+- finance
+- trading
+skills:
+- Java
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - java
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

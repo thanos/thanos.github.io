@@ -1,47 +1,48 @@
 id: rbc-ml-pricing
 kind: built
-title: ML Pricing Service — Munis & Credit Derivatives
+title: ML Pricing Service — Credit Derivatives
 client: RBC CM
 org: RBC Capital Markets
 job: rbc
+responsible:
+- built
+- architected
+- run
 when:
   start: 2020
   end: null
-summary: Real-time fair-price ML for ~1.5M unique bonds; beats competitor evals daily.
+summary: Real-time fair-price ML for credit derivatives; beats competitor evals daily.
 bullets:
-  - Real-time ML fair pricing for ~1.5M unique municipal and credit derivative instruments.
-  - Outperformed competitor evaluation services every trading day since go-live (~4 years).
-  - Also delivered real-time Position and PnL systems (2020).
+- Real-time ML fair pricing for credit derivative instruments.
+- Outperformed competitor evaluation services every trading day since go-live.
 domain:
+- finance
+- trading
+- AI
+skills:
+- Python
+- ML
+signals:
+  domains:
   - finance
   - trading
   - AI
-skills:
-  - Python
-  - ML
-signals:
-  domains:
-    - finance
-    - trading
-    - AI
   skills:
-    - python
-    - ml
-    - pricing
-    - real-time
-    - architecture
+  - python
+  - ml
+  - pricing
+  - real-time
+  - architecture
   seniority: hands-on
   impact:
-    - platform
-    - scale
+  - platform
+  - scale
 proof:
-  metrics:
-    - label: unique_bonds
-      value: 1500000
+  metrics: []
   links: []
   source: job
 provenance:
   type: job_built
   refs: []
-  last_verified: 2026-08-06
+  last_verified: '2026-11-16'
 visibility: public

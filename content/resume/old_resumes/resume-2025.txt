@@ -1,0 +1,187 @@
+Thanos Vassilakis
+thanosv@gmail.com
++1-917-517-5912
+
+
+
+
+
+Executive Summary
+
+Accomplished technology executive with over 20 years of experience driving transformation and innovation in the financial services sector. Demonstrated expertise in leading large-scale development initiatives, leveraging disruptive technologies, and fostering an entrepreneurial culture within established organizations. Proven record of enhancing income generation through strategic technology integration and operational efficiency. Adept at creating inclusive environments that empower teams and encourage collaboration to drive progress and maximize business impact. My career is characterized by a commitment to continuous learning, mentorship, and the pursuit of excellence in technology and its application in the finance industry.
+
+
+
+Professional Experience
+Royal Bank of Canada Capital Markets | Managing Director, Distinguished Engineer - Head of Global Operation Development & Shared Technical Services | 2023 - Present  
+Transformational Leadership: Took a highly siloed maintenance team of 160+  in North America and restructuring into a startup style development team  in Malaysia and other lower cost centers while increasing the number of applications and services by 20%.
+Innovation in Governance: Designed and implementing an vent driven realtime  Global Market supervision service, employing advanced machine learning algorithms to automate compliance monitoring against 400+ financial regulations. This enhanced the bank’s ability to respond quickly to regulatory changes, reducing risk and improving operational oversight.
+Streamlined Operational Processes: Designed , built and own the   bank's T+1 transaction processing infrastructure, culminating in a significant reduction in operational risks and enhanced customer experiences through rapid transaction settlements. This initiative has positioned RBC as a leader in operational effectiveness within the sector.
+Strategic Collaboration: Fostered cross-departmental partnerships to embed a culture of continuous innovation, enabling the company to leverage diverse expertise and perspectives in the development of impactful solutions.
+
+RBC CM Cash Management Bank | Distinguished Engineer & Head of Engineering | 2020 - 2023  
+Disruptive Initiative: Led the development of the first 5th generation transactional banking platform, seamlessly integrating cutting-edge features including automated liquidity management and virtual accounts. This platform has set new industry benchmarks for scalability and performance.
+
+
+RBC CM | Head of R&D for Technology & Shared Trading Services| 2019 - 2020
+Data Revolution: Led a comprehensive re-architecture of the bank's data infrastructure, achieving greater discoverability and reliability, while enhancing security measures compliant with stringent regulations.
+High-Performance Data Solutions: Developed a high-speed data transport system consolidating multiple data services into a single source, thereby optimizing operational processes and enabling streamlined decision-making and analysis.
+Machine Learning Leadership: Directed the integration of predictive analytics within trading architecture, enhancing the accuracy of pricing models for municipal bonds and driving strongly improved revenue margins.
+
+RBC CM | Head of R&D for Technology | 2016 - 2019  
+Cutting-Edge Development: Architected a sophisticated machine learning platform designed to outperform competitor offerings in the pricing of illiquid municipal bonds, generating significant revenue enhancements for the trading desk.
+User-Centric Solutions: Developed a web-based application framework that allowed rapid UI development for backend teams, streamlining processes and ensuring projects can scale effectively without compromising quality.
+Strategic Training Programs: Designed and implemented workshops and training sessions focused on machine learning, blockchain technology, and functional programming, ensuring that team members are equipped with the latest skills and knowledge in an evolving tech landscape.
+
+
+Infinigon Group | Head of Development | 2012 - 2015
+Pioneering Cryptocurrency Solutions: Spearheaded the creation of a cross-exchange custodial cryptocurrency trading platform equipped with robust security measures and high-performance capabilities, addressing emerging market demands.
+Data-Driven Insight Development: Created a machine learning analytics platform that utilized real-time data and social media sentiment to influence trading strategies, effectively redefining competitive positioning within the market.
+
+JPMorgan |  Contractor, Energy Trading Systems  | 2007
+Contributed to Athena, code profiler and native fix engine.
+Developed standardized trade feed framework and implemented gateways for CME and ICE, streamlining energy trading operations
+
+Zingy | Head of Mobile Development | 2006 - 2007
+Managed development and operations for 50+ mobile applications across 27 carriers and multiple platforms
+Led development of innovative mobile products, including the top-selling MapQuest mobile application
+
+ICAP | Head of Front-End Development | 2004 - 2006
+Established and led in-house development team for fixed income trading systems
+Developed high-performance distributed trading services and mobile trading platforms
+
+NYSE/SEC/SIAC (1997 - 2004)
+Technical Director / Lead Developer
+Architected and implemented market surveillance systems, stock information servers, and regulatory reporting services
+Developed innovative XML-based data feeds and Java-based trading applications
+
+
+
+
+
+
+
+
+
+
+
+
+Cultural Innovation: Established the "Five Rings" mentorship program that fosters a startup-like culture within the organization, developing future leaders who are proficient in technology and aligned with the strategic objectives of the bank.
+
+
+
+Key Achievements
+Embedded Innovation: Successfully led the development and launch of key products and services within the financial sector, including the first web-based trading platform for the NYSE, driving market-leading position for firms and enhancing profitability.
+Cultural Impact: Instituted initiatives to enhance diversity and inclusivity in technology roles, implementing mentorship programs that have advanced the careers of numerous individuals in technology-focused positions.
+Thought Leadership: Active contributor to industry discussions at events such as the Bloomberg Quant Seminar series, sharing insights on the impact of emerging technologies on the financial sector and driving forward-looking dialogue among industry leaders.
+
+
+
+
+the past at rbc
+
+at: RBC CM Cash Managment Bank 
+period: 2020 - 2023title: Distinguished Engineer & Head of Engineering
+Build 5th generation transactional bank. Developed a new cash management service, including the core bank- including virtual accounts and liquidity management, the payment manger and rails, ERP integrations, UI, the CMS KYC/KYB, evidence and document store, etc.tech stack: Elixir, phoenix, liveview, rust, python, and a blockchain
+
+at: RBC CM
+period: 2019title: Distinguished Engineer & Head of Shared Data Services and Machine Learning
+Holy Grail: making bank’s data discoverable, addressable, trustworthy, self-describing, interoperable, and secure. Added immutable, temporal, lineage, versioning, using dual schema-driven interface. The architecture included a file system replacing HDFS, a single SDK for managing data for all major development languages, a single immutable operational store for all the Bank's trading ecosystems. Meanwhile machine learning platform was built adding AI-based classification, validation, search and discovery, monitoring, alerts, and insights.
+tech stack: elixir, rust & python, graphql, grpc, presto.
+On these infrastructures was built:
+One Data Transport System: A transport and transform service.  
+A single data ingest service
+A Single Source for all Data:  Enterprise reference and market data services. 
+One Browser for all the Banks Data: An internal Tableau
+Machine Learning Platform that successfully beating RBC competitors every single day in pricing Municipal bonds and  Credit Derivatives.
+
+at: RBC CMperiod: 2017-2018title: Distinguished Engineer & Head of R&D and New Trading Infrastructure
+Leveraging BPF to Userspace  and processing 60+ million messages a second - using programable NICs, DPDK, BPFs and using FPGA-based routing and indexing systems. Built new consolidated trading Infrastructure that was multiple geographical region, cross-assets, cross-des, vertically and horizontally scalable, quick to be able to adopt new lines of business, with a single UI for data, risk, and cross-asset trading, that had a single master source for data, 99.999% uptime and supporting hot releases, very low touch RTB. A new OMS & Security Master – included in the new platform was a new generic OMS with plug and play architecture that inherited the basic features mentioned above. It was based on our "point in time object store." 
+
+at: RBC CMperiod: 2016-2017title: Head of R&D and Shared Technical Services
+The mandate was to change technical culture:  A layered approach was taken: One, a collection of "cookiecutters" were inner-sourced for generating all aspects of a new project in a consistent and prescribed manner: Configuration, secrets, logging, event management, resource connection, documentation structure, GitHub layout, make files, CI/CD integration, Container - Docker and Kubernetes configuration and setup, RTB requirements are now all handled and blueprinted out at the start of any project.  Two, shared technical services, included in-house platform-agnostic replicas of the AWS services developers typically need: SNS, SQS, Lambda (FaaS), S3, RBS, MRS, Authentication, and permission services, Discovery and connectivity.Three, a single interface, one API for each development language, a single point of discovery, etc.For,  set of generic cross-desk business services for order and position management, real-time pricing and risk reporting, and a single trading ecosystem data store for all active and reference data. Finally five,  UI framework designed to enable programmers with no UI development knowledge to generate front-ends to their work quickly.  Also led the porting of many models from C++ to Numa Python.
+
+Before rbc
+
+at: Infinigon Group
+period: 2012-2015title: Head of Development
+Architected and built cross exchange custodial crypto trading platform.  Architected and built machine learning platform for analyzing social media and identifying trading opportunities.
+
+at: RBC CM
+period: 2011-2012title: contractor
+Consolidated commodities trading platforms. Market data for commodities. LME trading connectivity 
+
+at: JP Morgan
+period: 2010-2011title: contractor
+Worked on network and computation performance improvements to counterparty risk system (GUASS).
+
+at: Credit Swiss
+period: 2008-2010title: contractor
+Risk system for complex commodities trades, external pricing models for Openlink. Market data services for commodities. Built central trade repo.
+
+at: Zingy 
+period: 2006-2007title: Head of Mobile Applications
+Eight of the top ten applications for 2006, including eBay and Mapquest. Created Phonescript. Also created the first mobile adobe flash app to go into production.
+
+at: ICAP 
+period: 2004-2006title: Head of Frontend Development
+Built the BrokerTec fixed income trading app.  To achieve performance needed also built high performance lightweight ui framework and asynchronous messaging infrastructure. 
+
+at: SIAC/NYSE 
+period: 1997-2004title: Head of Frontend Development
+Built specialist trading systems include first web based trading service for NYSE.  Built event sourced rules based trader supervision for SEC. Coded and open sourced Pythons decimal module.
+
+at: Ericsson 
+period: 1996-1997title: Contractor
+Architecture and built telecom switches capable of distributed hot releases and  nine nines reliability.
+
+
+
+
+  
+stack of past work:RBC CM, Infinigon Group, RBC CM, JP Morgan, Credit Suisse, JP Morgan, Zingy, ICAP, SIAC/NYSE, Ericsson/HP, West LB, European Community, Ceasars Casino, European Parliament, AAH Medical, Apple, Symantec (Zortech), Reuters International, Honeywell Bull, Drake, British Telecom, Ferrantti, Barclays, Multitone, Atari, Unilever, Atari, Electric Coin Company
+enumeration of languages:c, C++, erlang, elixir, fortran, go, java, javascript, python, solidity, zig
+
+
+
+
+
+personal details
+NATIONALITY: US & Greek (European)
+SPOKEN LANGUAGES: English & French
+EMAIL: thanosv@gmail.com
+
+
+bio
+I started in a roundabout way with Computer Science. At eighteen, I had no idea what a computer was. I had never seen one and had no curiosity in this direction. I was good at maths, but my heart was set on being a hydrologist and working with developing countries solving their water problems. I was an electronics and HiFi enthusiast, but on a more prosaic side, and had a side business trading and repairing valve amplifiers and other vintage equipment. I got a summer job with the Electric Coin company, one of the most prominent vendors of slot machines, but to my dismay, instead of wielding a soldering iron found myself coding 6801 controllers. By the end of the summer, it's sad to say, I was addicted to programming!
+So at the last minute, I jumped ship from a pretty good college and went to the North London Polytechnic and took Maths & Computer Science. While at college, I worked for Richard Forsyth, coding his Darwin genetic programming framework – one of the first Machine Learning platforms - which we used as an oracle to lose our money on the horses. I graduated in 1985 and joined Atari's PC games division. I then left Atari to create my own startup specializing in RIP engines for printer manufactures. I kind of remained a freelancer until this current position with RBC CM. 
+If my grandchildren were ever to ask me, "What did you do in your life..." I would be hard placed to mention anything remarkable. Much of my life has been programming in itself, which has not left a visible trail. 
+At the beginning of my career in the UK, I avoided financial institutions except for a gig with Barclays, for whom I developed their Topic-based trading system. But my work included coding the standard libraries for Walter Bright's C++ distribution; porting Eispack and Linpack to C++ and ADA; writing a Forth based RIP engines for Panasonic's laser printers; writing most of the drivers for their fax machines; implementing the functional programming language, Hope, for Imperial College and British Telecom; developing a fast time-series database for telecom for BT; another database for Multitone – a major beeper manufacturer; video routing switches for the BBC; OR (pallet packing) and then fuzzy logic control systems for Unilever; and an Occam based neural network on Transputers for the UK Treasury. During this period, I also worked for Ferranti to design and develop a real-time operating system for their Lynx helicopter program. The early nineties started with an interest in PDAs, and I joined Apple's Newton program developing programming languages and programming tools for the growing Newton community. It was through working for Apple in 1993 that I discovered the internet. That year, I started developing a centralized internet-based (using WAIS!) patient register and records for the UK's National Health system. In 1994 I joined DG1 in Luxembourg as the IT advisor to the European Parliament president, Klaus Hänsch. While there, I got into workflow systems and developed their all-embracing internet-based workflow system that is still in use today. In 1995 I got a commission to build an internet casino for Caesars. The casino presented many new security and session management challenges in online development and design. It was this project that made me a Python evangelist. I had first developed the Casino in C++, but I just could complete it. The codebase was tight but still over 40k lines. On a bored Friday night in Luxembourg, I bought the Mark Lutz Python book. I rewrote my entire code in Python over the weekend and looked at something much better sitting at 4k LOC! For the casino to take online payments, I worked with the Marita bank and developed an early cyber currency, WebCheck. After Luxembourg, I moved to Dusseldorf to work at Westdeutsche Landesbank to develop its VAR system. The finance world was alien to me, and after a year, I bailed out and joined Ericsson on their distributed switch programming system based on Erlang. From Stockholm, I moved to Zurich. I got pouched by IBM's research labs near to code their mobile phone version of the JVM.
+In 1997 I returned to my hometown, New York, and started developing a new NYSE trading system. It was NYSE's first internet-based system and possibly the first financial production system written in Python. Since then, I've been mostly working on finance gigs. I've developed high- frequency trading systems, trading platforms for fixed income, and risk systems for commodities at various joints such as ICAP, BrokerTec, a couple of times for JP Morgan, Credit Suisse, and this also my second time with RBC CM. There have been some sojourns with a few startups, including mobile apps, social media analytics, blockchains, smart contacts, and alt-currencies.
+
+outside workCo-founded art and short film festival in Mykonos
+Created the first global missing register (commended by the European Parliament)
+Regular contributor to the Bloomberg Quant Seminar series chaired by Bruno Dupire and given short talks with Peter Carr, John Hull, Nassim Taleb, and Robert J. Shiller.Vise President of The National Center for Art and Technology of Greece Internet consultant to the cabinet of the president of the European Parliament, 1994-1996Founder of the Linux & Python user groups in Luxembourg.Founder of the Python user groups in DüsseldorfPython Starship member
+
+notables & first
+Top earning US mobile app - MAPQUEST
+eBay’s first mobile app
+1st Python trading service - SIAC
+1st C++ debugger & Numeric library 
+1st Internet Casino - Caesars
+1st Web framework for Python, PSO - used by NASA, SIAC, JP Morgan
+European Parliament’s first website.
+byteeasy - Anonymous crypto exchange
+BTC terminal - cross exchange custodial crypto trading platform
+1st module phone programming language - Phonescript
+JVM for mobile - IBM
+
+work references
+Kabir Reike, MD Head of  Data Architecture,  Bank of America
+Alicia Belzberg, CEO,  Infinigon Group
+Endri Mani, MD Head of GenAI ,  RBC CM
+
+personal references
+Bruno Dupire, Head of Quantitative Research, Bloomberg
+Hope Igelhart, Senior Psychoanalyst, Columbia University
+Stavros Lambrinidis, European Ambassador to the UN.

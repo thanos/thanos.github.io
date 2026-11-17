@@ -1,0 +1,35 @@
+id: oss-chromite
+kind: oss
+title: Chromite — Bancor-style commodity-backed crypto
+org: Independent
+responsible:
+- built
+when:
+  start: 2014
+  end: null
+summary: Bancor-based crypto currency backed by chromium mine deposits.
+bullets:
+- 'Chromite: a Bancor-based crypto currency backed by chromium mine deposits in the Ring of Fire.'
+domain:
+- crypto
+skills: []
+signals:
+  domains:
+  - crypto
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: oss
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

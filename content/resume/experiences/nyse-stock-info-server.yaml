@@ -1,0 +1,44 @@
+id: nyse-stock-info-server
+kind: built
+title: NYSE Stock Information Server (pub/sub)
+client: NYSE/SIAC
+org: NYSE/SIAC
+job: nyse-siac
+responsible:
+- built
+when:
+  start: 1997
+  end: 2004
+summary: Pub/sub stock-information server with XML-RPC/SQL subscribe and Tandem protocol bridge.
+bullets:
+- Pub/sub of stock information; clients subscribe with XML-RPC and SQL; publish over XML-RPC or HTTP.
+- SWIG/C++ extended Python to subscribe to a bespoke Tandem protocol.
+domain:
+- finance
+- trading
+skills:
+- Python
+- C++
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - python
+  - c++
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

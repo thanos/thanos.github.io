@@ -1,0 +1,43 @@
+id: rbc-five-rings
+kind: ran
+title: Five Rings mentorship program
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+- run
+when:
+  start: 2016
+  end: null
+summary: Five Rings mentorship program fostering startup culture and technology leaders.
+bullets:
+- Established the Five Rings mentorship program developing future technology leaders.
+- Alumni cited include one CEO, two MDs, four directors, and eight ADs.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - people
+proof:
+  metrics:
+  - label: alumni_mds
+    value: 2
+  - label: alumni_directors
+    value: 4
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

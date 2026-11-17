@@ -1,38 +1,38 @@
 id: oss-nimalana
 kind: oss
 title: Nimalana — Nim Solana validator
-client: null
 org: AdCatenam
-job: null
+responsible:
+- built
 when:
   start: 2023
   end: null
 summary: Author of Nimalana, a Nim-based Solana validator.
 bullets:
-  - Author of Nimalana — a Solana validator written in Nim.
+- Author of Nimalana — a Solana validator written in Nim.
 domain:
-  - crypto
+- crypto
 skills:
-  - Nim
+- Nim
 signals:
   domains:
-    - crypto
+  - crypto
   skills:
-    - nim
-    - solana
-    - blockchain
-    - performance
+  - nim
+  - solana
+  - blockchain
+  - performance
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links:
-    - label: github
-      url: https://github.com/AdCatenam/nimlana
+  - label: github
+    url: https://github.com/AdCatenam/nimlana
   source: github
 provenance:
   type: github
   refs: []
-  last_verified: 2026-11-11
+  last_verified: '2026-11-16'
 visibility: public

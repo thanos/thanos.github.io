@@ -1,14 +1,12 @@
 id: interest-mykonos-festival
 kind: interest
 title: Mykonos art & short-film festival
-client: null
-org: null
 when:
   start: null
   end: null
 summary: Co-founded an art and short-film festival in Mykonos.
 bullets:
-  - Co-founded art and short film festival in Mykonos.
+- Co-founded art and short film festival in Mykonos.
 domain: []
 skills: []
 signals:
@@ -16,7 +14,7 @@ signals:
   skills: []
   seniority: executive
   impact:
-    - people
+  - people
 proof:
   metrics: []
   links: []
@@ -24,6 +22,6 @@ proof:
 provenance:
   type: other
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: '2026-11-16'
 visibility: public

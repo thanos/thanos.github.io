@@ -1,0 +1,47 @@
+id: nyse-market-share
+kind: built
+title: NYSE Market Share service into Specialist Portfolio
+client: NYSE/SIAC
+org: NYSE/SIAC
+job: nyse-siac
+responsible:
+- built
+when:
+  start: 1997
+  end: 2004
+summary: Oracle→Specialist Portfolio market-share XML-RPC service; <1 month turnaround for Grasso ask.
+bullets:
+- Server collecting market-share data from Oracle and publishing into Specialist Portfolio (XML-RPC, PSO,
+  Python, SWIG, C++, Tandem).
+- High-profile demand from Mr. Grasso; turnaround less than one month.
+domain:
+- finance
+- trading
+skills:
+- Python
+- C++
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - python
+  - c++
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: turnaround
+    value: <1 month
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

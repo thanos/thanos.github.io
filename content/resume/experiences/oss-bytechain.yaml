@@ -3,30 +3,32 @@ kind: built
 title: ByteChain — crypto arbitrage platform
 client: Byteeasy
 org: Byteeasy
-job: null
+responsible:
+- built
 when:
   start: 2019
   end: null
 summary: Cryptocurrency arbitrage platform (ByteChain), Elixir/Phoenix.
 bullets:
-  - Built ByteChain, a cryptocurrency arbitrage platform (Elixir/Phoenix).
+- Built ByteChain, a cryptocurrency arbitrage platform (Elixir/Phoenix).
 domain:
-  - crypto
-  - trading
+- crypto
+- trading
 skills:
-  - Elixir
+- Elixir
 signals:
   domains:
-    - crypto
-    - trading
+  - crypto
+  - trading
   skills:
-    - elixir
-    - arbitrage
-    - crypto-exchanges
-    - blockchain
+  - elixir
+  - arbitrage
+  - crypto-exchanges
+  - blockchain
+  - architecture
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links: []
@@ -34,5 +36,5 @@ proof:
 provenance:
   type: other
   refs: []
-  last_verified: 2026-11-11
+  last_verified: '2026-11-16'
 visibility: public

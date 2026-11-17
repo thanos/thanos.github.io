@@ -1,0 +1,41 @@
+id: forsyth-darwin-beagle
+kind: built
+title: Richard Forsyth — Darwin / Beagle genetic programming
+client: Richard Forsyth
+org: Richard Forsyth
+responsible:
+- built
+when:
+  start: 1980
+  end: 1984
+summary: Darwin genetic programming framework and Beagle horse-racing ML; early AI poker.
+bullets:
+- Coded Darwin genetic programming framework — one of the first ML platforms.
+- Beagle system used as an oracle on horse racing; also board poker with virtual AI players.
+domain:
+- AI
+- gaming
+skills:
+- C
+signals:
+  domains:
+  - AI
+  - gaming
+  skills:
+  - c
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

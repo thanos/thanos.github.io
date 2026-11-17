@@ -1,0 +1,39 @@
+id: bt-timeseries-db
+kind: built
+title: BT — fast time-series database for telecom
+client: British Telecom
+org: British Telecom
+job: british-telecom
+responsible:
+- built
+when:
+  start: 1992
+  end: 1992
+summary: Fast time-series database for telecom at BT.
+bullets:
+- Developed a fast time-series database for telecom for BT.
+domain:
+- telecom
+skills:
+- C
+signals:
+  domains:
+  - telecom
+  skills:
+  - c
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

@@ -1,0 +1,39 @@
+id: multitone-paging
+kind: built
+title: Multitone — paging server & signaling
+client: Multitone
+org: Multitone Plc
+responsible:
+- built
+when:
+  start: 1984
+  end: 1985
+summary: Paging server and signaling software; protocol design participation.
+bullets:
+- Developed paging server and paging signaling software (Unix C, HP3000).
+- Participated in the design of the protocols; also a database for Multitone cited in bio.
+domain:
+- telecom
+skills:
+- C
+signals:
+  domains:
+  - telecom
+  skills:
+  - c
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

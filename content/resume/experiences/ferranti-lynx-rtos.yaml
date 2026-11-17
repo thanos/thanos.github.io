@@ -4,27 +4,31 @@ title: Ferranti — Lynx helicopter real-time OS
 client: Ferranti
 org: Ferranti
 job: ferranti
+responsible:
+- built
 when:
   start: 1988
   end: 1990
 summary: Designed and developed real-time operating system components for the Lynx helicopter program.
 bullets:
-  - Real-time OS design and development for Ferranti Lynx helicopter program.
+- Real-time OS design and development for Ferranti Lynx helicopter program.
 domain:
-  - defence
+- defence
 skills:
-  - C
-  - Assembler
+- C
+- Assembler
 signals:
   domains:
-    - defence
+  - defence
   skills:
-    - c
-    - embedded
-    - real-time
+  - c
+  - assembler
+  - embedded
+  - real-time
+  - architecture
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links: []
@@ -32,6 +36,6 @@ proof:
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: '2026-11-16'
 visibility: public

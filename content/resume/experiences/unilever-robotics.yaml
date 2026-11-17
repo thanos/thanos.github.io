@@ -4,26 +4,30 @@ title: Unilever — die milling robotics control
 client: Unilever
 org: Unilever
 job: unilever
+responsible:
+- built
 when:
   start: 1982
   end: 1983
 summary: Fortran/Macro-11 on PDP-11s controlling die milling machines; later fuzzy-logic control work.
 bullets:
-  - Coded Fortran and Macro-11 on PDP-11s for die milling machine control.
-  - Later OR pallet-packing and fuzzy-logic control systems for Unilever.
+- Coded Fortran and Macro-11 on PDP-11s for die milling machine control.
+- Later OR pallet-packing and fuzzy-logic control systems for Unilever.
 domain:
-  - robotics
+- robotics
 skills:
-  - C
+- C
 signals:
   domains:
-    - robotics
+  - robotics
   skills:
-    - fortran
-    - assembler
+  - c
+  - fortran
+  - assembler
+  - architecture
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links: []
@@ -31,6 +35,6 @@ proof:
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: '2026-11-16'
 visibility: public

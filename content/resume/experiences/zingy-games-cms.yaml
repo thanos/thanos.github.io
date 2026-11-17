@@ -1,0 +1,43 @@
+id: zingy-games-cms
+kind: built
+title: Mobile games CMS / high-score server
+client: Zingy
+org: Zingy
+job: zingy
+responsible:
+- built
+- run
+when:
+  start: 2006
+  end: 2007
+summary: Stackless Python high-score server/CMS; 4000K simultaneous players cited.
+bullets:
+- High-score server and CMS for mobile multiplayer/fantasy games in Stackless Python.
+- Cited handling over 4000K simultaneous players; trial for later server work.
+domain:
+- gaming
+- telecom
+skills:
+- Python
+signals:
+  domains:
+  - gaming
+  - telecom
+  skills:
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

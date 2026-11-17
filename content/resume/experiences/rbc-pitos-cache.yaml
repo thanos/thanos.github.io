@@ -1,0 +1,42 @@
+id: rbc-pitos-cache
+kind: built
+title: PITOS cache — cross-VM cache for NextGen HA
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+- run
+when:
+  start: 2022
+  end: null
+summary: Cross-VM PITOS cache for NextGen HA; ~$800k/yr license avoidance.
+bullets:
+- Delivered PITOS cache — a cross-VM cache for NextGen HA.
+- Cited ~$800k/year license avoidance on nomination materials.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: license_avoidance_usd_per_year
+    value: 800000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

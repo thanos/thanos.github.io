@@ -1,0 +1,44 @@
+id: icap-brokertec-swing
+kind: built
+title: BrokerTec fixed-income trading app (Java/Swing)
+client: ICAP
+org: ICAP
+job: icap
+responsible:
+- built
+when:
+  start: 2004
+  end: 2006
+summary: Mainstream BrokerTec app with Random Walk; joystick trading, bulk orders, anonymous workup.
+bullets:
+- 'With Random Walk: Java 1.4→1.5 migration; joystick trading, quick order entry, net-position/P&L, batch/bulk
+  orders, anonymous workup.'
+domain:
+- finance
+- trading
+skills:
+- Java
+- C++
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - java
+  - c++
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

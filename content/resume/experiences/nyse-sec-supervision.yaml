@@ -1,0 +1,43 @@
+id: nyse-sec-supervision
+kind: built
+title: NYSE/SEC event-sourced trader supervision
+client: NYSE/SIAC
+org: NYSE/SIAC
+job: nyse-siac
+responsible:
+- built
+when:
+  start: 1997
+  end: 2004
+summary: Event-sourced rules-based trader supervision for the SEC.
+bullets:
+- Built event-sourced rules-based trader supervision for SEC (cited on résumé-2025 as NYSE/SEC/SIAC work).
+- 'Related claim on bio materials: SEC trading compliance monitoring associated with prosecutions/convictions
+  — verify before citing externally.'
+domain:
+- finance
+- trading
+skills:
+- Python
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

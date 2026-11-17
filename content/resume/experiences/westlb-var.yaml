@@ -5,28 +5,31 @@ client: West LB
 org: West LB
 job: west-lb
 role: Consultant, Lead
+responsible:
+- built
 when:
   start: 1996
   end: 1997
 summary: VAR team work on maturity calculators, swap/options pricing, Summit converters, portfolio tools.
 bullets:
-  - Developed maturity data calculators and swap/options pricing mechanisms.
-  - Work on Summit converters and portfolio management tools.
+- Developed maturity data calculators and swap/options pricing mechanisms.
+- Work on Summit converters and portfolio management tools.
 domain:
-  - finance
-  - trading
+- finance
+- trading
 skills:
-  - C++
+- C++
 signals:
   domains:
-    - finance
-    - trading
+  - finance
+  - trading
   skills:
-    - c++
-    - risk
+  - c++
+  - risk
+  - architecture
   seniority: hands-on
   impact:
-    - risk
+  - risk
 proof:
   metrics: []
   links: []
@@ -34,6 +37,6 @@ proof:
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: '2026-11-16'
 visibility: public

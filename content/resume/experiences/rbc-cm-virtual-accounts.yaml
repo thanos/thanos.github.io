@@ -1,0 +1,44 @@
+id: rbc-cm-virtual-accounts
+kind: built
+title: Cash Management — virtual accounts & liquidity
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+when:
+  start: 2020
+  end: 2023
+summary: Virtual accounts and liquidity management on the 5th-generation cash-management core.
+bullets:
+- Built cash-management core including virtual accounts and liquidity management.
+domain:
+- finance
+skills:
+- Elixir
+- Rust
+- Python
+signals:
+  domains:
+  - finance
+  skills:
+  - elixir
+  - rust
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

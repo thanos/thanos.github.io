@@ -4,28 +4,31 @@ title: Remote telecom switch management
 client: Ericsson
 org: Ericsson
 job: ericsson
+responsible:
+- built
 when:
   start: 1995
   end: 1997
 summary: Remote management system for telecom switches.
 bullets:
-  - Built a remote telecom switch management system.
+- Built a remote telecom switch management system.
 domain:
-  - telecom
+- telecom
 skills:
-  - Erlang
-  - C
+- Erlang
+- C
 signals:
   domains:
-    - telecom
+  - telecom
   skills:
-    - erlang
-    - c
-    - distributed-systems
-    - embedded
+  - erlang
+  - c
+  - distributed-systems
+  - embedded
+  - architecture
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links: []
@@ -33,5 +36,5 @@ proof:
 provenance:
   type: job_built
   refs: []
-  last_verified: 2026-08-06
+  last_verified: '2026-11-16'
 visibility: public

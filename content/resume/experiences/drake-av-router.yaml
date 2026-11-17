@@ -1,0 +1,41 @@
+id: drake-av-router
+kind: built
+title: Philip Drake — AV trunk line router (BBC)
+client: Philip Drake Ltd
+org: Philip Drake Ltd
+role: Team leader
+responsible:
+- built
+when:
+  start: 1989
+  end: 1989
+summary: AV trunk/audio line router for broadcasting studio control; later purchased by BBC.
+bullets:
+- Developed code handling trunk and audio lines for complex broadcasting studio control (68000 firmware
+  + X-Windows config + TCP/IP control).
+- System later purchased by BBC.
+domain:
+- telecom
+skills:
+- C
+signals:
+  domains:
+  - telecom
+  skills:
+  - c
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

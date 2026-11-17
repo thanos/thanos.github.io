@@ -1,0 +1,38 @@
+id: rbc-containerization
+kind: built
+title: Containerization program (Docker/K8s → AES)
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+when:
+  start: 2016
+  end: null
+summary: Advocated, POC’d, implemented containerization; divested to AES along maturity curve.
+bullets:
+- Advocated, POC’d, and implemented containerization (Docker/Kubernetes) in cookiecutters and STS.
+- Divested the program to AES along the maturity curve.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

@@ -1,0 +1,44 @@
+id: rbc-blockchain-muni-trading
+kind: built
+title: Municipal bond trading platform (blockchain)
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+- run
+when:
+  start: 2022
+  end: null
+summary: Municipal bond trading platform on blockchain — production 3Q 2022.
+bullets:
+- Delivered municipal bond trading platform; in production 3rd quarter 2022 (Ethereum/Solidity/Vyper).
+domain:
+- finance
+- crypto
+- trading
+skills:
+- Solidity
+signals:
+  domains:
+  - finance
+  - crypto
+  - trading
+  skills:
+  - solidity
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

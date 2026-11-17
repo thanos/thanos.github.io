@@ -1,0 +1,43 @@
+id: rbc-agentic-workflow
+kind: built
+title: Agentic service workflow service
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+- built
+- run
+when:
+  start: 2024
+  end: null
+summary: Agentic Service workflow service for trade operations shared infrastructure.
+bullets:
+- Built and owned Agentic Service workflow service for trade operations.
+domain:
+- finance
+- AI
+skills:
+- Python
+signals:
+  domains:
+  - finance
+  - AI
+  skills:
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

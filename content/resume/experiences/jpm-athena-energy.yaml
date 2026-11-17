@@ -1,49 +1,44 @@
 id: jpm-athena-energy
-kind: built
-title: Athena energy trade feeds — framework, CME/ICE, ops tooling
+kind: job_role
+title: JPMorgan Athena energy (umbrella)
 client: JPMorgan
 org: JPMorgan
 job: jpmorgan
+responsible:
+- built
 when:
   start: 2007
   end: 2007
-summary: >
-  Trade-feed framework that collected, filtered, and processed energy deals
-  into JPMorgan’s Athena Python analytics platform, plus CME and ICE FIX
-  gateways, reconciliation, profiling, and a shared alerting stack.
+summary: Umbrella for Athena energy trade-feed work — see granular child atoms.
 bullets:
-  - Built a C/Python trade-feed framework that collected, filtered, and processed deals, then booked them into Athena.
-  - Implemented a CME FIX gateway to the Athena trade feed for energy deals on that framework (Python).
-  - Enhanced an existing ICE-to-Athena FIX trade feed for energy deals (Java, Python).
-  - Built reconciliation toolsets for the CME and ICE feeds.
-  - Wrote a WxWindows/Python code profiler for performance and memory issues on the Athena stack.
-  - Delivered an alert and logging framework for all energy feeds, combining the useful parts of Nagios and Big Brother.
-  - Built additional tools to process and manage deals, events, and portfolios.
+- 'See child atoms: jpm-trade-feed-framework, jpm-cme-fix, jpm-ice-fix, jpm-recon-framework, jpm-athena-profiler,
+  jpm-energy-alerting.'
 domain:
+- finance
+- trading
+- commodities
+skills:
+- C
+- Python
+- Java
+signals:
+  domains:
   - finance
   - trading
   - commodities
-skills:
-  - C
-  - Python
-  - Java
-signals:
-  domains:
-    - finance
-    - trading
-    - commodities
   skills:
-    - c
-    - python
-    - java
-    - fix
-    - trading-systems
-    - performance
-    - observability
+  - c
+  - python
+  - java
+  - fix
+  - trading-systems
+  - performance
+  - observability
+  - architecture
   seniority: hands-on
   impact:
-    - platform
-    - scale
+  - platform
+  - scale
 proof:
   metrics: []
   links: []
@@ -51,5 +46,6 @@ proof:
 provenance:
   type: job_built
   refs: []
-  last_verified: 2026-08-22
+  last_verified: '2026-11-16'
+  note: Thinned after granular split; see child atoms + EXPERIENCES-REVIEW.
 visibility: public

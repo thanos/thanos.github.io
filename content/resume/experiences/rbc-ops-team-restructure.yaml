@@ -1,0 +1,44 @@
+id: rbc-ops-team-restructure
+kind: ran
+title: Ops team restructure — maintenance → startup-style delivery
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- run
+when:
+  start: 2023
+  end: null
+summary: Restructured 160+ NA maintenance team toward startup-style delivery incl. Malaysia; +20% apps/services.
+bullets:
+- Restructured a siloed 160+ North America maintenance team into startup-style development including Malaysia
+  LCCs.
+- Increased the number of applications and services by 20%.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - people
+  - platform
+proof:
+  metrics:
+  - label: headcount
+    value: 160
+  - label: apps_services_increase_pct
+    value: 20
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

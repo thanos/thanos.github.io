@@ -1,0 +1,42 @@
+id: rbc-cm-kyc-kyb
+kind: built
+title: Cash Management — KYC/KYB, evidence & document store
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+when:
+  start: 2020
+  end: 2023
+summary: CMS KYC/KYB plus evidence and document store; ERP integrations.
+bullets:
+- Built CMS KYC/KYB, evidence and document store, and ERP integrations for the cash-management bank.
+domain:
+- finance
+skills:
+- Elixir
+- Python
+signals:
+  domains:
+  - finance
+  skills:
+  - elixir
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

@@ -1,0 +1,44 @@
+id: rbc-cm-blockchain-ledger
+kind: built
+title: Cash Management — blockchain ledger accounting
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+when:
+  start: 2020
+  end: 2023
+summary: Core accounting on blockchain for the transactional bank; tholos-pq on the ledger.
+bullets:
+- Used blockchain for core accounting on the transactional cash-management bank.
+- Used tholos-pq on the ledger.
+domain:
+- finance
+- crypto
+skills:
+- Elixir
+- Rust
+signals:
+  domains:
+  - finance
+  - crypto
+  skills:
+  - elixir
+  - rust
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

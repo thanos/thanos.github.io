@@ -1,0 +1,46 @@
+id: rbc-cross-asset-ui
+kind: built
+title: Cross-asset trading UI platform
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+when:
+  start: 2019
+  end: null
+summary: Single cross-asset trading app replacing five systems and ~30 spreadsheets.
+bullets:
+- Built a single cross-asset trading application inspired by Bloomberg, Ikon, MetaTrader, and Quantopian.
+- Replaced five trading systems and about thirty spreadsheet-based systems.
+domain:
+- finance
+skills:
+- Python
+- TypeScript
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - typescript
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: systems_replaced
+    value: 5
+  - label: spreadsheets_replaced
+    value: 30
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

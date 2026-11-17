@@ -1,0 +1,39 @@
+id: rbc-blockchain-notes-poc
+kind: built
+title: Notes trading platform PoC (blockchain)
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+when:
+  start: 2016
+  end: 2016
+summary: Notes trading platform PoC on blockchain (2016).
+bullets:
+- Built a notes trading platform PoC on the internal blockchain stack (2016).
+domain:
+- finance
+- crypto
+skills: []
+signals:
+  domains:
+  - finance
+  - crypto
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

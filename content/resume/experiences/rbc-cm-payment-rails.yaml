@@ -1,0 +1,44 @@
+id: rbc-cm-payment-rails
+kind: built
+title: Cash Management — payment manager & rails
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+when:
+  start: 2020
+  end: 2023
+summary: Payment manager and rails for the transactional cash-management bank.
+bullets:
+- Built payment manager/rails for the cash-management transactional bank.
+domain:
+- finance
+skills:
+- Elixir
+- Rust
+- Python
+signals:
+  domains:
+  - finance
+  skills:
+  - elixir
+  - rust
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

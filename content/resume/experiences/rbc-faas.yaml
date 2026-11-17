@@ -1,0 +1,44 @@
+id: rbc-faas
+kind: built
+title: On-prem Function-as-a-Service (Lambda)
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+- built
+- run
+when:
+  start: 2017
+  end: 2018
+summary: Forked OpenWhisk into bank FaaS, then rewrote with streamed-event triggers.
+bullets:
+- POC then forked IBM OpenWhisk and adapted it on-prem/cloud as RBC’s Lambda-style FaaS.
+- Rewrote from scratch with streamed-event triggers to cut microservice sprawl and RTB cost.
+domain:
+- finance
+skills:
+- Python
+- Erlang
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - erlang
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

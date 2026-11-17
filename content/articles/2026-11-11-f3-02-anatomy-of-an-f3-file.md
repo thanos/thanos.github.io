@@ -135,13 +135,13 @@ Each column has one cascade EncUnit. The `WASMBinaries` line is a pointer. The i
 
 ## What is experimental?
 
-The layout comes from `format/File.fbs` and `FileWriter::finish` at `bd92506447dc1333820cfe9a34ebbf497fe0219e`. The schema says it can change. Unknown checksum bytes panic in the upstream converter. This library records an unknown checksum byte and continues. It does not verify either checksum. Footer compression other than uncompressed is refused. The inspector does not execute Wasm bytes. A sandboxed read can. See [part 6](https://thanos.github.io/articles/2026-11-11-f3-06-taking-the-decoder-with-the-data/).
+The layout comes from `format/File.fbs` and `FileWriter::finish` at `bd92506447dc1333820cfe9a34ebbf497fe0219e`. The schema says it can change. Unknown checksum bytes panic in the upstream converter. This library records an unknown checksum byte and continues. It does not verify either checksum. Footer compression other than uncompressed is refused. The inspector does not execute Wasm bytes. A sandboxed read can; that path is covered later in the series.
 
 ## Next
 
 **Previous:** [F3: Why Another File Format?](https://thanos.github.io/articles/2026-11-11-f3-01-why-f3/)
 
-**Read next:** [F3: Your First F3 File in Elixir](https://thanos.github.io/articles/2026-11-11-f3-03-your-first-f3-file-in-elixir/)
+Further parts of the [F3 series](https://thanos.github.io/series/f3/) are still in draft.
 
 ## Sources
 

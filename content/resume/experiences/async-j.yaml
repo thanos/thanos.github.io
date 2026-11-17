@@ -1,0 +1,38 @@
+id: async-j
+kind: built
+title: async-j — Java NIO asynchat-style wrapper
+org: Independent
+responsible:
+- built
+when:
+  start: 2004
+  end: 2007
+summary: Wrapped Java NIO to behave like Python’s asynchat; used at ICAP/Zingy backends.
+bullets:
+- Took crippled Java NIO and wrapped it to behave like Python’s asynchat (async-j).
+- Used for ICAP distributed trading services and Zingy’s asynchronous backend.
+domain:
+- finance
+skills:
+- Java
+signals:
+  domains:
+  - finance
+  skills:
+  - java
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

@@ -1,0 +1,40 @@
+id: rbc-emac-cmacs
+kind: built
+title: eMac / CMACS — Capital Markets access attestation
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+when:
+  start: 2023
+  end: null
+summary: CM Technology Risk access/attestation (eMac/CMACS).
+bullets:
+- Delivered/supported CMACS (CM Technology Risk) alongside central access control.
+- Nomination materials cite ~$500k projected impact for eMac-related work.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: projected_usd
+    value: 500000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

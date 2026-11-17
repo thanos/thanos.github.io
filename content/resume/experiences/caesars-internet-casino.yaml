@@ -4,31 +4,34 @@ title: Caesars — first internet casino & WebCheck
 client: Caesars Casino
 org: Caesars Casino
 job: caesars
+responsible:
+- built
 when:
   start: 1995
   end: 1995
-summary: Commissioned internet casino; rewrote ~40k LOC C++ to ~4k LOC Python; early cyber-currency
-  (WebCheck) with Marita Bank.
+summary: Commissioned internet casino; rewrote ~40k LOC C++ to ~4k LOC Python; early cyber-currency (WebCheck)
+  with Marita Bank.
 bullets:
-  - Built Caesars internet casino — early online session/security challenges.
-  - Rewrote C++ codebase to Python over a weekend (~40k → ~4k LOC).
-  - Worked with Marita Bank on WebCheck early cyber currency for online payments.
+- Built Caesars internet casino — early online session/security challenges.
+- Rewrote C++ codebase to Python over a weekend (~40k → ~4k LOC).
+- Worked with Marita Bank on WebCheck early cyber currency for online payments.
 domain:
-  - gaming
-  - crypto
+- gaming
+- crypto
 skills:
-  - Python
-  - C++
+- Python
+- C++
 signals:
   domains:
-    - gaming
-    - crypto
+  - gaming
+  - crypto
   skills:
-    - python
-    - c++
+  - python
+  - c++
+  - architecture
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links: []
@@ -36,6 +39,6 @@ proof:
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: '2026-11-16'
 visibility: public

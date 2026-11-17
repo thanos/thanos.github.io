@@ -1,0 +1,41 @@
+id: ferranti-satellite-comms
+kind: built
+title: Ferranti — armored satellite communications
+client: Ferranti
+org: Ferranti
+job: ferranti
+responsible:
+- built
+when:
+  start: 1986
+  end: 1986
+summary: Armored comms satellite programming mainly in C and 68000.
+bullets:
+- Armored communications satellite programming mainly in C and 68000 (CP/M).
+domain:
+- defence
+- telecom
+skills:
+- C
+signals:
+  domains:
+  - defence
+  - telecom
+  skills:
+  - c
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

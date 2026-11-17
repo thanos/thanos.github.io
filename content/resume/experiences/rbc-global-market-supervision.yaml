@@ -4,38 +4,42 @@ title: Global Market Supervision
 client: RBC CM
 org: RBC Capital Markets
 job: rbc-cm
+responsible:
+- architected
+- built
+- run
 when:
   start: 2023
   end: null
 summary: Event-driven supervision with ML/agents for SEC, FINRA, UK, EU reporting.
 bullets:
-  - Built event-driven real-time supervision replacing third-party systems (2023).
-  - ML and hierarchical agent state modeling for SEC, FINRA, UK, and European regulatory reports.
+- Built event-driven real-time supervision replacing third-party systems (2023).
+- ML and hierarchical agent state modeling for SEC, FINRA, UK, and European regulatory reports.
 domain:
+- finance
+- trading
+- AI
+skills:
+- Python
+- ML
+- Elixir
+signals:
+  domains:
   - finance
   - trading
   - AI
-skills:
-  - Python
-  - ML
-  - Elixir
-signals:
-  domains:
-    - finance
-    - trading
-    - AI
   skills:
-    - python
-    - ml
-    - elixir
-    - event-driven
-    - agents
-    - architecture
+  - python
+  - ml
+  - elixir
+  - event-driven
+  - agents
+  - architecture
   seniority: hybrid
   impact:
-    - risk
-    - platform
-    - cost
+  - risk
+  - platform
+  - cost
 proof:
   metrics: []
   links: []
@@ -43,5 +47,5 @@ proof:
 provenance:
   type: job_built
   refs: []
-  last_verified: 2026-08-06
+  last_verified: '2026-11-16'
 visibility: public

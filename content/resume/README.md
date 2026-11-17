@@ -14,9 +14,16 @@ Job specs: drop a posting in `content/resume/specs/<slug>/spec.md` and ask the a
 domain: [telecom]          # controlled list — see taxonomy.yaml
 client: Ericsson           # who the work was for (null for personal OSS)
 skills: [Erlang, C]        # languages / core tech shown in skill filters
+responsible:               # optional, multi-valued — see taxonomy.yaml
+  - built                  # you implemented / delivered
+  - run                    # you operated / owned the running service or org
+  - architected            # you set the design / architecture
 ```
 
-Portfolio page filters: **Domain · Client · Skills** only.
+`kind:` remains the atom type (`built` | `ran` | `oss` | `job_role` | …).  
+`responsible:` is who-did-what on that work and may list several values.
+
+Portfolio page filters: **Domain · Client · Skills** only (not yet `responsible`).
 
 ## Pipeline
 

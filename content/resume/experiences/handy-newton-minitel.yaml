@@ -1,0 +1,41 @@
+id: handy-newton-minitel
+kind: built
+title: Handy Software — Newton Minitel, browser, Smalltalk
+client: Handy Software
+org: Handy Software
+role: Project Manager
+responsible:
+- built
+when:
+  start: 1993
+  end: 1993
+summary: Minitel client, Lynx-style web/ftp/telnet/email/gopher/news clients, Newton Smalltalk.
+bullets:
+- Developed a Minitel client for Apple Newton.
+- Designed/developed Lynx-style web browser, ftp, telnet, email (POP), gopher and news clients.
+- Newton SmallTalk interpreter for Newton.
+domain:
+- telecom
+skills:
+- NewtonScript
+signals:
+  domains:
+  - telecom
+  skills:
+  - newtonscript
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

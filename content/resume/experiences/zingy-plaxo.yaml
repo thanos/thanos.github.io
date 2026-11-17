@@ -1,0 +1,49 @@
+id: zingy-plaxo
+kind: built
+title: Plaxo mobile sync
+client: Zingy
+org: Zingy
+job: zingy
+responsible:
+- built
+- run
+when:
+  start: 2006
+  end: 2007
+summary: On-the-go personal-content sync; ~800 new subscribers/day at launch.
+bullets:
+- Shipped on 38 Verizon (Brew/C++) and 37 Sprint/Cingular (J2ME) handsets; ~800 new subscribers/day after
+  November launch.
+domain:
+- telecom
+- gaming
+skills:
+- Java
+- C++
+- Python
+signals:
+  domains:
+  - telecom
+  - gaming
+  skills:
+  - java
+  - c++
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: signups_per_day
+    value: 800
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

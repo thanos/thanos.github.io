@@ -1,0 +1,37 @@
+id: rbc-idol
+kind: built
+title: IDOL — next-gen single execution platform (FaaS)
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+when:
+  start: 2023
+  end: null
+summary: 'Strategic BCST initiative: single execution platform — new FaaS called IDOL.'
+bullets:
+- Drove IDOL as the next-generation single execution platform (successor to on-prem FaaS) for BCST.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public
