@@ -1,40 +1,38 @@
 id: oss-ex-data-sketch
 kind: oss
 title: ex_data_sketch — streaming data sketches
-client: null
-org: null
-job: null
+responsible:
+- built
 when:
   start: 2025
   end: null
 summary: Production-grade streaming data sketching algorithms for Elixir.
 bullets:
-  - Shipped production-oriented streaming sketch algorithms for approximate analytics on high-volume
-    streams.
+- Shipped production-oriented streaming sketch algorithms for approximate analytics on high-volume streams.
 domain:
-  - AI
+- AI
 skills:
-  - Elixir
+- Elixir
 signals:
   domains:
-    - AI
+  - AI
   skills:
-    - elixir
-    - streaming
-    - algorithms
-    - architecture
+  - elixir
+  - streaming
+  - algorithms
+  - architecture
   seniority: hands-on
   impact:
-    - platform
-    - scale
+  - platform
+  - scale
 proof:
   metrics: []
   links:
-    - label: github
-      url: https://github.com/thanos/ex_data_sketch
+  - label: github
+    url: https://github.com/thanos/ex_data_sketch
   source: github
 provenance:
   type: github
   refs: []
-  last_verified: 2026-08-06
+  last_verified: '2026-11-16'
 visibility: public

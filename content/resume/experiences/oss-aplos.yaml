@@ -1,40 +1,40 @@
 id: oss-aplos
 kind: oss
 title: Aplos — ERC-20 token contracts on Ethereum
-client: null
-org: null
-job: null
+responsible:
+- built
 when:
   start: 2017
   end: 2017
 summary: Solidity ERC-20 contracts for issuing standards-compliant tokens on Ethereum.
 bullets:
-  - Built Aplos, a Solidity smart-contract project implementing ERC-20 for issuing
-    standards-compliant tokens on Ethereum (assets, currency, usage tokens).
+- Built Aplos, a Solidity smart-contract project implementing ERC-20 for issuing standards-compliant tokens
+  on Ethereum (assets, currency, usage tokens).
 domain:
-  - crypto
+- crypto
 skills:
-  - Solidity
-  - JavaScript
+- Solidity
+- JavaScript
 signals:
   domains:
-    - crypto
+  - crypto
   skills:
-    - solidity
-    - ethereum
-    - evm
-    - blockchain
+  - solidity
+  - javascript
+  - ethereum
+  - evm
+  - blockchain
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links:
-    - label: github
-      url: https://github.com/thanos/aplos
+  - label: github
+    url: https://github.com/thanos/aplos
   source: github
 provenance:
   type: github
   refs: []
-  last_verified: 2026-11-11
+  last_verified: '2026-11-16'
 visibility: public

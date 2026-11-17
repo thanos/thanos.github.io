@@ -1,42 +1,41 @@
 id: oss-ex-arrow
 kind: oss
 title: ex_arrow — Native Apache Arrow for the BEAM
-client: null
-org: null
-job: null
+responsible:
+- built
 when:
   start: 2025
   end: null
 summary: Apache Arrow IPC, Flight, and ADBC bindings; columnar data in Rust buffers with Elixir handles.
 bullets:
-  - "Built native Apache Arrow for Elixir: IPC streaming, Arrow Flight, and ADBC database bindings."
-  - Columnar payloads live in Rust buffers; precompiled NIFs across Linux, macOS, Windows.
+- 'Built native Apache Arrow for Elixir: IPC streaming, Arrow Flight, and ADBC database bindings.'
+- Columnar payloads live in Rust buffers; precompiled NIFs across Linux, macOS, Windows.
 domain:
-  - AI
+- AI
 skills:
-  - Elixir
-  - Rust
+- Elixir
+- Rust
 signals:
   domains:
-    - AI
+  - AI
   skills:
-    - elixir
-    - rust
-    - arrow
-    - architecture
-    - distributed-systems
+  - elixir
+  - rust
+  - arrow
+  - architecture
+  - distributed-systems
   seniority: hands-on
   impact:
-    - platform
-    - scale
+  - platform
+  - scale
 proof:
   metrics: []
   links:
-    - label: github
-      url: https://github.com/thanos/ex_arrow
+  - label: github
+    url: https://github.com/thanos/ex_arrow
   source: github
 provenance:
   type: github
   refs: []
-  last_verified: 2026-08-06
+  last_verified: '2026-11-16'
 visibility: public

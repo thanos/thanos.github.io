@@ -4,27 +4,31 @@ title: GPU Cuda Counter Party Risk
 client: RBC
 org: RBC Capital Markets
 job: rbc
+responsible:
+- architected
+- built
+- run
 when:
   start: 2010
   end: 2010
 summary: Ported heavy C++ models onto CUDA for calculating counter party risk.
 bullets:
-  - Ported counter party risk  pricing/risk models onto CUDA GPU blades.
+- Ported counter party risk  pricing/risk models onto CUDA GPU blades.
 domain:
-  - finance
+- finance
 skills:
-  - C++
-  - GPU
+- C++
+- GPU
 signals:
   domains:
-    - finance
-    - trading
+  - finance
   skills:
-    - c++
-    - gpu
+  - c++
+  - gpu
+  - architecture
   seniority: hybrid
   impact:
-    - scale
+  - scale
 proof:
   metrics: []
   links: []
@@ -32,6 +36,6 @@ proof:
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: '2026-11-16'
 visibility: public

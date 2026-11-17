@@ -1,27 +1,26 @@
 id: oss-pso-python-server-objects
 kind: oss
 title: Python Server Objects (PSO) — early Python web framework
-client: null
-org: null
-job: null
+responsible:
+- built
 when:
   start: 1996
   end: 1998
-summary: Early Python web/application framework (Rails/Django precursor); used at EP, NASA, SIAC,
-  JPMorgan; Debian packaging.
+summary: Early Python web/application framework (Rails/Django precursor); used at EP, NASA, SIAC, JPMorgan;
+  Debian packaging.
 bullets:
-  - Built PSO as a simple, fast Python application server framework in the mid-1990s.
-  - Adopted across public-sector and finance shops; shipped in Debian.
+- Built PSO as a simple, fast Python application server framework in the mid-1990s.
+- Adopted across public-sector and finance shops; shipped in Debian.
 domain: []
 skills:
-  - Python
+- Python
 signals:
   domains: []
   skills:
-    - python
+  - python
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links: []
@@ -29,6 +28,6 @@ proof:
 provenance:
   type: other
   refs:
-    - path: content/material/thanos-vassilakis-resume.md
-  last_verified: 2026-08-06
+  - path: content/material/thanos-vassilakis-resume.md
+  last_verified: '2026-11-16'
 visibility: public

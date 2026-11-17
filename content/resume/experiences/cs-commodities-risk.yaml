@@ -1,38 +1,39 @@
 id: cs-commodities-risk
-kind: built
-title: Commodities risk, repository & market data
+kind: job_role
+title: Credit Suisse commodities (umbrella)
 client: Credit Suisse
 org: Credit Suisse
 job: credit-suisse
+responsible:
+- built
 when:
   start: 2007
   end: 2010
-summary: Risk system for complex commodities; trade repository and market data.
+summary: Umbrella for CS commodities work — see granular child atoms.
 bullets:
-  - Architected risk system for complex commodities trades; integrated external pricing into
-    OpenLink.
-  - Built central trade repository and market data services for commodities.
+- 'See child atoms: cs-openlink-pricing, cs-trade-repo, cs-commodities-market-data (plus original risk
+  system narrative).'
 domain:
-  - finance
-  - trading
+- finance
+- trading
 skills:
-  - C++
-  - Python
+- C++
+- Python
 signals:
   domains:
-    - finance
-    - trading
+  - finance
+  - trading
   skills:
-    - c++
-    - python
-    - risk
-    - architecture
-    - openlink
-    - market-data
+  - c++
+  - python
+  - risk
+  - architecture
+  - openlink
+  - market-data
   seniority: hands-on
   impact:
-    - risk
-    - platform
+  - risk
+  - platform
 proof:
   metrics: []
   links: []
@@ -40,5 +41,6 @@ proof:
 provenance:
   type: job_built
   refs: []
-  last_verified: 2026-08-06
+  last_verified: '2026-11-16'
+  note: Thinned after granular split; see child atoms + EXPERIENCES-REVIEW.
 visibility: public

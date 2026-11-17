@@ -4,44 +4,49 @@ title: GPU model port — Numba/Python for pricing & risk
 client: RBC CM
 org: RBC Capital Markets
 job: rbc
+responsible:
+- architected
+- built
+- run
 when:
   start: 2015
   end: 2018
-summary: Ported heavy C++ model estate toward GPU (Numba Python / later Elixir NX), cutting
-  equipment and data-center cost.
+summary: Ported heavy C++ model estate toward GPU (Numba Python / later Elixir NX), cutting equipment
+  and data-center cost.
 bullets:
-  - Built a GPU port team of game/systems developers to move pricing/risk models onto GPU blades.
-  - Reported ~$18M/annum equipment and real-estate savings versus prior CPU-core footprint.
+- Built a GPU port team of game/systems developers to move pricing/risk models onto GPU blades.
+- Reported ~$18M/annum equipment and real-estate savings versus prior CPU-core footprint.
 domain:
-  - finance
-  - AI
+- finance
+- AI
 skills:
-  - Python
-  - C++
-  - GPU
-  - ML
+- Python
+- C++
+- GPU
+- ML
 signals:
   domains:
-    - finance
-    - AI
+  - finance
+  - AI
   skills:
-    - python
-    - c++
-    - gpu
-    - ml
+  - python
+  - c++
+  - gpu
+  - ml
+  - architecture
   seniority: hybrid
   impact:
-    - cost
-    - scale
+  - cost
+  - scale
 proof:
   metrics:
-    - label: annual_savings_usd
-      value: 18000000
+  - label: annual_savings_usd
+    value: 18000000
   links: []
   source: job
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: '2026-11-16'
 visibility: public

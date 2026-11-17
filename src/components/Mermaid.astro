@@ -1,0 +1,41 @@
+---
+/** Client-side Mermaid for ```mermaid fences in article/note/series markdown. */
+---
+
+<script>
+  function collectMermaidBlocks(): HTMLElement[] {
+    const out: HTMLElement[] = [];
+    document.querySelectorAll('pre > code.language-mermaid').forEach((code) => {
+      const pre = code.parentElement;
+      if (!(pre instanceof HTMLElement)) return;
+      const container = document.createElement('div');
+      container.className = 'mermaid';
+      container.textContent = code.textContent ?? '';
+      pre.replaceWith(container);
+      out.push(container);
+    });
+    return out;
+  }
+
+  async function renderMermaid() {
+    const nodes = collectMermaidBlocks();
+    if (!nodes.length) return;
+
+    const mermaid = (await import('mermaid')).default;
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: 'neutral',
+      securityLevel: 'strict',
+      flowchart: { htmlLabels: false },
+    });
+    await mermaid.run({ nodes });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      void renderMermaid();
+    });
+  } else {
+    void renderMermaid();
+  }
+</script>

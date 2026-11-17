@@ -1,63 +1,56 @@
 id: nyse-surveillance-python
-kind: built
-title: Front-end Technical Director — NYSE specialist systems & surveillance
+kind: job_role
+title: NYSE/SIAC front-end systems (umbrella)
 client: NYSE/SIAC
 org: NYSE/SIAC
 job: nyse-siac
 role: Front-end Technical Director / Lead Developer
+responsible:
+- built
 when:
   start: 1997
   end: 2004
-summary: >
-  Front-end Technical Director and lead developer for NYSE/SIAC specialist
-  systems in New York: a Python log-analyzer framework on the trading-floor
-  logs, a Java log browser with embedded Python, a one-month Market Share
-  XML-RPC service into Specialist Portfolio, a Tandem-backed stock-information
-  pub/sub server, the first NYSE XML regulatory feed, and Swing/AWT Specialist
-  Portfolio clients with trade-detail mining and manual trades.
+summary: Umbrella for NYSE/SIAC specialist systems — see granular child atoms.
 bullets:
-  - "Market surveillance (Python, Java, WebSphere, J2EE, EncXML, SWIG): NYSE trading-floor logs are numerous, very large, and often binary. Built a Python log-analyzer framework for ad-hoc data mining, querying, and alarms, plus a Java log browser with built-in Python scripting."
-  - "Market Share (XML-RPC, PSO, Python, SWIG, C++, Unix, Tandem): server collecting market-share data from Oracle and publishing it into the Specialist Portfolio service. High-profile demand from Mr. Grasso; turnaround less than one month."
-  - "Stock Information Server (XML-RPC, PSO, Python, SWIG, C++, Unix, Tandem): pub/sub of stock information. Clients subscribe with XML-RPC and SQL; data is published over XML-RPC or HTTP. SWIG/C++ extended Python to subscribe to a bespoke Tandem protocol."
-  - "Member Firm Regulatory Service (XML, PSO, Python, Java, Unix): near-real-time XML feed of specialist-firm positions to the NYSE member-firm regulatory body. First NYSE XML service."
-  - "Specialist Portfolio, Swing (Java, PSO, Python, Swing, Unix): designed and developed the Python server feed, Java data model, parts of the new GUI, and major Swing optimizations and printing. Shipped as a plug-in; also designed for Java Web Start."
-  - "Specialist Portfolio — trade details (Java, Python, AWT, C++, Unix): added trade details so specialists could mine principal trades on the floor and in the back office, plus editing of trade details and entry of manual trades."
+- 'See child atoms: nyse-market-surveillance, nyse-market-share, nyse-stock-info-server, nyse-member-firm-regulatory,
+  nyse-specialist-portfolio, nyse-web-trading, nyse-sec-supervision.'
 domain:
-  - finance
-  - trading
+- finance
+- trading
 skills:
-  - Python
-  - Java
-  - C++
+- Python
+- Java
+- C++
 signals:
   domains:
-    - finance
-    - trading
+  - finance
+  - trading
   skills:
-    - python
-    - java
-    - c++
-    - swig
-    - xml
-    - xml-rpc
-    - swing
-    - tandem
-    - architecture
-    - regulatory
-    - engineering-management
+  - python
+  - java
+  - c++
+  - swig
+  - xml
+  - xml-rpc
+  - swing
+  - tandem
+  - architecture
+  - regulatory
+  - engineering-management
   seniority: hybrid
   impact:
-    - risk
-    - platform
-    - people
+  - risk
+  - platform
+  - people
 proof:
   metrics:
-    - label: Market Share turnaround
-      value: "<1 month"
+  - label: Market Share turnaround
+    value: <1 month
   links: []
   source: job
 provenance:
   type: job_built
   refs: []
-  last_verified: 2026-08-22
+  last_verified: '2026-11-16'
+  note: Thinned after granular split; see child atoms + EXPERIENCES-REVIEW.
 visibility: public

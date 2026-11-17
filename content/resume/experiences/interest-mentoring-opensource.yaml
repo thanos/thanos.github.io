@@ -1,29 +1,24 @@
 id: interest-mentoring-opensource
 kind: interest
 title: Mentoring, inner source, and continuous learning
-client: null
-org: null
-job: null
 when:
   start: null
   end: null
 summary: Mentorship, inclusive teams, and shipping teaching artifacts publicly.
 bullets:
-  - Long-running mentorship and inclusive team building (47% diversity org).
-  - Public technical writing and open-source libraries as teaching surfaces.
+- Long-running mentorship and inclusive team building (47% diversity org).
+- Public technical writing and open-source libraries as teaching surfaces.
 domain: []
 skills: []
 signals:
-  domains:
-    - mentoring
-    - culture
+  domains: []
   skills:
-    - mentoring
-    - technical-writing
-    - oss
+  - mentoring
+  - technical-writing
+  - oss
   seniority: executive
   impact:
-    - people
+  - people
 proof:
   metrics: []
   links: []
@@ -31,5 +26,5 @@ proof:
 provenance:
   type: other
   refs: []
-  last_verified: 2026-08-06
+  last_verified: '2026-11-16'
 visibility: public

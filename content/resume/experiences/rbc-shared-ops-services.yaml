@@ -1,40 +1,38 @@
 id: rbc-shared-ops-services
-kind: ran
-title: Shared Operations Services portfolio
+kind: job_role
+title: Shared Operations Services portfolio (umbrella)
 client: RBC CM
 org: RBC Capital Markets
 job: rbc-cm
 when:
   start: 2016
   end: null
-summary: UI platforms, reporting, queuing, notifications, FAS, T+1, trade repository.
+summary: Umbrella for shared ops portfolio — see granular child atoms.
 bullets:
-  - "Own shared operation services: UI platforms, Reporting, central queuing, Notification, FAS, T+1
-    reporting, Trade Repository across CM, Wealth, and Cash Management."
-  - Built T+1 infrastructure and post-trade processing services (2024).
+- 'See child atoms: rbc-t1-infrastructure, rbc-trade-repository, rbc-sns, and related ops products.'
 domain:
-  - finance
-  - trading
+- finance
+- trading
 skills:
-  - Python
-  - Elixir
-  - Java
+- Python
+- Elixir
+- Java
 signals:
   domains:
-    - finance
-    - trading
+  - finance
+  - trading
   skills:
-    - python
-    - elixir
-    - java
-    - platform-engineering
-    - architecture
-    - t+1
+  - python
+  - elixir
+  - java
+  - platform-engineering
+  - architecture
+  - t+1
   seniority: hybrid
   impact:
-    - platform
-    - scale
-    - risk
+  - platform
+  - scale
+  - risk
 proof:
   metrics: []
   links: []
@@ -42,5 +40,6 @@ proof:
 provenance:
   type: job_ran
   refs: []
-  last_verified: 2026-10-15
+  last_verified: '2026-11-16'
+  note: Thinned after granular split; see child atoms + EXPERIENCES-REVIEW.
 visibility: public

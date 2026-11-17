@@ -3,30 +3,31 @@ kind: built
 title: Byteeasy / ByteSwap — anonymous crypto exchange (Zimbabwe)
 client: Byteeasy
 org: Byteeasy
-job: null
+responsible:
+- built
 when:
   start: 2019
   end: null
 summary: Anonymous cryptocurrency exchange (Byteeasy / ByteSwap) operating in Zimbabwe.
 bullets:
-  - Built Byteeasy / ByteSwap, an anonymous cryptocurrency exchange operating in Zimbabwe
-    (Elixir/Phoenix).
+- Built Byteeasy / ByteSwap, an anonymous cryptocurrency exchange operating in Zimbabwe (Elixir/Phoenix).
 domain:
-  - crypto
-  - trading
+- crypto
+- trading
 skills:
-  - Elixir
+- Elixir
 signals:
   domains:
-    - crypto
-    - trading
+  - crypto
+  - trading
   skills:
-    - elixir
-    - crypto-exchanges
-    - blockchain
+  - elixir
+  - crypto-exchanges
+  - blockchain
+  - architecture
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links: []
@@ -34,6 +35,6 @@ proof:
 provenance:
   type: other
   refs:
-    - path: content/material/thanos-vassilakis-resume.md
-  last_verified: 2026-11-11
+  - path: content/material/thanos-vassilakis-resume.md
+  last_verified: '2026-11-16'
 visibility: public

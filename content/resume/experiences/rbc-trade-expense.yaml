@@ -4,42 +4,46 @@ title: Trade Expense & Agentic Invoice Processing
 client: RBC CM
 org: RBC Capital Markets
 job: rbc-cm
+responsible:
+- built
+- architected
+- run
 when:
   start: 2024
   end: null
 summary: Agentic invoice processing modernizing trade expense; large vendor displacement.
 bullets:
-  - Deployed agentic invoice processing for trade expense management.
-  - Eliminated external vendor dependencies for ~$11M/year savings (2024).
+- Deployed agentic invoice processing for trade expense management.
+- Eliminated external vendor dependencies for ~$11M/year savings (2024).
 domain:
-  - finance
-  - AI
+- finance
+- AI
 skills:
-  - Python
-  - ML
+- Python
+- ML
 signals:
   domains:
-    - finance
-    - AI
+  - finance
+  - AI
   skills:
-    - python
-    - ml
-    - agents
-    - ai
-    - architecture
-    - vendor-consolidation
+  - python
+  - ml
+  - agents
+  - ai
+  - architecture
+  - vendor-consolidation
   seniority: hybrid
   impact:
-    - cost
-    - platform
+  - cost
+  - platform
 proof:
   metrics:
-    - label: annual_savings_usd
-      value: 11000000
+  - label: annual_savings_usd
+    value: 11000000
   links: []
   source: job
 provenance:
   type: job_built
   refs: []
-  last_verified: 2026-08-06
+  last_verified: '2026-11-16'
 visibility: public

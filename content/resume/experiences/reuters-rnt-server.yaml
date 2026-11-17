@@ -5,24 +5,27 @@ client: Reuters
 org: Reuters
 job: reuters
 role: Consultant, Lead
+responsible:
+- built
 when:
   start: 1988
   end: 1990
 summary: Developed news and image server for the Reuters RNT system.
 bullets:
-  - Development of news and image server for the RNT system.
+- Development of news and image server for the RNT system.
 domain:
-  - telecom
+- telecom
 skills:
-  - C
+- C
 signals:
   domains:
-    - telecom
+  - telecom
   skills:
-    - c
+  - c
+  - architecture
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links: []
@@ -30,6 +33,6 @@ proof:
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: '2026-11-16'
 visibility: public

@@ -9,28 +9,28 @@ when:
   end: null
 summary: Modernize reporting, monitoring, confirmation/settlement; oversee ops development and vendors.
 bullets:
-  - Drive modernization in reporting, monitoring, and confirmation & settlement.
-  - Oversee development and vendor acquisitions in operations.
+- Drive modernization in reporting, monitoring, and confirmation & settlement.
+- Oversee development and vendor acquisitions in operations.
 domain:
-  - finance
-  - trading
+- finance
+- trading
 skills:
-  - Python
-  - Elixir
+- Python
+- Elixir
 signals:
   domains:
-    - finance
-    - trading
+  - finance
+  - trading
   skills:
-    - python
-    - elixir
-    - architecture
-    - vendor-management
-    - settlement
+  - python
+  - elixir
+  - architecture
+  - vendor-management
+  - settlement
   seniority: hybrid
   impact:
-    - platform
-    - cost
+  - platform
+  - cost
 proof:
   metrics: []
   links: []
@@ -38,5 +38,5 @@ proof:
 provenance:
   type: job_ran
   refs: []
-  last_verified: 2026-08-06
+  last_verified: '2026-11-16'
 visibility: public

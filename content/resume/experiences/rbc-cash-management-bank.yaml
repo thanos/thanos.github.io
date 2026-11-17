@@ -1,6 +1,6 @@
 id: rbc-cash-management-bank
-kind: ran
-title: Cash Management Bank — 5th-generation transactional core
+kind: job_role
+title: Cash Management Bank — 5th-generation core (umbrella)
 client: RBC
 org: RBC
 job: rbc
@@ -8,36 +8,34 @@ role: Distinguished Engineer & Head of Engineering
 when:
   start: 2020
   end: 2023
-summary: "Head of engineering for RBC’s new transactional cash-management bank: virtual accounts,
-  liquidity, payments rails, ERP integrations, KYC/KYB; tholos-pq on the ledger."
+summary: Umbrella for transactional cash-management bank — see granular child atoms.
 bullets:
-  - Built cash-management core including virtual accounts and liquidity management.
-  - Payment manager/rails, ERP integrations, CMS KYC/KYB, evidence and document store.
-  - Stack included Elixir/Phoenix/LiveView, Rust, Python; used tholos-pq on the ledger.
+- 'See child atoms: rbc-cm-virtual-accounts, rbc-cm-payment-rails, rbc-cm-kyc-kyb, rbc-cm-blockchain-ledger,
+  rbc-iso-20022-mx.'
 domain:
+- finance
+- accounting
+- crypto
+skills:
+- Elixir
+- Rust
+- Python
+signals:
+  domains:
   - finance
   - accounting
   - crypto
-skills:
-  - Elixir
-  - Rust
-  - Python
-signals:
-  domains:
-    - finance
-    - accounting
-    - crypto
   skills:
-    - elixir
-    - rust
-    - python
-    - architecture
-    - blockchain
-    - post-quantum
+  - elixir
+  - rust
+  - python
+  - architecture
+  - blockchain
+  - post-quantum
   seniority: hybrid
   impact:
-    - platform
-    - scale
+  - platform
+  - scale
 proof:
   metrics: []
   links: []
@@ -45,6 +43,7 @@ proof:
 provenance:
   type: job_ran
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
-  last_verified: 2026-11-11
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: '2026-11-16'
+  note: Thinned after granular split; see child atoms + EXPERIENCES-REVIEW.
 visibility: public

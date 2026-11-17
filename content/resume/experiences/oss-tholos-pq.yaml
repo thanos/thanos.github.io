@@ -1,52 +1,51 @@
 id: oss-tholos-pq
 kind: oss
 title: tholos-pq — post-quantum multi-recipient encryption
-client: null
-org: null
-job: null
+responsible:
+- built
 when:
   start: 2025
   end: null
-summary: "Rust crate: encrypt-once / decrypt-many with ML-KEM / ML-DSA."
+summary: 'Rust crate: encrypt-once / decrypt-many with ML-KEM / ML-DSA.'
 bullets:
-  - Designed and published tholos-pq for multi-recipient PQ envelope encryption.
-  - Shipped ExTholosPq, the Elixir Rustler NIF (ML-KEM-1024, Dilithium-3).
-  - Documented threat model and wire format in a public series.
+- Designed and published tholos-pq for multi-recipient PQ envelope encryption.
+- Shipped ExTholosPq, the Elixir Rustler NIF (ML-KEM-1024, Dilithium-3).
+- Documented threat model and wire format in a public series.
 domain:
-  - crypto
+- crypto
 skills:
-  - Rust
-  - Elixir
+- Rust
+- Elixir
 signals:
   domains:
-    - crypto
+  - crypto
   skills:
-    - rust
-    - elixir
-    - post-quantum
-    - cryptography
-    - architecture
+  - rust
+  - elixir
+  - post-quantum
+  - cryptography
+  - architecture
   seniority: hands-on
   impact:
-    - platform
-    - risk
+  - platform
+  - risk
 proof:
   metrics: []
   links:
-    - label: github
-      url: https://github.com/AdCatenam/tholos-pq
-    - label: elixir-nif
-      url: https://github.com/AdCatenam/ex_tholos-pq
-    - label: crates.io
-      url: https://crates.io/crates/tholos-pq
-    - label: hex
-      url: https://hex.pm/packages/ex_tholos_pq
-    - label: series
-      url: /series/pqe-multi-recipient-encryption/
+  - label: github
+    url: https://github.com/AdCatenam/tholos-pq
+  - label: elixir-nif
+    url: https://github.com/AdCatenam/ex_tholos-pq
+  - label: crates.io
+    url: https://crates.io/crates/tholos-pq
+  - label: hex
+    url: https://hex.pm/packages/ex_tholos_pq
+  - label: series
+    url: /series/pqe-multi-recipient-encryption/
   source: github
 provenance:
   type: github
   refs:
-    - path: content/articles/01-why-pq-multi-recipient.md
-  last_verified: 2026-11-11
+  - path: content/articles/01-why-pq-multi-recipient.md
+  last_verified: '2026-11-16'
 visibility: public

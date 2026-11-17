@@ -4,7 +4,8 @@
 # Bullets under "Current job" may still be packed from experience atoms;
 # tenure labels and dates must match this file.
 #
-# Open question: Jan 2016 – Nov 2016 has no role listed (ask before filling).
+# Chronology rules (Nov 2025): no pre-2000 dates on flavored résumés;
+# abut concurrent roles (no overlaps); Jan 2016–Nov 2016 is RBC Consultant.
 
 # Display order below is reverse-chronological (as on the résumé).
 
@@ -17,25 +18,35 @@ employers:
         start: 2025-09
         end: null
         current: true
+        domain: AI / Finance IT / Architecture
       - title: Managing Director, Distinguished Engineer, Head of Wholesale Banking & Post Trade Development, Architecture and Capital Markets Blockchain
         start: 2023-09
         end: 2025-09
+        domain: Post-trade / Architecture / Blockchain
       - title: Distinguished Engineer, Head of Technology
         start: 2022-01
         end: 2023-09
+        domain: Capital Markets Technology
       - title: Head of Shared Trading Services, Head of R&D for Technology & Head of Reporting Services
         start: 2016-11
         end: 2022-01
+        domain: Trading / R&D / Reporting
+      - title: Consultant
+        start: 2016-01
+        end: 2016-11
+        domain: Capital Markets Consulting
       - title: Head of R&D for Technology
         start: 2014-11
         end: 2016-01
+        domain: R&D / Platform Engineering
 
   - id: infinigon
     org: Infinigon Group Inc
     tenures:
       - title: Chief Technology Officer (CTO)
-        start: 2012
-        end: 2014
+        start: 2012-01
+        end: 2014-11
+        domain: Crypto Trading / Custody
 
   - id: rbc-consultant
     org: RBC Capital Markets
@@ -43,6 +54,7 @@ employers:
       - title: Consultant
         start: 2010-09
         end: 2012-01
+        domain: Commodities Trading Platforms
         bullets:
           - Built commodities platform for oil, gas and LME.
 
@@ -52,13 +64,15 @@ employers:
       - title: Consultant
         start: 2007-10
         end: 2010-09
+        domain: Commodities Risk / Trade Repository
 
   - id: jpmorgan
     org: JPMorganChase
     tenures:
       - title: Consultant
         start: 2007-02
-        end: 2007-11
+        end: 2007-10
+        domain: Energy Trading / Athena
 
   - id: zingy
     org: Zingy
@@ -66,6 +80,7 @@ employers:
       - title: Director of Mobile Applications
         start: 2006-01
         end: 2007-02
+        domain: Mobile Applications
 
   - id: icap
     org: ICAP
@@ -73,17 +88,20 @@ employers:
       - title: Director of Front-End Development
         start: 2004-02
         end: 2006-01
+        domain: Fixed Income Trading
 
   - id: nyse-siac
     org: NYSE / SIAC
     tenures:
       - title: Technical Director / Display Book
         start: 2000-10
-        end: 2004-10
+        end: 2004-02
+        domain: Exchange / Market Surveillance
 
 # Do not list employers earlier than nyse-siac on flavored résumés.
 stop_before: nyse-siac
 notes:
-  - RBC consultant tenure is listed after Infinigon (not with later RBC titles).
-  - ICAP and NYSE/SIAC overlap (2004); keep both.
-  - Gap Jan 2016 – Nov 2016: not in source list — ask before inventing a role.
+  - NYSE/SIAC ends Feb 2004; ICAP starts Feb 2004.
+  - Zingy ends Feb 2007; JPMorgan starts Feb 2007; JPMorgan ends Oct 2007; CSFB starts Oct 2007.
+  - Infinigon CTO Jan 2012 – Nov 2014; RBC Consultant Sep 2010 – Jan 2012.
+  - Jan 2016 – Nov 2016: RBC Capital Markets Consultant (confirmed).

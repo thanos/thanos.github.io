@@ -1,40 +1,41 @@
 id: rbc-shared-data-services
-kind: built
-title: Shared Data Services — discoverable bank-wide data fabric
+kind: job_role
+title: Shared Data Services mandate (umbrella)
 client: RBC CM
 org: RBC Capital Markets
 job: rbc-cm
 role: Distinguished Engineer & Head of Shared Data Services
+responsible:
+- architected
+- built
+- run
 when:
   start: 2019
   end: 2019
-summary: Re-architected data infrastructure toward discoverable, addressable, trustworthy,
-  self-describing, interoperable data with a single schema-driven interface.
+summary: Umbrella for discoverable data fabric — see granular child atoms.
 bullets:
-  - Built teams for a storage-agnostic data SDK, immutable operational store, and AI-based data
-    intelligence (classification, search, monitoring).
-  - One Data Transport (Kappa-style) shipping bank data from logs to FRTB reports.
-  - Single RETE-based ingest consolidating 100+ ingest projects; Enterprise Market Data Services.
+- 'See child atoms: rbc-data-transport, rbc-data-ingest, rbc-emds, rbc-sdi, rbc-rabacus, rbc-ml-platform,
+  and related.'
 domain:
-  - finance
-  - AI
+- finance
+- AI
 skills:
-  - Elixir
-  - Rust
-  - Python
+- Elixir
+- Rust
+- Python
 signals:
   domains:
-    - finance
-    - AI
+  - finance
+  - AI
   skills:
-    - elixir
-    - rust
-    - python
-    - architecture
+  - elixir
+  - rust
+  - python
+  - architecture
   seniority: hybrid
   impact:
-    - platform
-    - scale
+  - platform
+  - scale
 proof:
   metrics: []
   links: []
@@ -42,6 +43,7 @@ proof:
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume-2025-v1.pdf
+  last_verified: '2026-11-16'
+  note: Thinned after granular split; see child atoms + EXPERIENCES-REVIEW.
 visibility: public

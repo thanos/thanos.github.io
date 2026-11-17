@@ -5,25 +5,28 @@ client: Symantec
 org: Symantec
 job: symantec-zortech
 role: Project Manager
+responsible:
+- built
 when:
   start: 1987
   end: 1992
 summary: Contributed to Zortech C++ debugger; project-managed Num++ / Fin++ numeric libraries.
 bullets:
-  - Contributed to Zortech C++ debugger development.
-  - Project manager for numeric library later sold as Greenleaf Num++ and Fin++.
+- Contributed to Zortech C++ debugger development.
+- Project manager for numeric library later sold as Greenleaf Num++ and Fin++.
 domain: []
 skills:
-  - C++
-  - C
+- C++
+- C
 signals:
   domains: []
   skills:
-    - c++
-    - c
+  - c++
+  - c
+  - architecture
   seniority: hybrid
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links: []
@@ -31,6 +34,6 @@ proof:
 provenance:
   type: job_built
   refs:
-    - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
-  last_verified: 2026-08-06
+  - path: ~/Documents/Resumes/previous/thanos-vassilakis-resume.pdf
+  last_verified: '2026-11-16'
 visibility: public

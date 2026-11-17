@@ -1,43 +1,43 @@
 id: oss-stratum-harness
 kind: oss
 title: stratum_harness — Verus Stratum mining-pool aggregator / simulator
-client: null
-org: null
-job: null
+responsible:
+- built
 when:
   start: 2025
   end: null
-summary: Elixir/Phoenix Stratum V1 harness that simulates a Verus mining pool for miner development and testing.
+summary: Elixir/Phoenix Stratum V1 harness that simulates a Verus mining pool for miner development and
+  testing.
 bullets:
-  - Built stratum_harness — a Verus Coin Stratum mining-pool aggregator/simulator (Elixir,
-    Phoenix LiveView) with VerusHash NIF validation, share diagnostics, and controllable
-    pool behaviors for developing Aito Hash and other miners.
+- Built stratum_harness — a Verus Coin Stratum mining-pool aggregator/simulator (Elixir, Phoenix LiveView)
+  with VerusHash NIF validation, share diagnostics, and controllable pool behaviors for developing Aito
+  Hash and other miners.
 domain:
-  - crypto
+- crypto
 skills:
-  - Elixir
-  - Zig
+- Elixir
+- Zig
 signals:
   domains:
-    - crypto
+  - crypto
   skills:
-    - elixir
-    - zig
-    - verus
-    - mining
-    - blockchain
-    - stratum
+  - elixir
+  - zig
+  - verus
+  - mining
+  - blockchain
+  - stratum
   seniority: hands-on
   impact:
-    - platform
+  - platform
 proof:
   metrics: []
   links:
-    - label: github
-      url: https://github.com/thanos/stratum_harness
+  - label: github
+    url: https://github.com/thanos/stratum_harness
   source: github
 provenance:
   type: github
   refs: []
-  last_verified: 2026-11-11
+  last_verified: '2026-11-16'
 visibility: public

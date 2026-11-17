@@ -1,6 +1,13 @@
 # Controlled vocabulary for portfolio filters and experience atoms.
 # Use these values in content/resume/experiences/*.yaml
 
+# What you personally owned on the work (multi-valued OK).
+# Distinct from `kind:` (atom type: built | ran | oss | job_role | interest | talk | article).
+responsible:
+  - built
+  - run
+  - architected
+
 domains:
   - telecom
   - finance

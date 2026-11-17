@@ -10,45 +10,45 @@ when:
   end: null
 summary: Lead a 16-person Vancouver & Toronto team; GL migration and Finance IT AI/modernization.
 bullets:
-  - Lead a 16-person engineering team in Vancouver and Toronto.
-  - AI solutions and modernization for the General Ledger and ERP.
-  - Designed the Strategy for Data for AI.
-  - Modernization of the GL and Posting Engines with AI.
-  - Technical ownership of GL migration from zOS/DB2 to Linux/Oracle and Sub-ledger modernization.
-  - Drive modernization and AI adoption across RBC Finance IT.
+- Lead a 16-person engineering team in Vancouver and Toronto.
+- AI solutions and modernization for the General Ledger and ERP.
+- Designed the Strategy for Data for AI.
+- Modernization of the GL and Posting Engines with AI.
+- Technical ownership of GL migration from zOS/DB2 to Linux/Oracle and Sub-ledger modernization.
+- Drive modernization and AI adoption across RBC Finance IT.
 domain:
-  - finance
-  - AI
+- finance
+- AI
 skills:
-  - Python
-  - Elixir
+- Python
+- Elixir
 signals:
   domains:
-    - finance
-    - AI
+  - finance
+  - AI
   skills:
-    - python
-    - elixir
-    - architecture
-    - migration
-    - ai-adoption
-    - hiring
-    - mentoring
-    - engineering-management
+  - python
+  - elixir
+  - architecture
+  - migration
+  - ai-adoption
+  - hiring
+  - mentoring
+  - engineering-management
   seniority: executive
   impact:
-    - platform
-    - people
-    - risk
+  - platform
+  - people
+  - risk
 proof:
   metrics:
-    - label: headcount
-      value: 16
+  - label: headcount
+    value: 16
   links: []
   source: job
 provenance:
   type: job_ran
   refs:
-    - path: content/material/thanos-vassilakis-resume.md
-  last_verified: 2026-11-11
+  - path: content/material/thanos-vassilakis-resume.md
+  last_verified: '2026-11-16'
 visibility: public
