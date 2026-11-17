@@ -1,0 +1,42 @@
+id: westlb-swaptions-pricing
+kind: built
+title: WestLB — maturity calculators / swaptions pricing
+client: WestLB
+org: WestLB
+job: west-lb
+responsible:
+- built
+when:
+  start: 1996
+  end: 1996
+summary: Maturity data calculators and swap/options pricing; Summit converters.
+bullets:
+- Development of maturity data calculators and swap/options pricing mechanisms (C++, Fame, Infinity, Smalltalk).
+- Some work on Summit converters.
+domain:
+- finance
+skills:
+- C++
+- Smalltalk
+signals:
+  domains:
+  - finance
+  skills:
+  - c++
+  - smalltalk
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

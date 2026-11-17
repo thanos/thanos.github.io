@@ -1,0 +1,51 @@
+id: rbc-sdi
+kind: built
+title: SDI — Single Data Interface SDK
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+- built
+- run
+when:
+  start: 2019
+  end: null
+summary: Single programmer interface / SDK to BCS data; ~$5–10MM / 5yr cost avoidance.
+bullets:
+- Delivered SDI — one interface to BCS data for efficiency and agility.
+- Clients included Logan, NextGen, Thor.
+- Nomination materials cite ~$5–10MM cost avoidance/savings over five years.
+domain:
+- finance
+skills:
+- Python
+- Elixir
+- Rust
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - elixir
+  - rust
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: cost_avoidance_usd_5yr_low
+    value: 5000000
+  - label: cost_avoidance_usd_5yr_high
+    value: 10000000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

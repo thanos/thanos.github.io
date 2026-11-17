@@ -1,0 +1,41 @@
+id: rbc-workspaces
+kind: built
+title: WORKSPACES — multi-tenant hierarchical metadata API
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+- run
+when:
+  start: 2019
+  end: null
+summary: Multi-tenant API for managing hierarchical metadata (RAMPP Workspaces).
+bullets:
+- Delivered WORKSPACES — multi-tenant API for hierarchical meta-data, used by RAMPP and RABACUS clients.
+domain:
+- finance
+skills:
+- Python
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

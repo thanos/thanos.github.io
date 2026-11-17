@@ -1,0 +1,41 @@
+id: oss-tradesource
+kind: oss
+title: TradeSource — trade abstraction framework
+org: Independent
+responsible:
+- built
+when:
+  start: 2012
+  end: null
+summary: Trade abstraction framework in Erlang and Python.
+bullets:
+- 'TradeSource: a trade abstraction framework written in Erlang and Python.'
+domain:
+- finance
+- trading
+skills:
+- Erlang
+- Python
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - erlang
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: oss
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

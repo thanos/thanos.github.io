@@ -1,0 +1,45 @@
+id: rbc-sts
+kind: ran
+title: Shared Technical Services (STS) — AWS-like on-prem platform
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+- run
+when:
+  start: 2016
+  end: null
+summary: Cloud-agnostic, scalable collection of AWS-like shared technical services.
+bullets:
+- Built and ran STS — AWS-like services that are cloud-agnostic and scalable.
+- Included on-prem replicas of SNS, SQS, Lambda (FaaS), S3-like storage, auth/permission, discovery and
+  connectivity.
+domain:
+- finance
+skills:
+- Python
+- Elixir
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - elixir
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

@@ -1,0 +1,49 @@
+id: rbc-ml-pricing-munis
+kind: built
+title: ML Pricing Service — Munis Bonds
+client: RBC CM
+org: RBC Capital Markets
+job: rbc
+responsible:
+- built
+- architected
+- run
+when:
+  start: 2020
+  end: null
+summary: Real-time ML fair pricing for ~1.5M unique municipal Bonds.; beats competitor evals daily.
+bullets:
+- Outperformed competitors' evaluation services every trading day since go-live (~4 years).
+domain:
+- finance
+- trading
+- AI
+skills:
+- Python
+- ML
+signals:
+  domains:
+  - finance
+  - trading
+  - AI
+  skills:
+  - python
+  - ml
+  - pricing
+  - real-time
+  - architecture
+  seniority: hands-on
+  impact:
+  - platform
+  - scale
+proof:
+  metrics:
+  - label: unique_bonds
+    value: 1500000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs: []
+  last_verified: '2026-11-16'
+visibility: public

@@ -1,0 +1,39 @@
+id: rbc-encompass-migration
+kind: built
+title: Encompass commodities migration
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+when:
+  start: 2014
+  end: null
+summary: Commodities lead engineer for Encompass migration (~$4MM).
+bullets:
+- Commodities lead engineer for Encompass migration (~$4MM migrate).
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: migration_usd
+    value: 4000000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

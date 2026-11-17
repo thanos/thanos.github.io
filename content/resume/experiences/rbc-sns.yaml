@@ -1,0 +1,46 @@
+id: rbc-sns
+kind: built
+title: Simple Notification Service (SNS)
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+- run
+when:
+  start: 2017
+  end: null
+summary: Platform-agnostic AWS-SNS-style notification; 65+ app codes / 92+ applications.
+bullets:
+- Architected and coded SNS modeled on AWS SNS, on-prem and on bank cloud.
+- Grew to 65+ app codes in production and eventually 92+ applications.
+domain:
+- finance
+skills:
+- Python
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: applications
+    value: 92
+  - label: app_codes
+    value: 65
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

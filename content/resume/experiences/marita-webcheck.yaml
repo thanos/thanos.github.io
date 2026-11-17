@@ -1,0 +1,39 @@
+id: marita-webcheck
+kind: built
+title: Marita Bank — WebCheck early cyber currency
+client: Marita Bank
+org: Marita Bank
+responsible:
+- built
+when:
+  start: 1995
+  end: 1995
+summary: Early cyber currency WebCheck for Caesars internet-casino payments.
+bullets:
+- With Marita Bank developed WebCheck, an early cyber currency, so the Caesars casino could take online
+  payments.
+domain:
+- finance
+- crypto
+skills: []
+signals:
+  domains:
+  - finance
+  - crypto
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

@@ -1,0 +1,41 @@
+id: jpm-gauss-cpr
+kind: built
+title: GAUSS counterparty-risk performance (network & compute)
+client: JPMorgan
+org: JPMorgan
+job: jpmorgan
+responsible:
+- built
+when:
+  start: 2010
+  end: 2011
+summary: Network and computation performance improvements to counterparty risk system (GAUSS).
+bullets:
+- Contractor work on network and computation performance improvements to counterparty risk system (GAUSS).
+domain:
+- finance
+skills:
+- C++
+- Python
+signals:
+  domains:
+  - finance
+  skills:
+  - c++
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

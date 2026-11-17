@@ -1,0 +1,505 @@
+Thanos Vassilakis
+
+Background
+Nationality: USA & European
+Degree BSC (Honors) Computing and Mathematics, Polytechnic of North London
+Languages: English &amp; French
+
+
+
+
+
+
+in crypto: I’ve worked in crypto space since 2014 and I’ve build exchanges - one anonymous, trading platforms, a bank, custodial and non custodial, wallet management, a generic cross chain smart contract language, a chain, contract and NFTs marketplaces, staking systems, and of crafted course a whole bunch of smart contracts. I know this domain is considered the future but for me it’s now! 
+
+
+I've programmed considerably in the gamming space. I just don't like to mentioned it too much in my resume. It puts the banks a bit off.
+When I was a student I work as an assistant for Richard Forsyth (1980-84), see his book Punters Revenge. We built, among other things, a built-in board poker system with virtual AI players.  and the Beagle system with which he used to play the horses. One of my first jobs was for the Electric Coin Company programming slot machines (in Z80 & 6502). Then my crimes moved to coding scratch cards, which were then regulated in Nyon, near Geneva. Many years passed and in 1994, while I worked at the European Parliament, I wrote one of the first card game CGIs - may be it was the first. It was a simple internet Tarot game but I really designed it for poker. Fortune tell is popular and soon it was getting a lot of hits. The program tackled a lot of classic internet/gaming problems - this is before cookies - such as how to handle the user going back and reloading  effectively and saving state. Somebody enlightened  at Caesar's - the 18 year old son of the owner - saw the game and hired me to develop an internet casino. We are talking about December 1994. I started the work in C++ but I could never see myself finishing. Working remotely with the client not understanding the internet space, changing their mind about the screens, and working in C++ was not easy. My code base stood at about 190,000 lines and I still had to do Poker, Craps and Baccarat, as well as test and bug fix etc. The design was innovative. It was a state machine, and I also developed my own templating language. One Thursday evening that December I was on the phone with a good friend of mine complaining about the project and C++. I was threatening to flatten my OO code into Perl 4. He told me that he just heard of a new OO scripting language called Python. Next I got Lutz book and downloaded Python1.1. I worked all weekend and by Monday I ported the whole casino to Python in under 4000 lines ! Since then I've been a Python evangelist.
+Having said all that I’m looking for a work where my experience and creative development skills will be used. I’m not seeking a title but a position where I can remain hands on and yet have enough responsibility and trust to really contribute to the company.  In my career I’ve had the privilege to built really great development teams, and with them create powerful and successful frameworks and applications.  I’m hoping these experiences and my strong technical and creative abilities will be exploited. Although I’ve often led teams I’m also very willing to take a back seat; listen, learn, reflect and then contribute. 
+
+
+
+
+
+
+
+I think I have the technical experiences that you are seeking. I've worked with Python since 1994.  I've also used RabbitMq on various projects normally with celery. I developed  in the late 90s my own web framework - PSO - that was for some time included in the Debian release.  I stop maintaining this code to the when DJANGO and turbogears took off.  I started using Falcon with pypy about a year ago when I needed a REST front end to Kafka. I also used it to write a copy of Amazons SNS service and a distributed localized cache service. 
+
+I've done a lot of work with RabbitMQ and Celery and I built a very dynamic distributed aggregation system using celery and Amazon spot instances which included broadcasting workers re-configuration data and monitoring work queues to start or stop worker EC2 spot instances.  I've been working on AWS since 2011 and I know some of the services quite well including using EC2, SQS, S3, Glacier for which I wrote a Fuse based filesystem.
+
+
+I think I have the technical experiences that you are seeking. I've worked with Python since 1994.  I've also used RabbitMq on various projects normally with celery. Although I've not used flask I developed  in the late 90s my own web framework - PSO - that was for some time included in the Debian release.  I stop maintaining this code to the when DJANGO and turbogears took off.  
+I'm strong in Django and I've developed a lot of custom code including:
+ Storage managers for keeping the static entities in Picassa.
+ Custom tags, filters, fields, forms and wizards.
+ Data manages for handling very large result sets fast
+ Serializes that build Excel, CSV and PDF pages iteratively.
+ Dynamic field choices.
+ Hierarchical models.
+ django-rest-framework extensions
+A simple notification app
+LDAP manager
+HDFS storage manager
+Virtual models.
+And lots more.
+
+I've used Angular 2 fro a project at RBC and I've written knockout and jquery plugins. I've been currently using canjs. With I've used git for version control since it came out and I've also developed apps around it including  a versioned configuration management  system.
+
+
+
+
+
+
+
+stack of past work:RBC CM, Infinigon Group, RBC CM, JP Morgan, Credit Suisse, JP Morgan, Zingy, ICAP, SIAC/NYSE, Ericsson/HP, West LB, European Community, Ceasars Casino, European Parliament, AAH Medical, Apple, Symantec (Zortech), Reuters International, Honeywell Bull, Drake, British Telecom, Ferrantti, Barclays, Multitone, Atari, Unilever, Atari, Electric Coin Company
+enumeration of languages:c, C++, erlang, elixir, fortran, go, java, javascript, python, solidity, zig
+
+
+
+big data - Infinigon Group, RBC CM blockchain, encryption & electronic money - British telecom, Ceasars Casino, Ferrantti, Marita Bank, RBC CM, Infinigon Group, Solanacomms/telecom - British telecom, Ericsson, HP, Honeywell Bull, Multitone, Reuters, Drakecloud - Infinigon Group, RBC CMgames - Atari, Zingygaming - Ceasars Casino, Electric Coin Company, ZingyHPC - JP Morgan, NYSE, SIAC, HP medical - British National Health, AAH Meditel
+
+
+military - Ferranttimobile - ICAP, Ericsson, Zingy, Apple Ceasars Casino, Infinigon Group, RBC CMsocial media analytics - Infinigon Group, RBC CMtrading - Barclays, ICAP, JP Morgan, NYSE, RBC, SIAC risk - West LB, JP Morgan, Credit Suisse, RBC CMrobotics - Unileverworkflow - European Parliament, European Communitymachine learning - Ceasars Casino, Infinigon Group, RBC CM
+
+
+Crypto
+
+
+
+Some Achievements
+
+I put together four great development teams: For AHH Meditel in 1994, the Specialist
+Portfolio team of NYSE/SIAC in 1999-2003, the front-end team for ICAP, and the
+Mobile Applications team of Zingy, .
+Phonescript – I ported postscript to J2mE, Brew and Symbian. What it brought over other
+frameworks: small under 35k including float and 2-D. Fast. One program can run on J2ME,
+Symbian, and Brew phones. Can load and run code on the fly. Try that in J2ME!
+Ilabs – An object oriented workflow system that conforms to all 39 Eindhoven patterns. It’s used
+by the European Parliament&#39;s EPEDES, SECTORS system control, NYSE compliance systems
+and JP Morgans ICE &amp; CME trade booking systems.
+async-j – I basically took the crippled Java nio and wrapped it to make it behave like Python’s
+asynchat.
+VisualTrading - A lightweight java UI framework for trading front-ends.
+Python Server Objects – A kind of Ruby on Rails for Python but simpler and faster.
+MobileNewton – My white elephant port of Newton script for phones, cool but uses to much
+memory for MIDP 1.0 phones. Phonescript replaced this effort.
+
+
+Hope – British Telecom’s white elephant, but they paid me well and it was still a great functional
+language.
+NewtonSmalltalk - Yes I ported Smalltalk to the Newton.
+Current Employment
+
+
+
+
+
+
+at: RBC CM
+period: 2020 -2023title: Distinguished Engineer & Head of Engineering, RBC CM Cash Managment Bank 
+
+
+Heads a global team of 130+ with 44% diversity. Teams in US, Mexico, Canada, , UK, India, Malaysia.
+His mandate is to modernize the banks operations to T+1 and better, build a global market supervision department and continue to lead R&D for technology.
+
+Services and projects under his responsibility:
+Business transformations and modernizations of -  Bank wide LLM services with full governance, Cross bank Reconciliation Service using GenAI, realtime global market supervision service covering over 400+ Finra, SEC, etc regulations; trade execution expense management,  trade confirmations, market access using  ML based OMS trading limits, migration of  equity settlement off Broadridge,  migrating off  COBOL/mainframe based ledgers, using GenAI to migrate 27k of stored procedures
+Managing and developing for the following programs -  USCT, Cross border payments, SWIFT MX to MT,  T+1.
+Built and own the following infrastructure and shared services for trade operations -  Access Management & Governance Services, Agentic Service workflow service, reference data service, consolidated  event sourced all trade events,  and central data ingest service with data labeling.
+
+
+
+Building the only 5th generation transactional bank: I’m currently head of all engineering in RBC’s new transactional bank. My mandate is to develop a new cash management service, including the core bank- including virtual accounts  and liquidity management, the payment manger and  rails, ERP integrations, UI, the CMS KYC/KYB, evidence and document store, etc.I’m also staying Head of R&D for Technology including Blockchain & Machine Learning for Capital Markets.tech stack: Elixir, phoenix, liveview, rust, python, and a blockchain
+
+at: RBC CMperiod: 2014 - 2023title: Distinguished Engineer & Head of R&D for Technology including Blockchain & Machine Learning
+Successfully beating RBC competitors every single day: RBC CM Machine Learning Platform - My team architected and developed the ML model management platform. The municipal bond desk was our first client. We build a model that predicts prices for the entire municipal bond universe, especially the illiquid bonds. It is used to price inventory and for price discovery in this market. The model can predict a fair price for all unique 1.5MM bonds in real-time and has beaten competitor evaluation services every single trading day since it went live early last year. It is, on average, about three basis points better than the best competitive service. This provides our Municipal desk with a strong prediction service for any bond, irrespective of the liquidity. The desk now accounts for over 30% of CM's income.
+The platform, fundamentally an AI Ops service,  has since been developed into a general algorithm and modeling execution service. It is estimated that for each client onboarded to this platform, 600k is being saved.tech stack: Python & Erlang
+Making UI Development very easy - We built a web-based application framework that enables programmers with no web development knowledge to quickly – in minutes – build web-based dashboards, reporting services, and trading screens. The POC was initially conceived and coded by myself and was taken over by my team and developed into a solid inner source offering. It is now the core technology behind all our new UI development. The saving in development, QA, and RTB are huge. Classic professional web development needs detailed knowledge of CSS, HTML, javascript, node, and then you need webservers, reverse proxies, etc.; all this is gone. Backend developers without any web knowledge can now create professional web UIs.tech stack: Python & node, typescript, web assembly, react & svelte
+Saving 18m/annum in equipment and real estate costs: Porting our models from C++ to Numa Python - RBC has a heavy CPU core dependency. I collected game developers and created a GPU port team. This is made relatively easy by using Numba Python, which is a GPU based python. In the last 5 years, due to the Data Science explosion, Python now has first-class GPU based numeric libraries – equivalent to those we use now but more up to date and often much more stable.
+Currently, $100k buys one GPU blade with 20,000 GPU cores or two CPU blades, each with 64 CPU cores. On AWS, $17/hour gets you 128 cores or 20k GPU cores. We needed thousands of CPU cores for RBC's original model base, basically a data center, for pricing and risk calculations. We now meet much of our compute needs with several GPU rack. The cost of porting our models paid within a year by hardware, RTB, and data center cost savings. The simplicity gained in the code base, ease of development, etc., improved model development and operational costs.tech stack: Python & NUMBA, now also Elixir NX.
+Getting control and speed at a low level: From leveraging BPF to Userspace  and processing 60+ million messages a second - I have several projects squeezing more performance using programable NICs, DPDK, BPFs and using FPGA-based routing and indexing systems. tech stack: linux, Smart NICs, FPGA
+As head of R&D at RBC CM I own the Blockchain Group which has built:
+ An internal chain - degenerately in use as an immutable ledger in use 
+A notes trading platform poc - 2016 
+A municipal bond trading platform - In production 3rd quarter 2022
+The core accounting on our blockchain for our transactional bank
+tech stack: ethereum & solidity, vyper
+
+at: RBC CM
+period: 2019 - 2023title: Distinguished Engineer & Head of Shared Data Services
+I've been leading an extensive re-architecture of our data infrastructure. We decided to go for the Holy Grail: making our data Discoverable, Addressable, Trustworthy, Self-Describing, Interoperable, and Secure. We added Immutable, Temporal, Lineage, Versioning, and we also threw in a single (really dual) schema-driven interface. Our solution is agnostic of the storage systems, development environment, location, and the actual data itself.
+
+To achieve our goals, I put together two new teams. The first built a file system replacing HDFS, a single SDK for managing data for all major development languages, a single immutable operational store for all the Bank's trading echo systems. The second team is dedicated to data intelligence: AI-based classification, validation, search and discovery, monitoring, alerts, and insights.tech stack: elixir, rust & python, graphql, grpc, presto.
+One Data Transport System: A transport and transform service.  We built a high-speed Kappa architecture style transport system that now processes and ships all the Bank's data, from logs to FRTB reports.
+A single data ingest service: This is a generic RETE-based rules engine with which we have managed to consolidate over one hundred separate ingest projects. As a result, the savings for operations has been significant.
+A Single Source for all Data: The Enterprise Market Data Services. This project started as the single source for all market data and soon became the central element of the RBC Capital Market Data Strategy program. A cross between QUANDLE and Quantopian, it has become a one-stop market data shop and algorithm sandbox.Leveraging the above new core data infrastructure we have - so far - built out the following new services:
+One Browser for all the Banks Data: An internal Tableau  In 2015, I was automating the IB's pipeline, and their principal tool was Tableau. Although very powerful, Tableau had many shortcomings, and I POC'd a Tableau alternative, Refine, that looked at resolving the many issues of commercial BI tools. The POC was later realized by another team in 2019 that I've since inherited. We did not build yet another  BI tool or a reporting tool; we created the visual portal to all the Bank's data.
+Better transparency on spending: The Expense Portal. The Expense Portal is a recent addition to my portfolio. It offers multiple dashboards to better manage and govern RBC CM's 3rd party cost spend base, including but not limited to Travel and Entertainment Expenses, Corporate Card, Overtime Meal, IT Professional Services, Mgmt Consulting, and Supplier Risk. These standardized views on RBC's expenses ensure that areas of opportunities in reduction are clearly identified in meaningful and straightforward manners. In addition, using lessons learned from Tuffte and Few, our dashboards give transparency to the Bank's expenses. This results in the users being able to proactively identify ways RBCCM can reduce NIE and/or address areas of risk associated with non-compliance to policy.
+
+
+at: RBC CM
+period: 2019 - 2023title: Head of Trading Infrastructure Services
+"Thanos has been instrumental in bringing convergence between Business Technology ran by Front Office and QTS. He has done this consistently on very complex topics around architecture and strategic vision”.Keeping the business going: Structured & Flow trade Maintenance & Improvements – I own an experienced team that makes sure that this critical trading system continues to run smoothly and is upgraded as necessary. The team's refactoring the platform and porting the platform to RedHat 7 have resulted in seven million operational savings.Consolidation of the trading desks: A new trading Infrastructure – We are building a new trading platform that will possess the following features:1. Multiple geographical regions.2. Cross-assets3. Cross-desk4. One-desk5. Vertically and horizontally scalable.6. Quick to be able to adopt new lines of business7. Single UI for data, risk, and cross-assets8. Single master source for data9. It should allow a fast time to market (under 36-hours) for new products, features, and fixes.10. It should be completely integrated with the Banks' DevOps infrastructure.12. 99.999% uptime and supporting hot releases, very low touch RTB.13. Bounded and reduced service and infrastructure costs.Trading anything: A New OMS   & Security Master – Included in the new platform is a new generic OMS with a new plug and play architecture that will inherit the basic features mentioned above. It's based on our "point in time object store." The design has very high performance and can scale on-demand horizontally, easily managing future unexpected transaction spikes. Also created a new temporal, cross-market and region universal Security Master for RBC.  Keeping the traders informed: Realtime Position Service - The design of our trading data ecosystem is so flexible that its codebase is being turned into a general event sourcing framework and repurposed as a real-time position service.Simplifying trading platforms: A cross-asset UI platform: My UI team is building a single cross-asset trading application. It's inspired Bloomberg and Ikon - no surprises there - but also Meta Trader and Quantopian. It already has replaced five trading systems and about thirty spreadsheet based systems.
+
+at: RBC CM
+period: 2019 -2023title: Head of Share Technical Services
+Reducing micro service costs: Function as a Service (FaaS) - To meet our 2020 strategic objectives, we needed to develop scalable, cloud-ready micro services, but building these services with existing infrastructure, we were faced with the following problems: Simple jobs and scripts required to be hosted on their own server. This resulted in high resource consumption where the lowest available unit is a VM, and even if we used Docker, the granularity would be too large. With every micro service, you would need to deploy an almost full stack with its own operational management. The costs and RTB complexities seemed to be exploding.FaaS was a solution, and in 2018 I wrote an in-depth POC to explore the concept. We then forked IBM's open source OpenWisk and adapted it to work on-prem and across our cloud services as RBC's own version of Amazon's Lambda service. This became a robust, scalable platform designed to support thousands of concurrent triggers and invocations and reduce the backend services explosion. Then we rewrote it from scratch and added triggering based on streamed events. This allowed massive normalization of services and economies of scale, saving the Bank millions per year in development, infrastructure, and RTB costs. Removing ridged coupling: A Simple Notification Service - I architected, coded a simple notification service. Basically, we copied AWS' SNS. We made it platform agnostic, available on-prem, and on our cloud services. It was a success and now services over 92 applications. Creating a single data ecosystem: An immutable point in time object-store - my team and I built out the equivalent of the data layer of JP Morgan's Athena or BoA's Quartz. We call it a Point in Time Object Store (PITOS), but it is a lot more. I also coded the original POC. The service provides a scalable infrastructure, low latency data fabric for trading. It meets the needs for a shared low-latency data fabric to store, access, and manage large scale data for trading. It was initially designed for a new cross-asset trading platform, but the client base has grown fast, and it has become the de-facto trading data store.Simplifying complexity - Rules as a Service (RaaS) – I architected and managed the development of our own rules engine based on AirBnB's Airflow but using our FaaS for execution and our Pitos for keeping the dependency graphs. Our version is completely integrated with the Bank and is currently used in eight projects.Changing Technical Culture - An Application Framework: From the top of the Bank came the request for an Application Framework. At first, I tried to fill this ask by proposing an application deck for RBC, such as a modern version of Bloomberg or Ikon. Then I realized I was not addressing the real problem and pivoted. So we created a layered cake.  Its base, a nice biscuit layer, addressed project genesis. A collection of "cookiecutters" were inner-sourced for generating all aspects of a new project in a consistent and prescribed manner: Configuration, secrets, logging, event management, resource connection, documentation structure, GitHub layout, make files, CI/CD integration, Container - Docker and Kubernetes configuration and setup, RTB requirements are now all handled and blueprinted out at the start of any project. The next layer, a lovely cream of shared technical services, included in-house (see below) platform-agnostic replicas of the AWS services developers typically need: SNS, SQS, Lambda (FaaS), S3, RBS, MRS, Authentication, and permission services, Discovery and connectivity.Then the data layer, a single interface, one API for each development language, a single point of discovery, etc.The penultimate layer is a very ambitious set of generic cross-desk business services for order and position management, real-time pricing and risk reporting, and a single trading ecosystem data store for all active and reference data. Finally, the icing is a single UI framework designed to enable programmers with no UI development knowledge to generate front-ends to their work quickly. It handles all UI settings and preferences and takes the best from the Bloomberg terminal, Metatrader, the Apple OS Desktop/ecosystem, and Electron.
+mentoring experienceI operate with careful consideration, a "Five Rings" school of software development where the depth of knowledge, efficiency, simplicity, excellence, and creativity are the order of the day. 
+Building a software development philosophy inspired by Miyamoto Musashi's principles in "The Book of Five Rings" can create a framework that emphasizes discipline, adaptability, and mastery. Here’s a conceptual framework:
+1. The Way of Strategy (Chūdan no kurai)
+Balance and Flexibility: Just as Musashi emphasizes adapting to circumstance, software development should prioritize flexibility in methodologies (e.g., Agile). Teams should be ready to pivot based on evolving requirements and circumstances.
+Holistic view: Understand the entire system, not just individual components. Encourage developers to see how their work fits into the larger project goal.
+2. Mastery Through Practice (Keiko)
+Continuous Learning: Encourage a culture of constant learning and improvement. This harkens back to Musashi's relentless practice and study, pushing developers to refine their skills and embrace new technologies.
+Code Quality: Mastery of coding practices, design patterns, and architectural principles should be a priority. Code reviews and pair programming can be tools for fostering growth.
+3. Focus and Discipline (Shin)
+Minimize Distractions: Just as Musashi trained himself to focus entirely on his swordsmanship, developers should cultivate an environment that minimizes distractions, allowing for deep work.
+Commitment to Craft: Emphasize the importance of discipline in following best practices, including testing, documentation, and code maintenance.
+4. Embrace the Void (Kū)
+Innovative Thinking: Like Musashi’s concept of the void, encourage a mindset open to new ideas, exploration, and divergence from the norm. Team members should feel safe proposing unconventional solutions or innovative approaches.
+Adapt to Uncertainty: Be prepared to face ambiguity and uncertainty in software requirements and technological changes, similar to the calm Musashi maintained in his confrontations.
+5. The Interconnectedness of All Things (Shin'yo)
+Team Collaboration: Promote strong communication and collaboration. Musashi practiced connecting with his opponents’ mindset; similarly, developers should strive to understand team dynamics and customer needs for better outcomes.
+Feedback Loops: Implement regular feedback loops with stakeholders to ensure the developments align with user expectations and project objectives.
+6. Physical and Mental Endurance
+Balance Work and Well-being: Musashi understood the importance of physical readiness. Encourage practices that promote work-life balance and mental health, recognizing that a well-rounded developer is more effective.
+Stress Management: Encourage practices such as regular breaks, mindfulness, or team-building activities to maintain morale and productivity.
+7. Perseverance and Patience
+Long-term Vision: Just as Musashi focused on long-term mastery rather than quick wins, software projects should prioritize sustainable development and avoid shortcuts that might compromise quality.
+Resilience Against Challenges: Build a culture that views obstacles as opportunities for learning and growth, reflecting Musashi’s overcoming of physical and mental challenges.
+Conclusion
+By adopting these principles derived from Musashi's philosophy, software development can become a disciplined, adaptable, and collaborative practice that emphasizes mastery and a deep understanding of the art, both in crafting code and in working as a team. This philosophy fosters continuous improvement and resilience, essential traits in the ever-evolving tech landscape.
+
+
+
+It's a kind of Bushido system where developers must be all-rounders in technology and the Bank's business need. Those that have been through this school include one CEO, two MDs, four directors and eight ADs. Few became very rich with their own start-ups.
+technical community buildingI'm running a book club, and we are currently focusing on the functional language Elixir. I've done various similar classes and study groups that have covered areas such as Performance Python, the JVM, Building Distributed Databases, using NoSQL, Blockchains, the anatomy of a trading system, understanding UI development, and programming for the web.I've been involved in the Young Women Leadership School – Tech Explorers programs.I've also taught in the Teaching Kids to Code program.I was a mentor at RBC's City College of New York Hackathon and Rutgers Hackathon.I regularly attend various meetups held in and around NYC each week, scouting for good developers and good ideas.
+
+
+
+
+
+
+JPMorgan, New York,
+AD Energy, 2007
+Trade Feed Framework, C, python. I developed a standard feed
+framework that collects deals, filters and process them and then books them into
+JPMorgan’s Athena python analytical tool.
+CME Feed, python. Using the above framework I implemented a CME Fix gateway
+to Athena trade feed for energy deals.
+ICE Feed, Java, python. Using the above framework I re-factored an existing ICE feed
+to Athena Fix trade feed for energy deals.
+Reconciliation Framework, python. I’m currently developing a general reconciliation
+framework to be used for numerous booking systems.
+
+Zingy, New York,
+Director of Software Development, 2006 – 2007
+I manage the development, QA, support and operations of more that 50
+mobile applications, on 27 carriers, 5major platforms and over 70 minor,
+with six different billing systems and four DRM systems.
+The actual apps are quite small. The client footprint is nearly always under 64K, and the
+handheld devices are very slow, often under 40Mhz. Once a program has been released,
+it’s hard and very expensive to upgrade. The Carriers who all enforce their own
+compliance testing will quickly drop an application with issues of the decks.
+A product that is not available through the carries deck just doesn’t earn. Mapquest
+mobile is the number one selling application for phones in the US. It has 30% of the
+entire market. The next best is our competitor the Weather Channel with 5%.
+Vindigo City Guide, Moviegoer, GuysStuff, Celebrity are also always in the top ten.
+The reason we have success a success is we cover all the platforms and carriers and very
+large selection of handsets.
+NBC Weather Mobile, Java, J2ME
+Developed for Sprint and then Cingular for over 35 MIDP 1.0 and MIDP 2.0
+handset s The Main challenges in the project were the animated radar maps.
+This was achieved be extending the platforms to handle MNG image formats.
+Real-time weather alerts.
+The other main issue was the complexity of the tabular screens would blowup the
+smaller Samsung devices.
+New York Times, Java,
+The backend was given a new workflow. Previous, allow NYT to syndicate its news
+feeds to various Carrier News Decks..
+Plaxo Java, J2ME, Brew, C++, Python, MIDP1.0, MIDP2.0
+This is the most complex mobile application on the market. It allows you to sync your
+telephone personal content while you are on the go. Like most Vindigo apps it gives you
+maps and travel instructions for each of your contents.
+Released on 38 Verizon (Brew, C++) and 37 Spring and Cingular (J2ME) handsets.
+Launched in November getting about 800 subscribers a day.
+MapQuest, Java, C++, J2ME, Python
+A major upgrade introducing multi-stop routing, points of interest and Canada.
+Moviegoer, Brew, Flash, Python
+This is the first mobile flash application in the in the US. We were very early
+Adobe
+Seeding partners.
+A mobile movie guide for the US and Canada. It includes how times, images,
+trailer, reviews, and maps. and maybe in the world. Running against our new
+python back-end. This product uses over 96 different data feeds. It’s been a
+Verizon bestseller for four consecutive months.
+Vindigo City Guide Brew, C++, J2ME, Java, Python
+This is the third best selling application in the US and best in the UK was upgraded to
+handle banner advertisement. The upgrade brings in 320K per month.
+Phonescript Based Client, J2ME, Brew, Symbian, C++, Postscript
+The previous Vindigo client was developed in both Brew and J2ME. The client was
+rewritten in Phonescript and the coded to work against the new asynchronous backend.
+Mobile Windows Port, C#
+The original Vindigo client was ported to Mobile Windows using C#.
+Palm Port, C
+The original Vindigo client was ported to Palm OS using .
+New Asynchronous Backend, Java NIO
+A new backend server was build around async-j.
+IPAY, Java.
+Integrated the new version of IPAY billing system.
+Games CMS, Stackless Python
+Developed a High Score server and CMS for our various mobile multiplayer games.
+Handles over 4000K simultaneous players. We used this as a trail for future server
+development in Stackless.
+Blackberry Port, J2mE
+This is a medium port of the original Vindigo client.
+Flash, Actionscript
+Worked with Adobe to develop a new Flash UI framework for mobile phones.
+iPhone, Javascript, Dashcode.
+We launched a project to Dashcode our suitable application.
+
+ICAP, New York,
+Front-End Development Leader, 2004 – 2006
+I setup and managed ICAP’s Front End in house development team for their
+fixed income trading system.
+BrokerTec Fixed Income Trading App, Java/Swing, C++.
+Collaborating with Randomwalk, we develop and maintain ICAP’s mainstream trading
+app. Our current release is a 1.4 to 1.5 Java migration. Our last release included Joystick
+trading, new quick order entry windows, net position and profit and loss tables, batch
+and bulk order management, and anonymous workup.
+IConnect Java, swig, C++
+Converted main trading platform to use iConnect.
+BrokerTec Lightweight Emerging Market Trading App Java, visualt, AJAX.
+Simple web based trading platform for Actives, Repos, CD and Mortgages. Due to its
+nature a lightweight gui framework was used and not Swing. Runs under 10 Meg.
+Lightweight GUI Framnework for Trading Systems, JAVA
+This frame work, is light fast and easily extendable. The screens are spec’d and designed
+in config files, and laid out dynamically. New menus, screens, panels, dialogs, columns
+instruments can be added without changing existing code. The framework allowed us to
+deliver a trading front-end in six weeks.
+BrokerTec/Blackberry Fixed Income Trading Platform
+C++, WebSphere, J2EE
+A simple, Benchmarks only, real-time trading application for handheld Blackberrys.
+Although a proof of concept, it is a fully functional, al be it very Spartan, trading app..
+Distributed Trading Backend Services
+Java, async-j, nio,Jabber
+Non-threading, high performance distributed trading service using the Jabber protocol.
+This is used for read only or position management screens. It allows hundreds of clients to connect to the BrokerTec services under one guest account, improving performance
+and security of the BokerTec services.
+Conformance Analysis
+Python, ilabs, wxWindows
+Designed market conformance analysis and monitoring tools &amp; utilities.
+
+
+NYSE/SEC/SIAC, New York, 1997 – 2004
+Fornt-endTechnical Director/ Lead Developer,
+Market Surveillance, WebSphere, J2EE, EncXML, swig
+NYSE trading floor generates numerous very large logs many of them in binary.
+Developed a Python log analyzer framework allowing ad hoc data mining, querying, and
+setting up of alarms. Also Java log browser with built-in python scripting.
+Market Share XML-RPC, PSO, Python, Swig, C++, Unix, Tandem
+A server collecting market share data from an ORACLE server and publishing it in the
+Specialist Portfolio service. This was a very high profile service demanded by Mr.
+Grasso, whose turnaround time was less than one month.
+Stock Information Server XML-RPC, PSO, Python, Swig, C++, Unix, Tandem
+Pub/Sub server of stock information. Clients subscribe using XML-RPC and SQL, and
+data is either published with XML-RPC, or with an HTTP request. Swig and C++ was
+used to extend Python to subscribe to a bespoke protocol used by Tandem.
+Member Firm Regulatory Service XML, PSO, Python, Java, Unix
+The service supplies NYSE member Firm regulatory body with a close to real-time XML
+feed of specialist firm positions. This service is the first NYSE XML service.
+Specialist Portfolio Swing Version Java, PSO, Python, Swing, Unix
+Swing version of specialist portfolio. Duties included design and development of the
+entire python server feed, java data model, parts of the new gui and major Swing
+optimizations and printing services. Currently delivered as a plug-in the client was
+designed also for webstart.
+Specialist portfolio - Trade details Java, Python, Awt, C++, Unix
+Addition of trade details to Specialist Portfolio, allowing specialists to data mine
+principle trades, both on the floor and in the back-office. Provision for editing trade
+details and entering Manual Trades was also added.
+
+
+Ericsson Hewlett Packard Telecomm, Stockholm,
+Lead developer, Dec 1996 - Nov 1997
+Switch Network Configuration System JAVA, AWT, ODBC, SYBASE, CORBA,
+JPYTHON, Erlang
+Cross platform GUI Development of; maintenance and control panels for Ericsson
+Hewlett Packard Teleco PM products. These applets either interfaced directly to servlets,
+or use CORBA (ORBIX). All applets were coded with 1.0X / AWT and 1.1 event models
+with Swing. Further development in JDK 1.2Beta/ Swing of GUI and CORBA server
+backend for an aggregation engine GUI, aggregation engine rules GUI and API.
+
+
+
+WestLB, Dusseldorf,
+Lead developer, 1996
+VAR Portfolio Management System C++, WINDOWS NT, ORACLE
+GUI Development for both the Data warehouse and portfolio management system of
+WestLB&#39;s risk management VAR project.
+Maturity data calculators /swaptions pricing C++, Fame, Infinity, Smalltalk
+Development of maturity data calculators and swap / options pricing mechanisms. Also
+some work on Summit converters.
+
+
+European Parliament, Luxemburg, 1993-95
+DG1, IT Adviser assigned to cabinet of president.
+www.europarl.eu.int Linux, C,Python, Apache
+European Parliaments first official website.
+Portal Workflow System C++, Unix, WINDOWS, Powerbuilder, JAVA, ORACLE
+Technical consultant to the European Parliament&#39;s internet and intranet web service. This
+entailed the development of all cgi , maintenance, conversion and dynamic document
+generation code. A Data Base search server was developed in Java, while small programs
+and maintenance scripts were generally developed in Perl. C++ was used when
+performance was an issue. The Handling of eleven different languages, six source
+databases and the generation of over 100,000 html documents a day presented many
+challenges.
+Epades II Workflow system C++, Unix, WINDOWS, Powerbuilder, JAVA, ORACLE
+Development of numerous clients for the Epades II work flow system. A Windows DLL
+for use in Powerbuilder and Visual Basic, HTML translators, Internet Mail and Auto
+Document servers, Netscape Plug-Ins. The servers were written in Java, otherwise nearly
+all other code was in C++ or Powerbuilder. In the development of the translators Lex and
+YACC were used when needed. Using the internet comms libraries of the previous
+project, developed a work flow engine, based on an internet transport layer and ORACLE
+database. This is one of the largest work flow system ever developed. It is now in
+production handling over 100,000 documents a day, in 11 languages, and over 12,000
+different types of documents. The work flow engine is a server, hence an api library was
+developed for the following client platforms: numerous UNIX flavors, MSDOS, APPLE,
+WINDOWS.
+Client/Server Comms Lib C++, Unix, MSDOS, Sockets, TCP/IP
+Developed a general client server library to be used in the development of a major Work
+flow system. The comms was based on Berkeley sockets using the TCP/IP protocol . The
+Client software had to be ported to numerous platforms. Simple forms of FTP, and
+remote procedure call libraries were also developed.
+
+AAH Meditel. Birmingham. Team Leader, 1993
+Medical Records Management C++, Unix, X-Windows, Windows MFC,
+Booch/Rose, Oracle
+Cross -Platform Internet based system for patient registration and records movement
+handling. The cross-platform client browsers (pre Netscape ) was written, first on cursors,
+then ported to Windows and X. All the development was carried out in a rigorous object
+oriented methodology based on Grady Booch. The actual product is installed with 60% of
+the UK doctors and medical centers , all health authorities, and is used by all the MOD
+GPs.
+Handy Software, Paris, Project Manager, 1993
+Newton Minitel, Newtonscript, TCP/IP
+First part of this contract was the development of a Minitel Client for the Apple Newton.
+Then designed and developed a Lynx style Web browser, ftp, telnet, email (pop), gofer
+and news clients.
+Newton SmallTalk, Newtonscript
+A SmallTalk interpreter for Newton.
+
+British Telecom, London, lead developer, 1992
+TCP/IP Router OS C++, TCP/IP Router programming and configuration software. This
+was embedded software development, Hope was used to prototype the work.
+
+Zortech/Symantec, London, Product Manager, 1992
+Numerical/Financial OO Library, C++, 8086, 68000
+Development of a numerical library, later sold by Greenleaf Inc, as Fin++.
+
+Honeywell Bull, London, Homework Manager/Project Manager, 1990
+Telecommuting System, C++, Unix Internet.
+Numerous servers were developed for the following areas: home working, spares &amp; parts
+inventory, support and maintenance.
+
+Philip Drake Ltd, London, team leader: 1989
+AV Trunk Line Router. C, Unix, Internet, X-Windows, TCP/IP, 68000
+Developing code handling trunk and audio lines for complex broadcasting studio control
+system later purchased by BBC. Router system based around 68000 dedicated board,
+whose firmware was configured by x-windows c code. Developed of configuration code
+and tcp/ip control comms code.
+
+British Telecom, London, team leader, 1988
+TELECOM GOLD, C, Unix, BBS, Prestel, Sybase
+Development of Telecom Gold&#39;s credit card transaction handling system, and various
+other financial related services.
+
+Austin Knight Plc, London, developer, 1987
+Accounting System, AT&amp;T 3BS, Unix C, Sybase, SQL
+Online Advertisement Coupon handling accounts system.
+
+Reuters International, London, lead programmer, 1987
+Reuters News Terminal, Unix C, 8086
+Development of news and image server for the RNT system, currently still in use by most
+Reuters clients.
+
+Ferrantti, Manchester, developer, 1986
+Satellite Comms, CP/M, c, 68000
+Armored comms satellite programming mainly in c and 68000
+
+Barclays De Zoote and Webb, London, lead programmer, 1985
+Topic Based Trading Book, Unix C, HP3000, IMB PC/DOS
+Developed of client to Barclays trading engine., and all comms protocol middleware.
+
+Multitone Plc, London, programmer,1984-1985
+Paging System, Unix C, HP3000Development of paging server and paging signaling
+software. Participated in the designed of the protocols.
+
+Unilever, London, programmer, 1982-4
+Robotics Department, Fortran, PDP11
+Robotic control programming. Operational Research based development.
+
+United Kingdom Treasurer, London, intern, 1980-1
+Foreign Exchange Forecast, FORTRAN
+Development of statistical methods &amp; trend analysis, indexing, graphics display. c matrix
+lib with complete functionality EISPAK &amp; Fourier Transforms
+Electric Coin Company, London, programmer, 1978-80
+Arcade Gaming, 4048, 8080,z80, 6803
+Programming arcade game machines, all in assembler
+
+
+bio
+I started in a roundabout way with Computer Science. At eighteen, I had no idea what a computer was. I had never seen one and had no curiosity in this direction. I was good at maths, but my heart was set on being a hydrologist and working with developing countries solving their water problems. I was an electronics and HiFi enthusiast, but on a more prosaic side, and had a side business trading and repairing valve amplifiers and other vintage equipment. I got a summer job with the Electric Coin company, one of the most prominent vendors of slot machines, but to my dismay, instead of wielding a soldering iron found myself coding 6801 controllers. By the end of the summer, it's sad to say, I was addicted to programming!
+So at the last minute, I jumped ship from a pretty good college and went to the North London Polytechnic and took Maths & Computer Science. While at college, I worked for Richard Forsyth, coding his Darwin genetic programming framework – one of the first Machine Learning platforms - which we used as an oracle to lose our money on the horses. I graduated in 1985 and joined Atari's PC games division. I then left Atari to create my own startup specializing in RIP engines for printer manufactures. I kind of remained a freelancer until this current position with RBC CM. 
+If my grandchildren were ever to ask me, "What did you do in your life..." I would be hard placed to mention anything remarkable. Much of my life has been programming in itself, which has not left a visible trail. 
+At the beginning of my career in the UK, I avoided financial institutions except for a gig with Barclays, for whom I developed their Topic-based trading system. But my work included coding the standard libraries for Walter Bright's C++ distribution; porting Eispack and Linpack to C++ and ADA; writing a Forth based RIP engines for Panasonic's laser printers; writing most of the drivers for their fax machines; implementing the functional programming language, Hope, for Imperial College and British Telecom; developing a fast time-series database for telecom for BT; another database for Multitone – a major beeper manufacturer; video routing switches for the BBC; OR (pallet packing) and then fuzzy logic control systems for Unilever; and an Occam based neural network on Transputers for the UK Treasury. During this period, I also worked for Ferranti to design and develop a real-time operating system for their Lynx helicopter program. The early nineties started with an interest in PDAs, and I joined Apple's Newton program developing programming languages and programming tools for the growing Newton community. It was through working for Apple in 1993 that I discovered the internet. That year, I started developing a centralized internet-based (using WAIS!) patient register and records for the UK's National Health system. In 1994 I joined DG1 in Luxembourg as the IT advisor to the European Parliament president, Klaus Hänsch. While there, I got into workflow systems and developed their all-embracing internet-based workflow system that is still in use today. In 1995 I got a commission to build an internet casino for Caesars. The casino presented many new security and session management challenges in online development and design. It was this project that made me a Python evangelist. I had first developed the Casino in C++, but I just could complete it. The codebase was tight but still over 40k lines. On a bored Friday night in Luxembourg, I bought the Mark Lutz Python book. I rewrote my entire code in Python over the weekend and looked at something much better sitting at 4k LOC! For the casino to take online payments, I worked with the Marita bank and developed an early cyber currency, WebCheck. After Luxembourg, I moved to Dusseldorf to work at Westdeutsche Landesbank to develop its VAR system. The finance world was alien to me, and after a year, I bailed out and joined Ericsson on their distributed switch programming system based on Erlang. From Stockholm, I moved to Zurich. I got pouched by IBM's research labs near to code their mobile phone version of the JVM.
+In 1997 I returned to my hometown, New York, and started developing a new NYSE trading system. It was NYSE's first internet-based system and possibly the first financial production system written in Python. Since then, I've been mostly working on finance gigs. I've developed high- frequency trading systems, trading platforms for fixed income, and risk systems for commodities at various joints such as ICAP, BrokerTec, a couple of times for JP Morgan, Credit Suisse, and this also my second time with RBC CM. There have been some sojourns with a few startups, including mobile apps, social media analytics, blockchains, smart contacts, and alt-currencies.
+
+outside workCo-founded art and short film festival in Mykonos
+Created the first global missing register (commended by the European Parliament)
+Regular contributor to the Bloomberg Quant Seminar series chaired by Bruno Dupire and given short talks with Peter Carr, John Hull, Nassim Taleb, and Robert J. Shiller.Vise President of The National Center for Art and Technology of Greece Internet consultant to the cabinet of the president of the European Parliament, 1994-1996Founder of the Linux & Python user groups in Luxembourg.Founder of the Python user groups in DüsseldorfPython Starship member
+
+Some more notables & first
+Top earning US mobile app - MAPQUEST
+eBay’s first mobile app
+1st Python trading service - SIAC
+1st C++ debugger & Numeric library 
+1st Internet Casino - Caesars
+1st Web framework for Python, PSO - used by NASA, SIAC, JP Morgan
+European Parliament’s first website.
+byteeasy - Anonymous crypto exchange
+BTC terminal - cross exchange custodial crypto trading platform
+1st module phone programming language - Phonescript
+JVM for mobile - IBM
+
+ByteEasy: A ShapeShift like exchange.
+ANEX: A cryptocurrency exchange.
+BTC: A cryptocurrency trading platform that aggregated across
+exchanges.
+Chromite: A Bancor based crypto currency backed by Chromium mine
+deposits in the ring of fire.
+Echo: A stream based realtime social analytical engine.
+TradeSource: A trade abstraction framework written in Erlang and
+Python.
+MarketSource: A market data framework written in Erlang and Python.
+HyperState: A gaming framework for the iPhone
+AudioBook: An audio visual book frame work for the iPhone as well as
+being on the team that were the first to bring chess (Caissa) to the
+iPhone.
+
+
+Publications & Articles
+Introducing Phonescript, MobiCom 2006
+Flash Lite Application Development: Trails and Issues, Adobe MAX 2006
+Financial Algorithms Cookbook, ISBN 978-1-4116-2259-3
+Trading in Python, Fast Track PyCon 2002
+Using LinPAK EISPAK from Erlang , Algorithms Journal, Vol 41, 1997
+Beagle and Evolutionary Trading, Algorithms Journal, Vol 9, 1989
+An EISPAK Introduction, Algorithms Journal, Vol. 8, 1988
+A LinPAK Introduction, Algorithms Journal, Vol 7, 1988
+How sharp is OCCAM, Algorithms Journal, Vol. 6, 1988
+Fixed versus Float, Algorithms Journal, Vol 4, 1987
+Cordic Functions, Algorithms Journal, Vol. 3, 1987
+Finding primes Through Probability, Algorithms Journal, Vol 2, 1987
+Large Arithmetic, Algorithms Journal, Vol. 1, 1987
+Financial Numeric Algorithms Edition One, Algorithms Press 1987
+Probably Prime, SIG Press, 1987

@@ -1,0 +1,42 @@
+id: icap-jabber-backend
+kind: built
+title: Distributed trading backend services (Jabber/async-j)
+client: ICAP
+org: ICAP
+job: icap
+responsible:
+- built
+when:
+  start: 2004
+  end: 2006
+summary: Non-threaded high-performance fan-out for read-only/position screens.
+bullets:
+- Non-threaded Jabber/async-j/NIO services so hundreds of clients could share one guest account against
+  BrokerTec.
+domain:
+- finance
+- trading
+skills:
+- Java
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - java
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

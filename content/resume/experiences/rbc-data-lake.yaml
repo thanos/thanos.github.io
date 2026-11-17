@@ -1,0 +1,39 @@
+id: rbc-data-lake
+kind: built
+title: Capital Markets Data Lake
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+when:
+  start: 2016
+  end: null
+summary: Capital Markets Data Lake (2016).
+bullets:
+- Delivered Capital Markets Data Lake (2016).
+domain:
+- finance
+skills:
+- Python
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

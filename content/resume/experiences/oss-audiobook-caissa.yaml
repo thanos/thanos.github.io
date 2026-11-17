@@ -1,0 +1,36 @@
+id: oss-audiobook-caissa
+kind: oss
+title: AudioBook framework & Caissa chess on iPhone
+org: Independent
+responsible:
+- built
+when:
+  start: 2008
+  end: null
+summary: Audio-visual book framework for iPhone; on the team that first brought chess (Caissa) to iPhone.
+bullets:
+- 'AudioBook: an audio-visual book framework for the iPhone.'
+- On the team that were the first to bring chess (Caissa) to the iPhone.
+domain:
+- gaming
+skills: []
+signals:
+  domains:
+  - gaming
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: oss
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

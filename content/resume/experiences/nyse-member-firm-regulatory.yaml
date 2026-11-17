@@ -1,0 +1,44 @@
+id: nyse-member-firm-regulatory
+kind: built
+title: NYSE Member Firm Regulatory Service — first XML feed
+client: NYSE/SIAC
+org: NYSE/SIAC
+job: nyse-siac
+responsible:
+- built
+when:
+  start: 1997
+  end: 2004
+summary: Near-real-time XML feed of specialist-firm positions; first NYSE XML service.
+bullets:
+- Near-real-time XML feed of specialist-firm positions to the member-firm regulatory body.
+- First NYSE XML service.
+domain:
+- finance
+- trading
+skills:
+- Python
+- Java
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - python
+  - java
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

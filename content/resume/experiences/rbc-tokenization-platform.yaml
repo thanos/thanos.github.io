@@ -1,0 +1,42 @@
+id: rbc-tokenization-platform
+kind: built
+title: Digital Asset Tokenization Platform
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+- run
+when:
+  start: 2022
+  end: null
+summary: Tokenization platform covering issuance / primary / secondary.
+bullets:
+- Delivered tokenization platform (2022).
+- Digital Asset Tokenization Platform PoC covering issuance / primary / secondary.
+domain:
+- finance
+- crypto
+skills: []
+signals:
+  domains:
+  - finance
+  - crypto
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

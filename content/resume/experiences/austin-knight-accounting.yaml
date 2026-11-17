@@ -1,0 +1,38 @@
+id: austin-knight-accounting
+kind: built
+title: Austin Knight — advertisement coupon accounting
+client: Austin Knight
+org: Austin Knight Plc
+responsible:
+- built
+when:
+  start: 1987
+  end: 1987
+summary: Online advertisement coupon handling accounts system.
+bullets:
+- Online Advertisement Coupon handling accounts system (AT&T 3B, Unix C, Sybase, SQL).
+domain:
+- finance
+skills:
+- C
+signals:
+  domains:
+  - finance
+  skills:
+  - c
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

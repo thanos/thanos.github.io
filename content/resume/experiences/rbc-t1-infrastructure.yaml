@@ -1,0 +1,45 @@
+id: rbc-t1-infrastructure
+kind: built
+title: T+1 transaction processing infrastructure
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+- run
+when:
+  start: 2023
+  end: 2024
+summary: Designed, built, and owned the bank’s T+1 infrastructure including 15c6-2.
+bullets:
+- Designed, built, and owned T+1 transaction processing and post-trade services (2024).
+- Contributed to core T+1 including Rule 15c6-2; STS/SDI/FaaS/test automation cut delivery from months
+  to weeks.
+domain:
+- finance
+skills:
+- Python
+- Elixir
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - elixir
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

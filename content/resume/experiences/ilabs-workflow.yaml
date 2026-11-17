@@ -1,0 +1,40 @@
+id: ilabs-workflow
+kind: built
+title: iLabs — object-oriented workflow (39 Eindhoven patterns)
+org: Independent
+responsible:
+- built
+when:
+  start: 1994
+  end: 2007
+summary: OO workflow conforming to all 39 Eindhoven patterns; used at EP, NYSE, JPM.
+bullets:
+- Built iLabs, an object-oriented workflow system conforming to all 39 Eindhoven patterns.
+- Used by European Parliament EPADES/SECTORS, NYSE compliance, and JPMorgan ICE & CME trade booking.
+domain:
+- finance
+skills:
+- Python
+- C++
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - c++
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

@@ -1,0 +1,40 @@
+id: rbc-test-automation-bcst
+kind: built
+title: Test Automation for BCST (EOD / T+1 industry testing)
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+when:
+  start: 2023
+  end: null
+summary: Automated EOD processes and industry testing for T+; ~15% cycle cut, ~$200k/yr.
+bullets:
+- Delivered Test Automation for BCST to automate EOD processes and industry testing for T+.
+- Cited ~15% cycle-time reduction and ~$200k/year on nomination materials.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: savings_usd_per_year
+    value: 200000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

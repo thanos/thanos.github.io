@@ -1,0 +1,42 @@
+id: rbc-python-elixir-adoption
+kind: built
+title: Python and Elixir enterprise adoption
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+when:
+  start: 2010
+  end: null
+summary: Introduced and standardized Python (2010) and Elixir (2017) in the enterprise stack.
+bullets:
+- Introduced and standardized Python (2010) and Elixir (2017) in the enterprise stack.
+- Ran workshops on Elixir, Performance Python, distributed databases, blockchains, trading-system anatomy.
+domain:
+- finance
+skills:
+- Python
+- Elixir
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - elixir
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

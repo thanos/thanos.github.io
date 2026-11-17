@@ -1,0 +1,37 @@
+id: rbc-metals-financing
+kind: built
+title: Metals Financing build-out
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+when:
+  start: 2014
+  end: null
+summary: Helped build out Metals Financing alongside Encompass commodities work.
+bullets:
+- Helped build out Metals Financing for commodities.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

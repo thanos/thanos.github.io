@@ -1,0 +1,44 @@
+id: rbc-pitos
+kind: built
+title: PITOS — point-in-time object store
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+- run
+when:
+  start: 2017
+  end: null
+summary: Athena/Quartz-style low-latency trading data fabric / point-in-time object store.
+bullets:
+- Coded the original POC and built PITOS — scalable low-latency fabric for large-scale trading data.
+- Became the de-facto trading data store; integral to PRISM and new OMS designs.
+domain:
+- finance
+skills:
+- Python
+- Elixir
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - elixir
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

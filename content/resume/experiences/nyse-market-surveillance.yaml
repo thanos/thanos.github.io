@@ -1,0 +1,45 @@
+id: nyse-market-surveillance
+kind: built
+title: NYSE market surveillance — Python log analyzer & Java browser
+client: NYSE/SIAC
+org: NYSE/SIAC
+job: nyse-siac
+responsible:
+- built
+when:
+  start: 1997
+  end: 2004
+summary: Python log-analyzer framework and Java log browser with embedded Python on trading-floor logs.
+bullets:
+- Built a Python log-analyzer framework for ad-hoc data mining, querying, and alarms on large/binary NYSE
+  floor logs.
+- Built a Java log browser with built-in Python scripting (WebSphere/J2EE/EncXML/SWIG).
+domain:
+- finance
+- trading
+skills:
+- Python
+- Java
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - python
+  - java
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

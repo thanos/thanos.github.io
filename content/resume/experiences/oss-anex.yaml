@@ -1,0 +1,35 @@
+id: oss-anex
+kind: oss
+title: ANEX — cryptocurrency exchange
+org: Independent
+responsible:
+- built
+when:
+  start: 2014
+  end: null
+summary: ANEX cryptocurrency exchange.
+bullets:
+- Built ANEX, a cryptocurrency exchange.
+domain:
+- crypto
+skills: []
+signals:
+  domains:
+  - crypto
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: oss
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

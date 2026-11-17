@@ -1,0 +1,36 @@
+id: cable-wireless-telecom
+kind: built
+title: Cable & Wireless — telecom systems
+client: Cable & Wireless
+org: Cable & Wireless
+responsible:
+- built
+when:
+  start: null
+  end: null
+summary: Telecom work listed on nomination “Before RBC” and stack enumerations.
+bullets:
+- Telecom systems work at Cable & Wireless (listed on MD nomination materials).
+domain:
+- telecom
+skills: []
+signals:
+  domains:
+  - telecom
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

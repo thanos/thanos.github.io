@@ -1,0 +1,41 @@
+id: panasonic-rip-fax
+kind: built
+title: Panasonic — Forth RIP engines & fax drivers
+client: Panasonic
+org: Panasonic
+responsible:
+- built
+when:
+  start: 1988
+  end: 1992
+summary: Forth-based RIP engines for Panasonic laser printers; most fax-machine drivers.
+bullets:
+- Wrote Forth-based RIP engines for Panasonic laser printers.
+- Wrote most of the drivers for their fax machines.
+domain:
+- telecom
+skills:
+- Forth
+- C
+signals:
+  domains:
+  - telecom
+  skills:
+  - forth
+  - c
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

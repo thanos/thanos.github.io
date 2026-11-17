@@ -1,0 +1,49 @@
+id: zingy-vindigo
+kind: built
+title: Vindigo City Guide — top-ten mobile
+client: Zingy
+org: Zingy
+job: zingy
+responsible:
+- built
+- run
+when:
+  start: 2006
+  end: 2007
+summary: 'Third-best US / #1 UK; banner ads ~$320K/month; PhoneScript rewrite and ports.'
+bullets:
+- 'Third-best-selling US app and #1 in the UK; banner-ad upgrade ~$320K/month.'
+- Rewrote client in PhoneScript; ports to Windows Mobile, Palm OS, BlackBerry.
+domain:
+- telecom
+- gaming
+skills:
+- Java
+- C++
+- Python
+signals:
+  domains:
+  - telecom
+  - gaming
+  skills:
+  - java
+  - c++
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: ads_usd_per_month
+    value: 320000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

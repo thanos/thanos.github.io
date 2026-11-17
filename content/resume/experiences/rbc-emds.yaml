@@ -1,0 +1,44 @@
+id: rbc-emds
+kind: built
+title: EMDS — Enterprise Market Data Services
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+- built
+- run
+when:
+  start: 2019
+  end: null
+summary: Quandl/Quantopian-like single source for market data and algorithm sandbox.
+bullets:
+- Built EMDS as the single source for market data, then central to the CM Data Strategy program.
+- Positioned as a one-stop market-data shop and algorithm sandbox.
+domain:
+- finance
+skills:
+- Python
+- Elixir
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - elixir
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

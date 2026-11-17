@@ -1,0 +1,39 @@
+id: rbc-mla-sentry
+kind: built
+title: MLA & SENTRY — fast bug/defect tooling
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+- run
+when:
+  start: 2018
+  end: null
+summary: MLA & SENTRY tooling — “zapping bugs fast” on nomination decks.
+bullets:
+- Delivered MLA & SENTRY tooling to accelerate defect detection and resolution.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

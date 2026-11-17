@@ -1,0 +1,43 @@
+id: icap-iconnect
+kind: built
+title: BrokerTec iConnect conversion
+client: ICAP
+org: ICAP
+job: icap
+responsible:
+- built
+when:
+  start: 2004
+  end: 2006
+summary: Converted main trading platform to use iConnect.
+bullets:
+- Converted the main trading platform to iConnect (Java, SWIG, C++).
+domain:
+- finance
+- trading
+skills:
+- Java
+- C++
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - java
+  - c++
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

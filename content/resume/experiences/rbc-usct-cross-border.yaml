@@ -1,0 +1,38 @@
+id: rbc-usct-cross-border
+kind: ran
+title: USCT and cross-border payments programs
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- run
+- architected
+when:
+  start: 2023
+  end: null
+summary: USCT and cross-border payments programs (with SWIFT MX and T+1).
+bullets:
+- Managed and developed programs for USCT, cross-border payments, SWIFT MX, and T+1.
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

@@ -1,0 +1,46 @@
+id: zingy-moviegoer-flash
+kind: built
+title: Moviegoer — first US mobile Flash app
+client: Zingy
+org: Zingy
+job: zingy
+responsible:
+- built
+- run
+when:
+  start: 2006
+  end: 2007
+summary: First US mobile Flash application; Verizon bestseller four months; 96+ feeds.
+bullets:
+- First US mobile Flash application (early Adobe seeding partner).
+- Showtimes, images, trailers, reviews, maps on Python backend with 96+ data feeds; Verizon bestseller
+  four consecutive months.
+domain:
+- telecom
+- gaming
+skills:
+- Python
+- Flash
+signals:
+  domains:
+  - telecom
+  - gaming
+  skills:
+  - python
+  - flash
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

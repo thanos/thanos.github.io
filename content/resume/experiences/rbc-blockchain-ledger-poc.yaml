@@ -1,0 +1,41 @@
+id: rbc-blockchain-ledger-poc
+kind: built
+title: Blockchain-based ledger PoC / IBM Reference Ledger
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+when:
+  start: 2018
+  end: null
+summary: Blockchain ledger PoC; distributed Reference Ledger with IBM and Canadian banks.
+bullets:
+- Blockchain-based ledger PoC for Capital Markets.
+- Distributed Reference Ledger work with IBM and Canadian banks.
+- Owned Blockchain Group that built an internal chain used as an immutable ledger.
+domain:
+- finance
+- crypto
+skills: []
+signals:
+  domains:
+  - finance
+  - crypto
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

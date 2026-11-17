@@ -1,0 +1,42 @@
+id: rbc-expense-reporting-portal
+kind: built
+title: Expense Reporting Portal
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+- run
+when:
+  start: 2022
+  end: null
+summary: Dashboards governing 3rd-party and T&E spend (distinct from trade-expense invoices).
+bullets:
+- Delivered Expense Reporting Portal for T&E, Corporate Card, Overtime Meal, IT Professional Services,
+  Mgmt Consulting, Supplier Risk.
+- 'Clients: Central Funding, COO, Finance, FIC, Global Equities, GIB, Global Research.'
+domain:
+- finance
+skills:
+- Python
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

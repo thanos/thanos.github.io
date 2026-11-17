@@ -1,0 +1,41 @@
+id: ep-first-website
+kind: built
+title: European Parliament — first official website
+client: European Parliament
+org: European Parliament
+job: european-parliament
+responsible:
+- built
+when:
+  start: 1993
+  end: 1995
+summary: European Parliament’s first official website (europarl.eu.int).
+bullets:
+- Built the European Parliament’s first official website (Linux, C, Python, Apache).
+domain:
+- finance
+skills:
+- Python
+- C
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - c
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

@@ -1,0 +1,43 @@
+id: rbc-raas
+kind: built
+title: Rules as a Service (RaaS)
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+when:
+  start: 2018
+  end: null
+summary: Airflow-inspired rules engine using FaaS execution and PITOS dependency graphs.
+bullets:
+- Architected RaaS based on Airflow patterns, using FaaS for execution and PITOS for dependency graphs.
+- Integrated with the bank and used in eight projects.
+domain:
+- finance
+skills:
+- Python
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: projects
+    value: 8
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

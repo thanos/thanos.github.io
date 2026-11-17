@@ -1,0 +1,39 @@
+id: startup-rip-engines
+kind: built
+title: Startup — RIP engines for printer manufacturers
+org: Independent
+responsible:
+- built
+when:
+  start: 1985
+  end: 1988
+summary: Left Atari to create a startup specializing in RIP engines for printer manufacturers.
+bullets:
+- Created a startup specializing in RIP engines for printer manufacturers after Atari PC games.
+domain:
+- finance
+skills:
+- C
+- Forth
+signals:
+  domains:
+  - finance
+  skills:
+  - c
+  - forth
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

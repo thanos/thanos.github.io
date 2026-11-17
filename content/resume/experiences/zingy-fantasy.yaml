@@ -1,0 +1,43 @@
+id: zingy-fantasy
+kind: built
+title: Official mobile Fantasy sports
+client: Zingy
+org: Zingy
+job: zingy
+responsible:
+- built
+- run
+when:
+  start: 2006
+  end: 2007
+summary: Official mobile fantasy sports (NBC, NBA, NFA, NHL) at Zingy.
+bullets:
+- Official mobile fantasy sports for NBC, NBA, NFA, and NHL.
+- Supported by the Stackless Python high-score / games CMS backend.
+domain:
+- telecom
+- gaming
+skills:
+- Java
+- C++
+- Python
+signals:
+  domains:
+  - telecom
+  - gaming
+  skills:
+  - java
+  - c++
+  - python
+  - architecture
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/EXPERIENCES-REVIEW.csv
+  last_verified: '2026-11-16'
+visibility: public

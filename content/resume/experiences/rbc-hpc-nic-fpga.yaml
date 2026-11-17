@@ -1,0 +1,44 @@
+id: rbc-hpc-nic-fpga
+kind: built
+title: HPC messaging — BPF, DPDK, Smart NIC, FPGA
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+when:
+  start: 2017
+  end: null
+summary: Userspace/BPF/DPDK/Smart NIC/FPGA work processing 60+ million messages/second.
+bullets:
+- Projects leveraging programmable NICs, DPDK, BPF, and FPGA-based routing/indexing.
+- Processed 60+ million messages a second in userspace paths.
+domain:
+- finance
+skills:
+- C
+- C++
+signals:
+  domains:
+  - finance
+  skills:
+  - c
+  - c++
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics:
+  - label: messages_per_second
+    value: 60000000
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

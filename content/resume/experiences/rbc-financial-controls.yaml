@@ -1,0 +1,39 @@
+id: rbc-financial-controls
+kind: ran
+title: Financial Controls — technical transformation mandate
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- architected
+- built
+- run
+when:
+  start: 2023
+  end: null
+summary: Technical leadership/transformation for Financial Controls.
+bullets:
+- Provided technical leadership and transformation for Financial Controls (cost, transparency, reliability).
+domain:
+- finance
+skills: []
+signals:
+  domains:
+  - finance
+  skills:
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

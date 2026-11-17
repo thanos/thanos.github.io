@@ -1,0 +1,42 @@
+id: symantec-eispack-linpack
+kind: built
+title: Symantec/Zortech — EISPACK/LINPACK ports to C++/Ada
+client: Symantec
+org: Symantec (Zortech)
+job: symantec-zortech
+responsible:
+- built
+when:
+  start: 1992
+  end: 1992
+summary: Ported EISPACK and LINPACK to C++ and Ada; numeric libraries.
+bullets:
+- Ported EISPACK and LINPACK to C++ and Ada.
+- Coded standard libraries for Walter Bright’s C++ distribution (bio).
+domain:
+- finance
+skills:
+- C++
+- Ada
+signals:
+  domains:
+  - finance
+  skills:
+  - c++
+  - ada
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

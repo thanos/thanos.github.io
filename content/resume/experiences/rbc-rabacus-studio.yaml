@@ -1,0 +1,46 @@
+id: rbc-rabacus-studio
+kind: built
+title: RABACUS Studio — dashboard builder for backend developers
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+when:
+  start: 2016
+  end: null
+summary: GELP-sponsored tool so backend developers without web skills can ship professional UIs.
+bullets:
+- POC’d then productized a web framework so programmers with no web knowledge can build dashboards, reporting,
+  and trading screens in minutes.
+- Became core technology behind new UI development; sponsored by GELP as RABACUS Studio.
+domain:
+- finance
+skills:
+- Python
+- TypeScript
+- Node
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - typescript
+  - node
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

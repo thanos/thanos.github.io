@@ -1,0 +1,44 @@
+id: uk-treasury-transputer-nn
+kind: built
+title: UK Treasury — Occam neural net on Transputers
+client: UK Treasury
+org: United Kingdom Treasury
+responsible:
+- built
+when:
+  start: 1980
+  end: 1981
+summary: Occam-based neural network on Transputers; FX forecast / statistical methods intern work.
+bullets:
+- Occam-based neural network on Transputers for the UK Treasury (bio).
+- 'Intern: foreign-exchange forecast, statistical methods, trend analysis, EISPACK/Fourier matrix lib
+  (FORTRAN).'
+domain:
+- AI
+- finance
+skills:
+- Occam
+- FORTRAN
+signals:
+  domains:
+  - AI
+  - finance
+  skills:
+  - occam
+  - fortran
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: manual
+provenance:
+  type: other
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

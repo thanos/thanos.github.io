@@ -1,0 +1,43 @@
+id: icap-blackberry-trading
+kind: built
+title: BrokerTec/BlackBerry fixed-income trading PoC
+client: ICAP
+org: ICAP
+job: icap
+responsible:
+- built
+when:
+  start: 2004
+  end: 2006
+summary: Spartan but fully functional real-time benchmarks-only handheld PoC.
+bullets:
+- Fully functional though Spartan real-time, benchmarks-only BlackBerry trading PoC (C++, WebSphere, J2EE).
+domain:
+- finance
+- trading
+skills:
+- C++
+- Java
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - c++
+  - java
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

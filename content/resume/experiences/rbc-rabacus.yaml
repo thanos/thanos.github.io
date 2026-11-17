@@ -1,0 +1,44 @@
+id: rbc-rabacus
+kind: built
+title: RABACUS — one browser for all the Bank’s data
+client: RBC CM
+org: RBC Capital Markets
+job: rbc-cm
+responsible:
+- built
+- architected
+when:
+  start: 2019
+  end: null
+summary: Internal Tableau-alternative visual portal to bank data.
+bullets:
+- Delivered RABACUS as the visual portal to bank data — an internal Tableau alternative.
+- 'Clients: BCS (ECPT/P2M), DADT (BookBuilder, DataWatch), GELP, RAMPP (Workspaces), Risk IT and Finance
+  IT.'
+domain:
+- finance
+skills:
+- Python
+- TypeScript
+signals:
+  domains:
+  - finance
+  skills:
+  - python
+  - typescript
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public

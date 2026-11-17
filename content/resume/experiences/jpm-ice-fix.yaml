@@ -1,0 +1,43 @@
+id: jpm-ice-fix
+kind: built
+title: ICE FIX gateway to Athena
+client: JPMorgan
+org: JPMorgan
+job: jpmorgan
+responsible:
+- built
+when:
+  start: 2007
+  end: 2007
+summary: Enhanced ICE-to-Athena FIX trade feed for energy deals.
+bullets:
+- Enhanced an existing ICE-to-Athena FIX trade feed for energy deals (Java, Python).
+domain:
+- finance
+- trading
+skills:
+- Java
+- Python
+signals:
+  domains:
+  - finance
+  - trading
+  skills:
+  - java
+  - python
+  - architecture
+  seniority: hybrid
+  impact:
+  - platform
+proof:
+  metrics: []
+  links: []
+  source: job
+provenance:
+  type: job_built
+  refs:
+  - path: content/resume/old_resumes/resume-incomplete.txt
+  - path: content/resume/old_resumes/resume-2025.txt
+  - path: content/resume/screenshots
+  last_verified: '2026-11-16'
+visibility: public
